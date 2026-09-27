@@ -1,0 +1,18 @@
+const fs=require('node:fs'),path=require('node:path');const{pathToFileURL}=require('node:url');
+const{chromium}=require('C:/PROJECTS/Tree Passport Platform/node_modules/playwright');
+const root=__dirname,url=pathToFileURL(path.join(root,'index.html')).href,out=path.join(root,'evidence','pass-two');
+const checks=[],errors=[];const check=(name,ok,detail=null)=>checks.push({name,ok:!!ok,detail});
+(async()=>{const b=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});let context;
+try{context=await b.newContext({viewport:{width:1440,height:960}});const p=await context.newPage();p.setDefaultTimeout(6000);p.on('pageerror',e=>errors.push(e.message));await p.goto(url);await p.waitForTimeout(1100);
+check('Direct local-file preview loads',await p.locator('h1').innerText()==='Good work.\nIn plain sight.');
+await p.locator('#stage-open').click();await p.waitForTimeout(500);await p.locator('#viewer-next').click();check('Local-file deep link changes screen',p.url().includes('screen=orchard-setup'));
+await p.evaluate(()=>{document.querySelector('.viewer-close').click();document.querySelector('.work-phc .pair-caption [data-open]').click();});await p.waitForTimeout(700);
+check('Immediate close/reopen preserves requested project',await p.locator('#project-viewer').evaluate(e=>e.open)&&await p.locator('#viewer-title').innerText()==='Plant Health Clinic',p.url());
+await p.keyboard.press('Escape');await p.waitForTimeout(250);check('Close after queued reopen clears scroll lock',await p.evaluate(()=>!document.querySelector('#project-viewer').open&&!document.body.classList.contains('has-overlay')));
+await p.goto(url+'#project=baghban&screen=varieties');await p.waitForTimeout(400);check('A directly opened screen URL restores correct viewer',await p.locator('#viewer-screen-title').innerText()==='Variety explorer');
+await p.keyboard.press('Escape');await p.waitForTimeout(200);check('Closing a direct screen link stays on the portfolio',p.url().startsWith(url)&&!await p.locator('#project-viewer').evaluate(e=>e.open));
+await context.close();context=await b.newContext({viewport:{width:320,height:844}});await context.route('https://fonts.googleapis.com/**',r=>r.abort());await context.route('https://fonts.gstatic.com/**',r=>r.abort());const q=await context.newPage();q.on('pageerror',e=>errors.push(e.message));await q.goto(url);await q.waitForTimeout(1000);
+check('Fallback fonts: no page overflow',await q.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));check('Fallback fonts: heading and primary action visible',await q.locator('h1').isVisible()&&await q.locator('#stage-open').isVisible());
+check('Fallback fonts: all local artwork resolves',await q.evaluate(()=>[...document.images].filter(i=>i.complete&&i.getAttribute('src')).every(i=>i.naturalWidth>0)));
+await q.screenshot({path:path.join(out,'fallback-fonts-320.png')});
+}catch(e){check('Edge review completed',false,e.stack)}finally{await context?.close().catch(()=>{});await b.close();check('No page exceptions',errors.length===0,errors);fs.writeFileSync(path.join(out,'edge-review.json'),JSON.stringify({checks},null,2));console.log(JSON.stringify({passed:checks.filter(c=>c.ok).length,failed:checks.filter(c=>!c.ok).length,failures:checks.filter(c=>!c.ok)},null,2));process.exitCode=checks.some(c=>!c.ok)?1:0}})();

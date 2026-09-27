@@ -1,0 +1,27 @@
+import { Link, redirect, useLoaderData, type LoaderFunctionArgs, type MetaFunction } from 'react-router';
+import { getProject, media, projectAliases, projects } from '~/data/portfolio/catalog';
+import { serviceCatalog } from '~/data/portfolio/services';
+import { Breadcrumbs, GalleryLink, ProjectArtwork, SystemMap } from '~/components/portfolio/UI';
+import { CareJourney } from '~/components/portfolio/signature/CareJourney';
+import { ResponsiveShowcase } from '~/components/portfolio/HomeSections';
+import { Icon } from '~/components/portfolio/Icon';
+import { breadcrumbSchema, pageMeta } from '~/lib/portfolio/seo';
+export function loader({params,request}:Pick<LoaderFunctionArgs,'params'|'request'>){
+ const slug=params.slug??'';if(projectAliases[slug])throw redirect(`/projects/${projectAliases[slug]}${new URL(request.url).search}`,301);
+ const project=getProject(slug);if(!project)throw new Response('Project not found',{status:404});return {project};
+}
+export const meta:MetaFunction<typeof loader>=({data})=>data?.project?[...pageMeta(data.project.name,data.project.summary,`/projects/${data.project.slug}`),{'script:ld+json':breadcrumbSchema([{name:'Home',path:'/'},{name:'Selected work',path:'/projects'},{name:data.project.name,path:`/projects/${data.project.slug}`}])}]:pageMeta('Project not found','Return to the KashCrop portfolio.','/projects');
+export default function ProjectPage(){
+ const {project:p}=useLoaderData<typeof loader>();const next=projects[(projects.findIndex(x=>x.slug===p.slug)+1)%projects.length];const services=serviceCatalog.filter(s=>s.projects.includes(p.slug));
+ return <main id="main" className="project-detail" data-project={p.theme}>
+ <div className="section-wrap"><Breadcrumbs items={[{label:'Selected work',to:'/projects'},{label:p.name}]}/></div>
+ <header className="project-detail-hero section-wrap"><div className="project-detail-heading"><p className="section-note">{p.category} · {p.year}</p><h1>{p.name}</h1><p className="project-tagline">{p.tagline}</p><p className="project-detail-summary">{p.summary}</p><div className="inline-actions">{p.screens.length>0&&<GalleryLink project={p} className="button button-dark">Explore the screens <Icon name="expand"/></GalleryLink>}{p.links.filter(l=>l.kind==='website').slice(0,1).map(l=><a key={l.href} className="underlined" href={l.href} target="_blank" rel="noopener noreferrer">Open website <Icon/></a>)}</div></div><ProjectArtwork project={p}/></header>
+ <div className="project-facts section-wrap"><dl>{(p.facts.length?p.facts:[{label:'Discipline',value:p.category},{label:'Work',value:p.kind},{label:'Role',value:p.scope.join(' + ')}]).slice(0,4).map(f=><div key={f.label}><dt>{f.label}</dt><dd>{f.value}</dd></div>)}</dl></div>
+ <section className="project-narrative section-wrap"><h2>Built around<br/>the actual work.</h2><div>{p.overview.map(paragraph=><p key={paragraph}>{paragraph}</p>)}</div></section>
+ {p.screens.length>0&&<section className="project-gallery section-wrap" aria-labelledby="screen-gallery-title"><div className="section-heading"><h2 id="screen-gallery-title">The interface,<br/>up close.</h2><p>Open a screen. Inspect the details.<br/>Scroll longer captures at a readable size.</p></div><div className="detail-screen-grid">{p.screens.map((s,i)=><figure id={`screen-${s.id}`} className={`detail-screen ${s.kind==='Desktop'?'is-wide':''}`} key={s.id}><GalleryLink project={p} screen={s} className="detail-screen-image" aria-label={`Inspect ${p.name}: ${s.name}`}><img src={media(s.file)} alt={`${p.name}: ${s.name}`} width={s.width} height={s.height} loading="lazy"/><span><Icon name="expand"/>Inspect screen</span></GalleryLink><figcaption><div><span className="capture-index">{String(i+1).padStart(2,'0')}</span><h3>{s.name}</h3></div><p>{s.caption}</p></figcaption></figure>)}</div><details className="capture-provenance"><summary>About the product captures</summary><p>{p.source}</p></details></section>}
+ {p.slug==='plant-health-clinic' && <CareJourney compact/>}{p.slug==='baghban' && <ResponsiveShowcase/>}<section className="engineering-section"><div className="section-wrap engineering-layout"><div><p className="section-note">Behind the interface</p><h2>Considered on the surface.<br/>Connected underneath.</h2><div className="technology-list" aria-label="Project technologies">{p.stack.map(t=><span key={t}>{t}</span>)}</div></div><div><h3>What the system brings together</h3><ul className="capability-list">{p.features.map(feature=><li key={feature}><Icon name="check"/>{feature}</li>)}</ul></div></div></section>
+ {p.workflow&&<section className="project-workflow section-wrap"><div className="section-heading"><h2>A view of<br/>the workflow.</h2><p>{p.workflow.title}</p></div><SystemMap project={p}/></section>}
+ {(p.links.length>0||services.length>0)&&<section className="project-connections section-wrap"><div><h2>Explore further.</h2><p>Project references and the disciplines behind the work.</p></div><div>{p.links.map(l=><a key={l.href} href={l.href} target="_blank" rel="noopener noreferrer">{l.label}<Icon/></a>)}{services.map(s=><Link key={s.slug} to={`/services/${s.slug}`}>{s.name} at KashCrop<Icon/></Link>)}</div></section>}
+ <section className="next-project section-wrap"><p className="section-note">Next in the collection</p><Link to={`/projects/${next.slug}`} className="next-project-link"><h2>{next.name}</h2><Icon/></Link><p>{next.tagline}</p></section>
+ </main>;
+}

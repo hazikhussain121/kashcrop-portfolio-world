@@ -1,0 +1,375 @@
+{
+  "mode": "responsive",
+  "at": "2026-09-20T17:07:51.943Z",
+  "checks": [
+    {
+      "name": "320: no page overflow",
+      "ok": true,
+      "detail": 305
+    },
+    {
+      "name": "320: one main heading",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "320: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "320: chosen fonts in use",
+      "ok": true,
+      "detail": [
+        {
+          "family": "Fraunces",
+          "loaded": true
+        },
+        {
+          "family": "Geist",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "320: unique IDs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "320: visible buttons named",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "320: stage action is contained",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "375: no page overflow",
+      "ok": true,
+      "detail": 360
+    },
+    {
+      "name": "375: one main heading",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "375: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "375: chosen fonts in use",
+      "ok": true,
+      "detail": [
+        {
+          "family": "Fraunces",
+          "loaded": true
+        },
+        {
+          "family": "Geist",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "375: unique IDs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "375: visible buttons named",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "375: stage action is contained",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "390: no page overflow",
+      "ok": true,
+      "detail": 375
+    },
+    {
+      "name": "390: one main heading",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "390: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "390: chosen fonts in use",
+      "ok": true,
+      "detail": [
+        {
+          "family": "Fraunces",
+          "loaded": true
+        },
+        {
+          "family": "Geist",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "390: unique IDs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "390: visible buttons named",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "390: stage action is contained",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "390: story labels do not overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "430: no page overflow",
+      "ok": true,
+      "detail": 415
+    },
+    {
+      "name": "430: one main heading",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "430: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "430: chosen fonts in use",
+      "ok": true,
+      "detail": [
+        {
+          "family": "Fraunces",
+          "loaded": true
+        },
+        {
+          "family": "Geist",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "430: unique IDs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "430: visible buttons named",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "430: stage action is contained",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "768: no page overflow",
+      "ok": true,
+      "detail": 753
+    },
+    {
+      "name": "768: one main heading",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "768: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "768: chosen fonts in use",
+      "ok": true,
+      "detail": [
+        {
+          "family": "Fraunces",
+          "loaded": true
+        },
+        {
+          "family": "Geist",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "768: unique IDs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "768: visible buttons named",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "768: stage action is contained",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1024: no page overflow",
+      "ok": true,
+      "detail": 1009
+    },
+    {
+      "name": "1024: one main heading",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1024: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "1024: chosen fonts in use",
+      "ok": true,
+      "detail": [
+        {
+          "family": "Fraunces",
+          "loaded": true
+        },
+        {
+          "family": "Geist",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "1024: unique IDs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1024: visible buttons named",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1024: stage action is contained",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1440: no page overflow",
+      "ok": true,
+      "detail": 1425
+    },
+    {
+      "name": "1440: one main heading",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1440: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "1440: chosen fonts in use",
+      "ok": true,
+      "detail": [
+        {
+          "family": "Fraunces",
+          "loaded": true
+        },
+        {
+          "family": "Geist",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "1440: unique IDs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1440: visible buttons named",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1440: stage action is contained",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1440: story labels do not overlap",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1920: no page overflow",
+      "ok": true,
+      "detail": 1905
+    },
+    {
+      "name": "1920: one main heading",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1920: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "1920: chosen fonts in use",
+      "ok": true,
+      "detail": [
+        {
+          "family": "Fraunces",
+          "loaded": true
+        },
+        {
+          "family": "Geist",
+          "loaded": true
+        }
+      ]
+    },
+    {
+      "name": "1920: unique IDs",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1920: visible buttons named",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "1920: stage action is contained",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "No JavaScript page errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "runtime": [],
+  "browser": "153.0.8010.50"
+}

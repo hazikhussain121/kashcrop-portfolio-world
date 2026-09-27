@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "include": [
+    "/*"
+  ],
+  "exclude": [
+    "/assets/*",
+    "/media/*",
+    "/favicon.svg",
+    "/kashcrop-logo.png",
+    "/skiie-logo.png",
+    "/robots.txt",
+    "/sitemap.xml",
+    "/llms.txt"
+  ]
+}

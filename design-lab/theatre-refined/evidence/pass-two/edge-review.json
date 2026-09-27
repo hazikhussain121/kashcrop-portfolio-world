@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "name": "Direct local-file preview loads",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Local-file deep link changes screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Immediate close/reopen preserves requested project",
+      "ok": true,
+      "detail": "file:///C:/PROJECTS/KASHCROP%20INNOVATIONS%20PORTFOLIO%20WEBSITE/design-lab/theatre-refined/index.html#project=plant-health-clinic&screen=home"
+    },
+    {
+      "name": "Close after queued reopen clears scroll lock",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "A directly opened screen URL restores correct viewer",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Closing a direct screen link stays on the portfolio",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Fallback fonts: no page overflow",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Fallback fonts: heading and primary action visible",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Fallback fonts: all local artwork resolves",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "No page exceptions",
+      "ok": true,
+      "detail": []
+    }
+  ]
+}

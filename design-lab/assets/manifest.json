@@ -1,0 +1,142 @@
+[
+  {
+    "name": "garden-home",
+    "file": "assets/garden-home.webp",
+    "source": "C:/PROJECTS/Garden Guardians Platform (Needs a Name)/artifacts/grower-experience-2026-09-20/browser/01-home-390.png",
+    "width": 390,
+    "height": 844,
+    "kind": "Existing local QA capture; local build, not a claim of current public release",
+    "bytes": 41470
+  },
+  {
+    "name": "garden-calendar",
+    "file": "assets/garden-calendar.webp",
+    "source": "C:/PROJECTS/Garden Guardians Platform (Needs a Name)/artifacts/grower-experience-2026-09-20/browser/07-calendar-390.png",
+    "width": 390,
+    "height": 1607,
+    "kind": "Existing local QA capture; local build, not a claim of current public release",
+    "bytes": 65798
+  },
+  {
+    "name": "garden-service",
+    "file": "assets/garden-service.webp",
+    "source": "C:/PROJECTS/Garden Guardians Platform (Needs a Name)/artifacts/grower-experience-2026-09-20/browser/02-orchard-service-390.png",
+    "width": 390,
+    "height": 1991,
+    "kind": "Existing local QA capture; local build, not a claim of current public release",
+    "bytes": 85418
+  },
+  {
+    "name": "garden-varieties",
+    "file": "assets/garden-varieties.webp",
+    "source": "C:/PROJECTS/Garden Guardians Platform (Needs a Name)/artifacts/grower-experience-2026-09-20/browser/11-variety-result-390.png",
+    "width": 390,
+    "height": 2556,
+    "kind": "Existing local QA capture; local build, not a claim of current public release",
+    "bytes": 88038
+  },
+  {
+    "name": "garden-desktop",
+    "file": "assets/garden-desktop.webp",
+    "source": "C:/PROJECTS/Garden Guardians Platform (Needs a Name)/artifacts/grower-experience-2026-09-20/browser/responsive-home-1440.png",
+    "width": 1440,
+    "height": 1537,
+    "kind": "Existing local QA capture; local build, not a claim of current public release",
+    "bytes": 73668
+  },
+  {
+    "name": "phc-home",
+    "file": "assets/phc-home.webp",
+    "source": "C:/PROJECTS/Plant Health Clinic/artifacts/farmer-ios-20260920/chromium/home.png",
+    "width": 390,
+    "height": 844,
+    "kind": "Existing local QA capture; local build, not a claim of current public release",
+    "bytes": 35282
+  },
+  {
+    "name": "phc-submit",
+    "file": "assets/phc-submit.webp",
+    "source": "C:/PROJECTS/Plant Health Clinic/artifacts/farmer-ios-20260920/chromium/submit-case.png",
+    "width": 390,
+    "height": 844,
+    "kind": "Existing local QA capture; local build, not a claim of current public release",
+    "bytes": 27066
+  },
+  {
+    "name": "phc-guide",
+    "file": "assets/phc-guide.webp",
+    "source": "C:/PROJECTS/Plant Health Clinic/artifacts/farmer-ios-20260920/chromium/photo-guide-sheet.png",
+    "width": 390,
+    "height": 844,
+    "kind": "Existing local QA capture; local build, not a claim of current public release",
+    "bytes": 28650
+  },
+  {
+    "name": "leaf",
+    "file": "assets/leaf.webp",
+    "source": "C:/PROJECTS/Plant Health Clinic/public/assets/farmer/leaf-lens-cutout.webp",
+    "width": 560,
+    "height": 560,
+    "kind": "Existing project artwork; illustrative, not documentary evidence",
+    "bytes": 46636
+  },
+  {
+    "name": "tree-tag",
+    "file": "assets/tree-tag.webp",
+    "source": "C:/PROJECTS/Tree Passport Platform/public/legacy/tag-concept.webp",
+    "width": 1000,
+    "height": 563,
+    "kind": "Existing project artwork; illustrative, not documentary evidence",
+    "bytes": 154884
+  },
+  {
+    "name": "cedar",
+    "file": "assets/cedar.webp",
+    "source": "C:/PROJECTS/Tree Passport Platform/public/legacy/cedar.webp",
+    "width": 1400,
+    "height": 788,
+    "kind": "Existing project artwork; illustrative, not documentary evidence",
+    "bytes": 231804
+  },
+  {
+    "name": "orchard",
+    "file": "assets/orchard.webp",
+    "source": "C:/PROJECTS/Garden Guardians Platform (Needs a Name)/public/assets/notion/header-orchard-signature.png",
+    "width": 1600,
+    "height": 686,
+    "kind": "Existing project artwork; illustrative, not documentary evidence",
+    "bytes": 112082
+  },
+  {
+    "name": "orchard-care",
+    "file": "assets/orchard-care.webp",
+    "source": "C:/PROJECTS/Garden Guardians Platform (Needs a Name)/public/assets/home-native/pruning-orchard-planning.webp",
+    "width": 420,
+    "height": 230,
+    "kind": "Existing project artwork; illustrative, not documentary evidence",
+    "bytes": 46070
+  },
+  {
+    "name": "live-before",
+    "file": "evidence/live-before.png",
+    "source": "https://kashcrop.in",
+    "kind": "Public website capture",
+    "capturedAt": "2026-09-20T13:35:19.860Z"
+  },
+  {
+    "name": "skiie",
+    "file": "assets/skiie.webp",
+    "source": "https://skiie.co.in",
+    "kind": "Public website capture",
+    "capturedAt": "2026-09-20T13:35:35.063Z"
+  },
+  {
+    "name": "apple-orchard",
+    "file": "assets/apple-orchard.webp",
+    "source": "https://unsplash.com/photos/red-apple-fruits-during-daytime-wvUYBXCgVzQ",
+    "author": "Marek Studzinski",
+    "license": "Unsplash License",
+    "licenseURL": "https://unsplash.com/license",
+    "kind": "Stock context photography; not Kashmir-specific and not a client field photograph"
+  }
+]

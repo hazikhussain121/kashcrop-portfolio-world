@@ -1,0 +1,10 @@
+/* Small, deliberate corrections shared by the built studies. */
+.phone,.browser-frame{display:block}.text-link{background:transparent}.field-headline{z-index:5}.field-headline h1{max-width:540px}.field-headline p{text-shadow:0 2px 15px #1118}.field-interface:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#31000825,transparent 48%);pointer-events:none}.stage-front,.stage-back{pointer-events:none}.stage-inscription{pointer-events:none}.gallery-object .object-caption{font-family:Geist,Arial,sans-serif}.motion-toggle:disabled{opacity:.85;cursor:default}.proof-dialog .pill:hover{background:#241b1f;color:white;border-color:#241b1f}
+@media(max-width:560px){.field-headline{max-width:300px}.field-headline h1{font-size:51px}.field-headline p{font-size:11px;max-width:240px}.field-interface .field-side-phone{right:55%}.phone{border-radius:26px}.phone img{border-radius:21px}}
+@media(max-width:360px){.field-headline h1{font-size:47px}.field-headline{max-width:260px}}
+
+@media(min-width:1101px){.stage-art .phone{width:clamp(220px,17vw,245px)}.stage-front{top:0;left:22%}}
+
+/* Respect image proportions when CSS changes intrinsic dimensions. */
+img{height:auto}.object-tree .object-surface>img{width:100%;height:auto}
+

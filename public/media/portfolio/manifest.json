@@ -1,0 +1,84 @@
+{
+  "captures": [
+    {
+      "file": "garden-home.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 41470,
+      "project": "baghban",
+      "source": "Actual interface captures from the Garden Guardians review build, 20 September 2026. These show implemented interface work; the pictured version is not a claim of current public release. Screens are a visual record, not an embedded application."
+    },
+    {
+      "file": "garden-service.webp",
+      "width": 390,
+      "height": 1991,
+      "bytes": 85418,
+      "project": "baghban",
+      "source": "Actual interface captures from the Garden Guardians review build, 20 September 2026. These show implemented interface work; the pictured version is not a claim of current public release. Screens are a visual record, not an embedded application."
+    },
+    {
+      "file": "garden-calendar.webp",
+      "width": 390,
+      "height": 1607,
+      "bytes": 65798,
+      "project": "baghban",
+      "source": "Actual interface captures from the Garden Guardians review build, 20 September 2026. These show implemented interface work; the pictured version is not a claim of current public release. Screens are a visual record, not an embedded application."
+    },
+    {
+      "file": "garden-varieties.webp",
+      "width": 390,
+      "height": 2556,
+      "bytes": 88038,
+      "project": "baghban",
+      "source": "Actual interface captures from the Garden Guardians review build, 20 September 2026. These show implemented interface work; the pictured version is not a claim of current public release. Screens are a visual record, not an embedded application."
+    },
+    {
+      "file": "garden-desktop.webp",
+      "width": 1440,
+      "height": 1537,
+      "bytes": 73668,
+      "project": "baghban",
+      "source": "Actual interface captures from the Garden Guardians review build, 20 September 2026. These show implemented interface work; the pictured version is not a claim of current public release. Screens are a visual record, not an embedded application."
+    },
+    {
+      "file": "phc-home.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 35282,
+      "project": "plant-health-clinic",
+      "source": "Actual farmer-app captures from the Plant Health Clinic review build, 20 September 2026. Medical and agricultural advice is not provided through this portfolio viewer."
+    },
+    {
+      "file": "phc-submit.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 27066,
+      "project": "plant-health-clinic",
+      "source": "Actual farmer-app captures from the Plant Health Clinic review build, 20 September 2026. Medical and agricultural advice is not provided through this portfolio viewer."
+    },
+    {
+      "file": "phc-guide.webp",
+      "width": 390,
+      "height": 844,
+      "bytes": 28650,
+      "project": "plant-health-clinic",
+      "source": "Actual farmer-app captures from the Plant Health Clinic review build, 20 September 2026. Medical and agricultural advice is not provided through this portfolio viewer."
+    },
+    {
+      "file": "skiie.webp",
+      "width": 1440,
+      "height": 960,
+      "bytes": 66554,
+      "project": "skiie",
+      "source": "Captured from the public skiie.co.in homepage on 20 September 2026. The live website may have changed since this capture."
+    }
+  ],
+  "artwork": "Additional artwork is drawn from existing company projects.",
+  "photograph": {
+    "file": "apple-orchard.webp",
+    "author": "Marek Studzinski",
+    "source": "https://unsplash.com/photos/red-apple-fruits-during-daytime-wvUYBXCgVzQ",
+    "license": "https://unsplash.com/license",
+    "use": "Stock context image, not a client field photograph."
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "at": "2026-09-20T14:08:13.677Z",
+  "checks": [
+    {
+      "name": "Comparison/1440: layout and images",
+      "ok": true,
+      "detail": {
+        "scroll": 1440,
+        "broken": [],
+        "h1": 1
+      }
+    },
+    {
+      "name": "Comparison/768: layout and images",
+      "ok": true,
+      "detail": {
+        "scroll": 768,
+        "broken": [],
+        "h1": 1
+      }
+    },
+    {
+      "name": "Comparison/390: layout and images",
+      "ok": true,
+      "detail": {
+        "scroll": 390,
+        "broken": [],
+        "h1": 1
+      }
+    },
+    {
+      "name": "Comparison/320: layout and images",
+      "ok": true,
+      "detail": {
+        "scroll": 320,
+        "broken": [],
+        "h1": 1
+      }
+    },
+    {
+      "name": "Spatial board: pointer drag pans without opening viewer",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Native modal: keyboard focus remains inside",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Native modal: Escape restores project focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Theatre: rapid switching leaves coherent selection",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Motion: manual reduction respects current project",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Motion: preference persists on reload",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "index: every local link and asset resolves",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "theatre: every local link and asset resolves",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "gallery: every local link and asset resolves",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "field: every local link and asset resolves",
+      "ok": true,
+      "detail": []
+    }
+  ]
+}

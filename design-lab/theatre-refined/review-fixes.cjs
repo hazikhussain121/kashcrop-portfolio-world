@@ -1,0 +1,15 @@
+const fs=require('node:fs'),path=require('node:path'),root=__dirname;
+let viewer=fs.readFileSync(path.join(root,'viewer.js'),'utf8');
+const before="figure.addEventListener('lostpointercapture',()=>{endPan();swipe=null;});";
+if(!viewer.includes(before))throw Error('Pointer handler anchor missing');
+viewer=viewer.replace(before,()=>"figure.addEventListener('lostpointercapture',event=>{if(event.target===figure){endPan();swipe=null;}});");
+fs.writeFileSync(path.join(root,'viewer.js'),viewer);
+fs.appendFileSync(path.join(root,'refinement.css'),'\n/* On small screens the selected button already names the capture. Keep the art uncluttered. */\n@media(max-width:560px){.walkthrough-preview-label{display:none}}\n');
+let tests=fs.readFileSync(path.join(root,'verify-pass-two.cjs'),'utf8');
+tests=tests.replace("const check=(name,ok,detail=null)=>checks.push({name,ok:!!ok,detail});",()=>"const check=(name,ok,detail=null)=>{checks.push({name,ok:!!ok,detail});fs.writeFileSync(path.join(out,'progress-'+mode+'.json'),JSON.stringify(report,null,2));};");
+tests=tests.replace("await p.evaluate(()=>document.fonts.ready);",()=>"await p.evaluate(()=>Promise.race([document.fonts.ready,new Promise(r=>setTimeout(r,2500))]));");
+tests=tests.replace("headless:true});\n  report.browser",()=>"headless:true,timeout:12000});\n  report.browser");
+tests=tests.replace("await wait(220)}",()=>"await wait(550)}");
+tests=tests.replace("await page.locator('.viewer-close').tap();await page.waitForTimeout(250);",()=>"await page.locator('.viewer-close').tap();await page.waitForTimeout(350);check('Touch close dismisses viewer',!await page.locator('#project-viewer').evaluate(e=>e.open),page.url());");
+fs.writeFileSync(path.join(root,'verify-pass-two.cjs'),tests);
+console.log('Refined mobile label density and implicit touch-capture handoff; bounded engine review timeout.');

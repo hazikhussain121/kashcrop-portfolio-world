@@ -1,36 +1,34 @@
-# KashCrop Innovations website
+# KashCrop Innovations — Portfolio
 
-Company-first single-page site for **KashCrop Innovations**, a software studio building institutional platforms, ERP and workflow systems, dashboards, full-stack web/mobile products and applied AI from Jammu and Kashmir.
+Award-caliber portfolio and company site for **KashCrop Innovations Pvt Ltd** — a Srinagar-based
+software and applied-AI product studio founded by Hazik Hussain.
 
-## Direction
+Built with **React Router v7**, **React 19**, **Tailwind CSS v4**, **GSAP** (ScrollTrigger) and
+**Lenis** smooth scrolling. Designed for Cloudflare (Workers / Pages, D1, R2).
 
-- **Identity:** the established Vizier graphite instrument, with Bricolage Grotesque, Inter, OKLCH tokens and a monochrome palette.
-- **Narrative:** company and capabilities first, representative proof, the cinematic Vizier chapter, wider portfolio, founder credibility, contact.
-- **Centerpiece:** a real Three.js conduit that morphs through Unify, Reason, Act and Improve inside the 460vh Vizier section.
-- **Content:** `src/content.js` holds the five case studies. Vizier data is optional per project and is rendered only when verified.
-
-## Stack
-
-- Vite + vanilla Three.js (r160)
-- Lenis for smooth scrolling
-- Mermaid loaded lazily when a case study opens
-- No framework or unnecessary dependencies
-
-## Run
+## Run locally
 
 ```bash
 npm install
 npm run dev
+```
+
+Then open http://localhost:5173
+
+## Build
+
+```bash
 npm run build
 ```
 
+## Editing content
+
+All site copy lives in `app/data/content.ts` so it can be edited without touching components.
+
 ## Structure
 
-```text
-index.html        metadata, company-first DOM order, navigation and sections
-src/main.js       Three.js conduit, Vizier-local progress, interactions and case studies
-src/style.css     graphite design system and responsive layout
-src/content.js    project copy and optional Vizier case data
-```
-
-This is a local safety repository. Do not deploy, push, or connect production configuration without explicit authorization.
+- `app/root.tsx` — document shell, fonts, smooth-scroll provider
+- `app/routes/home.tsx` — the single immersive page
+- `app/components/` — sections (Hero, Studio, Services, Work, Founder, Contact) and primitives
+- `app/data/content.ts` — all editable content
+- `app/hooks/` — animation + smooth-scroll hooks

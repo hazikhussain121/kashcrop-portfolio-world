@@ -1,0 +1,127 @@
+{
+  "review": "Product theatre / refinement 02",
+  "at": "2026-09-20T17:09:44.086Z",
+  "suites": [
+    {
+      "name": "responsive",
+      "at": "2026-09-20T17:07:51.943Z",
+      "passed": 59,
+      "failed": 0
+    },
+    {
+      "name": "interactions",
+      "at": "2026-09-20T17:08:09.983Z",
+      "passed": 27,
+      "failed": 0
+    },
+    {
+      "name": "touch",
+      "at": "2026-09-20T17:08:21.273Z",
+      "passed": 11,
+      "failed": 0
+    },
+    {
+      "name": "fallback",
+      "at": "2026-09-20T17:09:19.377Z",
+      "passed": 10,
+      "failed": 0
+    },
+    {
+      "name": "links",
+      "at": "2026-09-20T17:09:26.484Z",
+      "passed": 3,
+      "failed": 0
+    },
+    {
+      "name": "local-file-and-edge-cases",
+      "passed": 10,
+      "failed": 0
+    }
+  ],
+  "passed": 120,
+  "failed": 0,
+  "accessibility": {
+    "engine": "axe-core 4.13.0",
+    "scans": 6,
+    "detectedViolations": 0,
+    "unresolvedAutomatedChecks": [
+      {
+        "width": 1440,
+        "state": "page",
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 28
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "state": "phc-stage",
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 28
+          }
+        ]
+      },
+      {
+        "width": 1440,
+        "state": "viewer",
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 1
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "state": "page",
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "state": "phc-stage",
+        "incomplete": [
+          {
+            "id": "color-contrast",
+            "nodes": 34
+          }
+        ]
+      },
+      {
+        "width": 390,
+        "state": "viewer",
+        "incomplete": []
+      }
+    ],
+    "note": "Automated results do not constitute a certification. Contrast over imagery and other manual checks remain part of release review."
+  },
+  "stageLabelContrast": {
+    "samples": 30,
+    "lowestRatio": 4.63,
+    "method": "Pixel sampling of rendered backgrounds beneath five stage labels in three scenes at 390px and 1440px. Text color composited over the sampled background."
+  },
+  "webkit": {
+    "status": "not_verified",
+    "reason": "The available older WebKit runtime did not complete review startup with the installed Playwright. No WebKit pass or real-iPhone/Safari result is claimed."
+  },
+  "implementation": {
+    "index.html": "47acc8f3f950da290972550fc276c445bd42d5a076197b183878f4ced0253e4a",
+    "foundation.css": "9008b80667b8f62a22b34429c5ebea9d849df886a1450ff0a75e1b153f991c90",
+    "stage.css": "f2e2b2077390826e7941e005c4366baa05cc3618a752edd07fd83eb924b7ee76",
+    "portfolio.css": "9c8ce1703bf1a0ac940e5f8add1dcff418acf22973fe77032781f738e48c0e34",
+    "viewer.css": "da3e22eb25395f5a7546976d6c5b5172ab5deb70e8b9bcf5659fcffc5db9c0c6",
+    "refinement.css": "c9f654e6acbc51b2e7ba2efe381ecfa1117a6aa2825502711944d3c493dacf57",
+    "projects.js": "b9f853b1f769fa3deea2fa9af9d160e9a005cb5278322634d80bcdfd5e2c4a79",
+    "experience.js": "c64800b27c69fff4c96c4196ada4ab7b3fbf5d6b7866381d2ee75ebdaa44661b",
+    "walkthrough.js": "7a4ce4944225701c90aff27c11628ec6d838dcc38c364a4f6085cab5534a2a77",
+    "viewer.js": "de1c51d4e41f65d9d53b5b6ca3c82089cca7afe680ba15e26c51bd9b2a9bca0c"
+  }
+}

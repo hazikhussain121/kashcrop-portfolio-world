@@ -1,0 +1,75 @@
+[
+  {
+    "width": 1440,
+    "state": "page",
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 28
+      }
+    ],
+    "passes": 25
+  },
+  {
+    "width": 1440,
+    "state": "phc-stage",
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 28
+      }
+    ],
+    "passes": 25
+  },
+  {
+    "width": 1440,
+    "state": "viewer",
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 1
+      }
+    ],
+    "passes": 19
+  },
+  {
+    "width": 390,
+    "state": "page",
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 34
+      }
+    ],
+    "passes": 25
+  },
+  {
+    "width": 390,
+    "state": "phc-stage",
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "nodes": 34
+      }
+    ],
+    "passes": 25
+  },
+  {
+    "width": 390,
+    "state": "viewer",
+    "version": "4.13.0",
+    "violations": [],
+    "incomplete": [],
+    "passes": 20
+  }
+]

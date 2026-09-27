@@ -1,0 +1,158 @@
+[
+  {
+    "width": 1440,
+    "project": "garden",
+    "measured": [
+      {
+        "selector": ".stage-top>span",
+        "minimumContrast": 7.52
+      },
+      {
+        "selector": "#stage-index",
+        "minimumContrast": 7.52
+      },
+      {
+        "selector": ".pose-button>span",
+        "minimumContrast": 9.55
+      },
+      {
+        "selector": "#stage-name",
+        "minimumContrast": 6.78
+      },
+      {
+        "selector": "#stage-category",
+        "minimumContrast": 5.57
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "project": "phc",
+    "measured": [
+      {
+        "selector": ".stage-top>span",
+        "minimumContrast": 6.94
+      },
+      {
+        "selector": "#stage-index",
+        "minimumContrast": 6.93
+      },
+      {
+        "selector": ".pose-button>span",
+        "minimumContrast": 10.63
+      },
+      {
+        "selector": "#stage-name",
+        "minimumContrast": 7.19
+      },
+      {
+        "selector": "#stage-category",
+        "minimumContrast": 5.42
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "project": "skiie",
+    "measured": [
+      {
+        "selector": ".stage-top>span",
+        "minimumContrast": 5.67
+      },
+      {
+        "selector": "#stage-index",
+        "minimumContrast": 5.64
+      },
+      {
+        "selector": ".pose-button>span",
+        "minimumContrast": 9.32
+      },
+      {
+        "selector": "#stage-name",
+        "minimumContrast": 7.05
+      },
+      {
+        "selector": "#stage-category",
+        "minimumContrast": 5.36
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "project": "garden",
+    "measured": [
+      {
+        "selector": ".stage-top>span",
+        "minimumContrast": 6.86
+      },
+      {
+        "selector": "#stage-index",
+        "minimumContrast": 6.88
+      },
+      {
+        "selector": ".pose-button>span",
+        "minimumContrast": 9.02
+      },
+      {
+        "selector": "#stage-name",
+        "minimumContrast": 6.96
+      },
+      {
+        "selector": "#stage-category",
+        "minimumContrast": 5.21
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "project": "phc",
+    "measured": [
+      {
+        "selector": ".stage-top>span",
+        "minimumContrast": 5.88
+      },
+      {
+        "selector": "#stage-index",
+        "minimumContrast": 5.88
+      },
+      {
+        "selector": ".pose-button>span",
+        "minimumContrast": 9.59
+      },
+      {
+        "selector": "#stage-name",
+        "minimumContrast": 7.3
+      },
+      {
+        "selector": "#stage-category",
+        "minimumContrast": 5.84
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "project": "skiie",
+    "measured": [
+      {
+        "selector": ".stage-top>span",
+        "minimumContrast": 4.63
+      },
+      {
+        "selector": "#stage-index",
+        "minimumContrast": 4.68
+      },
+      {
+        "selector": ".pose-button>span",
+        "minimumContrast": 8.16
+      },
+      {
+        "selector": "#stage-name",
+        "minimumContrast": 8.12
+      },
+      {
+        "selector": "#stage-category",
+        "minimumContrast": 6.05
+      }
+    ]
+  }
+]

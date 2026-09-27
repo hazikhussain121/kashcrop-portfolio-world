@@ -1,0 +1,23 @@
+# KashCrop Innovations
+
+Product design, engineering and applied AI. Based in Kashmir, India; incubated at SKIIE, SKUAST-Kashmir.
+
+## Work
+- [Baghban](https://kashcrop.in/projects/baghban): Services, seasonal guidance and practical tools. All designed around the grower.
+- [Plant Health Clinic](https://kashcrop.in/projects/plant-health-clinic): Farmers send photos, symptoms, and voice notes from the field. Vizier drafts a diagnosis. A SKUAST-K expert reviews it and sends the advice.
+- [SKIIE](https://kashcrop.in/projects/skiie): The site lists SKIIE startups, programmes, events and facilities. Staff manage the content through an admin panel.
+- [KashCrop](https://kashcrop.in/projects/kashcrop): KashCrop is a practical orchard companion for Kashmir's apple farmers, keeping seasonal tasks, mandi rates, weather, references, and field calculators in one place.
+- [Treat My Fish](https://kashcrop.in/projects/treat-my-fish): Growers send photos, location, and water readings from a mobile app. Vizier drafts a diagnosis. Fisheries experts review the case in a web dashboard.
+- [TRACE-AMP](https://kashcrop.in/projects/trace-amp): Researchers enter a protein, DNA, or RNA sequence. The workbench calculates its properties, shows predicted structures, and checks databases and papers.
+
+## Services
+- [Full-stack apps](https://kashcrop.in/services/full-stack-apps): Full-stack software products. We handle frontend interfaces, backend systems, databases, APIs, mobile delivery, and cloud deployment.
+- [Websites](https://kashcrop.in/services/website-development): Websites and web platforms for companies, institutions, startups, and teams that need an admin panel.
+- [Applied AI](https://kashcrop.in/services/ai-training): Applied AI workflows for domain-specific products. We design prompts, capture expert feedback, prepare datasets, and connect model features to the product.
+- [Blockchain](https://kashcrop.in/services/blockchain-systems): Traceability systems that keep operational records clear and make important handoffs verifiable. We design the ledger, evidence flow, and public proof layer around the real process.
+
+## Contact
+https://kashcrop.in/contact
+Hazik@Kashcrop.in
+
+Project screenshots are visual records, not embedded applications. Capture details appear with each project.

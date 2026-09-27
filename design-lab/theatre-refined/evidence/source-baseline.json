@@ -1,0 +1,65 @@
+{
+  "at": "2026-09-20T15:52:09.968Z",
+  "files": [
+    {
+      "file": "package.json",
+      "sha256": "082326b6aac80181ffbee2a4b00730f559795d94b52d16373946f2dc492d445b"
+    },
+    {
+      "file": "package-lock.json",
+      "sha256": "ce6857d2a4c2f499a7e0b0e18444d7b5964084183f3d578800f46a5fed158214"
+    },
+    {
+      "file": "app/root.tsx",
+      "sha256": "3d4d1737c24d041e3f714b4b77b80f2bbd28d4baad102fef03a5ef171190fd72"
+    },
+    {
+      "file": "app/routes.ts",
+      "sha256": "c751a67bbfb30db47a1244124f8b3202c3fda3f0dc0fa164cb75ba4dcd8dfebe"
+    },
+    {
+      "file": "app/routes/home.tsx",
+      "sha256": "760ad62ec62cfa26facd1097d8f924e7bb6039b3ca3fe04c24dcf72f284f89fb"
+    },
+    {
+      "file": "app/app.css",
+      "sha256": "32e798b6cfbdc150b7f8a38fbd21c7d31d967b88bd7fe7981e8d83c85f508649"
+    },
+    {
+      "file": "app/data/content.ts",
+      "sha256": "07bd4265ff39b69d6be25ac2e8fb188ab9b88070d49d41ad2938e59b417f92ed"
+    },
+    {
+      "file": "AGENTS.md",
+      "sha256": "5dd5a19f0ca22280dc0a999c08731c089112afdd123ead8aa175fdc77d01d5e9"
+    },
+    {
+      "file": "PRODUCT.md",
+      "sha256": "6a05a616a6a9c1428bdb38ab901aeff4e8ee771cdc02cf4e7fe1047994e27b3a"
+    },
+    {
+      "file": "DESIGN.md",
+      "sha256": "3a1fbb44d996de9ee3b27acee67674efa6329da5b7ad407d4f8523d3be33d2ec"
+    },
+    {
+      "file": "design-lab/theatre.html",
+      "sha256": "160dd1b82962c0e23aecccad8b874dd761ea58798ea7249aa0de307a53040b59"
+    },
+    {
+      "file": "design-lab/theatre.css",
+      "sha256": "0d381f6f4aecf597ecb51ede668c8ff7d7b55f44305af493fe50a2337a0a055a"
+    },
+    {
+      "file": "design-lab/lab.js",
+      "sha256": "a72799e3390c34681c20b7c07d023a1a8b6c7af81382678c7bb7b9fcc2cf84d9"
+    },
+    {
+      "file": "design-lab/base.css",
+      "sha256": "3a309bb105f5b8bd693713ad164a442f45f381e4be603ccec695e2a8420c9a76"
+    },
+    {
+      "file": "design-lab/refinements.css",
+      "sha256": "c8c1fd0dbd643938e596f0d954d8a4ab9e3ed565de7ab51ded021744a9d4c381"
+    }
+  ]
+}

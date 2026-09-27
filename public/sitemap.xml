@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://kashcrop.in/</loc>
-    <lastmod>2026-07-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://kashcrop.in/</loc></url>
+  <url><loc>https://kashcrop.in/projects</loc></url>
+  <url><loc>https://kashcrop.in/services</loc></url>
+  <url><loc>https://kashcrop.in/about</loc></url>
+  <url><loc>https://kashcrop.in/contact</loc></url>
+  <url><loc>https://kashcrop.in/privacy</loc></url>
+  <url><loc>https://kashcrop.in/projects/baghban</loc></url>
+  <url><loc>https://kashcrop.in/projects/plant-health-clinic</loc></url>
+  <url><loc>https://kashcrop.in/projects/skiie</loc></url>
+  <url><loc>https://kashcrop.in/projects/kashcrop</loc></url>
+  <url><loc>https://kashcrop.in/projects/treat-my-fish</loc></url>
+  <url><loc>https://kashcrop.in/projects/trace-amp</loc></url>
+  <url><loc>https://kashcrop.in/services/full-stack-apps</loc></url>
+  <url><loc>https://kashcrop.in/services/website-development</loc></url>
+  <url><loc>https://kashcrop.in/services/ai-training</loc></url>
+  <url><loc>https://kashcrop.in/services/blockchain-systems</loc></url>
 </urlset>

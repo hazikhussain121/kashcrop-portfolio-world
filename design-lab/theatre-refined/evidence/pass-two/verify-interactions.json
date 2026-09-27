@@ -1,0 +1,143 @@
+{
+  "mode": "interactions",
+  "at": "2026-09-20T17:08:09.983Z",
+  "checks": [
+    {
+      "name": "Keyboard feature selection",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Selected feature remains focused",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Rapid switching: last selection wins",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Rapid switching: one visible scene",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Scene transition leaves no pending busy state",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Front-view control",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Sculpted-view control",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "In-page preview switches actual capture",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Selected in-page screen opens in viewer",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Viewer deep link follows selected screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Long page defaults to readable width",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Long page stays legible instead of thumbnail",
+      "ok": true,
+      "detail": 390
+    },
+    {
+      "name": "Long page can scroll fully",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Original-resolution inspection",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Keyboard zoom reset",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Desktop image uses original width",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Mouse pans a zoomed capture",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Tab remains in native dialog",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Escape dismisses and restores focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Closing restores non-project URL",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Next-screen control",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Browser Back closes viewer",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Browser Forward restores selected screen",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Reload preserves screen deep link",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Manual reduction interrupts motion cleanly",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Motion preference survives reload",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "No JavaScript page errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "runtime": [],
+  "browser": "153.0.8010.50"
+}

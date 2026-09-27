@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" id="top">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+ <meta name="theme-color" content="#f7f7f6">
+ <meta name="robots" content="noindex,nofollow">
+ <meta name="description" content="KashCrop Innovations. Product design, engineering and applied AI, shown through the work. Private design refinement.">
+ <title>KashCrop — Good work. In plain sight.</title>
+ <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300&family=Geist:wght@400;450;500;550;600&display=swap">
+ <link rel="stylesheet" href="foundation.css">
+ <link rel="stylesheet" href="stage.css">
+ <link rel="stylesheet" href="portfolio.css">
+ <link rel="stylesheet" href="viewer.css">
+ <script>try{document.documentElement.dataset.motion=matchMedia('(prefers-reduced-motion: reduce)').matches||localStorage.getItem('kc-theatre-motion')==='off'?'off':'on'}catch(e){document.documentElement.dataset.motion='off'}</script>
+ <script src="../vendor/gsap.min.js" defer></script>
+ <script src="../vendor/Flip.min.js" defer></script>
+ <script src="projects.js" defer></script>
+ <script src="experience.js" defer></script>
+ <script src="viewer.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to the work</a>
+<svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+ <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+ <symbol id="i-right" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+ <symbol id="i-left" viewBox="0 0 24 24"><path d="M20 12H4m6-6-6 6 6 6"/></symbol>
+ <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+ <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10 18.5h4"/></symbol>
+ <symbol id="i-desktop" viewBox="0 0 24 24"><rect x="2.5" y="3.5" width="19" height="13" rx="2"/><path d="M8 21h8m-4-4.5V21"/></symbol>
+ <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5m6 0h5v5m0 6v5h-5M9 20H4v-5"/></symbol>
+ <symbol id="i-link" viewBox="0 0 24 24"><path d="m9 15 6-6m-7 8-1 1a4.25 4.25 0 0 1-6-6l4-4a4.25 4.25 0 0 1 6 0m2 8a4.25 4.25 0 0 0 6 0l4-4a4.25 4.25 0 0 0-6-6l-1 1" transform="translate(1.5 0) scale(.88)"/></symbol>
+ <symbol id="i-angle" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5 9-5Zm-9 9 9 5 9-5M3 16l9 5 9-5"/></symbol>
+ <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+ <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+</defs></svg>
+<header class="site-header" id="site-header">
+ <a class="brand" href="#top" aria-label="KashCrop Innovations, back to top"><img src="../assets/kashcrop-logo.png" alt="" width="40" height="40"><span>kashcrop<small>Innovations</small></span></a>
+ <nav class="desktop-nav" aria-label="Main navigation"><a href="#work">Selected work</a><a href="#craft">The details</a><a href="#studio">The studio</a></nav>
+ <div class="header-actions"><a class="button button-outline header-contact" href="#contact">Let’s talk <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a><button class="menu-trigger icon-button" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded="false"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-menu"/></svg></button></div>
+</header>
+<dialog class="mobile-menu" id="mobile-menu" aria-labelledby="menu-title"><div class="menu-top"><p id="menu-title">KashCrop Innovations</p><button class="icon-button" data-close-menu aria-label="Close navigation"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button></div><nav aria-label="Mobile navigation"><a href="#work">Selected work <span>↗</span></a><a href="#craft">The details <span>↗</span></a><a href="#studio">The studio <span>↗</span></a><a href="#contact">Let’s talk <span>↗</span></a></nav><p class="menu-bottom">Product design. Engineering. Applied AI.<br>Built in Kashmir.</p></dialog>
+<main id="main">
+<section class="hero" aria-labelledby="hero-title">
+ <div class="hero-copy"><p class="location-line"><span class="signal-dot" aria-hidden="true"></span> Independent studio · Kashmir, India</p><h1 id="hero-title"><span>Good work.</span><span>In <em>plain sight.</em></span></h1><p class="hero-lede">We turn real-world problems into digital products. Here’s what that looks like.</p><a class="underlined hero-action" href="#work">Step inside the work <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div>
+ <div class="product-stage" id="product-stage" data-project="garden" data-pose="sculpted">
+  <div class="stage-light" aria-hidden="true"></div><div class="stage-arch" aria-hidden="true"></div><div class="stage-floor" aria-hidden="true"></div>
+  <div class="stage-top"><span>Selected work <span class="stage-index" id="stage-index">01 / 03</span></span><button class="pose-button" id="pose-button" aria-pressed="false" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-angle"/></svg><span>Front view</span></button></div>
+  <div class="stage-scenes" id="stage-scenes">
+   <div class="stage-scene" id="scene-garden" role="tabpanel" aria-labelledby="tab-garden" data-scene="garden">
+    <div class="composition composition-garden">
+     <div class="device-position device-secondary"><div class="device-frame"><div class="device-screen"><img src="../assets/garden-service.webp" alt="Baghban orchard establishment service, actual local-build capture" width="390" height="1991" decoding="async"></div></div></div>
+     <div class="device-position device-primary"><div class="device-frame"><div class="device-screen"><img src="../assets/garden-home.webp" alt="Baghban farmer home, actual local-build capture" width="390" height="844" fetchpriority="high" decoding="async"></div></div></div>
+    </div>
+   </div>
+   <div class="stage-scene" id="scene-phc" role="tabpanel" aria-labelledby="tab-phc" data-scene="phc" hidden inert>
+    <div class="composition composition-phc"><img class="scene-leaf" src="../assets/leaf.webp" alt="" width="560" height="560" decoding="async">
+     <div class="device-position device-secondary"><div class="device-frame"><div class="device-screen"><img src="../assets/phc-guide.webp" alt="Plant Health Clinic photography guidance, actual local-build capture" width="390" height="844" decoding="async"></div></div></div>
+     <div class="device-position device-primary"><div class="device-frame"><div class="device-screen"><img src="../assets/phc-home.webp" alt="Plant Health Clinic farmer home, actual local-build capture" width="390" height="844" decoding="async"></div></div></div>
+    </div>
+   </div>
+   <div class="stage-scene" id="scene-skiie" role="tabpanel" aria-labelledby="tab-skiie" data-scene="skiie" hidden inert>
+    <div class="composition composition-skiie"><div class="site-window stage-browser"><div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-address">skiie.co.in</span><span class="window-badge">↗</span></div><div class="window-screen"><img src="../assets/skiie.webp" alt="SKIIE publicly available homepage, captured 20 September 2026" width="1440" height="960" decoding="async"></div></div><div class="browser-reflection" aria-hidden="true"></div></div>
+   </div>
+  </div>
+  <div class="stage-bottom"><div class="stage-caption" aria-live="polite" aria-atomic="true"><p id="stage-name">Baghban</p><span id="stage-category">Orchard services & grower tools</span></div><button class="button button-white stage-open" data-open="garden" id="stage-open">Explore project <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button></div>
+ </div>
+ <div class="project-rail" role="tablist" aria-label="Featured projects" aria-orientation="vertical">
+  <button id="tab-garden" class="project-tab" role="tab" aria-selected="true" aria-controls="scene-garden" tabindex="0" data-feature="garden"><span class="project-thumb"><img src="../assets/garden-home.webp" alt="" width="390" height="844"></span><span class="project-name">Baghban<small>Orchard services & grower tools</small></span><svg class="icon project-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
+  <button id="tab-phc" class="project-tab" role="tab" aria-selected="false" aria-controls="scene-phc" tabindex="-1" data-feature="phc"><span class="project-thumb"><img src="../assets/phc-home.webp" alt="" width="390" height="844"></span><span class="project-name">Plant Health Clinic<small>Farmer-to-expert care</small></span><svg class="icon project-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
+  <button id="tab-skiie" class="project-tab" role="tab" aria-selected="false" aria-controls="scene-skiie" tabindex="-1" data-feature="skiie"><span class="project-thumb thumb-wide"><img src="../assets/skiie.webp" alt="" width="1440" height="960"></span><span class="project-name">SKIIE<small>A home for entrepreneurship</small></span><svg class="icon project-arrow" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
+ </div>
+</section>
+<div class="hero-foot"><p>Actual interfaces. A closer look is one click away.</p><a href="#work" aria-label="Scroll to selected projects">Keep looking <span aria-hidden="true">↓</span></a></div>
+<section class="selected-work section-wrap" id="work" aria-labelledby="work-title">
+ <div class="section-heading"><h2 id="work-title">Useful by purpose.<br>Thoughtful by design.</h2><p>A few of the products and platforms<br>we’ve brought to life.</p></div>
+ <article class="work-feature work-garden" aria-labelledby="garden-title">
+  <div class="garden-story-media media-stage" data-depth-surface>
+   <div class="orchard-photo"><img src="../assets/apple-orchard.webp" alt="Red apples on a tree; illustrative stock orchard photography" loading="lazy" decoding="async"><span class="photo-credit">Context photograph · Marek Studzinski / Unsplash</span></div>
+   <div class="garden-story-word" aria-hidden="true">Closer to<br>your orchard.</div>
+   <div class="garden-story-device story-device-one"><div class="device-frame"><div class="device-screen"><img src="../assets/garden-home.webp" alt="Baghban orchard services on the farmer home screen" width="390" height="844" loading="lazy"></div></div></div>
+   <div class="garden-story-device story-device-two"><div class="device-frame"><div class="device-screen"><img src="../assets/garden-service.webp" alt="Baghban new orchard setup page" width="390" height="1991" loading="lazy"></div></div></div>
+   <button class="round-open icon-button" data-open="garden" aria-label="Explore the Baghban project"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button>
+  </div>
+  <div class="project-caption"><div><p class="project-type">Grower platform</p><h3 id="garden-title">An orchard, brought together.</h3></div><p>Services, seasonal guidance and practical tools.<br>All designed around the grower.</p><button class="underlined" data-open="garden">Explore Baghban <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button></div>
+ </article>
+ <div class="work-pair">
+  <article class="work-feature work-phc" aria-labelledby="phc-title"><div class="clinic-media media-stage"><div class="clinic-orbit" aria-hidden="true"></div><img class="clinic-leaf" src="../assets/leaf.webp" alt="" width="560" height="560" loading="lazy"><div class="clinic-device"><div class="device-frame"><div class="device-screen"><img src="../assets/phc-home.webp" alt="Plant Health Clinic farmer interface" width="390" height="844" loading="lazy"></div></div></div><span class="media-note">Made for the first question.</span><button class="round-open icon-button" data-open="phc" aria-label="Explore Plant Health Clinic"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button></div><div class="pair-caption"><p class="project-type">Farmer app · SKUAST-Kashmir</p><h3 id="phc-title">Care, a little closer.</h3><p>From a plant-health concern to the next clear step.</p><button class="underlined" data-open="phc">Explore Plant Health Clinic <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button></div></article>
+  <article class="work-feature work-skiie" aria-labelledby="skiie-title"><div class="skiie-media media-stage"><div class="skiie-arch" aria-hidden="true"></div><div class="site-window skiie-story-window"><div class="window-bar" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span class="window-address">skiie.co.in</span><span class="window-badge">↗</span></div><div class="window-screen"><img src="../assets/skiie.webp" alt="SKIIE public website homepage" width="1440" height="960" loading="lazy"></div></div><span class="media-note">A home for what’s next.</span><button class="round-open icon-button" data-open="skiie" aria-label="Explore the SKIIE website project"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button></div><div class="pair-caption"><p class="project-type">Institutional web platform</p><h3 id="skiie-title">Where ideas find their people.</h3><p>A public home for startups, programmes and opportunity.</p><button class="underlined" data-open="skiie">Explore SKIIE <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button></div></article>
+ </div>
+</section>
+<section class="craft-section section-wrap" id="craft" aria-labelledby="craft-title">
+ <div class="craft-copy"><p class="section-note">Look a little closer.</p><h2 id="craft-title">The same care.<br>Every screen.</h2><p>A considered experience shouldn’t stop at the edge of a device.</p><div class="view-switch" role="group" aria-label="Choose a product perspective"><button type="button" aria-pressed="true" data-perspective="phone"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-phone"/></svg> On a phone</button><button type="button" aria-pressed="false" data-perspective="desktop"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-desktop"/></svg> On a desktop</button></div><p class="craft-footnote">Two actual Baghban captures.<br>One product, viewed differently.</p></div>
+ <div class="responsive-stage" id="responsive-stage" data-perspective="phone"><div class="responsive-grid" aria-hidden="true"></div><div class="responsive-halo" aria-hidden="true"></div><div class="responsive-device" id="responsive-device"><div class="responsive-chrome" aria-hidden="true"><span class="window-dots"><i></i><i></i><i></i></span><span>Baghban / Grower platform</span></div><img id="responsive-image" src="../assets/garden-home.webp" alt="Baghban mobile home screen" width="390" height="844" loading="lazy" decoding="async"></div><div class="responsive-caption"><span id="perspective-caption" aria-live="polite">Phone · 390 px capture</span><button class="underlined" data-open="garden" data-screen="home" id="perspective-open">Inspect the screen <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-expand"/></svg></button></div></div>
+</section>
+<section class="studio-section section-wrap" id="studio" aria-labelledby="studio-title"><div class="studio-identity"><div class="studio-mark" aria-hidden="true"><img src="../assets/kashcrop-logo.png" alt="" width="110" height="110" loading="lazy"></div><p>KashCrop Innovations<small>Product design · Engineering · Applied AI</small></p></div><div class="studio-main"><h2 id="studio-title">From the first idea.<br>Through to the details.</h2><p>We bring design, engineering and applied AI together to build useful digital systems. Based in Kashmir, we work across agriculture, institutions and the ideas in between.</p><div class="studio-people"><div class="founder"><span class="founder-monogram" aria-hidden="true">hh.</span><span><strong>Hazik Hussain</strong><small>Founder · Product & Engineering</small></span></div><a class="incubator" href="https://skiie.co.in/" target="_blank" rel="noopener noreferrer"><img src="skiie-logo.png" alt="SKIIE" width="45" height="45" loading="lazy"><span>Incubated at SKIIE<small>SKUAST-Kashmir</small></span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a></div></div></section>
+</main>
+<footer class="contact-section" id="contact" aria-labelledby="contact-title"><div class="contact-light" aria-hidden="true"></div><div class="contact-top"><div><p class="contact-intro">Something in mind?</p><h2 id="contact-title">Let’s make<br>something <em>useful.</em></h2></div><div class="contact-actions"><p>A first idea. A real problem.<br>A product ready for its next chapter.</p><a class="button button-white contact-primary" href="https://kashcrop.in/contact/" target="_blank" rel="noopener noreferrer">Tell us what you’re building <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a><div class="email-row"><a href="mailto:Hazik@Kashcrop.in">Hazik@Kashcrop.in</a><button class="copy-email" id="copy-email" aria-label="Copy email address"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-link"/></svg></button></div></div></div><div class="footer-wordmark" aria-hidden="true">kashcrop</div><div class="footer-baseline"><span>© 2026 KashCrop Innovations Pvt Ltd<br>Built in Kashmir.</span><nav aria-label="Social and contact links"><a href="https://www.linkedin.com/in/hazik-hussain-49b5663a3/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="tel:+918493905940">+91 8493905940</a></nav><button class="motion-toggle" aria-pressed="false" type="button"><span class="motion-dot" aria-hidden="true"></span><span>Motion on</span></button><a href="#top" class="back-to-top" aria-label="Back to top">Back to top ↑</a></div></footer>
+<div class="preview-footer"><span>Private design refinement · Not deployed</span><nav aria-label="Design review"><a href="../theatre.html">Original A</a><a href="../index.html">Other explorations</a><a href="NOTES.md">Sources & build notes</a></nav></div>
+<dialog class="project-viewer" id="project-viewer" aria-labelledby="viewer-title" aria-describedby="viewer-summary">
+ <div class="viewer-heading"><div class="viewer-heading-text"><p id="viewer-category">Project</p><h2 id="viewer-title">The work, up close.</h2></div><div class="viewer-heading-actions"><button class="icon-button viewer-share" id="viewer-share" type="button" aria-label="Copy link to this project screen"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-link"/></svg></button><button class="icon-button viewer-close" type="button" aria-label="Close project viewer" autofocus><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-close"/></svg></button></div></div>
+ <div class="viewer-body"><aside class="viewer-sidebar"><p id="viewer-summary"></p><div class="viewer-project-meta" id="viewer-project-meta"></div><div class="viewer-screen-label"><span>Explore the screens</span><span id="viewer-count">1 / 5</span></div><div class="viewer-screen-list" id="viewer-screen-list" role="group" aria-label="Select a project screen"></div><a class="underlined viewer-live" id="viewer-live" href="https://skiie.co.in/" target="_blank" rel="noopener noreferrer" hidden>Open public website <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></a><details class="viewer-source"><summary>About these images</summary><p id="viewer-source"></p><a id="viewer-original" href="../assets/garden-home.webp" target="_blank" rel="noopener">Open original image ↗</a></details></aside>
+ <div class="viewer-main"><div class="viewer-toolbar"><div class="viewer-screen-heading"><h3 id="viewer-screen-title">Farmer home</h3><p id="viewer-dimension">Actual product capture</p></div><button class="zoom-button" id="viewer-zoom" aria-pressed="false" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-expand"/></svg><span>Inspect at full size</span></button></div><figure class="viewer-figure" id="viewer-figure" tabindex="0" aria-label="Project image. Scroll to inspect the complete capture."><div class="viewer-image-wrap" id="viewer-image-wrap"><img id="viewer-image" alt="" decoding="async"><p class="image-error" id="image-error" hidden>This capture could not load. Choose another screen, or open the original image.</p></div></figure><div class="viewer-bottom"><p id="viewer-caption" aria-live="polite"></p><div class="viewer-pagination"><button class="icon-button" id="viewer-previous" aria-label="Previous project screen" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-left"/></svg></button><span id="viewer-pagination-count" aria-hidden="true">1 / 5</span><button class="icon-button" id="viewer-next" aria-label="Next project screen" type="button"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-right"/></svg></button></div></div></div>
+ </div><div class="viewer-disclosure">Actual interface captures · Screen viewer, not an embedded application.<span>Use ← → to change screens · Esc to close</span></div><div class="share-fallback" id="share-fallback" hidden><label for="share-url">Copy this screen link</label><input id="share-url" readonly><button type="button" id="close-share">Done</button></div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+<noscript><div class="no-script"><strong>The portfolio is fully visible without JavaScript.</strong> Interactive screen browsing needs JavaScript. <a href="../assets/garden-home.webp">Baghban home</a> · <a href="../assets/phc-home.webp">Plant Health Clinic home</a> · <a href="https://skiie.co.in/">SKIIE public website</a></div></noscript>
+</body></html>

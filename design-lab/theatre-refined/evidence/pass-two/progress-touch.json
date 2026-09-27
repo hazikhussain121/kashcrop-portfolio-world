@@ -1,0 +1,84 @@
+{
+  "mode": "touch",
+  "at": "2026-09-20T17:08:21.273Z",
+  "checks": [
+    {
+      "name": "Mobile menu opens",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile navigation closes and focuses destination",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Touch opens the selected long page",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Mobile inspection has useful vertical room",
+      "ok": true,
+      "detail": 456.5
+    },
+    {
+      "name": "Primary mobile viewer controls meet 44px",
+      "ok": true,
+      "detail": [
+        {
+          "id": "icon-button viewer-close",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "viewer-zoom",
+          "width": 82.21875,
+          "height": 44
+        },
+        {
+          "id": "viewer-previous",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "id": "viewer-next",
+          "width": 44,
+          "height": 44
+        }
+      ]
+    },
+    {
+      "name": "Vertical touch scroll does not change screens",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Vertical touch actually scrolls long content",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Horizontal touch swipe changes screens",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Touch close dismisses viewer",
+      "ok": true,
+      "detail": "http://127.0.0.1:3724/theatre-refined/index.html#work"
+    },
+    {
+      "name": "Landscape viewport leaves usable image area",
+      "ok": true,
+      "detail": 220.3125
+    },
+    {
+      "name": "No JavaScript page errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "runtime": [],
+  "browser": "153.0.8010.50"
+}

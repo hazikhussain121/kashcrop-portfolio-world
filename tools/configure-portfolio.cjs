@@ -1,0 +1,12 @@
+const fs=require('node:fs');
+const p='package.json',pkg=JSON.parse(fs.readFileSync(p,'utf8'));
+pkg.scripts={...pkg.scripts,dev:'react-router dev',build:'node tools/prepare-portfolio.cjs && react-router build',preview:'react-router-serve ./build/server/index.js',typecheck:'react-router typegen && tsc',test:'vitest run', 'test:e2e':'playwright test', 'check':'npm run typecheck && npm run test && npm run build', 'preview:cloudflare':'wrangler pages dev ./build/client --port 8788',deploy:'npm run build && wrangler pages deploy ./build/client'};
+fs.writeFileSync(p,JSON.stringify(pkg,null,2)+'\n');
+const ts=JSON.parse(fs.readFileSync('tsconfig.json','utf8'));ts.include=['app/**/*.ts','app/**/*.tsx','.react-router/types/**/*','vite.config.ts','react-router.config.ts','functions/**/*.ts','playwright.config.ts'];ts.exclude=['node_modules','artifacts','build','design-lab','frontend-vault','webgl-reference-skills','open-lofi'];fs.writeFileSync('tsconfig.json',JSON.stringify(ts,null,2)+'\n');
+fs.writeFileSync('app/routes/not-found.tsx',"export function loader(){throw new Response('Not found',{status:404});}\nexport default function NotFound(){return null;}\n");
+fs.writeFileSync('app/routes/legacy-projects-redirect.tsx',"import {redirect} from 'react-router';\nexport function loader(){return redirect('/projects',301);}\n");
+fs.writeFileSync('app/routes/legacy-about-redirect.tsx',"import {redirect} from 'react-router';\nexport function loader(){return redirect('/about',301);}\n");
+let styles=fs.readFileSync('app/styles/portfolio/pages.css','utf8').replace("@import './forms.css';\n",'').replace("@import './responsive.css';\n",'');fs.writeFileSync('app/styles/portfolio/pages.css',styles);
+fs.appendFileSync('app/app.css',"@import './styles/portfolio/forms.css';\n@import './styles/portfolio/responsive.css';\n");
+fs.writeFileSync('public/_routes.json',JSON.stringify({version:1,include:['/*'],exclude:['/assets/*','/media/*','/favicon.svg','/kashcrop-logo.png','/skiie-logo.png','/robots.txt','/sitemap.xml','/llms.txt']},null,2)+'\n');
+console.log('Production routing, build, test and style entry points configured.');

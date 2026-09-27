@@ -1,0 +1,35 @@
+<main id="main">
+<section class="theatre-hero" aria-label="Selected work, product theatre">
+ <div class="theatre-copy">
+  <div class="intro-line">Independent studio · Kashmir, India</div>
+  <h1>Good work.<br>In <em>plain sight.</em></h1>
+  <p>We turn real-world problems into digital products. Here’s what that looks like.</p>
+  <button class="text-link" data-open="garden" id="hero-inspect">Step inside the work <span class="arrow" aria-hidden="true">↗</span></button>
+  <div class="project-switcher" role="group" aria-label="Choose a featured project">
+   <button class="project-choice" data-select="garden" aria-pressed="true"><img src="assets/garden-home.webp" alt="" width="33" height="42"><span>Baghban<small>Orchard services & grower tools</small></span><span class="arrow" aria-hidden="true">↗</span></button>
+   <button class="project-choice" data-select="phc" aria-pressed="false"><img src="assets/phc-home.webp" alt="" width="33" height="42"><span>Plant Health Clinic<small>Farmer-to-expert care</small></span><span class="arrow" aria-hidden="true">↗</span></button>
+   <button class="project-choice" data-select="skiie" aria-pressed="false"><img src="assets/skiie.webp" alt="" width="33" height="42"><span>SKIIE<small>A home for entrepreneurship</small></span><span class="arrow" aria-hidden="true">↗</span></button>
+  </div>
+ </div>
+ <div class="theatre-stage" data-active="garden" id="product-stage">
+  <div class="stage-inscription"><span>KashCrop / Selected work</span><span id="stage-provenance">Real screens · Local build</span></div>
+  <div class="stage-disc" aria-hidden="true"></div>
+  <div class="stage-art" id="stage-art" data-project="garden">
+   <div class="phone stage-back" id="stage-back"><img src="assets/garden-service.webp" alt="Baghban orchard establishment service screen" id="back-image" width="390" height="1991"></div>
+   <div class="phone stage-front" id="stage-front"><img src="assets/garden-home.webp" alt="Baghban farmer home screen" id="front-image" width="390" height="844" fetchpriority="high"></div>
+   <img class="stage-leaf" src="assets/leaf.webp" alt="" width="560" height="560">
+   <div class="browser-frame stage-skiie" id="stage-skiie" hidden><div class="browser-chrome" aria-hidden="true"><i></i><i></i><i></i><span>skiie.co.in</span></div><img src="assets/skiie.webp" alt="The publicly available SKIIE website" width="1440" height="960"></div>
+  </div>
+  <div class="stage-footer"><div class="stage-caption" aria-live="polite"><strong id="stage-name">Baghban</strong><small id="stage-description">From orchard planning to expert care.</small></div><button class="inspect-tag" data-open="garden" id="stage-inspect">Explore screens <span class="arrow" aria-hidden="true">↗</span></button></div>
+ </div>
+</section>
+<div class="under-hero"><p>Actual product captures. Local builds are identified in the viewer.</p><a href="#work">More to explore ↓</a></div>
+<section class="work-exhibits" id="work">
+ <div class="section-head"><h2>The details<br>make the difference.</h2><p>A closer look at the interfaces behind the introductions. Open a project and explore its screens.</p></div>
+ <div class="work-grid">
+  <button class="work-piece" data-open="phc"><div class="work-image phc-image"><img class="leaf-object" src="assets/leaf.webp" alt="" loading="lazy" width="560" height="560"><div class="phone"><img src="assets/phc-home.webp" alt="Plant Health Clinic home screen" loading="lazy" width="390" height="844"></div><div class="phone"><img src="assets/phc-guide.webp" alt="Plant photography guidance screen" loading="lazy" width="390" height="844"></div></div><div class="work-caption"><div><strong>Plant Health Clinic</strong><small>A clearer path from concern to care.</small></div><span class="arrow" aria-hidden="true">↗</span></div></button>
+  <button class="work-piece" data-open="skiie"><div class="work-image"><img class="full-shot" src="assets/skiie.webp" alt="SKIIE website, public homepage capture" loading="lazy" width="1440" height="960"></div><div class="work-caption"><div><strong>SKIIE</strong><small>Ideas, people and opportunities. Connected.</small></div><span class="arrow" aria-hidden="true">↗</span></div></button>
+ </div>
+</section>
+<section class="studio-note" id="studio"><h2>Designed with care.<br>Built to be used.</h2><div><p>KashCrop Innovations brings product design, full-stack engineering and applied AI together. Based in Kashmir and incubated at SKIIE, SKUAST-Kashmir, we build around the people doing the work.</p><a href="mailto:hazik@kashcrop.in" class="text-link">Let’s talk about your project <span class="arrow" aria-hidden="true">↗</span></a></div></section>
+</main>

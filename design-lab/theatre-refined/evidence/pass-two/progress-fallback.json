@@ -1,0 +1,58 @@
+{
+  "mode": "fallback",
+  "at": "2026-09-20T17:09:19.377Z",
+  "checks": [
+    {
+      "name": "Operating-system reduced motion is honored",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Reduced-motion scene change is immediate",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Without GSAP: selection and viewer still work",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Clipboard unavailable: selectable link fallback",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Missing image displays recovery control",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Retry restores the selected image",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "Invalid project fragment does not open broken viewer",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "No JavaScript: headline and artwork remain visible",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "No JavaScript: direct capture fallback exists",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "No JavaScript page errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "runtime": [],
+  "browser": "153.0.8010.50"
+}

@@ -1,0 +1,23 @@
+{
+  "mode": "links",
+  "at": "2026-09-20T17:09:26.484Z",
+  "checks": [
+    {
+      "name": "Every local link and asset resolves",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "Existing app/config files unchanged",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "No JavaScript page errors",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "runtime": [],
+  "browser": "153.0.8010.50"
+}

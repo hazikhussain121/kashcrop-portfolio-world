@@ -1,0 +1,402 @@
+{
+  "createdAt": "2026-09-20T14:07:29.962Z",
+  "checks": [
+    {
+      "name": "theatre/1440: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 2270
+      }
+    },
+    {
+      "name": "theatre/1440: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "theatre/1440: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "theatre/1440: viewer opens",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "theatre/1440: viewer closes and restores focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "theatre/1440: switch updates actual images",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "theatre/1440: screen viewer navigation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "theatre/1440: desktop project stage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "gallery/1440: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 1495
+      }
+    },
+    {
+      "name": "gallery/1440: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "gallery/1440: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "gallery/1440: viewer opens",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "gallery/1440: viewer closes and restores focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "gallery/1440: accessible index toggle",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "gallery/1440: keyboard pan and reset",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "field/1440: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 1440,
+        "scroll": 1440,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 2516
+      }
+    },
+    {
+      "name": "field/1440: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "field/1440: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "field/1440: viewer opens",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "field/1440: viewer closes and restores focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "field/1440: keyboard reveal",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "field/1440: keyboard context",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "theatre/768: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 2370
+      }
+    },
+    {
+      "name": "theatre/768: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "theatre/768: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "gallery/768: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 1351
+      }
+    },
+    {
+      "name": "gallery/768: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "gallery/768: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "field/768: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 768,
+        "scroll": 768,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 2181
+      }
+    },
+    {
+      "name": "field/768: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "field/768: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "theatre/390: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 3037
+      }
+    },
+    {
+      "name": "theatre/390: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "theatre/390: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "theatre/390: viewer opens",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "theatre/390: viewer closes and restores focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "theatre/390: switch updates actual images",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "theatre/390: screen viewer navigation",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "theatre/390: desktop project stage",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "gallery/390: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 1763
+      }
+    },
+    {
+      "name": "gallery/390: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "gallery/390: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "gallery/390: viewer opens",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "gallery/390: viewer closes and restores focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "gallery/390: accessible index toggle",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "gallery/390: keyboard pan and reset",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "field/390: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 390,
+        "scroll": 390,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 3144
+      }
+    },
+    {
+      "name": "field/390: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "field/390: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "field/390: viewer opens",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "field/390: viewer closes and restores focus",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "field/390: keyboard reveal",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "field/390: keyboard context",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "theatre/320: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 3133
+      }
+    },
+    {
+      "name": "theatre/320: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "theatre/320: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "gallery/320: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 1821
+      }
+    },
+    {
+      "name": "gallery/320: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "gallery/320: heading and runtime",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "field/320: no horizontal overflow",
+      "ok": true,
+      "detail": {
+        "width": 320,
+        "scroll": 320,
+        "h1": 1,
+        "broken": [],
+        "bodyHeight": 3246
+      }
+    },
+    {
+      "name": "field/320: images loaded",
+      "ok": true,
+      "detail": []
+    },
+    {
+      "name": "field/320: heading and runtime",
+      "ok": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    "theatre-1440.png",
+    "gallery-1440.png",
+    "field-1440.png",
+    "theatre-768.png",
+    "gallery-768.png",
+    "field-768.png",
+    "theatre-390.png",
+    "gallery-390.png",
+    "field-390.png",
+    "theatre-320.png",
+    "gallery-320.png",
+    "field-320.png"
+  ]
+}

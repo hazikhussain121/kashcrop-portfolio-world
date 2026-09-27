@@ -1,0 +1,837 @@
+[
+  {
+    "width": 1425,
+    "errors": [
+      "$(...).forEach is not a function"
+    ],
+    "viewport": 1440,
+    "hero": {
+      "x": 0,
+      "y": 98,
+      "width": 1425,
+      "height": 678.390625,
+      "top": 98,
+      "right": 1425,
+      "bottom": 776.390625,
+      "left": 0
+    },
+    "stage": {
+      "x": 562.578125,
+      "y": 114,
+      "width": 810.59375,
+      "height": 662.390625,
+      "top": 114,
+      "right": 1373.171875,
+      "bottom": 776.390625,
+      "left": 562.578125
+    },
+    "fonts": [
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "loaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "loaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      }
+    ],
+    "overflow": [],
+    "images": []
+  },
+  {
+    "width": 1009,
+    "errors": [
+      "$(...).forEach is not a function"
+    ],
+    "viewport": 1024,
+    "hero": {
+      "x": 0,
+      "y": 86,
+      "width": 1009,
+      "height": 636,
+      "top": 86,
+      "right": 1009,
+      "bottom": 722,
+      "left": 0
+    },
+    "stage": {
+      "x": 399.859375,
+      "y": 102,
+      "width": 572.265625,
+      "height": 620,
+      "top": 102,
+      "right": 972.125,
+      "bottom": 722,
+      "left": 399.859375
+    },
+    "fonts": [
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "loaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "loaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      }
+    ],
+    "overflow": [],
+    "images": []
+  },
+  {
+    "width": 753,
+    "errors": [
+      "$(...).forEach is not a function"
+    ],
+    "viewport": 768,
+    "hero": {
+      "x": 0,
+      "y": 80,
+      "width": 753,
+      "height": 588,
+      "top": 80,
+      "right": 753,
+      "bottom": 668,
+      "left": 0
+    },
+    "stage": {
+      "x": 317.59375,
+      "y": 96,
+      "width": 407.765625,
+      "height": 572,
+      "top": 96,
+      "right": 725.359375,
+      "bottom": 668,
+      "left": 317.59375
+    },
+    "fonts": [
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "loaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "loaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      }
+    ],
+    "overflow": [],
+    "images": []
+  },
+  {
+    "width": 375,
+    "errors": [
+      "$(...).forEach is not a function"
+    ],
+    "viewport": 390,
+    "hero": {
+      "x": 0,
+      "y": 74,
+      "width": 375,
+      "height": 734.6875,
+      "top": 74,
+      "right": 375,
+      "bottom": 808.6875,
+      "left": 0
+    },
+    "stage": {
+      "x": 16,
+      "y": 299.6875,
+      "width": 343,
+      "height": 440,
+      "top": 299.6875,
+      "right": 359,
+      "bottom": 739.6875,
+      "left": 16
+    },
+    "fonts": [
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "loaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "loaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      }
+    ],
+    "overflow": [],
+    "images": []
+  },
+  {
+    "width": 305,
+    "errors": [
+      "$(...).forEach is not a function"
+    ],
+    "viewport": 320,
+    "hero": {
+      "x": 0,
+      "y": 74,
+      "width": 305,
+      "height": 682,
+      "top": 74,
+      "right": 305,
+      "bottom": 756,
+      "left": 0
+    },
+    "stage": {
+      "x": 16,
+      "y": 283,
+      "width": 273,
+      "height": 414,
+      "top": 283,
+      "right": 289,
+      "bottom": 697,
+      "left": 16
+    },
+    "fonts": [
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "loaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "loaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Fraunces",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "unloaded"
+      },
+      {
+        "family": "Geist",
+        "status": "loaded"
+      }
+    ],
+    "overflow": [],
+    "images": []
+  }
+]
