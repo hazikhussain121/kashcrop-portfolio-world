@@ -1,0 +1,64 @@
+/* Real interface footage. Posters and the content around them always remain usable. */
+.interface-film{margin:0;width:100%;min-width:0;position:relative;color:var(--ink)}
+.film-frame{position:relative;overflow:hidden;width:100%;background:#161719;isolation:isolate;aspect-ratio:var(--film-ratio)}
+.film-poster-picture{display:block;width:100%;height:100%}
+.film-description-mobile{display:none}
+@media(max-width:600px){.film-frame{aspect-ratio:var(--film-mobile-ratio,var(--film-ratio))}.film-description-desktop{display:none}.film-description-mobile{display:inline}}
+.film-poster,.film-video{display:block;width:100%;height:100%;object-fit:contain}
+.film-poster{position:relative}
+.film-video{position:absolute;inset:0;opacity:0;pointer-events:none}
+.interface-film[data-playing=true] .film-video{opacity:1}
+.film-caption{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:12px 16px;min-height:66px;background:var(--paper,#f7f7f6)}
+.film-caption-copy{min-width:0}
+.film-caption-copy p{font-size:12px;line-height:1.6;max-width:58ch;margin-bottom:5px}
+.film-caption-copy>span{font-size:10px;line-height:1.5;color:var(--muted);display:block}
+.film-toggle{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:42px;padding:10px 15px;border:1px solid var(--line);border-radius:999px;font-size:11px;white-space:nowrap;background:transparent;color:inherit;transition:background .2s}
+.film-toggle:hover{background:var(--line)}
+.film-toggle>span{font-size:16px;line-height:1}
+.film-toggle:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.composition-film{display:flex;align-items:center;justify-content:center;padding:12px 26px}
+.stage-film{width:100%;max-width:calc((690px - 245px) * 1.35);transform:rotate(-2deg);transition:transform .7s var(--ease)}
+.stage-film .interface-film{border-radius:8px;overflow:hidden}
+.stage-film:has([data-film=baghban]){max-width:calc(100% - 110px)}
+@media(max-width:960px){.stage-film:has([data-film=baghban]){max-width:calc(100% - 25px)}}
+@media(max-width:560px){.stage-film:has([data-film=baghban]){max-width:260px}}
+.stage-film .film-caption{background:#15090dd9;color:#fff;padding:9px 13px;min-height:62px}
+.stage-film .film-caption-copy>span{color:#f4ece9}
+.stage-film .film-toggle{border-color:#ffffff50}
+.stage-film .film-toggle:focus-visible{outline-color:#fff}
+.product-stage[data-pose=flat] .stage-film{transform:none}
+.project-artwork.project-artwork-film,.project-detail-hero .project-artwork.project-artwork-film{height:auto;perspective:none;background:var(--paper,#f7f7f6);border-radius:8px}
+.project-artwork-film .film-caption{padding-right:16px}
+.project-artwork-film:has(.film-screen-link) .film-caption{padding-bottom:55px;min-height:109px}
+.film-screen-link{position:absolute;left:16px;bottom:13px;display:inline-flex;align-items:center;gap:9px;min-height:34px;font-size:11px;text-decoration:underline;text-underline-offset:5px}
+.film-screen-link .icon{width:14px;height:14px}
+.project-cover-link .project-artwork-film{transition:none}
+.project-cover-link:hover .project-artwork-film{transform:none}
+.project-cover-link .cover-link-icon{bottom:83px;width:42px;height:42px;box-shadow:none;border:1px solid #d7d3d4;background:#fff}
+.project-cover-link .cover-link-icon:focus-visible{outline:2px solid var(--red);outline-offset:3px}
+.project-film-note{padding-bottom:35px;display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}
+.project-film-note>p{font-size:13px;color:var(--muted);max-width:60ch}
+.project-film-note .capture-provenance{margin:0;padding-top:0}
+.project-film-note .capture-provenance p{font-size:12px}
+.portfolio-film-room{margin:30px 0 85px;padding:78px 0;background:oklch(.30 .12 25);color:#f4ece9}
+.portfolio-film-layout{display:grid;grid-template-columns:.64fr 1.5fr;align-items:center;gap:clamp(32px,5vw,80px)}
+.portfolio-film-intro .section-note{color:#f0d6da;margin-bottom:22px}
+.portfolio-film-intro h2{font-size:clamp(45px,4.7vw,72px);line-height:1.02;letter-spacing:-.02em}
+.portfolio-film-intro>p:not(.section-note){font-size:13px;line-height:1.8;color:#f0d6da;margin-top:24px;max-width:32ch}
+.portfolio-film-intro .underlined{font-size:12px;margin-top:24px;color:#fff}
+.portfolio-reel-evidence{min-width:0}
+.portfolio-reel-evidence .interface-film{border-radius:8px;overflow:hidden}
+.portfolio-reel-evidence .film-caption{background:#2e1119;color:#f4ece9}
+.portfolio-reel-evidence .film-caption-copy>span{color:#f0d6da}
+.portfolio-reel-evidence .film-toggle{border-color:#ffffff50}
+.portfolio-reel-evidence .film-toggle:focus-visible,.portfolio-film-intro a:focus-visible{outline-color:#fff}
+.film-provenance{font-size:10px;line-height:1.7;margin-top:13px;color:#f0d6da}
+@media(max-width:960px){.composition-film{padding-inline:17px}.film-caption{padding-inline:12px;gap:9px}.film-toggle{padding-inline:12px}.portfolio-film-layout{grid-template-columns:.7fr 1.3fr;gap:30px}.portfolio-film-intro h2{font-size:49px}}
+@media(max-width:750px){.portfolio-film-room{margin-block:10px 45px;padding-block:48px}.portfolio-film-layout{grid-template-columns:1fr;gap:28px}.portfolio-film-intro>p:not(.section-note){max-width:49ch;margin-top:18px}.portfolio-film-intro h2{font-size:51px}.portfolio-film-intro .underlined{margin-top:18px}.project-film-note{grid-template-columns:1fr;gap:12px;padding-bottom:28px}.stage-film{max-width:580px}.composition-film{padding-inline:22px}.project-artwork.project-artwork-film,.project-detail-hero .project-artwork.project-artwork-film{height:auto}}
+@media(max-width:560px){.composition-film{padding-inline:12px}.stage-film{transform:rotate(-1.5deg)}.film-caption-copy>span{font-size:9px}.film-caption{min-height:62px;padding:10px 12px}.film-toggle{font-size:10px;min-height:42px;padding:9px 12px}.stage-film .film-caption{padding:8px 10px;gap:6px}.stage-film .film-caption-copy>span{max-width:115px}.portfolio-film-intro h2{font-size:48px}.film-provenance{font-size:9px}.project-cover-link .cover-link-icon{bottom:79px;right:13px;width:38px;height:38px}}
+@media(prefers-reduced-motion:reduce){.stage-film{transform:none;transition:none}.film-video{display:none}}
+html[data-motion=off] .stage-film{transform:none;transition:none}
+
+/* The square teaser must fit between the stage header and project actions. */
+.stage-scene{container-type:size}
+.stage-film:has([data-film=baghban]){width:min(100%,calc(100cqh - 90px));max-width:none}

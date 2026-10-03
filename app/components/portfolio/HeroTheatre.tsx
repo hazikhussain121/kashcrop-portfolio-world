@@ -7,9 +7,13 @@ import { featuredProjects, media, type Project } from '~/data/portfolio/catalog'
 import { BrowserFrame, DeviceFrame, GalleryLink } from './UI';
 import { Icon } from './Icon';
 import { useMotion } from './MotionProvider';
+import { projectFilms } from '~/data/portfolio/films';
+import { InterfaceFilm } from './InterfaceFilm';
 gsap.registerPlugin(useGSAP);
 
-function Scene({project}:{project:Project}) {
+function Scene({project,active}:{project:Project;active:boolean}) {
+ const film=projectFilms[project.slug];
+ if(film)return <div className={`composition composition-${project.theme} composition-film`}><div className="stage-film"><InterfaceFilm film={film} enabled={active} priority={active} compact/></div></div>;
  const [first,second]=project.screens;
  return <div className={`composition composition-${project.theme}`}>
  {project.theme==='skiie'?<><BrowserFrame screen={first} className="stage-browser" address="skiie.co.in"/><div className="browser-reflection" aria-hidden="true"/></>:<>
@@ -48,7 +52,7 @@ export function HeroTheatre() {
  <div className="product-stage" ref={stage} id="product-stage" data-project={active.theme} data-pose={flat?'flat':'sculpted'}>
  <div className="stage-light" aria-hidden="true"/><div className="stage-arch" aria-hidden="true"/><div className="stage-floor" aria-hidden="true"/>
  <div className="stage-top"><span>Selected work <span className="stage-index">{String(selected+1).padStart(2,'0')} / 03</span></span><button className="pose-button" onClick={()=>setFlat(v=>!v)} aria-pressed={flat}><Icon name="layers"/><span>{flat?'Sculpted view':'Front view'}</span></button></div>
- <div className="stage-scenes">{featuredProjects.map((p,i)=><div key={p.slug} className="stage-scene" id={`scene-${p.theme}`} role="tabpanel" aria-labelledby={`tab-${p.theme}`} data-scene={p.theme} hidden={i!==selected&&i!==outgoing} inert={i!==selected} aria-hidden={i!==selected}><Scene project={p}/></div>)}</div>
+ <div className="stage-scenes">{featuredProjects.map((p,i)=><div key={p.slug} className="stage-scene" id={`scene-${p.theme}`} role="tabpanel" aria-labelledby={`tab-${p.theme}`} data-scene={p.theme} hidden={i!==selected&&i!==outgoing} inert={i!==selected} aria-hidden={i!==selected}><Scene project={p} active={i===selected}/></div>)}</div>
  <div className="stage-bottom"><div className="stage-caption" aria-live="polite" aria-atomic="true"><p>{active.name}</p><span>{active.kind}</span></div><GalleryLink project={active} className="button button-white stage-open">Explore project <Icon/></GalleryLink></div>
  <div className="stage-progress" aria-hidden="true" style={{'--progress':`${(selected+1)/3*100}%`} as React.CSSProperties}/>
  </div>

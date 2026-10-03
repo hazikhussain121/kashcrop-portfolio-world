@@ -2,6 +2,8 @@ import { Link, useLocation, useNavigate, type LinkProps } from 'react-router';
 import type { CSSProperties, ReactNode } from 'react';
 import { media, type Screen, type Project } from '~/data/portfolio/catalog';
 import { Icon } from './Icon';
+import { projectFilms } from '~/data/portfolio/films';
+import { InterfaceFilm } from './InterfaceFilm';
 
 export function DeviceFrame({screen,className='',priority=false}:{screen:Screen;className?:string;priority?:boolean}) {
  return <div className={`device-frame ${className}`}><div className="device-screen"><img src={media(screen.file)} alt={screen.name} width={screen.width} height={screen.height} loading={priority?'eager':'lazy'} fetchPriority={priority?'high':undefined} decoding="async"/></div></div>;
@@ -29,8 +31,9 @@ export function SystemMap({project,compact=false}:{project:Project;compact?:bool
  <ol>{steps.map((step,i)=><li key={step} style={{'--step':i} as CSSProperties}><span className="system-step-number">{String(i+1).padStart(2,'0')}</span><span>{step}</span>{i<steps.length-1&&<Icon name="down"/>}</li>)}</ol>
  </div>;
 }
-export function ProjectArtwork({project,className='',interactive=true}:{project:Project;className?:string;interactive?:boolean}) {
- const first=project.screens[0],second=project.screens[1];
+export function ProjectArtwork({project,className='',interactive=true,useFilm=true}:{project:Project;className?:string;interactive?:boolean;useFilm?:boolean}) {
+ const first=project.screens[0],second=project.screens[1],film=useFilm?projectFilms[project.slug]:undefined;
+ if(film)return <div className={`project-artwork project-artwork-film ${className}`} data-theme={project.theme}><InterfaceFilm film={film}/>{interactive&&first&&<GalleryLink project={project} className="film-screen-link" aria-label={`Inspect ${project.name} screens`}>Inspect screens <Icon name="expand"/></GalleryLink>}</div>;
  const content=first ? project.theme==='skiie'||first.kind==='Desktop'?<BrowserFrame screen={first} address={project.theme==='skiie'?'skiie.co.in':project.name}/>:<><div className="artwork-orbit" aria-hidden="true"/>{project.theme==='phc'&&<img className="artwork-leaf" src={media('leaf.webp')} alt="" loading="lazy"/>}<div className="artwork-phone one"><DeviceFrame screen={first}/></div>{second&&<div className="artwork-phone two"><DeviceFrame screen={second}/></div>}</>:<SystemMap project={project} compact/>;
  return <div className={`project-artwork ${className}`} data-theme={project.theme}>{content}{interactive&&first&&<GalleryLink project={project} className="round-open icon-button" aria-label={`Inspect ${project.name} screens`}><Icon/></GalleryLink>}</div>;
 }
