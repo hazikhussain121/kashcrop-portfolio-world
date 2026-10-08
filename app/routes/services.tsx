@@ -2,6 +2,7 @@ import { Link, type MetaFunction } from 'react-router';
 import { getProject, media } from '~/data/portfolio/catalog';
 import { serviceCatalog, type Service } from '~/data/portfolio/services';
 import { Icon } from '~/components/portfolio/Icon';
+import { OfferComparison } from '~/components/portfolio/KashCropOffer';
 import { pageMeta } from '~/lib/portfolio/seo';
 
 export const meta: MetaFunction = () => pageMeta(
@@ -74,6 +75,10 @@ export default function ServicesPage() {
       <nav className="ap-service-jump" aria-label="Explore our services">
         {serviceCatalog.map(service => <a href={'#service-' + service.slug} key={service.slug}>{service.name}<Icon name="down" /></a>)}
       </nav>
+      <div className="ap-service-offer-note">
+        <p>One-time project pricing, hosting and care for up to 4 years, scoped to your project.</p>
+        <a className="ap-text-link" href="#compare">See what’s included <Icon name="right" /></a>
+      </div>
     </header>
 
     <section className="ap-services-index ap-wrap" aria-label="Our disciplines">
@@ -97,6 +102,8 @@ export default function ServicesPage() {
         </article>;
       })}
     </section>
+
+    <OfferComparison showClose={false} />
 
     <section className="ap-working-together ap-wrap">
       <h2>A clear scope.<br /><span>A shared way forward.</span></h2>

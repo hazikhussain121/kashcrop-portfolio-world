@@ -8,10 +8,10 @@ test('phone product chapters use direct touch controls without pinning or page o
   for (let index = 0; index < 3; index++) {
     await tabs.nth(index).tap();
     await expect(tabs.nth(index)).toHaveAttribute('aria-selected', 'true');
-    await expect(page.getByRole('tabpanel')).toHaveCount(1);
+    await expect(page.locator('#work').getByRole('tabpanel')).toHaveCount(1);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
   }
-  await expect(page.getByRole('tabpanel').getByRole('link')).toHaveAttribute('href', '/projects/skiie');
+  await expect(page.locator('#work').getByRole('tabpanel').getByRole('link')).toHaveAttribute('href', '/projects/skiie');
 });
 
 test('phone project selection preserves the reading position', async ({page}) => {
@@ -21,7 +21,7 @@ test('phone project selection preserves the reading position', async ({page}) =>
   const before = await page.evaluate(() => scrollY);
   await tabs.getByRole('tab', {name: 'Plant Health Clinic', exact: true}).tap();
   expect(Math.abs(await page.evaluate(() => scrollY) - before)).toBeLessThan(10);
-  await page.getByRole('tabpanel').getByRole('link').tap();
+  await page.locator('#work').getByRole('tabpanel').getByRole('link').tap();
   await expect(page).toHaveURL(/\/projects\/plant-health-clinic$/);
 });
 

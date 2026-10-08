@@ -15,6 +15,19 @@ colors:
   selection: "#d8e7fa"
   garden-stage: "#edf3ed"
   clinic-stage: "#edf3f7"
+  package-stage: "#101b16"
+  package-text: "#f5f8f5"
+  package-muted: "#c1cbc4"
+  package-accent: "#b2e7be"
+  package-chip: "#23382b"
+  package-track: "#26352c"
+  package-tab-selected: "#edf4ef"
+  package-tab-ink: "#14251a"
+  comparison-surface: "#f0f7f0"
+  comparison-line: "#dce4dc"
+  comparison-ink: "#234830"
+  comparison-muted: "#526157"
+  comparison-question: "#616168"
 typography:
   display:
     fontFamily: "-apple-system, BlinkMacSystemFont, Geist, Helvetica Neue, Segoe UI, sans-serif"
@@ -110,13 +123,13 @@ The approved direction is an Apple-inspired presentation adapted to KashCrop’s
 
 This system replaces the earlier Fraunces and red-room identity. Keep KashCrop’s existing red-and-green logo and original copy. The products supply their own colors inside real screenshots; the surrounding website remains neutral.
 
-The implementation sources are app/styles/portfolio/apple-base.css, apple.css, and apple-pages.css. The frontmatter above records reusable primitives. The .impeccable/design.json sidecar records motion, elevation, breakpoints, and component previews.
+The implementation sources are app/styles/portfolio/apple-base.css, apple.css, apple-pages.css, and offer.css. The frontmatter above records reusable primitives. The .impeccable/design.json sidecar records motion, elevation, breakpoints, and component previews.
 
 **Key characteristics:**
 
 - Large native sans-serif type, with a locally hosted Geist fallback.
 - Real software presented at a readable scale.
-- One white/silver visual system across home, archive, detail pages, forms, viewer, and footer.
+- One neutral visual system across home, archive, detail pages, forms, viewer, and footer, with a local dark stage for the project package.
 - Purposeful product choreography and optional, manually controlled recordings.
 
 ## Colors
@@ -133,6 +146,8 @@ The implementation sources are app/styles/portfolio/apple-base.css, apple.css, a
 
 Garden and clinic tints are local product-stage backgrounds. Blue is a functional focus/selection signal. The existing logo retains its own asset colors. Legacy CSS variables named --red and --red-deep are compatibility aliases for the neutral action system; their names do not authorize red page treatments.
 
+The project package has its own scoped material: a forest stage, pale text, muted supporting copy, and a mint accent. Chips and tab tracks use darker tonal layers; the selected tab has a light surface with dark ink. The light comparison uses a pale green offer column, quiet dividers, green offer text and gray questions. Package and comparison tokens apply to these components only; the shared site palette and primary actions remain neutral.
+
 ## Typography
 
 **Display and body:** native Apple/system sans, then locally hosted Geist, then platform fallbacks. Geist weights 400, 500, 600, and 700 are supplied from /fonts/; no remote font request is required.
@@ -143,7 +158,7 @@ Garden and clinic tints are local product-stage backgrounds. Blue is a functiona
 - **Body:** most narrative copy is 16–18px; short hero descriptions are 19–21px. Paragraphs normally stay within 45–65 characters per line.
 - **Labels:** compact navigation, facts, captions, and provenance use 11–14px. Small text is not a substitute for visible explanation.
 
-**The Single Voice Rule.** Headings and prose use the same sans family. Do not reintroduce the previous serif pairing, uppercase technical labels, or gradient-filled type. Keep tracking at or above −0.04em.
+**The Single Voice Rule.** Headings and prose use the same sans family. Do not reintroduce the previous serif pairing, uppercase technical labels, or gradient-filled type. Keep ordinary text tracking at or above −0.04em; reserve the tighter package tracking for its heading and oversized numerals.
 
 ## Layout
 
@@ -156,6 +171,7 @@ The homepage opens with centered copy and a real product family. At the default 
 | Home and shared navigation | Adapt at 1099px and 750px; narrow-phone refinements at 374px; a larger-desktop adjustment begins at 1600px. |
 | Supporting pages | Adapt at 1100px, 800px, and 480px. Two-column archives become one column; service rows stack; facts and galleries retain readable spacing. |
 | Sticky product showcase | Enabled only at a minimum width of 1100px and height of 850px with a fine pointer and hover support. Elsewhere the same products remain accessible through ordinary tabs. |
+| Project package and comparison | Refine at 1199px and 751–899px. At 750px and below, the device sits beside stacked payment/care numerals, hosting and publishing chips sit below, and each comparison row has a full-width heading above two labeled cells. |
 | Screen viewer | Long mobile captures retain a readable 390px presentation and scroll vertically; desktop captures use the available viewport. |
 
 Preserve URL-based project filters, direct screen IDs, legacy project redirects, and ordinary links when changing the layout.
@@ -186,7 +202,7 @@ The homepage uses subtle metallic hardware geometry. Supporting pages use simple
 
 Primary actions are ink pills with white text. Standard actions are 46px tall; supporting-page actions use 48px. Text links have a visible arrow or a clear action label and underline on hover. Press feedback scales to approximately 0.97–0.975.
 
-The header is a 64px translucent white bar, reduced to 58px on mobile. It contains Work, Services, About, and a compact project action. Mobile navigation uses a native dialog with focus management. Reduced-transparency preference removes navigation blur.
+The header is a 64px translucent white bar, reduced to 58px on mobile. It contains Work, Services, Why KashCrop, About, and a compact project action. Why KashCrop links directly to /services#compare. Mobile navigation uses a native dialog with focus management. Reduced-transparency preference removes navigation blur.
 
 Global focus is a three-pixel blue outline. Supporting pages use an equally explicit ink outline. Search fields indicate focus on the enclosing control. Do not remove keyboard focus to make a screenshot look cleaner.
 
@@ -202,9 +218,19 @@ Use real images as the main content. Archive tiles retain a project title, short
 
 The screen viewer remains a native dialog. Long captures must be scrollable at a readable width. Never convert a tall capture into a tiny full-height thumbnail as its only inspection view.
 
+### Package presentation and comparison
+
+The project package has a local dark product stage within the neutral site. Large 1 and 4 numerals communicate one-time project payment and maintenance options up to four years; keep the maintenance qualifier visible beside the numeral. Build, Launch and Care tabs pair concise copy with actual BaghBani and Plant Health Clinic review captures. Keep their source caption below the composition.
+
+Follow the stage with a light eight-row comparison. Use real table headers and questions about competing quotes, then give KashCrop’s scoped answer. Do not imply that other providers exclude an offer. Keep the quote-specific scope disclosure, client-controlled publisher account and contact action easy to find.
+
+Package scroll and pointer effects are eligible at 900px and above with hover and a fine pointer. Screens crossfade over 0.55s and settle over 0.85s; selected text panels arrive over 0.55s. Pointer tilt is limited to approximately ±2.5 degrees, with 0.55s smoothing. Composition and orbit scroll scrubs use 0.8 and 1, respectively. Reduced motion and touch layouts retain a complete static composition and directly selectable tabs. Responsive labels preserve the meaning of the comparison at small widths.
+
+The implemented colors and motion are recorded here and in the sidecar. The iteration record and verification status are in docs/design/APPLE_OVERDRIVE_2026-10-08.md.
+
 ### Motion and recordings
 
-The homepage’s authored moment is a layered product entrance followed by subtle scroll separation. Product chapters use staggered copy and screen transitions. CSS uses the shared exponential ease; GSAP entrance motion uses power3.out. Main chapter copy and visuals enter over 0.65s and 0.9s, respectively.
+The homepage’s layered entrance acts on the inner devices: the center desktop enters over 1.7s starting at 0.12s; the two phones enter over 1.6s starting at 0.25s and 0.33s. Separate outer wrappers provide the scroll fan, so scrolling does not overwrite the entrance transforms. The fan is eligible at 900px and above with hover and a fine pointer. CSS uses the shared exponential ease; GSAP hero entrance motion uses power3.out. Main chapter copy and visuals enter over 0.65s and 0.9s, respectively.
 
 Content is visible before animation setup. Honor prefers-reduced-motion, the site’s motion toggle, and the layout eligibility gate. Motion-off users keep all navigation and content.
 

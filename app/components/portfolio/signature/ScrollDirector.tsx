@@ -9,7 +9,10 @@ export function ScrollDirector() {
   useEffect(() => {
     let cancelled = false;
     const frame = requestAnimationFrame(() => {
-      import('gsap/ScrollTrigger').then(({ScrollTrigger}) => {if (!cancelled) ScrollTrigger.refresh();}).catch(() => {});
+      import('gsap/ScrollTrigger').then(({ScrollTrigger}) => {
+        // Refresh resets scroll offsets. Routes without scenes keep native hash navigation in charge.
+        if (!cancelled && ScrollTrigger.getAll().length > 0) ScrollTrigger.refresh();
+      }).catch(() => {});
     });
     return () => {cancelled = true; cancelAnimationFrame(frame);};
   }, [pathname, reduced]);

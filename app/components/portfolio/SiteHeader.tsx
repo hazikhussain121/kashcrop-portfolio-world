@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation, useNavigation } from 'react-router';
 import { media } from '~/data/portfolio/catalog';
 import { Icon } from './Icon';
 
-const navigation = [['/projects', 'Work'], ['/services', 'Services'], ['/about', 'About']] as const;
+const navigation = [['/projects', 'Work'], ['/services', 'Services'], ['/services#compare', 'Why KashCrop'], ['/about', 'About']] as const;
 
 export function SiteHeader() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,7 +39,7 @@ export function SiteHeader() {
     <span ref={sentinel} aria-hidden="true" style={{position: 'absolute', top: 0, left: 0, width: 1, height: 1, pointerEvents: 'none'}} />
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`} id="site-header">
       <Link className="brand" to="/" aria-label="KashCrop Innovations home"><img src={media('kashcrop-logo.png')} alt="" width="27" height="32" /><span>kashcrop</span></Link>
-      <nav className="desktop-nav" aria-label="Main navigation">{navigation.map(([to, label]) => <NavLink key={to} to={to} prefetch="intent">{label}</NavLink>)}</nav>
+      <nav className="desktop-nav" aria-label="Main navigation">{navigation.map(([to, label]) => to.includes('#') ? <Link key={to} to={to} prefetch="intent">{label}</Link> : <NavLink key={to} to={to} prefetch="intent">{label}</NavLink>)}</nav>
       <div className="header-actions"><Link className="button header-contact" to="/contact" prefetch="intent">Start a project</Link><button ref={trigger} className="menu-trigger icon-button" type="button" aria-label="Open navigation" aria-controls="mobile-menu" aria-expanded={menuOpen} onClick={() => setMenuOpen(true)}><Icon name="menu" /></button></div>
       <div className="navigation-progress" data-pending={navigationState.state !== 'idle'} aria-hidden="true" />
     </header>

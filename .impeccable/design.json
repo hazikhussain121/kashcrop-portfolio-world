@@ -1,48 +1,372 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T14:55:38Z",
+  "generatedAt": "2026-10-08T15:39:57Z",
   "title": "Design System: KashCrop Innovations",
   "extensions": {
     "colorMeta": {
       "ink": {
         "role": "primary",
-        "displayName": "Ink"
+        "displayName": "Ink",
+        "tonalRamp": [
+          "oklch(15% 0.0038 286.10)",
+          "oklch(27% 0.0038 286.10)",
+          "oklch(38% 0.0038 286.10)",
+          "oklch(50% 0.0038 286.10)",
+          "oklch(62% 0.0038 286.10)",
+          "oklch(73% 0.0038 286.10)",
+          "oklch(84% 0.0038 286.10)",
+          "oklch(95% 0.0038 286.10)"
+        ]
       },
       "paper": {
         "role": "neutral",
-        "displayName": "White canvas"
+        "displayName": "White canvas",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.00)",
+          "oklch(27% 0.0000 0.00)",
+          "oklch(38% 0.0000 0.00)",
+          "oklch(50% 0.0000 0.00)",
+          "oklch(62% 0.0000 0.00)",
+          "oklch(73% 0.0000 0.00)",
+          "oklch(84% 0.0000 0.00)",
+          "oklch(95% 0.0000 0.00)"
+        ]
       },
       "surface": {
         "role": "neutral",
-        "displayName": "Silver surface"
+        "displayName": "Silver surface",
+        "tonalRamp": [
+          "oklch(15% 0.0027 286.35)",
+          "oklch(27% 0.0027 286.35)",
+          "oklch(38% 0.0027 286.35)",
+          "oklch(50% 0.0027 286.35)",
+          "oklch(62% 0.0027 286.35)",
+          "oklch(73% 0.0027 286.35)",
+          "oklch(84% 0.0027 286.35)",
+          "oklch(95% 0.0027 286.35)"
+        ]
       },
       "muted": {
         "role": "neutral",
-        "displayName": "Supporting gray"
+        "displayName": "Supporting gray",
+        "tonalRamp": [
+          "oklch(15% 0.0077 286.14)",
+          "oklch(27% 0.0077 286.14)",
+          "oklch(38% 0.0077 286.14)",
+          "oklch(50% 0.0077 286.14)",
+          "oklch(62% 0.0077 286.14)",
+          "oklch(73% 0.0077 286.14)",
+          "oklch(84% 0.0077 286.14)",
+          "oklch(95% 0.0077 286.14)"
+        ]
       },
       "display-muted": {
         "role": "neutral",
-        "displayName": "Large display gray"
+        "displayName": "Large display gray",
+        "tonalRamp": [
+          "oklch(15% 0.0091 286.11)",
+          "oklch(27% 0.0091 286.11)",
+          "oklch(38% 0.0091 286.11)",
+          "oklch(50% 0.0091 286.11)",
+          "oklch(62% 0.0091 286.11)",
+          "oklch(73% 0.0091 286.11)",
+          "oklch(84% 0.0091 286.11)",
+          "oklch(95% 0.0091 286.11)"
+        ]
       },
       "line": {
         "role": "neutral",
-        "displayName": "Soft divider"
+        "displayName": "Soft divider",
+        "tonalRamp": [
+          "oklch(15% 0.0038 286.10 / 0.14)",
+          "oklch(27% 0.0038 286.10 / 0.14)",
+          "oklch(38% 0.0038 286.10 / 0.14)",
+          "oklch(50% 0.0038 286.10 / 0.14)",
+          "oklch(62% 0.0038 286.10 / 0.14)",
+          "oklch(73% 0.0038 286.10 / 0.14)",
+          "oklch(84% 0.0038 286.10 / 0.14)",
+          "oklch(95% 0.0038 286.10 / 0.14)"
+        ]
       },
       "line-solid": {
         "role": "neutral",
-        "displayName": "Solid divider"
+        "displayName": "Solid divider",
+        "tonalRamp": [
+          "oklch(15% 0.0068 286.26)",
+          "oklch(27% 0.0068 286.26)",
+          "oklch(38% 0.0068 286.26)",
+          "oklch(50% 0.0068 286.26)",
+          "oklch(62% 0.0068 286.26)",
+          "oklch(73% 0.0068 286.26)",
+          "oklch(84% 0.0068 286.26)",
+          "oklch(95% 0.0068 286.26)"
+        ]
       },
       "control-track": {
         "role": "neutral",
-        "displayName": "Segmented control track"
+        "displayName": "Segmented control track",
+        "tonalRamp": [
+          "oklch(15% 0.0067 286.27)",
+          "oklch(27% 0.0067 286.27)",
+          "oklch(38% 0.0067 286.27)",
+          "oklch(50% 0.0067 286.27)",
+          "oklch(62% 0.0067 286.27)",
+          "oklch(73% 0.0067 286.27)",
+          "oklch(84% 0.0067 286.27)",
+          "oklch(95% 0.0067 286.27)"
+        ]
       },
       "garden-stage": {
         "role": "secondary",
-        "displayName": "Orchard presentation tint"
+        "displayName": "Orchard presentation tint",
+        "tonalRamp": [
+          "oklch(15% 0.0102 145.50)",
+          "oklch(27% 0.0102 145.50)",
+          "oklch(38% 0.0102 145.50)",
+          "oklch(50% 0.0102 145.50)",
+          "oklch(62% 0.0102 145.50)",
+          "oklch(73% 0.0102 145.50)",
+          "oklch(84% 0.0102 145.50)",
+          "oklch(95% 0.0102 145.50)"
+        ]
       },
       "clinic-stage": {
         "role": "secondary",
-        "displayName": "Clinic presentation tint"
+        "displayName": "Clinic presentation tint",
+        "tonalRamp": [
+          "oklch(15% 0.0084 236.56)",
+          "oklch(27% 0.0084 236.56)",
+          "oklch(38% 0.0084 236.56)",
+          "oklch(50% 0.0084 236.56)",
+          "oklch(62% 0.0084 236.56)",
+          "oklch(73% 0.0084 236.56)",
+          "oklch(84% 0.0084 236.56)",
+          "oklch(95% 0.0084 236.56)"
+        ]
+      },
+      "package-stage": {
+        "role": "secondary",
+        "displayName": "Package — forest stage",
+        "tonalRamp": [
+          "oklch(15% 0.0187 164.80)",
+          "oklch(27% 0.0187 164.80)",
+          "oklch(38% 0.0187 164.80)",
+          "oklch(50% 0.0187 164.80)",
+          "oklch(62% 0.0187 164.80)",
+          "oklch(73% 0.0187 164.80)",
+          "oklch(84% 0.0187 164.80)",
+          "oklch(95% 0.0187 164.80)"
+        ]
+      },
+      "package-text": {
+        "role": "neutral",
+        "displayName": "Package — light text",
+        "tonalRamp": [
+          "oklch(15% 0.0051 145.54)",
+          "oklch(27% 0.0051 145.54)",
+          "oklch(38% 0.0051 145.54)",
+          "oklch(50% 0.0051 145.54)",
+          "oklch(62% 0.0051 145.54)",
+          "oklch(73% 0.0051 145.54)",
+          "oklch(84% 0.0051 145.54)",
+          "oklch(95% 0.0051 145.54)"
+        ]
+      },
+      "package-muted": {
+        "role": "neutral",
+        "displayName": "Package — supporting text",
+        "tonalRamp": [
+          "oklch(15% 0.0146 155.53)",
+          "oklch(27% 0.0146 155.53)",
+          "oklch(38% 0.0146 155.53)",
+          "oklch(50% 0.0146 155.53)",
+          "oklch(62% 0.0146 155.53)",
+          "oklch(73% 0.0146 155.53)",
+          "oklch(84% 0.0146 155.53)",
+          "oklch(95% 0.0146 155.53)"
+        ]
+      },
+      "package-accent": {
+        "role": "secondary",
+        "displayName": "Package — mint accent",
+        "tonalRamp": [
+          "oklch(15% 0.0783 151.45)",
+          "oklch(27% 0.0783 151.45)",
+          "oklch(38% 0.0783 151.45)",
+          "oklch(50% 0.0783 151.45)",
+          "oklch(62% 0.0783 151.45)",
+          "oklch(73% 0.0783 151.45)",
+          "oklch(84% 0.0783 151.45)",
+          "oklch(95% 0.0783 151.45)"
+        ]
+      },
+      "package-chip": {
+        "role": "secondary",
+        "displayName": "Package — support chip",
+        "tonalRamp": [
+          "oklch(15% 0.0356 156.56)",
+          "oklch(27% 0.0356 156.56)",
+          "oklch(38% 0.0356 156.56)",
+          "oklch(50% 0.0356 156.56)",
+          "oklch(62% 0.0356 156.56)",
+          "oklch(73% 0.0356 156.56)",
+          "oklch(84% 0.0356 156.56)",
+          "oklch(95% 0.0356 156.56)"
+        ]
+      },
+      "package-track": {
+        "role": "secondary",
+        "displayName": "Package — tab track",
+        "tonalRamp": [
+          "oklch(15% 0.0256 158.19)",
+          "oklch(27% 0.0256 158.19)",
+          "oklch(38% 0.0256 158.19)",
+          "oklch(50% 0.0256 158.19)",
+          "oklch(62% 0.0256 158.19)",
+          "oklch(73% 0.0256 158.19)",
+          "oklch(84% 0.0256 158.19)",
+          "oklch(95% 0.0256 158.19)"
+        ]
+      },
+      "package-tab-selected": {
+        "role": "neutral",
+        "displayName": "Package — selected tab",
+        "tonalRamp": [
+          "oklch(15% 0.0099 155.10)",
+          "oklch(27% 0.0099 155.10)",
+          "oklch(38% 0.0099 155.10)",
+          "oklch(50% 0.0099 155.10)",
+          "oklch(62% 0.0099 155.10)",
+          "oklch(73% 0.0099 155.10)",
+          "oklch(84% 0.0099 155.10)",
+          "oklch(95% 0.0099 155.10)"
+        ]
+      },
+      "package-tab-ink": {
+        "role": "neutral",
+        "displayName": "Package — selected tab text",
+        "tonalRamp": [
+          "oklch(15% 0.0311 155.04)",
+          "oklch(27% 0.0311 155.04)",
+          "oklch(38% 0.0311 155.04)",
+          "oklch(50% 0.0311 155.04)",
+          "oklch(62% 0.0311 155.04)",
+          "oklch(73% 0.0311 155.04)",
+          "oklch(84% 0.0311 155.04)",
+          "oklch(95% 0.0311 155.04)"
+        ]
+      },
+      "comparison-surface": {
+        "role": "secondary",
+        "displayName": "Comparison — KashCrop column",
+        "tonalRamp": [
+          "oklch(15% 0.0118 145.48)",
+          "oklch(27% 0.0118 145.48)",
+          "oklch(38% 0.0118 145.48)",
+          "oklch(50% 0.0118 145.48)",
+          "oklch(62% 0.0118 145.48)",
+          "oklch(73% 0.0118 145.48)",
+          "oklch(84% 0.0118 145.48)",
+          "oklch(95% 0.0118 145.48)"
+        ]
+      },
+      "comparison-line": {
+        "role": "neutral",
+        "displayName": "Comparison — divider",
+        "tonalRamp": [
+          "oklch(15% 0.0137 145.46)",
+          "oklch(27% 0.0137 145.46)",
+          "oklch(38% 0.0137 145.46)",
+          "oklch(50% 0.0137 145.46)",
+          "oklch(62% 0.0137 145.46)",
+          "oklch(73% 0.0137 145.46)",
+          "oklch(84% 0.0137 145.46)",
+          "oklch(95% 0.0137 145.46)"
+        ]
+      },
+      "comparison-ink": {
+        "role": "neutral",
+        "displayName": "Comparison — offer text",
+        "tonalRamp": [
+          "oklch(15% 0.0598 153.86)",
+          "oklch(27% 0.0598 153.86)",
+          "oklch(38% 0.0598 153.86)",
+          "oklch(50% 0.0598 153.86)",
+          "oklch(62% 0.0598 153.86)",
+          "oklch(73% 0.0598 153.86)",
+          "oklch(84% 0.0598 153.86)",
+          "oklch(95% 0.0598 153.86)"
+        ]
+      },
+      "comparison-muted": {
+        "role": "neutral",
+        "displayName": "Comparison — offer detail",
+        "tonalRamp": [
+          "oklch(15% 0.0244 156.18)",
+          "oklch(27% 0.0244 156.18)",
+          "oklch(38% 0.0244 156.18)",
+          "oklch(50% 0.0244 156.18)",
+          "oklch(62% 0.0244 156.18)",
+          "oklch(73% 0.0244 156.18)",
+          "oklch(84% 0.0244 156.18)",
+          "oklch(95% 0.0244 156.18)"
+        ]
+      },
+      "comparison-question": {
+        "role": "neutral",
+        "displayName": "Comparison — question text",
+        "tonalRamp": [
+          "oklch(15% 0.0110 285.99)",
+          "oklch(27% 0.0110 285.99)",
+          "oklch(38% 0.0110 285.99)",
+          "oklch(50% 0.0110 285.99)",
+          "oklch(62% 0.0110 285.99)",
+          "oklch(73% 0.0110 285.99)",
+          "oklch(84% 0.0110 285.99)",
+          "oklch(95% 0.0110 285.99)"
+        ]
+      },
+      "control-hover": {
+        "role": "neutral",
+        "displayName": "Primary action hover",
+        "tonalRamp": [
+          "oklch(15% 0.0035 286.21)",
+          "oklch(27% 0.0035 286.21)",
+          "oklch(38% 0.0035 286.21)",
+          "oklch(50% 0.0035 286.21)",
+          "oklch(62% 0.0035 286.21)",
+          "oklch(73% 0.0035 286.21)",
+          "oklch(84% 0.0035 286.21)",
+          "oklch(95% 0.0035 286.21)"
+        ]
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Functional keyboard focus",
+        "tonalRamp": [
+          "oklch(15% 0.1887 256.99)",
+          "oklch(27% 0.1887 256.99)",
+          "oklch(38% 0.1887 256.99)",
+          "oklch(50% 0.1887 256.99)",
+          "oklch(62% 0.1887 256.99)",
+          "oklch(73% 0.1887 256.99)",
+          "oklch(84% 0.1887 256.99)",
+          "oklch(95% 0.1887 256.99)"
+        ]
+      },
+      "selection": {
+        "role": "secondary",
+        "displayName": "Text selection",
+        "tonalRamp": [
+          "oklch(15% 0.0305 254.32)",
+          "oklch(27% 0.0305 254.32)",
+          "oklch(38% 0.0305 254.32)",
+          "oklch(50% 0.0305 254.32)",
+          "oklch(62% 0.0305 254.32)",
+          "oklch(73% 0.0305 254.32)",
+          "oklch(84% 0.0305 254.32)",
+          "oklch(95% 0.0305 254.32)"
+        ]
       }
     },
     "typographyMeta": {
@@ -97,6 +421,16 @@
         "name": "navigation-divider",
         "value": "0 1px 0 rgba(29,29,31,.06)",
         "purpose": "Subtle separation beneath the translucent header."
+      },
+      {
+        "name": "package-device",
+        "value": "0 25px 60px #0009, inset 0 0 0 1px #d2dad4",
+        "purpose": "Local depth around the actual interface inside the dark package stage."
+      },
+      {
+        "name": "package-chip",
+        "value": "0 16px 30px #0002",
+        "purpose": "Lift hosting and publishing chips on desktop; omitted on mobile."
       }
     ],
     "motion": [
@@ -117,8 +451,8 @@
       },
       {
         "name": "hero-devices",
-        "value": "1.5s; stagger .1s",
-        "purpose": "Layered real screens settle into the hero."
+        "value": "Inner center .apple-desktop: 1.7s starting at .12s; inner phones: 1.6s starting at .25s and .33s",
+        "purpose": "Entrance transforms act on the inner desktop and phones, independently of the outer wrappers used by the scroll fan."
       },
       {
         "name": "chapter-copy",
@@ -154,6 +488,51 @@
         "name": "reduced-transparency",
         "value": "prefers-reduced-transparency: reduce",
         "purpose": "Replace translucent navigation with an opaque white surface."
+      },
+      {
+        "name": "hero-scroll-fan",
+        "value": ".8 scrub; outer device wrappers",
+        "purpose": "Fan the outer hero wrappers without overwriting the inner device entrance transforms."
+      },
+      {
+        "name": "hero-fan-eligibility",
+        "value": "(min-width: 900px) and (hover: hover) and (pointer: fine)",
+        "purpose": "Enable the hero scroll fan on layouts with a fine pointer and hover."
+      },
+      {
+        "name": "package-eligibility",
+        "value": "(min-width: 900px) and (hover: hover) and (pointer: fine)",
+        "purpose": "Enable package scroll choreography and pointer tilt; separate from sticky chapter eligibility."
+      },
+      {
+        "name": "package-entrance-ease",
+        "value": "power2.out",
+        "purpose": "Ease the package device, numerals and support chips into their scroll-linked positions."
+      },
+      {
+        "name": "package-screen-crossfade",
+        "value": ".55s opacity; .85s transform",
+        "purpose": "Switch the actual Build, Launch and Care interface captures."
+      },
+      {
+        "name": "package-panel",
+        "value": ".55s",
+        "purpose": "Bring in the selected chapter explanation when motion is enabled."
+      },
+      {
+        "name": "package-pointer",
+        "value": "Approximately ±2.5deg on each axis; .55s transform smoothing",
+        "purpose": "Add device tilt for fine pointers, resetting on pointer leave or eligibility changes; touch and reduced motion bypass it."
+      },
+      {
+        "name": "package-composition-scrub",
+        "value": ".8; top 90% to top 8%",
+        "purpose": "Scroll-linked arrival of the package device, payment/care numerals and support chips."
+      },
+      {
+        "name": "package-orbit-scrub",
+        "value": "1; top bottom to bottom top",
+        "purpose": "Move local orbital geometry through 16 degrees and −30px as the package passes the viewport."
       }
     ],
     "breakpoints": [
@@ -184,6 +563,18 @@
       {
         "name": "supporting-mobile",
         "value": "max-width: 480px"
+      },
+      {
+        "name": "package-compact",
+        "value": "max-width: 1199px"
+      },
+      {
+        "name": "package-tablet",
+        "value": "min-width: 751px and max-width: 899px"
+      },
+      {
+        "name": "package-mobile",
+        "value": "max-width: 750px"
       }
     ]
   },
@@ -233,7 +624,7 @@
       "kind": "nav",
       "refersTo": "navigation",
       "description": "Familiar, compact navigation with a translucent white material.",
-      "html": "<nav class=\"ds-navigation\" aria-label=\"Main navigation\"><a class=\"ds-brand\" href=\"#home\">KashCrop</a><div><a href=\"#work\" aria-current=\"page\">Work</a><a href=\"#services\">Services</a><a href=\"#about\">About</a></div><a class=\"ds-nav-action\" href=\"#contact\">Start a project</a></nav>",
+      "html": "<nav class=\"ds-navigation\" aria-label=\"Main navigation\"><a class=\"ds-brand\" href=\"#home\">KashCrop</a><div><a href=\"#work\" aria-current=\"page\">Work</a><a href=\"#services\">Services</a><a href=\"/services#compare\">Why KashCrop</a><a href=\"#about\">About</a></div><a class=\"ds-nav-action\" href=\"#contact\">Start a project</a></nav>",
       "css": ".ds-navigation{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:64px;padding:0 24px;background:rgba(255,255,255,.84);backdrop-filter:saturate(170%) blur(20px);box-shadow:0 1px 0 rgba(29,29,31,.06);color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-navigation a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:none;font-size:12px}.ds-navigation .ds-brand{font-size:19px;font-weight:600;letter-spacing:-.04em}.ds-navigation>div{display:flex;gap:30px}.ds-navigation .ds-nav-action{min-height:34px;padding:0 15px;background:var(--ink,#1d1d1f);color:var(--paper,#fff);border-radius:999px}.ds-navigation a:hover{text-decoration:underline;text-underline-offset:4px}.ds-navigation .ds-nav-action:hover{background:#373739;text-decoration:none}.ds-navigation a:focus-visible{outline:3px solid #0067d6;outline-offset:4px}.ds-navigation a:active{opacity:.7}@media(max-width:500px){.ds-navigation{gap:18px;flex-wrap:wrap;padding:15px 20px}.ds-navigation>div{gap:17px}}@media(prefers-reduced-transparency:reduce){.ds-navigation{background:#fff;backdrop-filter:none}}"
     },
     {
@@ -242,47 +633,61 @@
       "description": "A native, keyboard-accessible disclosure for optional interface recordings and provenance.",
       "html": "<details class=\"ds-recording\"><summary>Watch interface film<svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></summary><p>Recorded from the implemented interface using demonstration data. The production recording provides native manual controls and pauses when this disclosure closes.</p></details>",
       "css": ".ds-recording{max-width:580px;border-bottom:1px solid #d2d2d7;color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-recording summary{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:54px;list-style:none;cursor:pointer;font-size:13px;font-weight:500}.ds-recording summary::-webkit-details-marker{display:none}.ds-recording summary svg{transition:transform .3s cubic-bezier(.16,1,.3,1)}.ds-recording[open] summary svg{transform:rotate(90deg)}.ds-recording summary:hover{text-decoration:underline;text-underline-offset:4px}.ds-recording summary:focus-visible{outline:3px solid var(--ink,#1d1d1f);outline-offset:4px}.ds-recording p{max-width:75ch;margin:0;padding:0 0 21px;color:var(--muted,#6e6e73);font-size:13px;line-height:1.7}@media(prefers-reduced-motion:reduce){.ds-recording summary svg{transition:none}}"
+    },
+    {
+      "name": "Package chapter tabs",
+      "kind": "custom",
+      "description": "Build, Launch and Care control on the local forest stage, shown with Build selected. Production adds roving keyboard navigation and real interface changes.",
+      "html": "<section class=\"ds-package-preview\" aria-label=\"Project package chapters\"><div class=\"ds-package-tabs\" role=\"tablist\" aria-label=\"Explore the project package\"><button type=\"button\" role=\"tab\" id=\"ds-package-build\" aria-selected=\"true\" aria-controls=\"ds-package-panel-build\" tabindex=\"0\">Build</button><button type=\"button\" role=\"tab\" id=\"ds-package-launch\" aria-selected=\"false\" aria-controls=\"ds-package-panel-launch\" tabindex=\"-1\">Launch</button><button type=\"button\" role=\"tab\" id=\"ds-package-care\" aria-selected=\"false\" aria-controls=\"ds-package-panel-care\" tabindex=\"-1\">Care</button></div><div class=\"ds-package-panel\" id=\"ds-package-panel-build\" role=\"tabpanel\" aria-labelledby=\"ds-package-build\" tabindex=\"0\"><h3>Made for your world.</h3><p>Your workflow. Your interface. One connected product.</p></div><div class=\"ds-package-panel\" id=\"ds-package-panel-launch\" role=\"tabpanel\" aria-labelledby=\"ds-package-launch\" hidden><h3>Ready for the real world.</h3><p>Hosting, publishing and the details around going live.</p></div><div class=\"ds-package-panel\" id=\"ds-package-panel-care\" role=\"tabpanel\" aria-labelledby=\"ds-package-care\" hidden><h3>A longer view.</h3><p>Maintenance options that can stay with you for up to four years.</p></div></section>",
+      "css": ".ds-package-preview{padding:32px 24px;border-radius:28px;background:#101b16;color:#f5f8f5;text-align:center;font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-package-tabs{display:inline-flex;gap:4px;padding:5px;background:#26352c;border:1px solid #4a5b50;border-radius:999px}.ds-package-tabs button{min-width:93px;min-height:43px;padding:10px 21px;border:0;border-radius:999px;background:transparent;color:#e3eae5;font-family:inherit;font-size:14px;font-weight:500;line-height:1.3;cursor:pointer;transition:color .25s,background .3s,box-shadow .3s}.ds-package-tabs button:hover{background:#3b4c41}.ds-package-tabs button[aria-selected=true]{background:#edf4ef;color:#14251a;box-shadow:0 2px 8px #0002}.ds-package-tabs button:focus-visible,.ds-package-panel:focus-visible{outline:3px solid var(--kc-accent,#b2e7be);outline-offset:4px}.ds-package-panel{max-width:570px;min-height:73px;margin:22px auto 0}.ds-package-panel[hidden]{display:none}.ds-package-panel h3{margin:0;font-size:23px;line-height:1.2;letter-spacing:-.025em;font-weight:600}.ds-package-panel p{margin:8px 0 0;color:#c1cbc4;font-size:15px;line-height:1.5}@media(max-width:750px){.ds-package-preview{padding:27px 22px;border-radius:24px}.ds-package-tabs{gap:2px;padding:4px}.ds-package-tabs button{min-width:82px;padding:10px 16px;font-size:13px}.ds-package-panel{min-height:94px;margin-top:21px}.ds-package-panel h3{font-size:22px}.ds-package-panel p{font-size:14px;max-width:330px;margin:9px auto 0}}@media(prefers-reduced-motion:reduce){.ds-package-tabs button{transition:none}}"
+    },
+    {
+      "name": "Scoped quote comparison",
+      "kind": "custom",
+      "description": "Two-row material preview of the eight-row comparison: real quote questions, KashCrop scope, light offer column and native terms disclosure.",
+      "html": "<section class=\"ds-comparison-preview\" aria-label=\"Project quote comparison\"><div class=\"ds-comparison-wrap\"><table class=\"ds-comparison-table\" role=\"table\"><caption class=\"ds-compare-caption\">Questions to ask when comparing project quotes, alongside the KashCrop offer</caption><thead role=\"rowgroup\"><tr role=\"row\"><th scope=\"col\" role=\"columnheader\">What matters</th><th scope=\"col\" role=\"columnheader\">When comparing quotes</th><th scope=\"col\" role=\"columnheader\">With KashCrop</th></tr></thead><tbody role=\"rowgroup\"><tr role=\"row\"><th scope=\"row\" role=\"rowheader\">Server hosting</th><td role=\"cell\"><span class=\"ds-compare-label\" aria-hidden=\"true\">Ask other providers</span>Who gets it online and handles hosting?</td><td role=\"cell\"><span class=\"ds-compare-label\" aria-hidden=\"true\">With KashCrop</span><div class=\"ds-compare-commitment\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\"/></svg><strong>Hosting in your package.</strong></div><p>Setup and hosting for the term agreed in your quote.</p></td></tr><tr role=\"row\"><th scope=\"row\" role=\"rowheader\">Long-term care</th><td role=\"cell\"><span class=\"ds-compare-label\" aria-hidden=\"true\">Ask other providers</span>What support follows the launch?</td><td role=\"cell\"><span class=\"ds-compare-label\" aria-hidden=\"true\">With KashCrop</span><div class=\"ds-compare-commitment\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\"/></svg><strong>Maintenance up to 4 years.</strong></div><p>Choose the coverage and duration your project needs.</p></td></tr></tbody></table></div><div class=\"ds-comparison-footnote\"><p>Compare written scopes. Every provider’s offer is different.</p><details><summary>Package scope and terms <svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 4v16m-6-6 6 6 6-6\"/></svg></summary><p>Your quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.</p></details></div></section>",
+      "css": ".ds-comparison-preview{max-width:1180px;background:var(--paper,#fff);color:#1d1d1f;font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-comparison-wrap{border:1px solid #dce4dc;border-radius:24px;overflow:hidden}.ds-comparison-table{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0;text-align:left}.ds-compare-caption{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ds-comparison-table th,.ds-comparison-table td{padding:25px 26px;vertical-align:top;border-bottom:1px solid #dce4dc;line-height:1.5}.ds-comparison-table thead th{vertical-align:middle;color:#616168;font-size:13px;font-weight:500}.ds-comparison-table thead th:first-child{width:22%}.ds-comparison-table thead th:nth-child(2){width:33%}.ds-comparison-table thead th:last-child{width:45%;color:#173f26;font-size:19px;font-weight:600}.ds-comparison-table tbody th{color:#303033;font-size:15px;font-weight:600}.ds-comparison-table tbody td{font-size:15px;color:#616168}.ds-comparison-table tr>:last-child{background:#f0f7f0}.ds-comparison-table tbody tr:last-child>*{border-bottom:0}.ds-comparison-table tbody tr>:not(:last-child){transition:background .25s}.ds-comparison-table tbody tr:hover>:not(:last-child){background:#f6f7f6}.ds-compare-commitment{display:flex;align-items:flex-start;gap:10px}.ds-compare-commitment>svg{width:18px;height:18px;margin-top:4px;color:#2e7046;flex-shrink:0}.ds-compare-commitment strong{color:#234830;font-size:17px;font-weight:600;letter-spacing:-.015em;line-height:1.45}.ds-comparison-table td>p{margin:7px 0 0 28px;color:#526157;font-size:13px;line-height:1.5}.ds-compare-label{display:none}.ds-comparison-footnote{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:22px;color:#68686e;font-size:12px;line-height:1.55}.ds-comparison-footnote>p{margin:0;padding-top:11px}.ds-comparison-footnote details{justify-self:end;max-width:520px}.ds-comparison-footnote summary{display:flex;align-items:center;justify-content:flex-end;gap:8px;min-height:44px;list-style:none;color:#44494a;cursor:pointer}.ds-comparison-footnote summary::-webkit-details-marker{display:none}.ds-comparison-footnote summary:hover{text-decoration:underline;text-underline-offset:3px}.ds-comparison-footnote summary:focus-visible{outline:3px solid #0067d6;outline-offset:4px}.ds-comparison-footnote summary svg{transition:transform .25s}.ds-comparison-footnote details[open] summary svg{transform:rotate(180deg)}.ds-comparison-footnote details p{margin:10px 0 0}@media(max-width:750px){.ds-comparison-wrap{border-radius:19px}.ds-comparison-table,.ds-comparison-table tbody{display:block}.ds-comparison-table thead{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ds-comparison-table tbody tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-bottom:1px solid #cfdacf}.ds-comparison-table tbody tr:last-child{border-bottom:0}.ds-comparison-table tbody th{grid-column:1/-1;padding:17px 15px;background:#f5f6f5;border-bottom:1px solid #dce4dc;font-size:16px;line-height:1.3}.ds-comparison-table tbody td{border-bottom:0;padding:18px 14px 23px;font-size:14px}.ds-comparison-table tbody td:last-child{border-left:1px solid #dce4dc}.ds-compare-label{display:block;min-height:17px;margin-bottom:11px;color:#62696a;font-size:10px;line-height:1.3;font-weight:600}.ds-comparison-table td:last-child .ds-compare-label{color:#366346}.ds-compare-commitment{gap:5px}.ds-compare-commitment>svg{width:14px;height:14px;margin-top:3px}.ds-compare-commitment strong{font-size:14px;line-height:1.4;letter-spacing:-.01em}.ds-comparison-table td>p{margin:9px 0 0 19px;font-size:12px}.ds-comparison-footnote{grid-template-columns:1fr;gap:3px;margin-top:15px;font-size:11px}.ds-comparison-footnote>p{padding-top:0}.ds-comparison-footnote details{justify-self:stretch;max-width:none}.ds-comparison-footnote summary{justify-content:flex-start;width:max-content}}@media(prefers-reduced-motion:reduce){.ds-comparison-table tbody tr>:not(:last-child),.ds-comparison-footnote summary svg{transition:none}}"
     }
   ],
   "narrative": {
     "northStar": "The product, beautifully presented.",
-    "overview": "An Apple-inspired presentation adapted to KashCrop’s own work. White and silver surfaces, confident sans-serif headlines, and actual product captures create a familiar visual rhythm. Product motion adds scale and depth while navigation and controls remain direct. The original KashCrop logo and factual product records remain authoritative.",
+    "overview": "The approved direction is an Apple-inspired presentation adapted to KashCrop’s own work. White and silver surfaces, confident sans-serif headlines, clear product photography and interface captures create a familiar visual rhythm. Motion gives the products scale and depth while navigation and controls stay direct.\n\nThis system replaces the earlier Fraunces and red-room identity. Keep KashCrop’s existing red-and-green logo and original copy. The products supply their own colors inside real screenshots; the surrounding website remains neutral.",
     "keyCharacteristics": [
-      "Native system sans with locally hosted Geist fallback",
-      "One white/silver visual system across routes",
-      "Actual interfaces presented at a readable scale",
-      "Product choreography with a complete reduced-motion experience",
-      "Optional manually controlled recordings with source context"
+      "Large native sans-serif type, with a locally hosted Geist fallback.",
+      "Real software presented at a readable scale.",
+      "One neutral visual system across home, archive, detail pages, forms, viewer, and footer, with a local dark stage for the project package.",
+      "Purposeful product choreography and optional, manually controlled recordings."
     ],
     "rules": [
       {
         "name": "The Neutral Frame Rule",
-        "body": "Product colors belong to actual imagery and selected presentation stages; the surrounding website stays neutral.",
+        "body": "Product colors belong to actual imagery and selected presentation stages. They do not establish separate site identities.",
         "section": "colors"
       },
       {
         "name": "The Single Voice Rule",
-        "body": "Headings and prose use the same sans family. The superseded Fraunces pairing is not visual authority.",
+        "body": "Headings and prose use the same sans family. Do not reintroduce the previous serif pairing, uppercase technical labels, or gradient-filled type. Keep ordinary text tracking at or above −0.04em; reserve the tighter package tracking for its heading and oversized numerals.",
         "section": "typography"
       },
       {
         "name": "The Product Depth Rule",
-        "body": "Spend depth on presented software and active overlays. Keep routine content panels calm.",
+        "body": "Spend depth on the presented software and active overlays. Keep text sections, facts, and routine cards calm.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do retain the KashCrop logo, original wording, and factual project content.",
-      "Do preserve readable screen inspection, URL behavior, and keyboard focus.",
-      "Do make product motion ambitious while retaining a complete static experience.",
-      "Do keep source notes and sample-data context with historical demonstrations.",
-      "Do place source captions below artwork with a clear gap so they remain separate from the product image."
+      "Do keep KashCrop’s logo and factual project records intact.",
+      "Do build new pages in the same neutral material and sans-serif hierarchy.",
+      "Do use actual interfaces, original copy, clear destinations, and honest recording provenance.",
+      "Do make product motion ambitious while keeping the complete static experience available.",
+      "Do inspect mobile spacing, focus, long-screen scrolling, and real content together."
     ],
     "donts": [
-      "Don't restore the superseded serif/red-room visual system.",
-      "Don't fabricate screenshots, performance figures, adoption metrics, or validation claims.",
-      "Don't hide necessary content behind animation.",
-      "Don't autoplay optional recordings or leave them playing when closed."
+      "Don't restore the superseded Fraunces/red-room presentation or layer another design identity over this one.",
+      "Don't substitute fabricated application screenshots, adoption figures, or validation claims.",
+      "Don't turn every section into an animation demo or conceal content until scrolling triggers it.",
+      "Don't autoplay optional recordings or leave a hidden recording playing after its disclosure closes.",
+      "Don't discard useful project details, source notes, URL behavior, or gallery access while simplifying the layout."
     ]
   }
 }

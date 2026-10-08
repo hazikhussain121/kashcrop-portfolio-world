@@ -710,3 +710,12 @@ html[data-motion="off"] .ap-page *::after { animation: none !important; transiti
   .ap-other-services h2 { font-size: 35px; }
   .ap-other-services nav a { font-size: 17px; }
 }
+
+/* A direct route from the service introduction to the scoped package comparison. */
+.ap-service-offer-note { max-width: 670px; margin: 23px auto 0; text-align: center; }
+.ap-service-offer-note > p { color: var(--ap-muted); font-size: 14px; line-height: 1.55; }
+.ap-service-offer-note > .ap-text-link { margin-top: 3px; font-size: 14px; }
+@media (max-width: 480px) {
+  .ap-service-offer-note { margin-top: 20px; max-width: 36ch; }
+  .ap-service-offer-note > p { font-size: 13px; }
+}

@@ -4,12 +4,12 @@ test('project tabs keep selected labels and visible panels coherent', async ({pa
   await page.goto('/');
   const tabs = page.getByRole('tablist', {name: 'Featured projects'});
   await tabs.getByRole('tab', {name: 'Plant Health Clinic', exact: true}).click();
-  await expect(page.getByRole('tabpanel')).toContainText('Plant Health Clinic');
-  await expect(page.getByRole('tabpanel')).toHaveCount(1);
+  await expect(page.locator('#work').getByRole('tabpanel')).toContainText('Plant Health Clinic');
+  await expect(page.locator('#work').getByRole('tabpanel')).toHaveCount(1);
   await tabs.getByRole('tab', {name: 'SKIIE', exact: true}).click();
-  await expect(page.getByRole('tabpanel')).toContainText('SKIIE');
+  await expect(page.locator('#work').getByRole('tabpanel')).toContainText('SKIIE');
   await tabs.getByRole('tab', {name: 'BaghBani', exact: true}).click();
-  await expect(page.getByRole('tabpanel')).toContainText('Your orchard.');
+  await expect(page.locator('#work').getByRole('tabpanel')).toContainText('Your orchard.');
   await page.keyboard.press('End');
   await expect(tabs.getByRole('tab', {name: 'SKIIE', exact: true})).toHaveAttribute('aria-selected', 'true');
 });

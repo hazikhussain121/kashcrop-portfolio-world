@@ -24,7 +24,9 @@ export function AppleHero() {
       const ctx = gsap.context(() => {
         const intro = gsap.timeline({defaults: {ease: 'power3.out'}});
         intro.from('.apple-hero-copy > *', {y: 22, opacity: .2, duration: .95, stagger: .09})
-          .from('.hero-device', {y: 95, opacity: .25, rotateX: 14, duration: 1.5, stagger: .1}, .12);
+          .from('.hero-device-centre .apple-desktop', {y: 130, opacity: .25, rotateX: 24, scale: .82, duration: 1.7}, .12)
+          .from('.hero-device-left .apple-phone', {x: 110, y: 135, opacity: .25, rotate: -15, scale: .86, duration: 1.6}, .25)
+          .from('.hero-device-right .apple-phone', {x: -110, y: 135, opacity: .25, rotate: 15, scale: .86, duration: 1.6}, .33);
         const mm = gsap.matchMedia();
         mm.add('(min-width: 900px) and (hover: hover) and (pointer: fine)', () => {
           const tl = gsap.timeline({scrollTrigger: {trigger: root.current, start: 'top top', end: 'bottom top', scrub: .8}});

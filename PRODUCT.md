@@ -24,6 +24,14 @@ Adapt that presentation to KashCrop’s own identity. Preserve the existing red-
 
 DESIGN.md and its .impeccable/design.json sidecar document the implemented system. Product colors remain in the actual interfaces and selected presentation stages.
 
+## Project Packages
+
+The user confirmed four offers on 8 October 2026: one-time payment for the agreed development scope, server hosting, maintenance options up to four years, and Play Console account setup, publishing and release management for Android projects.
+
+Each quote defines development scope, hosting term, maintenance coverage and third-party charges. The publisher account remains in the client’s name, with delegated management access. Google account verification and app review apply.
+
+Help visitors compare written quotes through concrete questions and clear KashCrop answers. Do not invent exclusions or prices for other providers. The canonical wording is in app/data/portfolio/offer.ts; the presentation and verification are recorded in docs/design/APPLE_OVERDRIVE_2026-10-08.md.
+
 ## Design Principles
 
 - Lead with the work. Show real product interfaces at a useful scale.

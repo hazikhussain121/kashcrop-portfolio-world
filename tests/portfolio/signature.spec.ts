@@ -40,11 +40,11 @@ test('desktop scrolling advances project chapters while manual controls stay coh
       window.scrollTo(0, start + (rect.height - innerHeight + 88) * progress);
     }, progress);
     await expect(tabs.nth(selected)).toHaveAttribute('aria-selected', 'true');
-    await expect(page.getByRole('tabpanel')).toHaveCount(1);
+    await expect(page.locator('#work').getByRole('tabpanel')).toHaveCount(1);
   }
   await tabs.nth(0).click();
   await expect(tabs.nth(0)).toHaveAttribute('aria-selected', 'true');
-  await expect(page.getByRole('tabpanel')).toContainText('Your orchard.');
+  await expect(page.locator('#work').getByRole('tabpanel')).toContainText('Your orchard.');
 });
 
 test('all featured projects have usable direct links after keyboard selection', async ({page}) => {
@@ -54,11 +54,11 @@ test('all featured projects have usable direct links after keyboard selection', 
   await tabs.nth(0).focus();
   await tabs.nth(0).press('ArrowRight');
   await expect(tabs.nth(1)).toBeFocused();
-  await expect(page.getByRole('tabpanel').getByRole('link')).toHaveAttribute('href', '/projects/plant-health-clinic');
+  await expect(page.locator('#work').getByRole('tabpanel').getByRole('link')).toHaveAttribute('href', '/projects/plant-health-clinic');
   await tabs.nth(1).press('End');
-  await expect(page.getByRole('tabpanel').getByRole('link')).toHaveAttribute('href', '/projects/skiie');
+  await expect(page.locator('#work').getByRole('tabpanel').getByRole('link')).toHaveAttribute('href', '/projects/skiie');
   await tabs.nth(2).press('Home');
-  await page.getByRole('tabpanel').getByRole('link').click();
+  await page.locator('#work').getByRole('tabpanel').getByRole('link').click();
   await expect(page).toHaveURL(/\/projects\/baghban$/);
   await expect(page.locator('main h1')).toHaveText('BaghBani');
 });
@@ -70,7 +70,7 @@ test('reduced motion disables scroll choreography while preserving product selec
   await expect(page.locator('#work')).not.toHaveAttribute('data-scroll-showcase', 'on');
   await expect(page.locator('html')).not.toHaveClass(/lenis/);
   await page.getByRole('tab', {name: 'SKIIE', exact: true}).click();
-  await expect(page.getByRole('tabpanel')).toContainText('A home for');
+  await expect(page.locator('#work').getByRole('tabpanel')).toContainText('A home for');
   await expect(page.getByRole('button', {name: 'Reduced motion follows your system'})).toBeDisabled();
 });
 
