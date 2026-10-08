@@ -1,0 +1,31 @@
+{
+  "family": "Geist",
+  "source": "https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap",
+  "license": "SIL Open Font License 1.1",
+  "assets": [
+    {
+      "file": "geist-400.ttf",
+      "weight": "400",
+      "source": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RnOM4nQ.ttf",
+      "sha256": "ccce59465ae5c61930ada5453834f60500fbd95084d85db63e0e65fad0125455"
+    },
+    {
+      "file": "geist-500.ttf",
+      "weight": "500",
+      "source": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RruM4nQ.ttf",
+      "sha256": "a8eefb873ba9c9020665f8a98302697ce1f3b79ab2deef6ee508c0ca6a82e876"
+    },
+    {
+      "file": "geist-600.ttf",
+      "weight": "600",
+      "source": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_RQuQ4nQ.ttf",
+      "sha256": "7171f481b121803d007f5c6c76cd9988c0d41cce4202db9a18dff9945505d36d"
+    },
+    {
+      "file": "geist-700.ttf",
+      "weight": "700",
+      "source": "https://fonts.gstatic.com/s/geist/v5/gyBhhwUxId8gMGYQMKR3pzfaWI_Re-Q4nQ.ttf",
+      "sha256": "1a9874b3be0fc168692a3d2327bccb4d28835653d3b91537a755296a467a83e3"
+    }
+  ]
+}

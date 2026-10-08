@@ -32,11 +32,11 @@ const phcScreens = [
  shot('photo-guide','Photo guidance','phc-guide',844,'Photography guidance at the moment it is useful.'),
 ];
 const garden: Project = {
- slug:'baghban',name:'Baghban',category:'Platforms',kind:'Orchard services & grower tools',year:'2026',theme:'garden',
+ slug:'baghban',name:'BaghBani',category:'Platforms',kind:'Orchard services & grower tools',year:'2026',theme:'garden',
  tagline:'An orchard, brought together.',summary:'Services, seasonal guidance and practical tools. All designed around the grower.',
  overview:[
   'A grower should be able to understand an orchard service before being asked to choose a location, fill in a form or make a commitment. Baghban brings the service, the explanation and the next step into one experience.',
-  'The platform connects orchard planning, specialist access, seasonal guidance and grower tools. The interface prioritises clear language, useful context and a mobile experience suited to field use.',
+  'The platform connects orchard services, specialist access, seasonal guidance and grower tools. The interface prioritises clear language, useful context and a mobile experience suited to field use.',
  ],features:['Farmer-first service discovery','Orchard establishment and care requests','Specialist consultations and group sessions','Seasonal calendar and grower tools','Responsive mobile and desktop experience'],
  stack:['React','TypeScript','Cloudflare','D1','R2'],scope:['Product design','Farmer experience','Full-stack'],
  facts:[{label:'Audience',value:'Orchard growers'},{label:'Surfaces',value:'Farmer, specialist and admin'},{label:'Role',value:'Product design + engineering'}],

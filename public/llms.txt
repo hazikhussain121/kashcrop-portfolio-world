@@ -3,7 +3,7 @@
 Product design, engineering and applied AI. Based in Kashmir, India; incubated at SKIIE, SKUAST-Kashmir.
 
 ## Work
-- [Baghban](https://kashcrop.in/projects/baghban): Services, seasonal guidance and practical tools. All designed around the grower.
+- [BaghBani](https://kashcrop.in/projects/baghban): Services, seasonal guidance and practical tools. All designed around the grower.
 - [Plant Health Clinic](https://kashcrop.in/projects/plant-health-clinic): Farmers send photos, symptoms, and voice notes from the field. Vizier drafts a diagnosis. A SKUAST-K expert reviews it and sends the advice.
 - [SKIIE](https://kashcrop.in/projects/skiie): The site lists SKIIE startups, programmes, events and facilities. Staff manage the content through an admin panel.
 - [KashCrop](https://kashcrop.in/projects/kashcrop): KashCrop is a practical orchard companion for Kashmir's apple farmers, keeping seasonal tasks, mandi rates, weather, references, and field calculators in one place.

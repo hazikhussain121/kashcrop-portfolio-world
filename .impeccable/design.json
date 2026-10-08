@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-08T14:55:38Z",
+  "title": "Design System: KashCrop Innovations",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Ink"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "White canvas"
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Silver surface"
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Supporting gray"
+      },
+      "display-muted": {
+        "role": "neutral",
+        "displayName": "Large display gray"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Soft divider"
+      },
+      "line-solid": {
+        "role": "neutral",
+        "displayName": "Solid divider"
+      },
+      "control-track": {
+        "role": "neutral",
+        "displayName": "Segmented control track"
+      },
+      "garden-stage": {
+        "role": "secondary",
+        "displayName": "Orchard presentation tint"
+      },
+      "clinic-stage": {
+        "role": "secondary",
+        "displayName": "Clinic presentation tint"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Hero display",
+        "purpose": "Confident native-sans hero; maximum 88px on the homepage."
+      },
+      "headline": {
+        "displayName": "Section headline",
+        "purpose": "Major product and narrative sections; 600 weight and tight balanced lines."
+      },
+      "title": {
+        "displayName": "Product title",
+        "purpose": "Project names, service names, and supporting panel titles."
+      },
+      "body": {
+        "displayName": "Narrative",
+        "purpose": "Readable project explanations, generally 16–18px within a restrained text measure."
+      },
+      "label": {
+        "displayName": "Control and context",
+        "purpose": "Compact navigation, source notes, facts, and controls."
+      }
+    },
+    "shadows": [
+      {
+        "name": "phone-hero",
+        "value": "0 24px 38px -16px rgba(26,33,37,.32)",
+        "purpose": "Depth below the homepage product devices."
+      },
+      {
+        "name": "phone-supporting",
+        "value": "0 17px 42px #1d1d1f2b",
+        "purpose": "Soft separation around actual interface captures."
+      },
+      {
+        "name": "browser",
+        "value": "0 20px 45px #1d1d1f24",
+        "purpose": "Browser-window presentation."
+      },
+      {
+        "name": "selected-tab",
+        "value": "0 2px 8px rgba(0,0,0,.08)",
+        "purpose": "Active white segment above a silver control track."
+      },
+      {
+        "name": "viewer",
+        "value": "0 40px 110px rgba(0,0,0,.24)",
+        "purpose": "The native screen-inspection dialog."
+      },
+      {
+        "name": "navigation-divider",
+        "value": "0 1px 0 rgba(29,29,31,.06)",
+        "purpose": "Subtle separation beneath the translucent header."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Shared CSS product and interaction easing."
+      },
+      {
+        "name": "entrance-ease",
+        "value": "power3.out",
+        "purpose": "GSAP hero entrance easing."
+      },
+      {
+        "name": "hero-copy",
+        "value": ".95s; stagger .09s",
+        "purpose": "Already-visible headline and supporting copy move into place."
+      },
+      {
+        "name": "hero-devices",
+        "value": "1.5s; stagger .1s",
+        "purpose": "Layered real screens settle into the hero."
+      },
+      {
+        "name": "chapter-copy",
+        "value": ".65s",
+        "purpose": "Transition into a selected product chapter."
+      },
+      {
+        "name": "chapter-visual",
+        "value": ".9s",
+        "purpose": "Product imagery accompanies the selected chapter."
+      },
+      {
+        "name": "mobile-navigation",
+        "value": ".32s",
+        "purpose": "Native menu entrance."
+      },
+      {
+        "name": "scroll-scrub",
+        "value": ".8",
+        "purpose": "Subtle GSAP product separation and contextual-image parallax."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce; html[data-motion=off]",
+        "purpose": "Keep every control and content item accessible without the authored motion."
+      },
+      {
+        "name": "sticky-eligibility",
+        "value": "(min-width: 1100px) and (min-height: 850px) and (hover: hover) and (pointer: fine)",
+        "purpose": "Use scroll-selected product chapters only when the complete stage fits comfortably."
+      },
+      {
+        "name": "reduced-transparency",
+        "value": "prefers-reduced-transparency: reduce",
+        "purpose": "Replace translucent navigation with an opaque white surface."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "home-wide",
+        "value": "min-width: 1600px"
+      },
+      {
+        "name": "home-tablet",
+        "value": "max-width: 1099px"
+      },
+      {
+        "name": "home-mobile",
+        "value": "max-width: 750px"
+      },
+      {
+        "name": "home-narrow",
+        "value": "max-width: 374px"
+      },
+      {
+        "name": "supporting-tablet",
+        "value": "max-width: 1100px"
+      },
+      {
+        "name": "supporting-stack",
+        "value": "max-width: 800px"
+      },
+      {
+        "name": "supporting-mobile",
+        "value": "max-width: 480px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Neutral pill for a clear next step.",
+      "html": "<button class=\"ds-button-primary\" type=\"button\">Start a conversation<svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:12px 23px;background:var(--ink,#1d1d1f);color:var(--paper,#fff);border:0;border-radius:999px;font:500 15px/1.3 -apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif;cursor:pointer;transition:background .25s,transform .35s cubic-bezier(.16,1,.3,1)}.ds-button-primary:hover{background:#373739;transform:translateY(-2px)}.ds-button-primary:active{transform:scale(.975)}.ds-button-primary:focus-visible{outline:3px solid #0067d6;outline-offset:5px}.ds-button-primary:disabled{opacity:.5;cursor:default;transform:none}"
+    },
+    {
+      "name": "Text action",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A quiet secondary action alongside product content.",
+      "html": "<button class=\"ds-text-action\" type=\"button\">Explore the work<svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button>",
+      "css": ".ds-text-action{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:12px 0;background:transparent;border:0;color:var(--ink,#1d1d1f);font:500 16px/1.3 -apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif;cursor:pointer;text-underline-offset:4px}.ds-text-action svg{transition:transform .35s cubic-bezier(.16,1,.3,1)}.ds-text-action:hover{text-decoration:underline}.ds-text-action:hover svg{transform:translateX(3px)}.ds-text-action:active{opacity:.65}.ds-text-action:focus-visible{outline:3px solid #0067d6;outline-offset:5px}"
+    },
+    {
+      "name": "Project search",
+      "kind": "input",
+      "refersTo": "search",
+      "description": "A labeled neutral search control used by the URL-based project archive.",
+      "html": "<form class=\"ds-search\" role=\"search\"><label class=\"ds-search-label\" for=\"ds-project-query\">Search projects</label><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M16 16l5 5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0\"/></svg><input id=\"ds-project-query\" name=\"q\" type=\"search\" placeholder=\"Find a project\"/><button type=\"submit\" aria-label=\"Search projects\"><svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button></form>",
+      "css": ".ds-search{display:flex;align-items:center;gap:10px;max-width:300px;min-height:46px;padding:0 6px 0 15px;background:var(--surface,#f5f5f7);border-radius:999px;color:var(--ink,#1d1d1f);font:400 14px/1.5 -apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-search-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ds-search>svg{color:var(--muted,#6e6e73);flex-shrink:0}.ds-search input{width:100%;min-width:0;padding:11px 0;border:0;background:transparent;color:inherit;font:inherit;caret-color:var(--ink,#1d1d1f)}.ds-search input::placeholder{color:var(--muted,#6e6e73);opacity:1}.ds-search input:focus-visible{outline:0}.ds-search:focus-within{outline:3px solid var(--ink,#1d1d1f);outline-offset:3px}.ds-search button{display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;padding:0;border:0;border-radius:50%;background:transparent;color:inherit;cursor:pointer}.ds-search button:hover{background:#e8e8ed}.ds-search button:focus-visible{outline:3px solid var(--ink,#1d1d1f);outline-offset:3px}"
+    },
+    {
+      "name": "Archive filters",
+      "kind": "chip",
+      "refersTo": "chip-selected",
+      "description": "An ink selected pill with quiet neutral alternatives.",
+      "html": "<div class=\"ds-filters\" role=\"group\" aria-label=\"Filter projects\"><button type=\"button\" aria-pressed=\"true\">All work</button><button type=\"button\" aria-pressed=\"false\">Platforms</button><button type=\"button\" aria-pressed=\"false\">Applied AI</button></div>",
+      "css": ".ds-filters{display:flex;flex-wrap:wrap;gap:7px;font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-filters button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 17px;border:0;border-radius:999px;background:transparent;color:var(--ink,#1d1d1f);font:500 14px/1.4 -apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif;cursor:pointer;transition:background .22s,color .22s}.ds-filters button:hover{background:var(--surface,#f5f5f7)}.ds-filters button[aria-pressed=true]{background:var(--ink,#1d1d1f);color:var(--paper,#fff)}.ds-filters button:active{transform:scale(.98)}.ds-filters button:focus-visible{outline:3px solid var(--ink,#1d1d1f);outline-offset:4px}"
+    },
+    {
+      "name": "Product panel",
+      "kind": "card",
+      "refersTo": "product-panel",
+      "description": "Material and title preview of an archive tile. Production tiles include the actual captured product.",
+      "html": "<article class=\"ds-product-panel\"><h3>BaghBani</h3><p>Orchard services, specialist access and seasonal guidance.</p><a href=\"#project\">Explore the project<svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></a></article>",
+      "css": ".ds-product-panel{max-width:420px;padding:38px;background:var(--surface,#f5f5f7);border-radius:28px;color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-product-panel h3{margin:0;font-size:32px;font-weight:600;line-height:1.12;letter-spacing:-.035em}.ds-product-panel p{margin:16px 0 10px;max-width:35ch;font-size:16px;line-height:1.5;color:var(--muted,#6e6e73)}.ds-product-panel a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:inherit;text-decoration:none;font-size:14px;font-weight:500;text-underline-offset:4px}.ds-product-panel a:hover{text-decoration:underline}.ds-product-panel a:focus-visible{outline:3px solid var(--ink,#1d1d1f);outline-offset:4px}.ds-product-panel a:active{opacity:.65}"
+    },
+    {
+      "name": "Site navigation",
+      "kind": "nav",
+      "refersTo": "navigation",
+      "description": "Familiar, compact navigation with a translucent white material.",
+      "html": "<nav class=\"ds-navigation\" aria-label=\"Main navigation\"><a class=\"ds-brand\" href=\"#home\">KashCrop</a><div><a href=\"#work\" aria-current=\"page\">Work</a><a href=\"#services\">Services</a><a href=\"#about\">About</a></div><a class=\"ds-nav-action\" href=\"#contact\">Start a project</a></nav>",
+      "css": ".ds-navigation{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:64px;padding:0 24px;background:rgba(255,255,255,.84);backdrop-filter:saturate(170%) blur(20px);box-shadow:0 1px 0 rgba(29,29,31,.06);color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-navigation a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:none;font-size:12px}.ds-navigation .ds-brand{font-size:19px;font-weight:600;letter-spacing:-.04em}.ds-navigation>div{display:flex;gap:30px}.ds-navigation .ds-nav-action{min-height:34px;padding:0 15px;background:var(--ink,#1d1d1f);color:var(--paper,#fff);border-radius:999px}.ds-navigation a:hover{text-decoration:underline;text-underline-offset:4px}.ds-navigation .ds-nav-action:hover{background:#373739;text-decoration:none}.ds-navigation a:focus-visible{outline:3px solid #0067d6;outline-offset:4px}.ds-navigation a:active{opacity:.7}@media(max-width:500px){.ds-navigation{gap:18px;flex-wrap:wrap;padding:15px 20px}.ds-navigation>div{gap:17px}}@media(prefers-reduced-transparency:reduce){.ds-navigation{background:#fff;backdrop-filter:none}}"
+    },
+    {
+      "name": "Recording disclosure",
+      "kind": "custom",
+      "description": "A native, keyboard-accessible disclosure for optional interface recordings and provenance.",
+      "html": "<details class=\"ds-recording\"><summary>Watch interface film<svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></summary><p>Recorded from the implemented interface using demonstration data. The production recording provides native manual controls and pauses when this disclosure closes.</p></details>",
+      "css": ".ds-recording{max-width:580px;border-bottom:1px solid #d2d2d7;color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-recording summary{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:54px;list-style:none;cursor:pointer;font-size:13px;font-weight:500}.ds-recording summary::-webkit-details-marker{display:none}.ds-recording summary svg{transition:transform .3s cubic-bezier(.16,1,.3,1)}.ds-recording[open] summary svg{transform:rotate(90deg)}.ds-recording summary:hover{text-decoration:underline;text-underline-offset:4px}.ds-recording summary:focus-visible{outline:3px solid var(--ink,#1d1d1f);outline-offset:4px}.ds-recording p{max-width:75ch;margin:0;padding:0 0 21px;color:var(--muted,#6e6e73);font-size:13px;line-height:1.7}@media(prefers-reduced-motion:reduce){.ds-recording summary svg{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The product, beautifully presented.",
+    "overview": "An Apple-inspired presentation adapted to KashCrop’s own work. White and silver surfaces, confident sans-serif headlines, and actual product captures create a familiar visual rhythm. Product motion adds scale and depth while navigation and controls remain direct. The original KashCrop logo and factual product records remain authoritative.",
+    "keyCharacteristics": [
+      "Native system sans with locally hosted Geist fallback",
+      "One white/silver visual system across routes",
+      "Actual interfaces presented at a readable scale",
+      "Product choreography with a complete reduced-motion experience",
+      "Optional manually controlled recordings with source context"
+    ],
+    "rules": [
+      {
+        "name": "The Neutral Frame Rule",
+        "body": "Product colors belong to actual imagery and selected presentation stages; the surrounding website stays neutral.",
+        "section": "colors"
+      },
+      {
+        "name": "The Single Voice Rule",
+        "body": "Headings and prose use the same sans family. The superseded Fraunces pairing is not visual authority.",
+        "section": "typography"
+      },
+      {
+        "name": "The Product Depth Rule",
+        "body": "Spend depth on presented software and active overlays. Keep routine content panels calm.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do retain the KashCrop logo, original wording, and factual project content.",
+      "Do preserve readable screen inspection, URL behavior, and keyboard focus.",
+      "Do make product motion ambitious while retaining a complete static experience.",
+      "Do keep source notes and sample-data context with historical demonstrations.",
+      "Do place source captions below artwork with a clear gap so they remain separate from the product image."
+    ],
+    "donts": [
+      "Don't restore the superseded serif/red-room visual system.",
+      "Don't fabricate screenshots, performance figures, adoption metrics, or validation claims.",
+      "Don't hide necessary content behind animation.",
+      "Don't autoplay optional recordings or leave them playing when closed."
+    ]
+  }
+}

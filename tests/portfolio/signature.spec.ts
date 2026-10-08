@@ -1,116 +1,97 @@
-import { test, expect } from '@playwright/test';
+import {test, expect} from '@playwright/test';
 
-test('the new homepage has connected, substantial visual chapters', async ({ page }) => {
- const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
- await page.goto('/');
- await expect(page.locator('#hero-title')).toContainText('Good work.');
- for (const id of ['work','anatomy','care-story','craft','studio']) await expect(page.locator(`#${id}`)).toHaveCount(1);
- await expect(page.getByRole('button',{name:'Take the studio tour'})).toBeVisible();
- await expect(page.getByRole('heading',{name:'Beauty is the surface. The thinking goes deeper.'})).toBeAttached();
- expect(errors).toEqual([]);
+test('homepage presents one product story with real interfaces and direct next steps', async ({page}) => {
+  const errors: string[] = [];
+  page.on('pageerror', error => errors.push(error.message));
+  await page.goto('/');
+  await expect(page.locator('main h1')).toHaveText('Good ideas.Beautifully built.');
+  await expect(page.getByRole('heading', {name: 'Meet the work.'})).toBeVisible();
+  await expect(page.locator('.apple-product-family .hero-device')).toHaveCount(3);
+  for (const image of await page.locator('.apple-product-family img').all()) {
+    await expect(image).toBeVisible();
+    await expect.poll(() => image.evaluate((element: HTMLImageElement) => element.complete && element.naturalWidth > 0)).toBe(true);
+  }
+  await expect(page.getByRole('link', {name: 'Explore the work', exact: true})).toHaveAttribute('href', '#work');
+  await expect(page.locator('.apple-hero-actions').getByRole('link', {name: 'Start a project'})).toHaveAttribute('href', '/contact');
+  expect(errors).toEqual([]);
 });
 
-test('product anatomy exposes all four layers and responds to keyboard control', async ({ page }) => {
- await page.goto('/'); await page.locator('#anatomy').scrollIntoViewIfNeeded();
- const tabs = page.getByRole('tablist',{name:'Explore the product layers'});
- await tabs.getByRole('tab',{name:/Workflow/}).click();
- await expect(page.locator('#anatomy-detail')).toContainText('What happens next.');
- await page.keyboard.press('End'); await expect(tabs.getByRole('tab',{name:/Infrastructure/})).toHaveAttribute('aria-selected','true');
- await expect(page.locator('#anatomy-detail')).toContainText('What holds it together.');
- await page.locator('#layer-separation').focus(); await page.keyboard.press('Home');
- await expect(page.locator('#layer-separation')).toHaveValue('0');
- await page.keyboard.press('End'); await expect(page.locator('#layer-separation')).toHaveValue('100');
- await expect(page.locator('.anatomy-visual-note')).toContainText('Illustrated internals');
+test('ordinary wheel input scrolls the document and preserves the compact navigation', async ({page}) => {
+  await page.goto('/');
+  await page.mouse.move(1300, 800);
+  await page.mouse.wheel(0, 620);
+  await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(300);
+  await expect(page.locator('.site-header')).toHaveClass(/is-scrolled/);
+  await expect(page.getByRole('navigation', {name: 'Main navigation', exact: true})).toBeVisible();
+  await expect(page.locator('body')).not.toHaveClass(/has-overlay/);
+  expect(await page.evaluate(() => getComputedStyle(document.body).overflowY)).not.toBe('hidden');
 });
 
-test('Three.js enhances the real product view and is loaded below the fold', async ({ page }) => {
- const chunks: string[]=[];page.on('request',r=>{if(r.url().includes('AnatomyCanvas'))chunks.push(r.url());});
- await page.goto('/');await page.waitForTimeout(500);expect(chunks).toHaveLength(0);
- await page.locator('#anatomy').scrollIntoViewIfNeeded();
- await expect(page.locator('.anatomy-visual')).toHaveAttribute('data-renderer','webgl',{timeout:18000});
- const before=await page.locator('.anatomy-canvas').screenshot();
- await page.locator('#layer-separation').fill('100');await page.waitForTimeout(1600);
- const after=await page.locator('.anatomy-canvas').screenshot();expect(before.equals(after)).toBe(false);
- await page.goto('/about');await expect(page.locator('.anatomy-canvas')).toHaveCount(0);
+test('desktop scrolling advances project chapters while manual controls stay coherent', async ({page}) => {
+  await page.setViewportSize({width: 1440, height: 960});
+  await page.goto('/');
+  const section = page.locator('#work');
+  await expect(section).toHaveAttribute('data-scroll-showcase', 'on');
+  const tabs = page.getByRole('tablist', {name: 'Featured projects'}).getByRole('tab');
+  for (const [progress, selected] of [[.1, 0], [.49, 1], [.85, 2]] as const) {
+    await section.evaluate((element, progress) => {
+      const rect = element.getBoundingClientRect();
+      const start = scrollY + rect.top - 64;
+      window.scrollTo(0, start + (rect.height - innerHeight + 88) * progress);
+    }, progress);
+    await expect(tabs.nth(selected)).toHaveAttribute('aria-selected', 'true');
+    await expect(page.getByRole('tabpanel')).toHaveCount(1);
+  }
+  await tabs.nth(0).click();
+  await expect(tabs.nth(0)).toHaveAttribute('aria-selected', 'true');
+  await expect(page.getByRole('tabpanel')).toContainText('Your orchard.');
 });
 
-test('WebGL failure retains the static view and usable semantic controls', async ({ page }) => {
- await page.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type:string,...args:unknown[]){if(type==='webgl'||type==='webgl2'||type==='experimental-webgl')return null;return original.apply(this,[type,...args] as never);} as typeof original;});
- await page.goto('/');await page.locator('#anatomy').scrollIntoViewIfNeeded();await page.waitForTimeout(1800);
- await expect(page.locator('.anatomy-visual')).toHaveAttribute('data-renderer','poster');
- await expect(page.locator('.anatomy-poster img')).toBeVisible();
- await page.getByRole('tab',{name:/Data What the system remembers/}).click();
- await expect(page.locator('#anatomy-detail')).toContainText('What the system remembers.');
+test('all featured projects have usable direct links after keyboard selection', async ({page}) => {
+  await page.emulateMedia({reducedMotion: 'reduce'});
+  await page.goto('/');
+  const tabs = page.getByRole('tablist', {name: 'Featured projects'}).getByRole('tab');
+  await tabs.nth(0).focus();
+  await tabs.nth(0).press('ArrowRight');
+  await expect(tabs.nth(1)).toBeFocused();
+  await expect(page.getByRole('tabpanel').getByRole('link')).toHaveAttribute('href', '/projects/plant-health-clinic');
+  await tabs.nth(1).press('End');
+  await expect(page.getByRole('tabpanel').getByRole('link')).toHaveAttribute('href', '/projects/skiie');
+  await tabs.nth(2).press('Home');
+  await page.getByRole('tabpanel').getByRole('link').click();
+  await expect(page).toHaveURL(/\/projects\/baghban$/);
+  await expect(page.locator('main h1')).toHaveText('BaghBani');
 });
 
-test('the studio tour supports pause, all scenes, focus containment and close', async ({ page }) => {
- await page.goto('/');const trigger=page.getByRole('button',{name:'Take the studio tour'});await trigger.click();
- const tour=page.getByRole('dialog',{name:'The work, in focus.'});await expect(tour).toBeVisible();
- await page.getByRole('button',{name:'Pause tour'}).click();await expect(page.getByRole('button',{name:'Play tour'})).toBeVisible();
- await tour.getByRole('button',{name:/Plant Health Clinic/}).click();await expect(tour.locator('.tour-description h2')).toHaveText('Expertise, a little closer.');
- await tour.getByRole('button',{name:/SKIIE/}).click();await expect(tour.locator('.tour-browser')).toBeVisible();
- await page.getByRole('button',{name:'Close studio tour'}).focus();await page.keyboard.press('Shift+Tab');
- expect(await page.evaluate(()=>!!document.activeElement?.closest('.studio-tour'))).toBe(true);
- await page.keyboard.press('Escape');await expect(tour).not.toBeVisible();await expect(trigger).toBeFocused();
- await expect(page.locator('body')).not.toHaveClass(/has-overlay/);
+test('reduced motion disables scroll choreography while preserving product selection', async ({page}) => {
+  await page.emulateMedia({reducedMotion: 'reduce'});
+  await page.goto('/');
+  await expect(page.locator('html')).toHaveAttribute('data-motion', 'off');
+  await expect(page.locator('#work')).not.toHaveAttribute('data-scroll-showcase', 'on');
+  await expect(page.locator('html')).not.toHaveClass(/lenis/);
+  await page.getByRole('tab', {name: 'SKIIE', exact: true}).click();
+  await expect(page.getByRole('tabpanel')).toContainText('A home for');
+  await expect(page.getByRole('button', {name: 'Reduced motion follows your system'})).toBeDisabled();
 });
 
-test('the tour advances only after the visitor opens it and can enter a real project', async ({ page }) => {
- await page.goto('/');await expect(page.locator('.studio-tour')).toHaveCount(0);
- await page.getByRole('button',{name:'Take the studio tour'}).click();
- await expect(page.locator('.tour-scene')).toHaveAttribute('data-scene','phc',{timeout:10000});
- await page.getByRole('button',{name:'Pause tour'}).click();await page.getByRole('link',{name:'Explore this project',exact:true}).click();
- await expect(page).toHaveURL(/\/projects\/plant-health-clinic$/);await expect(page.locator('.studio-tour')).toHaveCount(0);await expect(page.locator('body')).not.toHaveClass(/has-overlay/);
+test('normal and reduced motion can be changed during the same visit', async ({page}) => {
+  await page.goto('/');
+  await expect(page.locator('#work')).toHaveAttribute('data-scroll-showcase', 'on');
+  await page.getByRole('button', {name: 'Reduce decorative motion'}).click();
+  await expect(page.locator('html')).toHaveAttribute('data-motion', 'off');
+  await expect(page.locator('#work')).not.toHaveAttribute('data-scroll-showcase', 'on');
+  await page.getByRole('button', {name: 'Enable decorative motion'}).click();
+  await expect(page.locator('html')).toHaveAttribute('data-motion', 'on');
+  await expect(page.locator('#work')).toHaveAttribute('data-scroll-showcase', 'on');
 });
 
-test('workflow sequence shows context, draft and expert review without fake diagnoses', async ({ page }) => {
- await page.goto('/');for(const [label,index,title] of [['Context','1','Bring the knowledge closer.'],['Draft','2','Assist. Don’t replace.'],['Review','3','The expert makes the call.']] as const){
-  await page.getByRole('button',{name:`Step ${Number(index)+1}: ${label}`}).click();await expect(page.locator('.care-visual')).toHaveAttribute('data-step',index);await expect(page.locator('.care-narrative h3')).toHaveText(title);
- }
- await expect(page.locator('.care-visual-bottom')).toContainText('No live diagnosis');
- await page.getByRole('button',{name:'Play workflow sequence'}).click();await expect(page.locator('.care-visual')).toHaveAttribute('data-step','1',{timeout:5000});
- await page.getByRole('button',{name:'Pause workflow sequence'}).click();await page.waitForTimeout(3000);await expect(page.locator('.care-visual')).toHaveAttribute('data-step','1');
-});
-
-test('the real interface specimen responds to layout, spacing and selection', async ({ page }) => {
- const writes:string[]=[];page.on('request',r=>{if(r.method()==='POST')writes.push(r.url());});
- await page.goto('/');await page.locator('#craft').scrollIntoViewIfNeeded();
- await page.getByRole('button',{name:'Wide',exact:true}).click();await expect(page.locator('#study-width')).toHaveValue('650');
- await expect.poll(()=>page.locator('.study-app-body').evaluate(e=>getComputedStyle(e).display)).toBe('grid');
- await page.getByRole('button',{name:'Compact',exact:true}).click();await expect(page.locator('.study-screen')).toHaveAttribute('data-density','compact');
- await page.getByRole('button',{name:/Expert consultation A little clarity/}).click();await page.getByRole('button',{name:'Evening',exact:true}).click();
- await expect(page.locator('.study-summary')).toContainText('Evening');await page.getByRole('button',{name:'Preview selection',exact:true}).click();
- await expect(page.locator('.study-summary')).toContainText('No appointment was created.');expect(writes).toEqual([]);
- await page.getByRole('button',{name:'Reset the study'}).click();await expect(page.locator('#study-width')).toHaveValue('390');await expect(page.locator('.study-screen')).toHaveAttribute('data-density','roomy');
- await expect(page.locator('.study-summary')).toContainText('Orchard planning');await expect(page.locator('.study-summary')).toContainText('Morning');
-});
-
-test('the screen atlas opens the correct actual capture and filters remain direct', async ({ page }) => {
- await page.goto('/projects');await expect(page.locator('.screen-atlas')).toBeVisible();
- await page.getByRole('link',{name:'Inspect Plant Health Clinic: Farmer home',exact:true}).click();
- await expect(page.locator('#project-viewer')).toBeVisible();await expect(page.locator('#project-viewer h2')).toHaveText('Plant Health Clinic');
- await page.keyboard.press('Escape');await page.getByRole('navigation',{name:'Filter projects by discipline'}).getByRole('link',{name:'Research',exact:true}).click();
- await expect(page.locator('.screen-atlas')).toHaveCount(0);await expect(page.locator('.work-index-item')).toHaveCount(1);
-});
-
-test('the studio method keeps all information accessible while the artifact changes', async ({ page }) => {
- await page.goto('/about');await expect(page.locator('.method-stories article')).toHaveCount(4);
- await page.locator('#method-2').scrollIntoViewIfNeeded();await expect(page.locator('.method-stage')).toHaveAttribute('data-active','2');
- await page.locator('#method-3').scrollIntoViewIfNeeded();await expect(page.locator('.method-stage')).toHaveAttribute('data-active','3');
- await expect(page.locator('.method-handover')).toContainText('Scope and handover are agreed per project.');
-});
-
-test('reduced motion bypasses WebGL, smooth scrolling and autoplay without losing content', async ({ page }) => {
- await page.emulateMedia({reducedMotion:'reduce'});await page.goto('/');await page.locator('#anatomy').scrollIntoViewIfNeeded();
- await expect(page.locator('html')).toHaveAttribute('data-motion','off');await expect(page.locator('html')).not.toHaveClass(/lenis/);
- await expect(page.locator('.anatomy-visual')).toHaveAttribute('data-renderer','poster');await expect(page.locator('.anatomy-canvas')).toHaveCount(0);
- await page.getByRole('button',{name:'Take the studio tour'}).click();await expect(page.getByRole('button',{name:'Play tour'})).toBeDisabled();
- await page.getByRole('button',{name:'Close studio tour'}).click();await page.getByRole('button',{name:'Step 4: Review'}).click();await expect(page.locator('.care-narrative')).toContainText('The expert makes the call.');
-});
-
-test('without JavaScript the portfolio, layer poster and real project links remain visible', async ({ browser,baseURL }) => {
- const context=await browser.newContext({javaScriptEnabled:false,baseURL,viewport:{width:390,height:844}});const page=await context.newPage();
- try{await page.goto('/');await expect(page.locator('#hero-title')).toBeVisible();await page.locator('#anatomy').scrollIntoViewIfNeeded();await expect(page.locator('.anatomy-poster img')).toBeVisible();
- await expect(page.locator('#anatomy-detail')).toContainText('What people touch.');await page.getByRole('link',{name:'See the product behind the study'}).click();await expect(page).toHaveURL(/\/projects\/baghban\/?$/);await expect(page.locator('main h1')).toHaveText('Baghban');
- }finally{await context.close();}
+test('project browsing and returning home leave ordinary scrolling available', async ({page}) => {
+  await page.goto('/');
+  await page.getByRole('navigation', {name: 'Main navigation', exact: true}).getByRole('link', {name: 'Work', exact: true}).click();
+  await expect(page).toHaveURL(/\/projects$/);
+  await page.locator('#site-header').getByRole('link', {name: 'KashCrop Innovations home'}).click();
+  await expect(page.locator('main h1')).toBeVisible();
+  await expect(page.locator('body')).not.toHaveClass(/has-overlay/);
+  await page.mouse.wheel(0, 700);
+  await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(200);
 });

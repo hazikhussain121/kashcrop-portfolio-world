@@ -5,21 +5,41 @@
 brand
 
 ## Users
-Founders, institutional leaders, and agricultural experts in Kashmir (and globally) looking for practical, robust digital systems. They need tools that work in the real world (low connectivity, multilingual, actual workflows), not just prototypes.
+
+Founders, institutional leaders, and agricultural experts in Kashmir and beyond who need practical digital systems. They care about actual workflows, field conditions including low connectivity, multilingual use, clear language, and reliable operation after delivery.
 
 ## Product Purpose
-To showcase KashCrop Innovations' portfolio, explain the studio's pragmatic engineering philosophy ("Proof, not promises"), and capture high-intent leads for full-stack apps, web platforms, and applied AI projects. 
+
+Show KashCrop Innovations’ real portfolio, explain its connected approach to product design, engineering, and applied AI, and capture project enquiries. Visitors should quickly understand what the studio builds, see the work clearly, and find a direct next step.
 
 ## Brand Personality
-Grounded, pragmatic, expert, confident, direct. The voice emphasizes shipping real software for real use cases over generic startup theater.
 
-## Anti-references
-Generic SaaS boilerplate (cream/sand/biscuit backgrounds), vaporware marketing, playful/sketchy illustrations, "insanely rounded" (32px+) card UI. Do not use generic 01/02/03 scaffolding unless it's an actual sequence. 
+Grounded, expert, confident, and direct. Let the products demonstrate the quality of the work. Keep copy concise, specific, and rooted in what has actually been built.
+
+## Visual Commitment
+
+The user explicitly selected an Apple-inspired redesign on 8 October 2026: familiar product presentation, confident sans-serif typography, white and silver surfaces, clear hierarchy, and ambitious product animation.
+
+Adapt that presentation to KashCrop’s own identity. Preserve the existing red-and-green logo, original company wording, and real project content. Native system sans with locally hosted Geist fallback replaces the previous Fraunces pairing. The surrounding website uses one neutral visual system across every route.
+
+DESIGN.md and its .impeccable/design.json sidecar document the implemented system. Product colors remain in the actual interfaces and selected presentation stages.
 
 ## Design Principles
-- Proof, not promises. (Show real product footage, not mockups)
-- Direct and grounded. (Keep copy and visuals focused on real-world utility)
-- Expert confidence. (Subdued, deliberate layout over loud, shouting UI)
+
+- Lead with the work. Show real product interfaces at a useful scale.
+- Make exploration easy. Keep projects, services, supporting details, and contact routes clear.
+- Keep the complete story. Project pages retain capabilities, scope, technologies, references, and source context.
+- Give motion a purpose. Use layered entrances, chapter changes, and product depth while preserving a complete static experience.
+- Keep claims grounded. Historical captures and demonstrations describe interface work; they do not establish current release status, model accuracy, adoption, or laboratory results.
+
+## Anti-references
+
+Fragmented visual identities, dense technical decoration, generic software mockups, invented project metrics, unrelated background imagery, and interaction demos that interrupt understanding the portfolio.
+
+The previous serif/red-room direction is superseded. Use the current approved system for future additions.
 
 ## Accessibility & Inclusion
-WCAG AA compliance. Needs standard contrast minimums and reduced-motion alternatives, ensuring accessibility for diverse users and regions.
+
+Meet WCAG AA contrast requirements and provide visible keyboard focus, readable text, responsive layouts, and reduced-motion support. Respect the site’s motion preference and reduced-transparency settings.
+
+Preserve accessible dialog behavior, direct links, searchable URL state, useful empty/error states, and readable scrolling for long interface captures. Optional recordings use manual controls and pause when their disclosure closes.
