@@ -18,11 +18,11 @@ Grounded, expert, confident, and direct. Let the products demonstrate the qualit
 
 ## Visual Commitment
 
-The user explicitly selected an Apple-inspired redesign on 8 October 2026: familiar product presentation, confident sans-serif typography, white and silver surfaces, clear hierarchy, and ambitious product animation.
+On 9 October 2026 the founder rejected the 8 October Apple-inspired presentation as too basic and overly familiar. The approved direction is now **FIELDWORK**, an experimental but readable editorial software-studio portfolio: monumental bespoke-feeling typography, carefully limited vermilion/ink/paper colors, art-directed project worlds and real interface evidence. The portfolio should have its own creative identity rather than borrow Apple's visual language.
 
-Adapt that presentation to KashCrop’s own identity. Preserve the existing red-and-green logo, original company wording, and real project content. Native system sans with locally hosted Geist fallback replaces the previous Fraunces pairing. The surrounding website uses one neutral visual system across every route.
+Begin with the live homepage and BaghBani case file; preserve the old routes while converting them. The studio should feel capable of designing and engineering actual systems. No fabricated app screens, stock farming illustrations, invented growth metrics, boilerplate agency cards or decorative 3D clutter. User asks for craftsmanship, not more explanation.
 
-DESIGN.md and its .impeccable/design.json sidecar document the implemented system. Product colors remain in the actual interfaces and selected presentation stages.
+The old Apple presentation is archived as a historical iteration and remains temporarily active on unconverted secondary routes. The current source is `docs/design/FIELDWORK_2026-10-09.md`.
 
 ## Project Packages
 
@@ -30,7 +30,7 @@ The user confirmed four offers on 8 October 2026: one-time payment for the agree
 
 Each quote defines development scope, hosting term, maintenance coverage and third-party charges. The publisher account remains in the client’s name, with delegated management access. Google account verification and app review apply.
 
-Help visitors compare written quotes through concrete questions and clear KashCrop answers. Do not invent exclusions or prices for other providers. The canonical wording is in app/data/portfolio/offer.ts; the presentation and verification are recorded in docs/design/APPLE_OVERDRIVE_2026-10-08.md.
+Help visitors understand what is included in a quoted package without invented competitor omissions, fabricated prices or unqualified promises. The canonical wording is in app/data/portfolio/offer.ts. The new homepage uses an editorial service narrative instead of the comparison table; the legacy Services page still carries the historical comparison pending redesign.
 
 ## Design Principles
 
@@ -44,7 +44,7 @@ Help visitors compare written quotes through concrete questions and clear KashCr
 
 Fragmented visual identities, dense technical decoration, generic software mockups, invented project metrics, unrelated background imagery, and interaction demos that interrupt understanding the portfolio.
 
-The previous serif/red-room direction is superseded. Use the current approved system for future additions.
+The previous serif/red-room and Apple-inspired directions are superseded. Use the Fieldwork grammar for future additions, adapting per project without reintroducing generic templates.
 
 ## Accessibility & Inclusion
 

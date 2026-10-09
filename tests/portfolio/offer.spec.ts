@@ -1,27 +1,15 @@
 import {test, expect} from '@playwright/test';
 
-test('package controls keep their own accessible panel and project selection independent', async ({page}) => {
-  await page.goto('/');
-  const stage = page.locator('.kc-package-stage');
-  const tabs = stage.getByRole('tablist', {name: 'Explore the project package'}).getByRole('tab');
-  await tabs.nth(0).focus();
-  await tabs.nth(0).press('ArrowLeft');
-  await expect(tabs.nth(2)).toBeFocused();
-  await expect(tabs.nth(2)).toHaveAttribute('aria-selected', 'true');
-  await expect(stage.getByRole('tabpanel')).toContainText('up to four years');
-  await expect(stage.getByRole('tabpanel')).toHaveAttribute('aria-labelledby', 'package-tab-2');
-  await tabs.nth(2).press('ArrowRight');
-  await expect(tabs.nth(0)).toBeFocused();
-  await tabs.nth(0).press('End');
-  await expect(tabs.nth(2)).toBeFocused();
-  await tabs.nth(2).press('Home');
-  await expect(tabs.nth(0)).toBeFocused();
-  await expect(stage.getByRole('tabpanel')).toHaveCount(1);
-  await expect(stage.locator('.kc-package-device img.is-active')).toHaveCount(1);
-  await tabs.nth(0).press('Tab');
-  await expect(stage.getByRole('tabpanel')).toBeFocused();
-  await page.locator('#work').getByRole('tab', {name: 'Plant Health Clinic', exact: true}).click();
-  await expect(stage.getByRole('tabpanel')).toHaveAttribute('id', 'package-panel-0');
+test('the homepage explains the scoped package without an invented competitor table',async({page})=>{
+ await page.goto('/');
+ const section=page.locator('.fw-capabilities');
+ await expect(section.getByRole('heading',{name:/We stay for/})).toBeVisible();
+ await expect(section.locator('.fw-capability')).toHaveCount(3);
+ await expect(section).toContainText('Maintenance options up to four years');
+ await expect(section).toContainText('Play Console');
+ await expect(page.locator('main table')).toHaveCount(0);
+ await page.getByRole('link',{name:'Explore how we work'}).click();
+ await expect(page).toHaveURL(/\/services$/);
 });
 
 for (const viewport of [{width: 390, height: 844}, {width: 1440, height: 960}]) {

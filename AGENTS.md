@@ -10,8 +10,6 @@ Read these before UI work:
 - [DESIGN.md](DESIGN.md): the approved visual system and its implementation sources.
 - [.impeccable/design.json](.impeccable/design.json): motion, elevation, breakpoints, and self-contained component previews.
 
-The user explicitly replaced the earlier Fraunces/red-room direction with an Apple-inspired presentation on 8 October 2026. Use native system sans with locally hosted Geist fallback, white/silver surfaces, neutral actions, the existing KashCrop logo, and actual product imagery. Do not revive the obsolete font pairing or invent another palette.
-
-PRODUCT.md governs product truth and voice. DESIGN.md governs visual decisions. The current implementation is defined by app/styles/portfolio/apple-base.css, apple.css, and apple-pages.css; unused older styles are not visual authority.
+**Current direction, 9 October 2026:** User explicitly rejected the generic Apple-inspired portfolio and requested an Awwwards-caliber studio identity with character and taste. The current design is FIELDWORK: editorial typography, asymmetry, vermilion/cream/ink color, and real case-study evidence. See [docs/design/FIELDWORK_2026-10-09.md](docs/design/FIELDWORK_2026-10-09.md). The Apple direction from 8 October is now **historical**; do not restore it over the Fieldwork homepage or BaghBani case. The unconverted pages temporarily retain existing Apple styling and behavior. The newest visual source of truth is `app/styles/portfolio/fieldwork.css` and the two Fieldwork components.
 
 Preserve project/service loaders, aliases, URL filters, screen IDs, GalleryLink viewer behavior, source captions, and the contact workflow. Default BaghBani presentation uses its actual home screen; historical recordings remain optional and labeled. Keep reduced-motion and keyboard access functional when adding animation.

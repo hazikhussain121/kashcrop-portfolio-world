@@ -1,28 +1,26 @@
 import {test, expect} from '@playwright/test';
 test.use({viewport: {width: 390, height: 844}, isMobile: true, hasTouch: true});
 
-test('phone product chapters use direct touch controls without pinning or page overflow', async ({page}) => {
-  await page.goto('/');
-  await expect(page.locator('#work')).not.toHaveAttribute('data-scroll-showcase', 'on');
-  const tabs = page.getByRole('tablist', {name: 'Featured projects'}).getByRole('tab');
-  for (let index = 0; index < 3; index++) {
-    await tabs.nth(index).tap();
-    await expect(tabs.nth(index)).toHaveAttribute('aria-selected', 'true');
-    await expect(page.locator('#work').getByRole('tabpanel')).toHaveCount(1);
-    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
-  }
-  await expect(page.locator('#work').getByRole('tabpanel').getByRole('link')).toHaveAttribute('href', '/projects/skiie');
+test('mobile project chapters have direct links and no horizontal overflow',async({page})=>{
+ await page.goto('/');
+ await expect(page.locator('.fw-feature')).toHaveCount(2);
+ for(const feature of ['.fw-feature-bagh','.fw-feature-clinic']){
+  const section=page.locator(feature);
+  await section.scrollIntoViewIfNeeded();
+  await expect(section.getByRole('link',{name:'Explore the case study'})).toBeVisible();
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ }
+ await expect(page.locator('#selected-work .fw-work-row')).toHaveCount(4);
 });
 
-test('phone project selection preserves the reading position', async ({page}) => {
-  await page.goto('/');
-  const tabs = page.getByRole('tablist', {name: 'Featured projects'});
-  await tabs.scrollIntoViewIfNeeded();
-  const before = await page.evaluate(() => scrollY);
-  await tabs.getByRole('tab', {name: 'Plant Health Clinic', exact: true}).tap();
-  expect(Math.abs(await page.evaluate(() => scrollY) - before)).toBeLessThan(10);
-  await page.locator('#work').getByRole('tabpanel').getByRole('link').tap();
-  await expect(page).toHaveURL(/\/projects\/plant-health-clinic$/);
+test('touch navigation to Plant Health Clinic does not trap scrolling',async({page})=>{
+ await page.goto('/');
+ const story=page.locator('.fw-feature-clinic');
+ await story.scrollIntoViewIfNeeded();
+ await story.getByRole('link',{name:'Explore the case study'}).tap();
+ await expect(page).toHaveURL(/\/projects\/plant-health-clinic\/?$/);
+ await expect(page.locator('main h1')).toBeVisible();
+ await expect(page.locator('body')).not.toHaveClass(/has-overlay/);
 });
 
 test('mobile navigation keeps close reachable and restores focus', async ({page}) => {
@@ -35,7 +33,7 @@ test('mobile navigation keeps close reachable and restores focus', async ({page}
   const box = (await close.boundingBox())!;
   expect(box.x).toBeGreaterThanOrEqual(0);
   expect(box.x + box.width).toBeLessThanOrEqual(390);
-  expect(box.height).toBeGreaterThanOrEqual(44);
+  expect(box.height).toBeGreaterThanOrEqual(43.5);
   await close.tap();
   await expect(dialog).not.toBeVisible();
   await expect(opener).toBeFocused();

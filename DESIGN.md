@@ -1,18 +1,21 @@
 ---
 name: KashCrop Innovations
-description: Apple-inspired product presentation with KashCrop identity, real interfaces, and confident motion.
+description: FIELDWORK editorial studio identity with monumental typography and genuine project evidence.
 colors:
-  paper: "#fff"
+  paper: "#eeece5"
   surface: "#f5f5f7"
-  ink: "#1d1d1f"
+  ink: "#151715"
   muted: "#6e6e73"
   display-muted: "#77777d"
   line: "rgba(29,29,31,.14)"
   line-solid: "#d2d2d7"
   control-hover: "#373739"
   control-track: "#e8e8ed"
-  focus: "#0067d6"
+  focus: "#f6b600"
   selection: "#d8e7fa"
+  fieldwork-vermilion: "#bd3827"
+  fieldwork-leaf: "#dce683"
+  fieldwork-orchard: "#123b2e"
   garden-stage: "#edf3ed"
   clinic-stage: "#edf3f7"
   package-stage: "#101b16"
@@ -111,6 +114,16 @@ components:
     backgroundColor: "rgba(255,255,255,.84)"
     textColor: "{colors.ink}"
     height: "64px"
+---
+
+## CURRENT / FIELDWORK / 9 OCTOBER 2026
+
+This document retains older Apple-stage token and component reference sections for unconverted routes. **These are not the current design authority for the home or BaghBani case.** The latest brief and accurate token palette are in [FIELDWORK_2026-10-09.md](docs/design/FIELDWORK_2026-10-09.md), and the implemented styles are in `app/styles/portfolio/fieldwork.css`.
+
+Fieldwork is an experimental editorial system: oversized close-set Geist display typography, restrained Georgia italic contrast, ink on warm paper, deeper accessible vermilion, finely tracked mono case labels, graphic rules, real product screenshots, and distinct story formats per project. Do not reintroduce translucent SaaS cards, comparison tables on the homepage, invented KPI metrics, or generic Apple-like silver surfaces.
+
+The brand-specific logo, real project data, links, source and accuracy notes, reduced-motion behavior, and direct contact workflow are unchanged.
+
 ---
 
 # Design System: KashCrop Innovations

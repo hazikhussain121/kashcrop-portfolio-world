@@ -1,22 +1,17 @@
 import {test, expect} from '@playwright/test';
 
-test('project tabs keep selected labels and visible panels coherent', async ({page}) => {
+test('featured case studies are direct, descriptive links', async ({page}) => {
   await page.goto('/');
-  const tabs = page.getByRole('tablist', {name: 'Featured projects'});
-  await tabs.getByRole('tab', {name: 'Plant Health Clinic', exact: true}).click();
-  await expect(page.locator('#work').getByRole('tabpanel')).toContainText('Plant Health Clinic');
-  await expect(page.locator('#work').getByRole('tabpanel')).toHaveCount(1);
-  await tabs.getByRole('tab', {name: 'SKIIE', exact: true}).click();
-  await expect(page.locator('#work').getByRole('tabpanel')).toContainText('SKIIE');
-  await tabs.getByRole('tab', {name: 'BaghBani', exact: true}).click();
-  await expect(page.locator('#work').getByRole('tabpanel')).toContainText('Your orchard.');
-  await page.keyboard.press('End');
-  await expect(tabs.getByRole('tab', {name: 'SKIIE', exact: true})).toHaveAttribute('aria-selected', 'true');
+  const selected=page.locator('#selected-work');
+  await expect(selected.getByRole('heading', {name: /Proof, not/})).toBeVisible();
+  await expect(selected.locator('.fw-feature')).toHaveCount(2);
+  await expect(selected.locator('.fw-work-row')).toHaveCount(4);
+  await expect(selected.getByRole('link', {name:'Explore the case study'})).toHaveCount(2);
 });
 
 test('a project screen link opens the selected actual capture', async ({page}) => {
   await page.goto('/projects/baghban');
-  await page.getByRole('link', {name: 'Inspect BaghBani: Seasonal calendar', exact: true}).click();
+  await page.getByRole('link', {name: 'Explore the calendar', exact: true}).click();
   await expect(page.locator('#project-viewer')).toBeVisible();
   await expect(page.locator('.viewer-screen-heading h3')).toHaveText('Seasonal calendar');
   await expect(page.locator('#project-viewer img[alt="BaghBani: Seasonal calendar"]')).toHaveAttribute('src', /garden-calendar.webp/);

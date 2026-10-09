@@ -58,7 +58,7 @@ test('all six optional project films play with provenance and static product con
     expect(poster).toMatch(/poster\.webp$/);
     expect((await page.request.get(poster!)).status()).toBe(200);
     await expect(page.locator('.ap-film-provenance')).toContainText('demonstration data');
-    await expect(page.locator('.ap-case-story')).toBeVisible();
+    await expect(page.locator(slug === 'baghban' ? '.fw-case-context' : '.ap-case-story')).toBeVisible();
   }
 });
 
@@ -107,7 +107,7 @@ test('a failed movie retains its poster, product content and optional recording 
   expect(await video.evaluate((element: HTMLVideoElement) => element.readyState)).toBe(0);
   await video.evaluate((element: HTMLVideoElement) => element.pause());
   await expect(video).toHaveAttribute('poster', /poster\.webp$/);
-  await expect(page.locator('.ap-case-story')).toBeVisible();
+  await expect(page.locator('.fw-case-context')).toBeVisible();
   await expect(page.getByRole('link', {name: 'Watch the mobile recording'})).toHaveAttribute('href', /film-mobile\.mp4$/);
 });
 
@@ -134,7 +134,7 @@ test('without JavaScript the product and native optional film remain available',
     await context.route('**/*', route => new URL(route.request().url()).origin === new URL(baseURL!).origin ? route.continue() : route.abort());
     const page = await context.newPage();
     await page.goto('/projects/baghban');
-    await expect(page.locator('.ap-case-stage img').last()).toBeVisible();
+    await expect(page.locator('.fw-case-object img').last()).toBeVisible();
     const video = await openFilm(page);
     await expect(video).not.toHaveAttribute('autoplay');
     await expect(video.locator('source')).toHaveAttribute('src', /\.mp4$/);

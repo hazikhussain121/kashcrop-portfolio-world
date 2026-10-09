@@ -5,6 +5,7 @@ import { projectFilms } from '~/data/portfolio/films';
 import { Breadcrumbs, GalleryLink } from '~/components/portfolio/UI';
 import { Icon } from '~/components/portfolio/Icon';
 import { breadcrumbSchema, pageMeta } from '~/lib/portfolio/seo';
+import FieldworkBaghBani from '~/components/portfolio/FieldworkBaghBani';
 
 export function loader({ params, request }: Pick<LoaderFunctionArgs, 'params' | 'request'>) {
   const slug = params.slug ?? '';
@@ -47,6 +48,7 @@ function ProjectStage({ project }: { project: Project }) {
 
 export default function ProjectPage() {
   const { project: p } = useLoaderData<typeof loader>();
+  if (p.slug === 'baghban') return <FieldworkBaghBani project={p} />;
   const next = projects[(projects.findIndex(project => project.slug === p.slug) + 1) % projects.length];
   const services = serviceCatalog.filter(service => service.projects.includes(p.slug));
   const film = projectFilms[p.slug];

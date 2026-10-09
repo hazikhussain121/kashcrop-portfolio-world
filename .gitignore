@@ -6,3 +6,6 @@ node_modules
 .react-router
 .wrangler
 .DS_Store
+
+# Generated QA captures and Playwright traces
+artifacts/

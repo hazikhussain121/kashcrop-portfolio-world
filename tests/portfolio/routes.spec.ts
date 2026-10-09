@@ -20,10 +20,10 @@ test('the core portfolio remains useful without JavaScript',async({browser,baseU
  try {
   const page=await context.newPage();
   await page.goto('/');
-  await expect(page.getByRole('heading',{name:'Good ideas. Beautifully built.'})).toBeVisible();
-  await page.getByRole('link',{name:'Explore BaghBani',exact:true}).click();
+  await expect(page.getByRole('heading',{name:/THE WORK HAS TO WORK/})).toBeVisible();
+  await page.getByRole('link',{name:'Explore the case study',exact:true}).first().click();
   await expect(page).toHaveURL(/\/projects\/baghban\/?$/);
-  await expect(page.getByRole('heading',{name:'BaghBani',exact:true})).toBeVisible();
+  await expect(page.locator('main h1')).toHaveText('BaghBani');
   await page.goto('/contact');
   await expect(page.locator('form')).toHaveAttribute('action','https://api.web3forms.com/submit');
   expect(await page.locator('form').getAttribute('novalidate')).toBeNull();

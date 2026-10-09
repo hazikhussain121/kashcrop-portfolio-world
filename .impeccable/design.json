@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-08T15:39:57Z",
+  "generatedAt": "2026-10-09T15:00:00Z",
   "title": "Design System: KashCrop Innovations",
   "extensions": {
     "colorMeta": {
@@ -576,7 +576,30 @@
         "name": "package-mobile",
         "value": "max-width: 750px"
       }
-    ]
+    ],
+    "fieldwork": {
+      "status": "current",
+      "guidance": "FIELDWORK supersedes Apple on homepage and BaghBani; other pages are deliberately transitional. See docs/design/FIELDWORK_2026-10-09.md.",
+      "colors": {
+        "paper": "#eeece5",
+        "ink": "#151715",
+        "vermilion": "#bd3827",
+        "leaf": "#dce683",
+        "orchard": "#123b2e"
+      },
+      "typography": {
+        "display": "Geist 700 tight tracking -0.07 to -0.11em",
+        "accent": "Georgia italic",
+        "micro": "system monospace tracked uppercase"
+      },
+      "components": [
+        "Editorial cover",
+        "Case-file chapter",
+        "Evidence viewer",
+        "Real-screen exhibit",
+        "Three-part lifecycle narrative"
+      ]
+    }
   },
   "components": [
     {
@@ -650,8 +673,8 @@
     }
   ],
   "narrative": {
-    "northStar": "The product, beautifully presented.",
-    "overview": "The approved direction is an Apple-inspired presentation adapted to KashCrop’s own work. White and silver surfaces, confident sans-serif headlines, clear product photography and interface captures create a familiar visual rhythm. Motion gives the products scale and depth while navigation and controls stay direct.\n\nThis system replaces the earlier Fraunces and red-room identity. Keep KashCrop’s existing red-and-green logo and original copy. The products supply their own colors inside real screenshots; the surrounding website remains neutral.",
+    "northStar": "The work has to work. A distinctive editorial software studio portfolio with real product proof.",
+    "overview": "The 9 October 2026 FIELDWORK art direction supersedes the 8 October Apple style on converted pages. Preserve case provenance and the existing product data. Unconverted routes retain prior styles until separately reviewed.",
     "keyCharacteristics": [
       "Large native sans-serif type, with a locally hosted Geist fallback.",
       "Real software presented at a readable scale.",
