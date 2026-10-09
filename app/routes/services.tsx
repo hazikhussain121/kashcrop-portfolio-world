@@ -2,7 +2,6 @@ import { Link, type MetaFunction } from 'react-router';
 import { getProject, media } from '~/data/portfolio/catalog';
 import { serviceCatalog, type Service } from '~/data/portfolio/services';
 import { Icon } from '~/components/portfolio/Icon';
-import { OfferComparison } from '~/components/portfolio/KashCropOffer';
 import { pageMeta } from '~/lib/portfolio/seo';
 
 export const meta: MetaFunction = () => pageMeta(
@@ -21,8 +20,8 @@ const serviceHeadlines: Record<string, [string, string]> = {
 function ServicePreview({ service }: { service: Service }) {
   if (service.visual === 'platform') {
     return <div className="ap-service-preview ap-service-platform">
-      <div className="ap-preview-phone ap-service-phone-back"><img src={media('phc-home.webp')} alt="Plant Health Clinic farmer app" width="390" height="844" loading="lazy" decoding="async" /></div>
-      <div className="ap-preview-phone ap-service-phone-front"><img src={media('garden-home.webp')} alt="Baghban orchard services app" width="390" height="844" loading="lazy" decoding="async" /></div>
+      <div className="ap-preview-phone ap-service-phone-back"><img src={media('phc-home.webp')} alt="Plant Health Clinic farmer app" width="390" height="844" loading="eager" decoding="async" /></div>
+      <div className="ap-preview-phone ap-service-phone-front"><img src={media('garden-home.webp')} alt="Baghban orchard services app" width="390" height="844" loading="eager" decoding="async" /></div>
       <span className="ap-visual-note">Baghban &amp; Plant Health Clinic</span>
     </div>;
   }
@@ -68,46 +67,40 @@ function ServicePreview({ service }: { service: Service }) {
 }
 
 export default function ServicesPage() {
-  return <main id="main" className="ap-page">
-    <header className="page-intro ap-page-intro ap-wrap">
-      <h1>Everything it takes.<br /><span>To make it work.</span></h1>
-      <p>Product design, engineering and applied AI.<br className="ap-desktop-break" /> One connected practice, from the first idea to the final detail.</p>
-      <nav className="ap-service-jump" aria-label="Explore our services">
-        {serviceCatalog.map(service => <a href={'#service-' + service.slug} key={service.slug}>{service.name}<Icon name="down" /></a>)}
-      </nav>
-      <div className="ap-service-offer-note">
-        <p>One-time project pricing, hosting and care for up to 4 years, scoped to your project.</p>
-        <a className="ap-text-link" href="#compare">See what’s included <Icon name="right" /></a>
-      </div>
+  return <main id="main" className="fw-services fw-editorial-page">
+    <header className="fw-services-hero fw-edge">
+      <div className="fw-editorial-rail"><span>CAPABILITIES / END TO END</span><span>THE WORK BEHIND THE WORK</span></div>
+      <div className="fw-services-hero-heading"><h1>NO PRETTY<br/><em>DEAD ENDS.</em></h1><p>We design, engineer and deliver useful software. The interface is only the beginning of the story.</p></div>
+      <nav className="fw-services-toc" aria-label="Explore our services">{serviceCatalog.map((service,index)=><a href={'#service-'+service.slug} key={service.slug}><span>{String(index+1).padStart(2,'0')}</span>{service.name}<Icon name="down"/></a>)}</nav>
     </header>
-
-    <section className="ap-services-index ap-wrap" aria-label="Our disciplines">
-      {serviceCatalog.map(service => {
-        const [headline, secondLine] = serviceHeadlines[service.slug];
-        return <article className="ap-service-row" id={'service-' + service.slug} key={service.slug}>
-          <div className="ap-service-copy">
-            <h2>{headline}<br /><span>{secondLine}</span></h2>
-            <h3>{service.name}</h3>
-            <p>{service.description}</p>
-            <ul className="ap-service-includes">{service.includes.slice(0, 3).map(item => <li key={item}><Icon name="check" /><span>{item}</span></li>)}</ul>
-            <Link className="ap-text-link" to={'/services/' + service.slug}>Explore {service.name.toLowerCase()} <Icon name="right" /></Link>
+    <section className="fw-service-sections fw-edge" aria-label="Studio capabilities">
+      {serviceCatalog.map((service,index)=>{
+        const [first,second]=serviceHeadlines[service.slug];
+        return <article className="fw-service-chapter" id={'service-'+service.slug} key={service.slug}>
+          <div className="fw-service-chapter-marker"><span>{String(index+1).padStart(2,'0')} / 04</span><span>{service.name}</span><span>↘</span></div>
+          <div className="fw-service-chapter-main">
+            <div className="fw-service-chapter-copy">
+              <h2>{first}<br/><em>{second}</em></h2><p>{service.description}</p>
+              <ul>{service.includes.slice(0,4).map(item=><li key={item}>{item}</li>)}</ul>
+              <Link className="fw-underlink" to={'/services/'+service.slug}>What goes into {service.name.toLowerCase()} <span aria-hidden="true">↗</span></Link>
+            </div>
+            <div className="fw-service-chapter-visual"><ServicePreview service={service}/></div>
           </div>
-          <div className="ap-service-evidence">
-            <ServicePreview service={service} />
-            {service.projects.length > 0 && <div className="ap-service-projects"><span>See it in practice</span><div>{service.projects.map(slug => {
-              const project = getProject(slug);
-              return project ? <Link to={'/projects/' + slug} key={slug}>{project.name}<Icon name="right" /></Link> : null;
-            })}</div></div>}
-          </div>
+          {service.projects.length>0 && <div className="fw-service-proof"><span>PROOF IN THE WORK</span><div>{service.projects.map(slug=>{const project=getProject(slug);return project?<Link key={slug} to={'/projects/'+slug}>{project.name}<Icon name="right"/></Link>:null})}</div></div>}
         </article>;
       })}
     </section>
-
-    <OfferComparison showClose={false} />
-
-    <section className="ap-working-together ap-wrap">
-      <h2>A clear scope.<br /><span>A shared way forward.</span></h2>
-      <div><p>We agree the development scope and plan ongoing support around the product that ships. It starts with understanding what needs to work.</p><Link className="ap-button" to="/contact">Tell us about your project <Icon name="right" /></Link></div>
+    <section className="fw-terms fw-edge" id="compare" aria-labelledby="fw-terms-title">
+      <div className="fw-editorial-rail"><span>WHAT A COMPLETE PROJECT INCLUDES</span><span>NO SURPRISE PROMISES</span></div>
+      <div className="fw-terms-lead"><h2 id="fw-terms-title">BEYOND<br/><em>LAUNCH DAY.</em></h2><p>A product is more than the moment it goes live. We plan the delivery, hosting and care as part of the real scope.</p></div>
+      <div className="fw-terms-columns">
+        <div><span>01 / DEVELOPMENT</span><h3>One agreed project price.</h3><p>A fixed price for the development scope defined together.</p></div>
+        <div><span>02 / HOSTING</span><h3>The infrastructure matters.</h3><p>Setup and hosting included where agreed, for the term named in the quote.</p></div>
+        <div><span>03 / RELEASES</span><h3>Your account, your control.</h3><p>Play Console account setup and Android release management, subject to Google's verification and review.</p></div>
+        <div><span>04 / CARE</span><h3>Up to four years of support.</h3><p>Maintenance options are scoped by coverage and duration. Third-party charges are stated in writing.</p></div>
+      </div>
+      <div className="fw-terms-bottom"><p>Compare written scopes. Different providers offer different packages; there is no universal checklist.</p><Link to="/contact" className="fw-underlink">Plan your project <span aria-hidden="true">↗</span></Link></div>
     </section>
+    <section className="fw-service-end fw-edge"><p>GOT SOMETHING COMPLEX?</p><h2>GOOD.<br/><em>WE LIKE HARD PROBLEMS.</em></h2><Link to="/contact">Let's talk about it <span aria-hidden="true">↗</span></Link></section>
   </main>;
 }

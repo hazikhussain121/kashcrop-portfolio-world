@@ -20,9 +20,9 @@ Grounded, expert, confident, and direct. Let the products demonstrate the qualit
 
 On 9 October 2026 the founder rejected the 8 October Apple-inspired presentation as too basic and overly familiar. The approved direction is now **FIELDWORK**, an experimental but readable editorial software-studio portfolio: monumental bespoke-feeling typography, carefully limited vermilion/ink/paper colors, art-directed project worlds and real interface evidence. The portfolio should have its own creative identity rather than borrow Apple's visual language.
 
-Begin with the live homepage and BaghBani case file; preserve the old routes while converting them. The studio should feel capable of designing and engineering actual systems. No fabricated app screens, stock farming illustrations, invented growth metrics, boilerplate agency cards or decorative 3D clutter. User asks for craftsmanship, not more explanation.
+The homepage, six case-study routes, Work, Services, About, Contact and site navigation are now in the Fieldwork world on a preview branch. Existing service detail routes retain their functionality and transitional styling. Production remains unchanged. The studio should feel capable of designing and engineering actual systems. No fabricated app screens, stock farming illustrations, invented growth metrics, boilerplate agency cards or decorative 3D clutter. User asks for craftsmanship, not more explanation.
 
-The old Apple presentation is archived as a historical iteration and remains temporarily active on unconverted secondary routes. The current source is `docs/design/FIELDWORK_2026-10-09.md`.
+The old Apple presentation is archived as a historical iteration and its preserved components remain only where service-detail compatibility requires them. The current source is `docs/design/FIELDWORK_2026-10-09.md`.
 
 ## Project Packages
 

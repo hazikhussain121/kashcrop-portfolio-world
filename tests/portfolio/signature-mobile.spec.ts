@@ -42,7 +42,7 @@ test('mobile navigation keeps close reachable and restores focus', async ({page}
 
 test('phone collection opens an actual project capture and releases the viewer', async ({page}) => {
   await page.goto('/projects');
-  await page.getByRole('link', {name: 'View screens', exact: true}).first().tap();
+  await page.getByRole('link', {name: 'Inspect screens', exact: true}).first().tap();
   await expect(page.locator('#project-viewer')).toBeVisible();
   await expect(page.locator('#project-viewer h2')).toHaveText('BaghBani');
   await page.getByRole('button', {name: 'Next project screen'}).tap();

@@ -578,8 +578,8 @@
       }
     ],
     "fieldwork": {
-      "status": "current",
-      "guidance": "FIELDWORK supersedes Apple on homepage and BaghBani; other pages are deliberately transitional. See docs/design/FIELDWORK_2026-10-09.md.",
+      "status": "current across principal studio pages",
+      "guidance": "FIELDWORK supersedes Apple on homepage, Work index, Services, About, Contact and six case study routes. Service details are transitional. See docs/design/FIELDWORK_2026-10-09.md.",
       "colors": {
         "paper": "#eeece5",
         "ink": "#151715",
@@ -674,7 +674,7 @@
   ],
   "narrative": {
     "northStar": "The work has to work. A distinctive editorial software studio portfolio with real product proof.",
-    "overview": "The 9 October 2026 FIELDWORK art direction supersedes the 8 October Apple style on converted pages. Preserve case provenance and the existing product data. Unconverted routes retain prior styles until separately reviewed.",
+    "overview": "9 October 2026 FIELDWORK studio expansion across the main portfolio: editorial covers, actual project evidence, distinct case palette, functional search and enquiry preserved. Service detail routes transitional; no production deployment.",
     "keyCharacteristics": [
       "Large native sans-serif type, with a locally hosted Geist fallback.",
       "Real software presented at a readable scale.",

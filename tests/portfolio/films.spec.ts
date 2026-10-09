@@ -58,7 +58,7 @@ test('all six optional project films play with provenance and static product con
     expect(poster).toMatch(/poster\.webp$/);
     expect((await page.request.get(poster!)).status()).toBe(200);
     await expect(page.locator('.ap-film-provenance')).toContainText('demonstration data');
-    await expect(page.locator(slug === 'baghban' ? '.fw-case-context' : '.ap-case-story')).toBeVisible();
+    await expect(page.locator(slug === 'baghban' ? '.fw-case-context' : slug === 'plant-health-clinic' ? '.fw-clinic-context' : '.fw-other-story')).toBeVisible();
   }
 });
 

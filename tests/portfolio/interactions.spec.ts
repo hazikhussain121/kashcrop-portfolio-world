@@ -19,7 +19,7 @@ test('a project screen link opens the selected actual capture', async ({page}) =
 
 test('viewer supports keyboard, browser history, source details and focus return', async ({page}) => {
   await page.goto('/projects');
-  const trigger = page.getByRole('link', {name: 'View screens', exact: true}).first();
+  const trigger = page.getByRole('link', {name: 'Inspect screens', exact: true}).first();
   await trigger.click();
   await expect(page.locator('#project-viewer')).toBeVisible();
   await expect(page).toHaveURL(/project=baghban/);
@@ -75,13 +75,13 @@ test('long captures scroll at readable width and full-size inspection can pan', 
 test('catalogue filters, search and empty recovery work together', async ({page}) => {
   await page.goto('/projects');
   await page.getByRole('navigation', {name: 'Filter projects by discipline'}).getByRole('link', {name: 'Websites', exact: true}).click();
-  await expect(page.locator('.ap-project-card')).toHaveCount(1);
-  await expect(page.locator('.ap-project-card h2')).toHaveText('SKIIE');
+  await expect(page.locator('.fw-index-entry')).toHaveCount(1);
+  await expect(page.locator('.fw-index-entry h2')).toHaveText('SKIIE');
   await page.getByRole('searchbox').fill('no matching project');
   await page.getByRole('button', {name: 'Search projects', exact: true}).click();
   await expect(page.locator('.ap-empty-results')).toBeVisible();
   await page.getByRole('link', {name: 'Show all work'}).click();
-  await expect(page.locator('.ap-project-card')).toHaveCount(6);
+  await expect(page.locator('.fw-index-entry')).toHaveCount(6);
 });
 
 test('motion preference survives navigation and reload', async ({page}) => {

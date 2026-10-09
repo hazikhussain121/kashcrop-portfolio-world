@@ -16,7 +16,7 @@ const principles = [
 ];
 
 export default function About() {
-  return <main id="main" className="ap-page">
+  return <main id="main" className="ap-page fw-about">
     <header className="page-intro ap-page-intro ap-wrap">
       <h1>Rooted in Kashmir.<br /><span>Open to what’s next.</span></h1>
       <p>We bring product design, engineering and applied AI together.<br className="ap-desktop-break" /> To make useful software feel beautifully simple.</p>

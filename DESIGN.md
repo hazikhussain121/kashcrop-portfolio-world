@@ -118,7 +118,7 @@ components:
 
 ## CURRENT / FIELDWORK / 9 OCTOBER 2026
 
-This document retains older Apple-stage token and component reference sections for unconverted routes. **These are not the current design authority for the home or BaghBani case.** The latest brief and accurate token palette are in [FIELDWORK_2026-10-09.md](docs/design/FIELDWORK_2026-10-09.md), and the implemented styles are in `app/styles/portfolio/fieldwork.css`.
+This document retains older Apple-stage token and component reference sections for unconverted routes. **These are not the current design authority for the converted Fieldwork routes.** The latest brief and accurate token palette are in [FIELDWORK_2026-10-09.md](docs/design/FIELDWORK_2026-10-09.md), and the implemented styles are in `app/styles/portfolio/fieldwork.css` and `app/styles/portfolio/fieldwork-expansion.css`.
 
 Fieldwork is an experimental editorial system: oversized close-set Geist display typography, restrained Georgia italic contrast, ink on warm paper, deeper accessible vermilion, finely tracked mono case labels, graphic rules, real product screenshots, and distinct story formats per project. Do not reintroduce translucent SaaS cards, comparison tables on the homepage, invented KPI metrics, or generic Apple-like silver surfaces.
 
