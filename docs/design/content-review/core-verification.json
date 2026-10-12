@@ -1,0 +1,403 @@
+{
+  "mode": "core",
+  "pages": [
+    {
+      "route": "/",
+      "name": "home-desktop",
+      "status": 200,
+      "title": "Bright ideas. Real things. | KashCrop Innovations",
+      "h1": "Bright ideas.\nReal things.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 8779,
+      "missing": [],
+      "sections": [
+        "Made for real life.",
+        "From the first\n“what if?”",
+        "THE WHOLE\nPACKAGE.",
+        "From idea\nto everyday use.",
+        "Rooted here.\nReaching further.",
+        "Before we\nget started."
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/services",
+      "name": "services-desktop",
+      "status": 200,
+      "title": "What we do | KashCrop Innovations",
+      "h1": "FROM IDEA\nTO IN USE.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 6508,
+      "missing": [],
+      "sections": [
+        "Full-stack apps.",
+        "Websites.",
+        "Applied AI.",
+        "Blockchain.",
+        "THE WHOLE\nPACKAGE.",
+        "WHAT ARE\nYOU MAKING?"
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/about",
+      "name": "about-desktop",
+      "status": 200,
+      "title": "The studio | KashCrop Innovations",
+      "h1": "Small studio.\nOpen horizons.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 4291,
+      "missing": [],
+      "sections": [
+        "Hazik\nHussain.",
+        "Built from Kashmir.\nBuilt around people.",
+        "How we see the work.",
+        "Curiosity has\na few side projects."
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/services/full-stack-apps",
+      "name": "full-stack-desktop",
+      "status": 200,
+      "title": "Full-stack apps | KashCrop Innovations",
+      "h1": "FULL-STACK APPS.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 4277,
+      "missing": [],
+      "sections": [
+        "Full-stack products, built end to end.",
+        "What goes\ninto it.",
+        "A clear path\nthrough the work.",
+        "In the work.",
+        "It all connects.",
+        "YOUR NEXT\nPROJECT?"
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/services/ai-training",
+      "name": "ai-service-desktop",
+      "status": 200,
+      "title": "Applied AI | KashCrop Innovations",
+      "h1": "APPLIED AI.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 4210,
+      "missing": [],
+      "sections": [
+        "AI features connected to the work people do.",
+        "What goes\ninto it.",
+        "A clear path\nthrough the work.",
+        "In the work.",
+        "It all connects.",
+        "YOUR NEXT\nPROJECT?"
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/projects",
+      "name": "work-desktop",
+      "status": 200,
+      "title": "Selected work | KashCrop Innovations",
+      "h1": "THE WORK.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 4230,
+      "missing": [],
+      "sections": [
+        "BaghBani",
+        "Plant Health Clinic",
+        "SKIIE",
+        "KashCrop",
+        "Treat My Fish",
+        "TRACE-AMP"
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/",
+      "name": "home-mobile",
+      "status": 200,
+      "title": "Bright ideas. Real things. | KashCrop Innovations",
+      "h1": "Bright ideas.\nReal things.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 12078,
+      "missing": [],
+      "sections": [
+        "Made for real life.",
+        "From the first\n“what if?”",
+        "THE WHOLE\nPACKAGE.",
+        "From idea\nto everyday use.",
+        "Rooted here.\nReaching further.",
+        "Before we\nget started."
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/services",
+      "name": "services-mobile",
+      "status": 200,
+      "title": "What we do | KashCrop Innovations",
+      "h1": "FROM IDEA\nTO IN USE.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 8335,
+      "missing": [],
+      "sections": [
+        "Full-stack apps.",
+        "Websites.",
+        "Applied AI.",
+        "Blockchain.",
+        "THE WHOLE\nPACKAGE.",
+        "WHAT ARE\nYOU MAKING?"
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/about",
+      "name": "about-mobile",
+      "status": 200,
+      "title": "The studio | KashCrop Innovations",
+      "h1": "Small studio.\nOpen horizons.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 5417,
+      "missing": [],
+      "sections": [
+        "Hazik\nHussain.",
+        "Built from Kashmir.\nBuilt around people.",
+        "How we see the work.",
+        "Curiosity has\na few side projects."
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/services/full-stack-apps",
+      "name": "full-stack-mobile",
+      "status": 200,
+      "title": "Full-stack apps | KashCrop Innovations",
+      "h1": "FULL-STACK APPS.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 4489,
+      "missing": [],
+      "sections": [
+        "Full-stack products, built end to end.",
+        "What goes\ninto it.",
+        "A clear path\nthrough the work.",
+        "In the work.",
+        "It all connects.",
+        "YOUR NEXT\nPROJECT?"
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/services/ai-training",
+      "name": "ai-service-mobile",
+      "status": 200,
+      "title": "Applied AI | KashCrop Innovations",
+      "h1": "APPLIED AI.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 4499,
+      "missing": [],
+      "sections": [
+        "AI features connected to the work people do.",
+        "What goes\ninto it.",
+        "A clear path\nthrough the work.",
+        "In the work.",
+        "It all connects.",
+        "YOUR NEXT\nPROJECT?"
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    },
+    {
+      "route": "/projects",
+      "name": "work-mobile",
+      "status": 200,
+      "title": "Selected work | KashCrop Innovations",
+      "h1": "THE WORK.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 6447,
+      "missing": [],
+      "sections": [
+        "BaghBani",
+        "Plant Health Clinic",
+        "SKIIE",
+        "KashCrop",
+        "Treat My Fish",
+        "TRACE-AMP"
+      ],
+      "diagrams": 0,
+      "decisions": 0
+    }
+  ],
+  "checks": [
+    {
+      "name": "home-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "home-desktop six visible case previews",
+      "pass": true
+    },
+    {
+      "name": "home-desktop eight comparison rows and valid headers",
+      "pass": true
+    },
+    {
+      "name": "home-desktop FAQ keyboard disclosure",
+      "pass": true
+    },
+    {
+      "name": "services-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "about-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "full-stack-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "ai-service-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "work-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "home-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "home-mobile six visible case previews",
+      "pass": true
+    },
+    {
+      "name": "home-mobile eight comparison rows and valid headers",
+      "pass": true
+    },
+    {
+      "name": "home-mobile FAQ keyboard disclosure",
+      "pass": true
+    },
+    {
+      "name": "services-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "about-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "full-stack-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "ai-service-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "work-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "375px comparison remains readable without page overflow",
+      "pass": true
+    },
+    {
+      "name": "archive filter and direct query work",
+      "pass": true
+    },
+    {
+      "name": "reel keeps direct selection with reduced motion",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "route": "/",
+      "name": "home-desktop",
+      "violations": []
+    },
+    {
+      "route": "/services",
+      "name": "services-desktop",
+      "violations": []
+    },
+    {
+      "route": "/about",
+      "name": "about-desktop",
+      "violations": []
+    },
+    {
+      "route": "/services/full-stack-apps",
+      "name": "full-stack-desktop",
+      "violations": []
+    },
+    {
+      "route": "/services/ai-training",
+      "name": "ai-service-desktop",
+      "violations": []
+    },
+    {
+      "route": "/projects",
+      "name": "work-desktop",
+      "violations": []
+    },
+    {
+      "route": "/",
+      "name": "home-mobile",
+      "violations": []
+    },
+    {
+      "route": "/services",
+      "name": "services-mobile",
+      "violations": []
+    },
+    {
+      "route": "/about",
+      "name": "about-mobile",
+      "violations": []
+    },
+    {
+      "route": "/services/full-stack-apps",
+      "name": "full-stack-mobile",
+      "violations": []
+    },
+    {
+      "route": "/services/ai-training",
+      "name": "ai-service-mobile",
+      "violations": []
+    },
+    {
+      "route": "/projects",
+      "name": "work-mobile",
+      "violations": []
+    }
+  ],
+  "finishedAt": "2026-10-12T04:36:09.974Z"
+}

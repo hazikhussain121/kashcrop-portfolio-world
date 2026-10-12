@@ -1,7 +1,11 @@
-import { services as existingServices } from '../content';
+import { services as existingServices, type ServiceDetail } from '../content';
+import { getProject, projectAliases } from './catalog';
+
+export type ServiceProof = ServiceDetail['proofDetails'][number];
 export type Service = {
  slug: string; name: string; headline: string; description: string; philosophy: string;
  includes: string[]; proof: string[]; projects: string[]; process: string[];
+ proofDetails: ServiceProof[];
  visual: 'platform' | 'website' | 'ai' | 'traceability';
 };
 const mapping: Record<string, Pick<Service,'projects'|'process'|'visual'>> = {
@@ -10,9 +14,22 @@ const mapping: Record<string, Pick<Service,'projects'|'process'|'visual'>> = {
  'ai-training':{projects:['plant-health-clinic','treat-my-fish','trace-amp'],process:['Define the task and boundaries','Connect the relevant knowledge','Keep human review in the workflow','Test the outputs and failure cases'],visual:'ai'},
  'blockchain-systems':{projects:[],process:['Map the chain of custody','Structure the records and evidence','Build the verification layer','Test the complete handoff'],visual:'traceability'},
 };
+
+function restoreProof(proof: ServiceProof): ServiceProof {
+ const canonicalSlug = proof.projectSlug ? projectAliases[proof.projectSlug] ?? proof.projectSlug : undefined;
+ return {
+  ...proof,
+  // Keep a reference without a dedicated case as text; never invent a destination.
+  projectSlug: getProject(canonicalSlug)?.slug,
+  // The source names the showcase but does not substantiate a conversion result.
+  description: proof.name === 'KashCrop landing site' ? 'A focused product showcase.' : proof.description,
+ };
+}
+
 export const serviceCatalog: Service[] = existingServices.map(s=>({
  slug:s.slug,name:s.title,headline:s.detail?.headline ?? s.title,description:s.description,
  philosophy:s.detail?.philosophy ?? s.description,includes:s.detail?.expandedIncludes ?? s.includes,proof:s.proof,
+ proofDetails:(s.detail?.proofDetails ?? []).map(restoreProof),
  ...mapping[s.slug],
 }));
 export function getService(slug?: string) { return serviceCatalog.find(s=>s.slug===slug); }

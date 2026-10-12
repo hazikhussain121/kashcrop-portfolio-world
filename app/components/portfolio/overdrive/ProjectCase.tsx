@@ -1,5 +1,7 @@
+import type { CSSProperties } from 'react';
 import { Link } from 'react-router';
 import { media, projects, type Project, type Screen } from '~/data/portfolio/catalog';
+import type { CaseSystemDiagram, DiagramNode } from '~/data/portfolio/caseDepth';
 import { projectFilms, type InterfaceFilmAsset } from '~/data/portfolio/films';
 import { GalleryLink } from '../UI';
 import { Icon } from '../Icon';
@@ -37,7 +39,7 @@ function HeroArtwork({ project, film }: { project: Project; film: InterfaceFilmA
 }
 
 function ScreenshotGallery({ project, film }: { project: Project; film: InterfaceFilmAsset }) {
-  if (!project.screens.length) return <section className="od-case-gallery-section od-wrap" aria-labelledby="interface-gallery-title">
+  if (!project.screens.length) return <section className="od-case-gallery-section od-wrap" id="project-screens" aria-labelledby="interface-gallery-title">
     <div className="od-case-section-heading">
       <h2 id="interface-gallery-title">Across the screens.</h2>
       <p>Still frames from the interface demonstration. The examples use synthetic data.</p>
@@ -60,7 +62,7 @@ function ScreenshotGallery({ project, film }: { project: Project; film: Interfac
     </div>
   </section>;
 
-  return <section className="od-case-gallery-section od-wrap" aria-labelledby="interface-gallery-title">
+  return <section className="od-case-gallery-section od-wrap" id="project-screens" aria-labelledby="interface-gallery-title">
     <div className="od-case-section-heading">
       <h2 id="interface-gallery-title">Take a closer look.</h2>
       <p>Open a capture to explore the complete interface.</p>
@@ -79,6 +81,33 @@ function ScreenshotGallery({ project, film }: { project: Project; film: Interfac
       </figure>)}
     </div>
   </section>;
+}
+
+function DiagramPath({ nodes, vertical = false }: { nodes: DiagramNode[]; vertical?: boolean }) {
+  return <ol className={`od-diagram-path${vertical ? ' od-diagram-path-vertical' : ''}`} style={{ '--diagram-nodes': nodes.length } as CSSProperties}>
+    {nodes.map((node, index) => <li key={`${index}-${node.title}`}>
+      <div className="od-diagram-node"><strong>{node.title}</strong>{node.detail && <span>{node.detail}</span>}</div>
+      {index < nodes.length - 1 && <Icon name="right" />}
+    </li>)}
+  </ol>;
+}
+
+function SystemDiagram({ diagram }: { diagram: CaseSystemDiagram }) {
+  return <figure className="od-case-diagram" aria-labelledby={diagram.id}>
+    <figcaption><h3 id={diagram.id}>{diagram.title}</h3><p>{diagram.description}</p></figcaption>
+    <div className="od-diagram-board">
+      {diagram.parts.map((part, index) => <div className="od-diagram-part" key={index}>
+        {index > 0 && <div className="od-diagram-join" aria-hidden="true"><Icon name="down" /></div>}
+        {part.kind === 'path' ? <DiagramPath nodes={part.nodes} /> : <>
+          <p className="sr-only">Parallel paths{index < diagram.parts.length - 1 ? ' that join at the next step' : ''}:</p>
+          <ul className="od-diagram-branches" style={{ '--diagram-branches': part.paths.length } as CSSProperties}>
+            {part.paths.map((nodes, branchIndex) => <li key={branchIndex}><DiagramPath nodes={nodes} vertical /></li>)}
+          </ul>
+        </>}
+      </div>)}
+      {diagram.feedback && <div className="od-diagram-feedback"><p>{diagram.feedback.description}</p><DiagramPath nodes={diagram.feedback.nodes} /></div>}
+    </div>
+  </figure>;
 }
 
 function InterfaceRecording({ film }: { film: InterfaceFilmAsset }) {
@@ -115,10 +144,18 @@ export default function ProjectCase({ project }: { project: Project }) {
         <p>{project.summary}</p>
         <ul aria-label="Project scope">{project.scope.map(item => <li key={item}>{item}</li>)}</ul>
       </div>
+      <nav className="od-case-chapters" aria-label="Case study sections">
+        <a href="#project-overview">Overview</a>
+        <a href="#project-screens">Screens</a>
+        {project.workflow && <a href="#project-workflow">Workflow</a>}
+        {project.diagrams.length > 0 && <a href="#project-system">System diagrams</a>}
+        <a href="#project-details">Product decisions</a>
+        <a href="#project-material">Sources & links</a>
+      </nav>
       <HeroArtwork project={project} film={film} />
     </header>
 
-    <section className="od-case-story od-wrap" aria-labelledby="project-story-title">
+    <section className="od-case-story od-wrap" id="project-overview" aria-labelledby="project-story-title">
       <h2 id="project-story-title">{project.tagline}</h2>
       <div className="od-case-story-copy">{project.overview.map(paragraph => <p key={paragraph}>{paragraph}</p>)}</div>
       <dl className="od-case-facts">{project.facts.map(fact => <div key={fact.label}><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}</dl>
@@ -126,11 +163,22 @@ export default function ProjectCase({ project }: { project: Project }) {
 
     <ScreenshotGallery project={project} film={film} />
 
-    {project.workflow && <section className="od-case-flow" aria-labelledby="project-flow-title">
+    {project.workflow && <section className="od-case-flow" id="project-workflow" aria-labelledby="project-flow-title">
       <div className="od-wrap">
         <div className="od-case-section-heading"><h2 id="project-flow-title">How it works.</h2><p>{project.workflow.title}</p></div>
         <ol>{project.workflow.steps.map((step, index) => <li key={step}><p>{step}</p>{index < project.workflow!.steps.length - 1 && <Icon name="right" />}</li>)}</ol>
+        {project.depth?.workflowNote && <p className="od-case-workflow-note">{project.depth.workflowNote}</p>}
       </div>
+    </section>}
+
+    {project.diagrams.length > 0 && <section className="od-case-system od-wrap" id="project-system" aria-labelledby="project-system-title">
+      <div className="od-case-section-heading"><h2 id="project-system-title">Inside the system.</h2><p>The flows, sources and review points behind the interface.</p></div>
+      {project.diagrams.map(diagram => <SystemDiagram key={diagram.id} diagram={diagram} />)}
+    </section>}
+
+    {project.depth && <section className="od-case-decisions od-wrap" id="project-details" aria-labelledby="project-decisions-title">
+      <h2 id="project-decisions-title">{project.depth.title}</h2>
+      <div>{project.depth.decisions.map(decision => <div className="od-case-decision" key={decision.title}><h3>{decision.title}</h3><p>{decision.body}</p></div>)}</div>
     </section>}
 
     <section className="od-case-capabilities od-wrap" aria-labelledby="project-capabilities-title">
@@ -141,6 +189,7 @@ export default function ProjectCase({ project }: { project: Project }) {
 
     <section className="od-case-material od-wrap" id="project-material" aria-labelledby="project-material-title">
       <div className="od-case-material-intro"><h2 id="project-material-title">From the product.</h2><p>{project.source}</p></div>
+      {project.depth?.recordNote && <p className="od-case-record-note">{project.depth.recordNote}</p>}
       {project.links.length > 0 && <div className="od-case-references" aria-label="Project links and references">
         {project.links.map(link => <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer">{link.label}<Icon name="arrow" /></a>)}
       </div>}

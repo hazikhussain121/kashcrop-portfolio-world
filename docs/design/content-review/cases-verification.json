@@ -1,0 +1,502 @@
+{
+  "mode": "cases",
+  "pages": [
+    {
+      "route": "/projects/baghban",
+      "name": "baghban-desktop",
+      "status": 200,
+      "title": "BaghBani | KashCrop Innovations",
+      "h1": "BAGHBANI",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 6981,
+      "missing": [],
+      "sections": [
+        "An orchard, brought together.",
+        "TAKE A CLOSER LOOK.",
+        "HOW IT WORKS.",
+        "Designed around the grower.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 0,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/plant-health-clinic",
+      "name": "plant-health-clinic-desktop",
+      "status": 200,
+      "title": "Plant Health Clinic | KashCrop Innovations",
+      "h1": "PLANT HEALTH CLINIC",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 7600,
+      "missing": [],
+      "sections": [
+        "Care, a little closer.",
+        "TAKE A CLOSER LOOK.",
+        "HOW IT WORKS.",
+        "INSIDE THE SYSTEM.",
+        "Built for the case and the expert.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 2,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/skiie",
+      "name": "skiie-desktop",
+      "status": 200,
+      "title": "SKIIE | KashCrop Innovations",
+      "h1": "SKIIE",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 7829,
+      "missing": [],
+      "sections": [
+        "Where ideas find their people.",
+        "TAKE A CLOSER LOOK.",
+        "HOW IT WORKS.",
+        "INSIDE THE SYSTEM.",
+        "A website the team can run.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 2,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/kashcrop",
+      "name": "kashcrop-desktop",
+      "status": 200,
+      "title": "KashCrop | KashCrop Innovations",
+      "h1": "KASHCROP",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 6002,
+      "missing": [],
+      "sections": [
+        "An orchard app for Kashmir's apple farmers.",
+        "ACROSS THE SCREENS.",
+        "Everyday tools, kept together.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 0,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/treat-my-fish",
+      "name": "treat-my-fish-desktop",
+      "status": 200,
+      "title": "Treat My Fish | KashCrop Innovations",
+      "h1": "TREAT MY FISH",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 8008,
+      "missing": [],
+      "sections": [
+        "Growers send fish-health cases to fisheries experts.",
+        "ACROSS THE SCREENS.",
+        "HOW IT WORKS.",
+        "INSIDE THE SYSTEM.",
+        "Context travels with the case.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 2,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/trace-amp",
+      "name": "trace-amp-desktop",
+      "status": 200,
+      "title": "TRACE-AMP | KashCrop Innovations",
+      "h1": "TRACE-AMP",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 8318,
+      "missing": [],
+      "sections": [
+        "A workbench for antimicrobial-peptide research.",
+        "ACROSS THE SCREENS.",
+        "HOW IT WORKS.",
+        "INSIDE THE SYSTEM.",
+        "Research, with the evidence in view.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 2,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/baghban",
+      "name": "baghban-mobile",
+      "status": 200,
+      "title": "BaghBani | KashCrop Innovations",
+      "h1": "BAGHBANI",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 9320,
+      "missing": [],
+      "sections": [
+        "An orchard, brought together.",
+        "TAKE A CLOSER LOOK.",
+        "HOW IT WORKS.",
+        "Designed around the grower.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 0,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/plant-health-clinic",
+      "name": "plant-health-clinic-mobile",
+      "status": 200,
+      "title": "Plant Health Clinic | KashCrop Innovations",
+      "h1": "PLANT HEALTH CLINIC",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 11062,
+      "missing": [],
+      "sections": [
+        "Care, a little closer.",
+        "TAKE A CLOSER LOOK.",
+        "HOW IT WORKS.",
+        "INSIDE THE SYSTEM.",
+        "Built for the case and the expert.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 2,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/skiie",
+      "name": "skiie-mobile",
+      "status": 200,
+      "title": "SKIIE | KashCrop Innovations",
+      "h1": "SKIIE",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 8123,
+      "missing": [],
+      "sections": [
+        "Where ideas find their people.",
+        "TAKE A CLOSER LOOK.",
+        "HOW IT WORKS.",
+        "INSIDE THE SYSTEM.",
+        "A website the team can run.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 2,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/kashcrop",
+      "name": "kashcrop-mobile",
+      "status": 200,
+      "title": "KashCrop | KashCrop Innovations",
+      "h1": "KASHCROP",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 6630,
+      "missing": [],
+      "sections": [
+        "An orchard app for Kashmir's apple farmers.",
+        "ACROSS THE SCREENS.",
+        "Everyday tools, kept together.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 0,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/treat-my-fish",
+      "name": "treat-my-fish-mobile",
+      "status": 200,
+      "title": "Treat My Fish | KashCrop Innovations",
+      "h1": "TREAT MY FISH",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 9508,
+      "missing": [],
+      "sections": [
+        "Growers send fish-health cases to fisheries experts.",
+        "ACROSS THE SCREENS.",
+        "HOW IT WORKS.",
+        "INSIDE THE SYSTEM.",
+        "Context travels with the case.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 2,
+      "decisions": 3
+    },
+    {
+      "route": "/projects/trace-amp",
+      "name": "trace-amp-mobile",
+      "status": 200,
+      "title": "TRACE-AMP | KashCrop Innovations",
+      "h1": "TRACE-AMP",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 9879,
+      "missing": [],
+      "sections": [
+        "A workbench for antimicrobial-peptide research.",
+        "ACROSS THE SCREENS.",
+        "HOW IT WORKS.",
+        "INSIDE THE SYSTEM.",
+        "Research, with the evidence in view.",
+        "BUILT AROUND\nTHE JOB.",
+        "From the product.",
+        "Next project"
+      ],
+      "diagrams": 2,
+      "decisions": 3
+    }
+  ],
+  "checks": [
+    {
+      "name": "baghban-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "baghban-desktop chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "baghban-desktop current BaghBani Play listing",
+      "pass": true
+    },
+    {
+      "name": "plant-health-clinic-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "plant-health-clinic-desktop chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "plant-health-clinic-desktop diagram chapter scroll",
+      "pass": true
+    },
+    {
+      "name": "skiie-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "skiie-desktop chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "skiie-desktop diagram chapter scroll",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-desktop chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-desktop no stale KashCrop Play listing",
+      "pass": true
+    },
+    {
+      "name": "treat-my-fish-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "treat-my-fish-desktop chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "treat-my-fish-desktop diagram chapter scroll",
+      "pass": true
+    },
+    {
+      "name": "trace-amp-desktop loads and fits",
+      "pass": true
+    },
+    {
+      "name": "trace-amp-desktop chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "trace-amp-desktop diagram chapter scroll",
+      "pass": true
+    },
+    {
+      "name": "baghban-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "baghban-mobile chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "baghban-mobile current BaghBani Play listing",
+      "pass": true
+    },
+    {
+      "name": "plant-health-clinic-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "plant-health-clinic-mobile chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "plant-health-clinic-mobile diagram chapter scroll",
+      "pass": true
+    },
+    {
+      "name": "skiie-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "skiie-mobile chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "skiie-mobile diagram chapter scroll",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-mobile chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-mobile no stale KashCrop Play listing",
+      "pass": true
+    },
+    {
+      "name": "treat-my-fish-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "treat-my-fish-mobile chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "treat-my-fish-mobile diagram chapter scroll",
+      "pass": true
+    },
+    {
+      "name": "trace-amp-mobile loads and fits",
+      "pass": true
+    },
+    {
+      "name": "trace-amp-mobile chapter destinations and decision depth",
+      "pass": true
+    },
+    {
+      "name": "trace-amp-mobile diagram chapter scroll",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "route": "/projects/baghban",
+      "name": "baghban-desktop",
+      "violations": []
+    },
+    {
+      "route": "/projects/plant-health-clinic",
+      "name": "plant-health-clinic-desktop",
+      "violations": []
+    },
+    {
+      "route": "/projects/skiie",
+      "name": "skiie-desktop",
+      "violations": []
+    },
+    {
+      "route": "/projects/kashcrop",
+      "name": "kashcrop-desktop",
+      "violations": []
+    },
+    {
+      "route": "/projects/treat-my-fish",
+      "name": "treat-my-fish-desktop",
+      "violations": []
+    },
+    {
+      "route": "/projects/trace-amp",
+      "name": "trace-amp-desktop",
+      "violations": []
+    },
+    {
+      "route": "/projects/baghban",
+      "name": "baghban-mobile",
+      "violations": []
+    },
+    {
+      "route": "/projects/plant-health-clinic",
+      "name": "plant-health-clinic-mobile",
+      "violations": []
+    },
+    {
+      "route": "/projects/skiie",
+      "name": "skiie-mobile",
+      "violations": []
+    },
+    {
+      "route": "/projects/kashcrop",
+      "name": "kashcrop-mobile",
+      "violations": []
+    },
+    {
+      "route": "/projects/treat-my-fish",
+      "name": "treat-my-fish-mobile",
+      "violations": []
+    },
+    {
+      "route": "/projects/trace-amp",
+      "name": "trace-amp-mobile",
+      "violations": []
+    }
+  ],
+  "finishedAt": "2026-10-12T04:41:41.750Z",
+  "corrections": [
+    {
+      "name": "kashcrop-mobile",
+      "before": 392,
+      "after": 390
+    },
+    {
+      "name": "treat-my-fish-mobile",
+      "before": 392,
+      "after": 390
+    },
+    {
+      "name": "trace-amp-mobile",
+      "before": 392,
+      "after": 390
+    }
+  ]
+}

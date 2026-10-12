@@ -1,0 +1,155 @@
+/* Content extensions keep the accepted Overdrive stage and image language. */
+.od-home .od-feature-caption{display:block;margin-top:26px}
+.od-home .od-feature-caption .od-feature-type{font-size:12px;line-height:1.5;color:var(--od-muted);margin-bottom:9px}
+.od-home .od-feature-caption h3{font-size:clamp(24px,2.3vw,34px);line-height:1.25;margin-bottom:15px}
+.od-home .od-feature-caption .od-feature-summary{font-size:15px;line-height:1.85;max-width:58ch}
+.od-home .od-case-link{font-size:13px;margin-top:17px;align-self:start}
+.od-home .od-feature-skiie .od-feature-caption{display:grid;grid-template-columns:1fr 1.2fr;gap:48px}
+.od-more-work{margin-top:96px;padding-top:43px;border-top:1px solid var(--od-line)}
+.od-more-work>h3{font-size:clamp(30px,3.1vw,44px);margin-bottom:36px}
+.od-more-work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+.od-more-case{display:flex;flex-direction:column;min-width:0;align-items:start}
+.od-more-case-image{display:grid;align-items:center;position:relative;width:100%;aspect-ratio:16/10;background:var(--od-pale);border-radius:12px;padding:12px;overflow:hidden}
+.od-more-case-image img{width:100%;height:auto;box-shadow:0 8px 24px #16204320}
+.od-more-case-arrow{position:absolute;right:13px;bottom:13px;width:39px;height:39px;display:grid;place-items:center;background:var(--od-blue);color:var(--od-white);border-radius:50%}
+.od-more-case-image:hover .od-more-case-arrow{background:var(--od-ink)}
+.od-more-case-source{color:var(--od-muted);font-size:10px;line-height:1.65;margin-top:12px}
+.od-more-case h4{font-size:25px;line-height:1.3;margin-top:23px;margin-bottom:13px}
+.od-more-case-summary{color:var(--od-muted);font-size:14px;line-height:1.85;margin-bottom:7px}
+.od-more-case .od-case-link{margin-top:auto}
+.od-home-comparison{padding-block:5px 20px}
+.od-content-heading{display:grid;grid-template-columns:1.15fr 1fr;gap:70px;align-items:end;margin-bottom:60px}
+.od-content-heading h2{font-size:clamp(39px,4.6vw,65px);line-height:1.12}
+.od-content-heading>p{font-size:16px;color:var(--od-muted);line-height:1.85;max-width:480px}
+.od-delivery{padding-block:110px 120px}
+.od-delivery-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));list-style:none;gap:32px;padding:0;margin:0}
+.od-delivery-steps li{display:flex;flex-direction:column;align-items:start;border-top:1px solid var(--od-line);padding-top:24px;min-width:0}
+.od-delivery-number{font-family:'Barlow Condensed',sans-serif;font-size:76px;font-weight:700;line-height:1;color:var(--od-yellow);margin-bottom:27px}
+.od-delivery-steps h3{font-size:23px;line-height:1.3;max-width:240px;min-height:60px;margin-bottom:17px}
+.od-delivery-steps p{font-size:14px;line-height:1.85;color:var(--od-muted);margin-bottom:30px}
+.od-delivery-output{font-size:12px;line-height:1.65;margin-top:auto;padding-top:15px;border-top:1px solid var(--od-line);width:100%}
+.od-home .od-home-studio{padding-block:35px 115px}
+.od-home .od-studio-context-copy{font-size:15px;line-height:1.9;color:var(--od-muted);max-width:540px;margin-top:24px}
+.od-faq{display:grid;grid-template-columns:1fr 1.2fr;gap:90px;padding-block:15px 130px}
+.od-faq-intro h2{font-size:clamp(36px,4.2vw,60px);line-height:1.12}
+.od-faq-intro>p{font-size:15px;line-height:1.85;color:var(--od-muted);max-width:310px;margin-top:25px}
+.od-faq-intro .od-text-link{font-size:13px;margin-top:20px}
+.od-faq-list{border-top:1px solid var(--od-line)}
+.od-faq-list details{border-bottom:1px solid var(--od-line)}
+.od-faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:24px;list-style:none;min-height:84px;padding-block:22px;font-size:17px;font-weight:500;line-height:1.6;cursor:pointer}
+.od-faq-list summary::-webkit-details-marker{display:none}
+.od-faq-list summary .icon{flex-shrink:0;width:19px;height:19px;transition:rotate .2s var(--od-ease)}
+.od-faq-list details[open] summary{color:var(--od-yellow)}
+.od-faq-list details[open] summary .icon{rotate:180deg}
+.od-faq-list details>p{font-size:15px;line-height:1.85;color:var(--od-muted);padding-bottom:27px;max-width:58ch}
+
+/* Studio context is sourced from the earlier company biography. */
+.od-founder-story>p a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.od-founder-story>p a:hover{color:var(--od-yellow)}
+.od-studio-grounding{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;padding:55px;background:var(--od-pale);color:var(--od-ink);border-radius:16px;margin-bottom:105px}
+.od-studio-grounding h2{font-size:clamp(35px,4.1vw,58px);line-height:1.12;margin-bottom:30px}
+.od-studio-grounding-intro>p{font-size:16px;line-height:1.85;max-width:36ch;color:#465373}
+.od-studio-grounding ul{list-style:none;padding:0;margin:0}
+.od-studio-grounding li{padding-block:22px;border-bottom:1px solid #16204330}
+.od-studio-grounding li:first-child{padding-top:0}
+.od-studio-grounding li:last-child{border-bottom:0;padding-bottom:0}
+.od-studio-grounding h3{font-size:21px;line-height:1.35;margin-bottom:10px}
+.od-studio-grounding li p{font-size:14px;line-height:1.85;color:#465373}
+.od-experiments{margin-top:96px;padding-top:55px;border-top:1px solid var(--od-line)}
+.od-experiments .od-content-heading{margin-bottom:40px}
+.od-experiments .od-content-heading h2{font-size:clamp(34px,3.7vw,52px)}
+.od-experiments .od-content-heading>p{font-size:15px}
+.od-experiment-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:35px}
+.od-experiment{padding-block:26px;border-top:1px solid var(--od-line)}
+.od-experiment h3{font-size:28px;margin-bottom:18px}
+.od-experiment p{font-size:14px;line-height:1.9;color:var(--od-muted)}
+.od-about-next{display:flex;align-items:center;justify-content:space-between;gap:35px;margin-top:50px}
+.od-about-next>p{font-size:16px;line-height:1.85;max-width:580px;color:var(--od-muted)}
+.od-about-next .od-text-link{flex-shrink:0}
+
+@media(max-width:1050px){
+  .od-more-work-grid{gap:22px}
+  .od-delivery-steps{grid-template-columns:repeat(2,minmax(0,1fr));gap:45px 35px}
+  .od-delivery-steps h3{max-width:none;min-height:0}
+  .od-delivery-steps p{max-width:47ch}
+  .od-faq{gap:45px;grid-template-columns:.9fr 1.2fr}
+  .od-studio-grounding{padding:40px;gap:40px}
+  .od-experiment-grid{gap:25px}
+}
+@media(max-width:760px){
+  .od-home .od-feature-caption .od-feature-summary{font-size:14px;max-width:none}
+  .od-home .od-feature-caption h3{font-size:25px}
+  .od-home .od-feature-skiie .od-feature-caption{grid-template-columns:1fr 1.3fr;gap:30px}
+  .od-more-work{margin-top:70px}
+  .od-more-work-grid{grid-template-columns:1fr;gap:37px}
+  .od-more-case{display:grid;grid-template-columns:.85fr 1fr;column-gap:27px}
+  .od-more-case-image{grid-column:1;grid-row:1/5;align-self:start}
+  .od-more-case-source{grid-column:1;grid-row:5;align-self:start}
+  .od-more-case h4{grid-column:2;grid-row:1;margin-top:0}
+  .od-more-case-summary{grid-column:2;grid-row:2;font-size:14px}
+  .od-more-case .od-case-link{grid-column:2;grid-row:3;justify-self:start;margin-top:10px}
+  .od-content-heading{grid-template-columns:1fr;gap:25px;margin-bottom:40px}
+  .od-content-heading h2{font-size:45px}
+  .od-content-heading>p{font-size:15px}
+  .od-delivery{padding-block:80px 85px}
+  .od-delivery-number{font-size:65px;margin-bottom:20px}
+  .od-delivery-steps h3{font-size:23px}
+  .od-home .od-home-studio{padding-block:20px 85px}
+  .od-faq{grid-template-columns:1fr;gap:35px;padding-block:0 85px}
+  .od-faq-intro h2{font-size:43px}
+  .od-faq-intro>p{margin-top:20px;max-width:100%}
+  .od-faq-list summary{font-size:16px;min-height:76px}
+  .od-studio-grounding{grid-template-columns:1fr;gap:35px;margin-bottom:70px;padding:35px}
+  .od-studio-grounding h2{font-size:42px;margin-bottom:23px}
+  .od-studio-grounding-intro>p{max-width:none}
+  .od-studio-grounding h3{font-size:22px}
+  .od-experiments{margin-top:70px;padding-top:38px}
+  .od-experiment-grid{grid-template-columns:1fr;gap:5px}
+  .od-experiment{display:grid;grid-template-columns:1fr 2fr;gap:30px}
+  .od-experiment h3{font-size:26px;margin-bottom:0}
+  .od-about-next{flex-direction:column;align-items:start;gap:20px;margin-top:35px}
+}
+@media(max-width:520px){
+  .od-home .od-feature-caption{margin-top:21px}
+  .od-home .od-feature-caption .od-feature-type{font-size:11px;margin-bottom:8px}
+  .od-home .od-feature-caption h3{font-size:24px;margin-bottom:12px}
+  .od-home .od-feature-caption .od-feature-summary{font-size:14px;line-height:1.85;max-width:none}
+  .od-home .od-feature-skiie .od-feature-caption{display:block}
+  .od-home .od-case-link{font-size:12px;margin-top:15px}
+  .od-home .od-feature-grid{gap:46px}
+  .od-more-work{margin-top:58px;padding-top:33px}
+  .od-more-work>h3{font-size:32px;margin-bottom:28px}
+  .od-more-work-grid{gap:42px}
+  .od-more-case{display:flex}
+  .od-more-case-image{aspect-ratio:16/10}
+  .od-more-case-source{font-size:10px;margin-top:10px}
+  .od-more-case h4{font-size:25px;margin-top:19px}
+  .od-more-case .od-case-link{margin-top:12px}
+  .od-content-heading h2{font-size:39px}
+  .od-content-heading>p{font-size:14px}
+  .od-delivery{padding-block:70px 65px}
+  .od-delivery-steps{grid-template-columns:1fr;gap:30px}
+  .od-delivery-steps li{display:grid;grid-template-columns:55px 1fr;gap:0 20px;padding-top:24px}
+  .od-delivery-number{grid-row:1/4;grid-column:1;font-size:55px;margin:0}
+  .od-delivery-steps h3{grid-column:2;font-size:22px;margin-bottom:12px}
+  .od-delivery-steps p{grid-column:2;font-size:14px;margin-bottom:18px}
+  .od-delivery-output{grid-column:2;font-size:11px;padding-top:12px}
+  .od-home .od-home-studio{padding-block:15px 70px}
+  .od-home .od-studio-context-copy{font-size:14px;margin-top:20px}
+  .od-faq{gap:27px;padding-bottom:70px}
+  .od-faq-intro h2{font-size:38px}
+  .od-faq-intro>p{font-size:14px;margin-top:18px}
+  .od-faq-list summary{font-size:15px;gap:18px}
+  .od-faq-list details>p{font-size:14px;padding-bottom:22px}
+  .od-studio-grounding{padding:29px 23px;border-radius:12px}
+  .od-studio-grounding h2{font-size:35px}
+  .od-studio-grounding-intro>p{font-size:14px}
+  .od-studio-grounding h3{font-size:21px}
+  .od-studio-grounding li p{font-size:14px}
+  .od-experiments .od-content-heading h2{font-size:33px}
+  .od-experiment{display:block;padding-block:25px}
+  .od-experiment h3{margin-bottom:14px}
+  .od-about-next>p{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.od-faq-list summary .icon{transition:none}}
+html[data-motion=off] .od-faq-list summary .icon{transition:none}

@@ -75,14 +75,16 @@ export default function Projects() {
       </p>
       {result.length ? <div className="od-work-grid">
         {result.map((project, index) => <article key={project.slug} className="od-work-project" aria-labelledby={`od-work-${project.slug}`}>
-          <Link className="od-work-image-link" to={'/projects/' + project.slug} aria-label={'Explore ' + project.name}>
-            <WorkArtwork project={project} priority={index < 2} />
+          <Link className="od-work-case-link" to={'/projects/' + project.slug} aria-labelledby={`od-work-${project.slug} od-work-read-${project.slug}`}>
+            <div className="od-work-image-link"><WorkArtwork project={project} priority={index < 2} /></div>
+            <div className="od-work-project-title">
+              <h2 id={`od-work-${project.slug}`}>{project.name}</h2>
+              <span>{project.year}</span>
+            </div>
+            <p className="od-work-project-kind">{project.kind}</p>
+            <p className="od-work-project-summary">{project.summary}</p>
+            <span className="od-work-read" id={`od-work-read-${project.slug}`}>Read case study <Icon name="arrow" /></span>
           </Link>
-          <div className="od-work-project-title">
-            <h2 id={`od-work-${project.slug}`}><Link to={'/projects/' + project.slug}>{project.name}</Link></h2>
-            <span>{project.year}</span>
-          </div>
-          <p className="od-work-project-kind">{project.kind}</p>
           <div className="od-work-project-foot">
             <p>{project.screens.length ? 'Actual interface captures' : 'Synthetic interface demonstration'}</p>
             {project.screens.length > 0 && <GalleryLink project={project} screen={project.screens[0]} className="od-work-inspect">View screens <Icon name="expand" /></GalleryLink>}

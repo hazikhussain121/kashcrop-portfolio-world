@@ -1,0 +1,154 @@
+.od-compare {
+  padding-block: clamp(64px, 7.2vw, 108px) clamp(56px, 6vw, 88px);
+  background: var(--od-yellow, #f5eb6a);
+  color: var(--od-ink, #162043);
+  font-family: "Sora", sans-serif;
+  color-scheme: light;
+  scroll-margin-top: 110px;
+}
+
+.od-compare .od-compare-heading {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: end;
+  gap: 10%;
+  margin-bottom: 42px;
+}
+
+.od-compare .od-compare-title {
+  margin: 0;
+  color: var(--od-blue, #2448e8);
+  font-family: "Barlow Condensed", "Sora", sans-serif;
+  font-size: clamp(76px, 9.3vw, 138px);
+  font-weight: 700;
+  line-height: .9;
+  letter-spacing: -.025em;
+  text-wrap: initial;
+}
+
+.od-compare .od-compare-intro {
+  max-width: 380px;
+  margin: 0 0 6px;
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.od-compare .od-compare-baseline {
+  max-width: 88ch;
+  margin: 0 0 32px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.od-compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  border-top: 1px solid rgb(22 32 67 / 45%);
+  color: inherit;
+}
+
+.od-compare-feature-col { width: 24%; }
+.od-compare-build-col { width: 33%; }
+.od-compare-managed-col { width: 43%; }
+
+.od-compare-table th,
+.od-compare-table td {
+  padding: 25px 28px;
+  border-bottom: 1px solid rgb(22 32 67 / 25%);
+  text-align: left;
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+
+.od-compare-table th:first-child { padding-left: 0; padding-right: 30px; }
+.od-compare-table thead th { font-size: 14px; font-weight: 600; line-height: 1.5; vertical-align: middle; }
+.od-compare-table thead .od-compare-managed { font-size: clamp(20px, 2.05vw, 29px); letter-spacing: -.025em; }
+.od-compare-table thead .od-compare-managed > span { display: block; margin-top: 7px; color: var(--od-muted, #d4ddff); font-size: 12px; font-weight: 400; letter-spacing: 0; }
+.od-compare-table tbody th { font-size: 15px; font-weight: 600; line-height: 1.65; }
+.od-compare-build-copy { display: block; max-width: 32ch; font-size: 14px; line-height: 1.8; }
+
+.od-compare-table .od-compare-managed {
+  background: var(--od-blue, #2448e8);
+  color: var(--od-white, #f7f8ff);
+  border-bottom-color: rgb(247 248 255 / 28%);
+}
+
+.od-compare-managed > strong { display: block; max-width: 28ch; font-size: clamp(18px, 1.8vw, 25px); font-weight: 600; line-height: 1.35; letter-spacing: -.025em; }
+.od-compare-detail { display: block; max-width: 46ch; margin-top: 9px; color: var(--od-muted, #d4ddff); font-size: 13px; line-height: 1.8; }
+.od-compare-mobile-label { display: none; }
+
+.od-compare .od-compare-bottom { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; margin-top: 32px; }
+.od-compare .od-compare-terms { max-width: 78ch; margin: 0; font-size: 12px; line-height: 1.9; }
+
+.od-compare .od-compare-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  gap: 24px;
+  min-height: 56px;
+  padding: 16px 22px;
+  border-radius: 999px;
+  background: var(--od-blue, #2448e8);
+  color: var(--od-white, #f7f8ff);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  transition: background-color 180ms ease-out;
+}
+
+.od-compare .od-compare-action .icon { flex: 0 0 auto; width: 21px; height: 21px; }
+.od-compare .od-compare-action:focus-visible { outline: 3px solid var(--od-blue, #2448e8); outline-offset: 5px; }
+.od-compare ::selection { background: var(--od-ink, #162043); color: var(--od-white, #f7f8ff); }
+
+.od-compare-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+
+@media (hover: hover) and (pointer: fine) {
+  .od-compare .od-compare-action:hover { background: var(--od-ink, #162043); }
+}
+
+@media (max-width: 1000px) {
+  .od-compare-table th,
+  .od-compare-table td { padding: 23px 20px; }
+  .od-compare-table th:first-child { padding-right: 20px; }
+  .od-compare .od-compare-bottom { gap: 28px; }
+}
+
+@media (max-width: 700px) {
+  .od-compare .od-compare-heading { display: block; margin-bottom: 25px; }
+  .od-compare .od-compare-title { font-size: clamp(74px, 17vw, 110px); }
+  .od-compare .od-compare-intro { max-width: 36ch; margin-top: 26px; font-size: 16px; line-height: 1.75; }
+  .od-compare .od-compare-baseline { margin-bottom: 28px; font-size: 12px; line-height: 1.85; }
+
+  /* Each decision keeps both scopes in view. Explicit roles and header IDs
+     preserve table relationships when the visual rows become grids. */
+  .od-compare-table { display: block; border-top: 0; }
+  .od-compare-table colgroup { display: none; }
+  .od-compare-table thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+  .od-compare-table tbody { display: block; width: 100%; }
+  .od-compare-table tbody tr { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.12fr); border-top: 1px solid rgb(22 32 67 / 40%); }
+  .od-compare-table tbody tr + tr { margin-top: 22px; }
+  .od-compare-table tbody th { grid-column: 1 / -1; padding: 16px 0 12px; border: 0; font-size: 16px; font-weight: 600; line-height: 1.5; }
+  .od-compare-table tbody td { min-width: 0; padding: 17px 14px 20px; border: 0; }
+  .od-compare-table tbody .od-compare-build { padding-left: 0; padding-right: 18px; }
+  .od-compare-mobile-label { display: block; margin-bottom: 14px; font-size: 11px; font-weight: 500; line-height: 1.5; }
+  .od-compare-managed .od-compare-mobile-label { color: var(--od-muted, #d4ddff); }
+  .od-compare-build-copy { font-size: 13px; line-height: 1.8; }
+  .od-compare-managed > strong { font-size: 17px; line-height: 1.4; }
+  .od-compare-detail { margin-top: 10px; font-size: 12px; line-height: 1.8; }
+
+  .od-compare .od-compare-bottom { flex-direction: column; gap: 24px; margin-top: 32px; }
+  .od-compare .od-compare-terms { font-size: 12px; line-height: 1.85; }
+  .od-compare .od-compare-action { min-height: 56px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .od-compare .od-compare-action { transition: none; }
+}
+
+html[data-motion="off"] .od-compare .od-compare-action { transition: none; }

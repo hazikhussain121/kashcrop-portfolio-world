@@ -1,0 +1,25 @@
+{
+  "copy": "with case evidence and expert advice kept together.",
+  "pages": [
+    {
+      "label": "desktop",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "correctedCopy": true,
+      "missingImages": []
+    },
+    {
+      "label": "mobile",
+      "width": 390,
+      "scrollWidth": 390,
+      "correctedCopy": true,
+      "missingImages": []
+    }
+  ],
+  "errors": [],
+  "checkedAt": "2026-10-12T04:51:39.931Z",
+  "public": {
+    "status": 200,
+    "correctedCopy": true
+  }
+}

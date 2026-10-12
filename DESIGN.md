@@ -172,7 +172,7 @@ The world is continuous across Home, Work, all six project cases, Services, ever
 - Soft depth on the work and overlays; flat rules and open space around supporting information.
 - Direct selection, ordinary links and a complete static experience alongside decorative motion.
 
-This is the implemented system recorded on 12 October 2026 after the independent finish review. The current [direction contract](docs/design/OVERDRIVE_2026-10-12.md) supersedes the Fieldwork and Apple presentation iterations. The visual sources are [overdrive.css](app/styles/portfolio/overdrive.css), [overdrive-reel.css](app/styles/portfolio/overdrive-reel.css), [overdrive-projects.css](app/styles/portfolio/overdrive-projects.css) and [overdrive-services.css](app/styles/portfolio/overdrive-services.css). The [sidecar](.impeccable/design.json) records extensions and component previews; the frontmatter above owns reusable primitives.
+The base system was recorded on 12 October 2026 after the independent finish review. The current [direction contract](docs/design/OVERDRIVE_2026-10-12.md) supersedes the Fieldwork and Apple presentation iterations. The subsequent [content extension](docs/design/CONTENT_EXPANSION_2026-10-12.md) retains this accepted system. Its completed [finish review](docs/design/content-review/finish-review.md) records a ship disposition; the [evidence record](docs/design/content-review/README.md) preserves the reviewed captures and validation scope. The visual sources are [overdrive.css](app/styles/portfolio/overdrive.css), [overdrive-reel.css](app/styles/portfolio/overdrive-reel.css), [overdrive-projects.css](app/styles/portfolio/overdrive-projects.css) and [overdrive-services.css](app/styles/portfolio/overdrive-services.css). Component-specific content additions use [overdrive-content.css](app/styles/portfolio/overdrive-content.css), [overdrive-package-comparison.css](app/styles/portfolio/overdrive-package-comparison.css) and [overdrive-service-proof.css](app/styles/portfolio/overdrive-service-proof.css). The [sidecar](.impeccable/design.json) records extensions and component previews; the frontmatter above owns reusable primitives.
 
 ## Colors
 
@@ -255,7 +255,7 @@ The shared easing is cubic-bezier(.16,1,.3,1). Most control color transitions la
 
 Shape distinguishes the job of the component. Shared header and homepage actions use an 8px radius; service actions use full pills, and project actions use a 100px pill radius. Archive filters and search are pills, while the reel picker and contact choices use compact 6px corners. Contact fields use 7px corners.
 
-The homepage artwork and reel panels have 14px corners. Commitment and contact sheets use 16px corners, tightening to 12px on compact layouts. Work and case stage backgrounds are deliberately square; service media uses 8px corners. Browser and phone frames clip their actual captures with nested, source-specific radii. Circular controls are reserved for arrows, inspection and compact actions.
+The homepage artwork and reel panels have 14px corners. Contact sheets use 16px corners, tightening to 12px on compact layouts. The earlier compact commitment sheet remains a retained token and sidecar preview; current package content uses the shared comparison described below. Work and case stage backgrounds are deliberately square; service media uses 8px corners. Browser and phone frames clip their actual captures with nested, source-specific radii. Circular controls are reserved for arrows, inspection and compact actions.
 
 Do not normalize these roles into one universal rounded card. Maintain the image's source aspect ratio and keep decorative device framing separate from the controls of the presented application.
 
@@ -287,21 +287,21 @@ Archive categories remain ordinary links with URL state. A selected category is 
 
 ### Artwork, cases and viewer
 
-Large project artwork remains the main evidence. Links open the case or the original accessible screen viewer; decorative crops never replace the ability to inspect the full capture. Source captions remain outside the media frame. Case pages retain the story, scope, workflow, capabilities, technologies, references and material disclosure.
+Large project artwork remains the main evidence. Links open the case or the original accessible screen viewer; decorative crops never replace the ability to inspect the full capture. Source captions remain outside the media frame. Home now previews all six cases with excerpts and direct case links. Case pages retain the story, scope, workflow, capabilities, technologies, references and material disclosure, with added decision content and section navigation. [caseDepth.ts](app/data/portfolio/caseDepth.ts) supplies the richer explanations and eight source diagrams across four cases; their responsive layouts preserve source relationships and expert-review boundaries without adding a new visual system.
 
 The viewer uses pale blue with Ink and darker supporting text. It remains a native dialog with direct screen identifiers and readable scrolling for long mobile captures. Its current supporting text uses the source's darker viewer color, rather than the main site's light muted color.
 
 Interface recordings sit in a native disclosure, with controls and no autoplay. They use no preload beyond their poster, pause when closed, and retain access to the mobile recording and the synthetic-data provenance.
 
-### Commitment and package sheets
+### Package comparison
 
-The homepage commitment is a rounded citron sheet. Services presents the full package on a broad citron field, using a two-column, eight-row semantic table: comparison topic and the KashCrop offer. The actual quote scope and client-controlled publisher account remain in the adjacent terms disclosure.
+[PackageComparison.tsx](app/components/portfolio/overdrive/PackageComparison.tsx) presents the shared comparison on a broad citron field directly on Home and at /services#compare, with eight rows and three semantic columns: Feature, Build-only scope and KashCrop package. At 700px and below, each feature header spans above its two scope cells. Column headers remain available to assistive technology, and explicit header IDs keep each value associated with its feature and scope.
 
-The sheet presents existing confirmed offers; it is not a competitor scorecard. Keep pricing, hosting term, maintenance coverage, publishing conditions and third-party-charge qualifiers readable at every size. Package rows and scoped copy are sourced from [offer.ts](app/data/portfolio/offer.ts).
+The visible baseline defines an illustrative build-only engagement and acknowledges that providers and packages vary. Keep pricing, hosting term, maintenance coverage, client-controlled publisher access, Google verification/review conditions and third-party-charge qualifiers readable at every size. Package rows, baseline and quote conditions are sourced from [offer.ts](app/data/portfolio/offer.ts). The comparison's styles remain local to its component; they do not change the reusable tokens above.
 
 ### Service disclosures and process
 
-The homepage service list uses native details and summary, with a ruled row and an arrow that reverses on opening. The fuller service pages pair a discipline with relevant evidence, then show included scope and a numbered process. These are reading and navigation components: retain their real service destinations and native semantics.
+The homepage service list uses native details and summary, with a ruled row and an arrow that reverses on opening. The fuller service pages pair a discipline with relevant evidence, including the nine restored source proof descriptions, then show included scope and a numbered process. Home adds four delivery stages and five practical questions; About adds regional context and smaller products. These component-specific content extensions retain real destinations, readable measures and native disclosure semantics.
 
 ### Contact fields and states
 

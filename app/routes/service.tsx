@@ -5,6 +5,7 @@ import { Icon } from '~/components/portfolio/Icon';
 import { pageMeta } from '~/lib/portfolio/seo';
 import { ServiceMedia } from './services';
 import '~/styles/portfolio/overdrive-services.css';
+import '~/styles/portfolio/overdrive-service-proof.css';
 
 export function loader({ params }: Pick<LoaderFunctionArgs, 'params' | 'request'>) {
   const service = getService(params.slug);
@@ -19,6 +20,13 @@ export const meta: MetaFunction<typeof loader> = ({ data }) => data?.service
 export default function ServicePage() {
   const { service } = useLoaderData<typeof loader>();
   const evidence = service.projects.map(getProject).filter((project): project is NonNullable<typeof project> => !!project);
+  const describedProjects = new Set(service.proofDetails.map(proof => proof.projectSlug).filter(Boolean));
+  const proofEntries = [
+    ...service.proofDetails.map(proof => ({ ...proof, project: getProject(proof.projectSlug) })),
+    ...evidence.filter(project => !describedProjects.has(project.slug)).map(project => ({
+      name: project.name, description: project.summary, projectSlug: project.slug, project,
+    })),
+  ];
   const contactPath = '/contact?service=' + encodeURIComponent(serviceFormValues[service.slug]);
 
   return <main id="main" className="ods-page ods-detail-page">
@@ -44,10 +52,14 @@ export default function ServicePage() {
     </section>
 
     <section className="ods-detail-work od-wrap" aria-labelledby="ods-work-title">
-      <div className="ods-detail-section-heading"><h2 id="ods-work-title">{evidence.length ? 'In the work.' : 'Project references.'}</h2><p>{service.proof.join(' · ')}</p></div>
-      {evidence.length > 0 ? <div className="ods-evidence-list">{evidence.map(project => <Link className="ods-evidence-link" key={project.slug} to={'/projects/' + project.slug}>
-        <div><h3>{project.name}</h3><p>{project.tagline}</p></div><Icon name="arrow" />
-      </Link>)}</div> : <div className="ods-trace-reference"><p>Lot history, evidence capture and public proof pages, connected through a clear chain of custody.</p><Link className="ods-text-link" to={contactPath}>Discuss a traceability system<Icon name="arrow" /></Link></div>}
+      <div className="ods-detail-section-heading"><h2 id="ods-work-title">{evidence.length ? 'In the work.' : 'Project references.'}</h2><p>{evidence.length ? 'The projects and workflows behind this service.' : 'Selected traceability projects and the workflows they cover.'}</p></div>
+      <div className="ods-proof-list">
+        {proofEntries.map(proof => <article className="ods-proof-entry" key={proof.projectSlug ?? proof.name}>
+          {proof.project ? <Link className="ods-proof-title" to={'/projects/' + proof.project.slug}><h3>{proof.name}</h3><Icon name="arrow" /></Link> : <h3>{proof.name}</h3>}
+          <p>{proof.description}</p>
+        </article>)}
+        {!evidence.length && <Link className="ods-text-link" to={contactPath}>Discuss a traceability system<Icon name="arrow" /></Link>}
+      </div>
     </section>
 
     <section className="ods-other-services od-wrap" aria-labelledby="ods-other-title">

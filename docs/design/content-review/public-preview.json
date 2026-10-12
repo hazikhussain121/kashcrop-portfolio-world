@@ -1,0 +1,34 @@
+{
+  "base": "https://prove-jane-little-ranking.trycloudflare.com",
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "title": "Bright ideas. Real things. | KashCrop Innovations",
+      "cases": 6,
+      "comparisonRows": 8,
+      "diagrams": 0,
+      "missingImages": []
+    },
+    {
+      "route": "/services#compare",
+      "status": 200,
+      "title": "What we do | KashCrop Innovations",
+      "cases": 0,
+      "comparisonRows": 8,
+      "diagrams": 0,
+      "missingImages": []
+    },
+    {
+      "route": "/projects/plant-health-clinic#project-system",
+      "status": 200,
+      "title": "Plant Health Clinic | KashCrop Innovations",
+      "cases": 0,
+      "comparisonRows": 0,
+      "diagrams": 2,
+      "missingImages": []
+    }
+  ],
+  "errors": [],
+  "checkedAt": "2026-10-12T04:45:49.183Z"
+}

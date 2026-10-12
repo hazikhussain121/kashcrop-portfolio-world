@@ -1,0 +1,20 @@
+.ods-detail-work .ods-proof-list { min-width: 0; }
+.ods-detail-work .ods-proof-entry { padding-block: 25px 28px; border-top: 1px solid rgb(247 248 255 / 30%); }
+.ods-detail-work .ods-proof-entry:last-of-type { border-bottom: 1px solid rgb(247 248 255 / 30%); }
+.ods-detail-work .ods-proof-entry h3 { margin: 0; font-size: clamp(24px, 2.6vw, 36px); line-height: 1.2; letter-spacing: -.03em; }
+.ods-detail-work .ods-proof-title { display: flex; align-items: center; justify-content: space-between; gap: 25px; min-height: 44px; color: inherit; text-decoration: none; }
+.ods-detail-work .ods-proof-title .icon { flex: 0 0 auto; width: 28px; height: 28px; color: var(--od-yellow, #f5eb6a); }
+.ods-detail-work .ods-proof-entry > p { max-width: 58ch; margin-top: 13px; color: var(--od-muted, #d4ddff); font-size: 14px; line-height: 1.85; }
+.ods-detail-work .ods-proof-list > .ods-text-link { margin-top: 25px; }
+
+@media (hover: hover) and (pointer: fine) {
+  .ods-detail-work .ods-proof-title:hover h3 { color: var(--od-yellow, #f5eb6a); }
+}
+
+@media (max-width: 750px) {
+  .ods-detail-work .ods-proof-entry { padding-block: 20px 24px; }
+  .ods-detail-work .ods-proof-entry h3 { font-size: 26px; }
+  .ods-detail-work .ods-proof-title { gap: 18px; }
+  .ods-detail-work .ods-proof-title .icon { width: 24px; height: 24px; }
+  .ods-detail-work .ods-proof-entry > p { margin-top: 10px; font-size: 13px; line-height: 1.85; }
+}

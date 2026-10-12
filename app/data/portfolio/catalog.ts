@@ -1,4 +1,5 @@
 import { caseStudyProjects } from '../caseStudies';
+import { caseDepth, caseSystemDiagrams, type CaseDepth, type CaseSystemDiagram } from './caseDepth';
 
 export const company = {
  name: 'KashCrop Innovations', legalName: 'KashCrop Innovations Pvt Ltd', url: 'https://kashcrop.in',
@@ -17,6 +18,8 @@ export type Project = {
  screens: Screen[]; source: string;
  links: { label: string; href: string; kind?: string }[];
  workflow: { title: string; steps: string[] } | null;
+ diagrams: CaseSystemDiagram[];
+ depth: CaseDepth | null;
 };
 const shot = (id: string, name: string, file: string, height: number, caption: string, width = 390): Screen => ({id,name,file:`${file}.webp`,width,height,kind:width > 600 ? 'Desktop' : 'Mobile',caption});
 const gardenScreens = [
@@ -40,22 +43,29 @@ const garden: Project = {
  ],features:['Farmer-first service discovery','Orchard establishment and care requests','Specialist consultations and group sessions','Seasonal calendar and grower tools','Responsive mobile and desktop experience'],
  stack:['React','TypeScript','Cloudflare','D1','R2'],scope:['Product design','Farmer experience','Full-stack'],
  facts:[{label:'Audience',value:'Orchard growers'},{label:'Surfaces',value:'Farmer, specialist and admin'},{label:'Role',value:'Product design + engineering'}],
- screens:gardenScreens,source:'Actual interface captures from the Garden Guardians review build, 20 September 2026. These show implemented interface work; the pictured version is not a claim of current public release. Screens are a visual record, not an embedded application.',links:[],
+ screens:gardenScreens,source:'Actual interface captures from the Garden Guardians review build, 20 September 2026. These show implemented interface work; the pictured version is not a claim of current public release. Screens are a visual record, not an embedded application.',
+ links:[{label:'Google Play · open testing',href:'https://play.google.com/store/apps/details?id=com.kashcrop.app',kind:'playstore'}],
  workflow:{title:'From understanding a service to taking the next step.',steps:['Explore the service','Understand the scope','Share orchard details','Request support']},
+ diagrams:[],depth:caseDepth.baghban,
 };
 const visual: Record<string, Partial<Project>> = {
- 'plant-health-clinic':{name:'Plant Health Clinic',category:'Applied AI',theme:'phc',tagline:'Care, a little closer.',screens:phcScreens,scope:['Product design','Farmer app','Expert workflow'],source:'Actual farmer-app captures from the Plant Health Clinic review build, 20 September 2026. Medical and agricultural advice is not provided through this portfolio viewer.',workflow:{title:'The expert stays in the loop.',steps:['Farmer documents the concern','Relevant knowledge is retrieved','AI prepares a draft','Expert reviews the advisory']}},
+ 'plant-health-clinic':{name:'Plant Health Clinic',category:'Applied AI',theme:'phc',tagline:'Care, a little closer.',screens:phcScreens,scope:['Product design','Farmer app','Expert workflow'],source:'Actual farmer-app captures from the Plant Health Clinic review build, 20 September 2026. Medical and agricultural advice is not provided through this portfolio viewer.'},
  'skiie':{category:'Websites',theme:'skiie',tagline:'Where ideas find their people.',scope:['Website','Content system','Institutional UX'],screens:[shot('home','Public homepage','skiie',960,'The public SKIIE homepage, captured 20 September 2026.',1440)],source:'Captured from the public skiie.co.in homepage on 20 September 2026. The live website may have changed since this capture.'},
- 'kashcrop':{category:'Platforms',theme:'kashcrop',scope:['Grower tools','Web + Android','Full-stack'],screens:[],source:'Project description and implementation details from the existing KashCrop portfolio records.'},
+ 'kashcrop':{category:'Platforms',theme:'kashcrop',scope:['Grower tools','Web + Android','Full-stack'],screens:[],overview:['KashCrop brings the most useful orchard tools together: mandi rates, a seasonal roadmap, weather, references, and calculators for spray quantities, units, and estimated profit.','The project was developed for web and Android, with Kashmiri, Urdu and English interfaces. Its core utility experience brings the practical tools together, with account-based and experimental features kept separate.'],source:'Project description and implementation details from the existing KashCrop portfolio records. This case documents the orchard companion under its earlier KashCrop identity.'},
  'trace-amp':{category:'Research',theme:'research',scope:['Research interface','Scientific workflow','Full-stack'],screens:[],source:'System overview drawn from the existing project record. The illustrated workflow is not an application screenshot.'},
- 'treat-my-fish':{category:'Applied AI',theme:'fish',scope:['Grower app','Expert workflow','Applied AI'],screens:[],source:'System overview drawn from the existing project record. The illustrated workflow is not an application screenshot.',workflow:{title:'A clearer route from case to advisory.',steps:['Capture the fish-health case','Add water and feed context','Retrieve relevant references','Expert reviews and follows up']}},
+ 'treat-my-fish':{category:'Applied AI',theme:'fish',scope:['Grower app','Expert workflow','Applied AI'],screens:[],source:'System overview drawn from the existing project record. The illustrated workflow is not an application screenshot.'},
+};
+const datedReferenceLabels: Record<string, string> = {
+ 'https://risingkashmir.com/skuast-k-launches-ai-driven-plant-health-clinic/':'App launch · Rising Kashmir · 19 May 2026',
+ 'https://kashmirreader.com/2026/04/09/skuast-k-launches-nextgen-e-plant-clinic-at-shalimar-campus/':'Clinic facilities · Kashmir Reader · 9 April 2026',
 };
 const legacy: Project[] = caseStudyProjects.map(p => ({
  slug:p.slug,name:p.name,category:'Platforms',theme:'research',kind:p.kind,year:p.year,tagline:p.tagline,
  summary:p.summary,overview:p.detail?.overview ?? [p.summary],features:p.features,stack:p.stack,
- facts:(p.detail?.facts ?? []).filter(f=>f.label!=='Status'),scope:['Product design','Engineering'],screens:[],
- source:'Project information from the existing company portfolio.',links:p.links,
+ facts:(p.detail?.facts ?? []).map(f=>f.label==='Status' ? {label:p.slug==='plant-health-clinic'?'Public milestone':'Website',value:p.slug==='skiie'?'skiie.co.in':p.slug==='plant-health-clinic'?'App inaugurated · 18 May 2026':f.value} : f),scope:['Product design','Engineering'],screens:[],
+ source:'Project information from the existing company portfolio.',links:p.links.filter(link=>p.slug!=='kashcrop'||link.kind!=='playstore').map(link=>({...link,label:datedReferenceLabels[link.href] ?? link.label})),
  workflow:p.detail?.vizier ? {title:p.detail.vizier.headline,steps:p.detail.vizier.steps} : null,
+ diagrams:caseSystemDiagrams[p.slug] ?? [],depth:caseDepth[p.slug] ?? null,
  ...visual[p.slug],
 }));
 export const projects: Project[] = [garden,...['plant-health-clinic','skiie','kashcrop','treat-my-fish','trace-amp'].map(slug=>legacy.find(p=>p.slug===slug)!).filter(Boolean)];

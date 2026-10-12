@@ -1,9 +1,9 @@
 import { Link, type MetaFunction } from 'react-router';
 import { getProject, media } from '~/data/portfolio/catalog';
 import { serviceCatalog, type Service } from '~/data/portfolio/services';
-import { packageComparison, offerScope } from '~/data/portfolio/offer';
 import { projectFilms } from '~/data/portfolio/films';
 import { Icon } from '~/components/portfolio/Icon';
+import { PackageComparison } from '~/components/portfolio/overdrive/PackageComparison';
 import { pageMeta } from '~/lib/portfolio/seo';
 import '~/styles/portfolio/overdrive-services.css';
 
@@ -107,32 +107,7 @@ export default function ServicesPage() {
       {serviceCatalog.map(service => <ServiceChapter key={service.slug} service={service} />)}
     </section>
 
-    <section className="ods-package" id="compare" aria-labelledby="ods-package-title">
-      <div className="od-wrap">
-        <div className="ods-package-heading">
-          <h2 id="ods-package-title">THE WHOLE<br /><span>PACKAGE.</span></h2>
-          <p>Look beyond the build price. Agree who handles the launch, the hosting and the years that follow.</p>
-        </div>
-        <div className="ods-package-table-wrap">
-          <table className="ods-package-table">
-            <caption className="sr-only">KashCrop project packages: compare the development, launch and maintenance scope.</caption>
-            <thead><tr><th scope="col">What to compare</th><th scope="col">Your KashCrop package</th></tr></thead>
-            <tbody>{packageComparison.map(row => <tr key={row.id}>
-              <th scope="row">{row.feature}</th>
-              <td><strong>{row.answer}</strong><span>{row.detail}</span></td>
-            </tr>)}</tbody>
-          </table>
-        </div>
-        <div className="ods-package-bottom">
-          <details className="ods-package-terms">
-            <summary>Package &amp; publishing terms<Icon name="down" /></summary>
-            <p>{offerScope}</p>
-            <p>Play Console is set up in the client’s name, with delegated access for management. Compare the written scope of each provider’s offer.</p>
-          </details>
-          <Link className="ods-button ods-button-blue" to="/contact">Plan your project<Icon name="arrow" /></Link>
-        </div>
-      </div>
-    </section>
+    <PackageComparison id="compare" />
 
     <section className="ods-close od-wrap" aria-labelledby="ods-close-title">
       <h2 id="ods-close-title">WHAT ARE<br /><span>YOU MAKING?</span></h2>
