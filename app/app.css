@@ -1,13 +1,4 @@
-/* Fieldwork builds upon the existing working app routes and viewer; legacy foundations remain for unconverted service details. */
 @import './styles/portfolio/apple-base.css';
 @import './styles/portfolio/viewer.css';
 @import './styles/portfolio/forms.css';
-@import './styles/portfolio/apple.css';
-@import './styles/portfolio/apple-pages.css';
-@import './styles/portfolio/offer.css';
-
-/* Editorial Fieldwork art direction / 9 October 2026. */
-@import './styles/portfolio/fieldwork.css';
-
-/* Fieldwork studio-wide continuation, after the first case-file pass. */
-@import './styles/portfolio/fieldwork-expansion.css';
+@import './styles/portfolio/overdrive.css';

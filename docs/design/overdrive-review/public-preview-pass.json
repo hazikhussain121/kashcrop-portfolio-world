@@ -1,0 +1,17 @@
+{
+  "url": "https://prove-jane-little-ranking.trycloudflare.com",
+  "home": {
+    "status": 200,
+    "title": "Bright ideas. Real things. | KashCrop Innovations",
+    "heading": "Bright ideas.\nReal things.",
+    "ground": "rgb(36, 72, 232)",
+    "imagesReady": true,
+    "reel": true
+  },
+  "directFilter": {
+    "url": "https://prove-jane-little-ranking.trycloudflare.com/projects/?category=Applied+AI",
+    "count": 2
+  },
+  "pageErrors": [],
+  "verifiedAt": "2026-10-12T03:39:29.939Z"
+}

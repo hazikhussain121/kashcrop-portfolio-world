@@ -1,0 +1,160 @@
+{
+  "checks": [
+    {
+      "name": "direct category URL hydrates and renders two matching projects",
+      "pass": true,
+      "detail": {
+        "url": "http://127.0.0.1:5216/projects/?category=Applied+AI",
+        "count": 2,
+        "projects": [
+          "Plant Health Clinic",
+          "Treat My Fish"
+        ]
+      }
+    },
+    {
+      "name": "direct empty search URL hydrates and reset restores all work",
+      "pass": true,
+      "detail": {
+        "empty": {
+          "url": "http://127.0.0.1:5216/projects/?q=zz-no-such-project&category=Applied+AI",
+          "count": 0
+        },
+        "resetCount": 6,
+        "refilteredCount": 2,
+        "url": "http://127.0.0.1:5216/projects?category=Applied+AI"
+      }
+    },
+    {
+      "name": "direct viewer URL hydrates and opens requested screen",
+      "pass": true,
+      "detail": {
+        "loaded": {
+          "naturalWidth": 390,
+          "naturalHeight": 2556
+        },
+        "focus": "Close project viewer",
+        "urlAfterClose": "http://127.0.0.1:5216/projects/baghban/"
+      }
+    },
+    {
+      "name": "alias, viewer navigation, zoom, Escape and focus restoration",
+      "pass": true,
+      "detail": {
+        "alias": "http://127.0.0.1:5216/projects/baghban/",
+        "zoomWorks": true,
+        "escape": "First fits to view; second closes",
+        "focusRestored": true
+      }
+    },
+    {
+      "name": "mobile viewer selection, image loading, layout and dismissal",
+      "pass": true,
+      "detail": {
+        "originals": 5,
+        "viewport": {
+          "width": 390,
+          "scrollWidth": 390
+        },
+        "accessibilityViolations": [],
+        "focusRestored": true
+      }
+    }
+  ],
+  "errors": [],
+  "networkFailures": [],
+  "artifacts": [
+    "viewer-desktop.jpg",
+    "viewer-mobile.jpg"
+  ],
+  "finishedAt": "2026-10-12T03:31:50.681Z",
+  "finalViewerVerification": {
+    "results": [
+      {
+        "name": "desktop",
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "screen": "calendar",
+        "selection": [
+          {
+            "screen": "home",
+            "selected": false,
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "screen": "orchard-setup",
+            "selected": false,
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "screen": "calendar",
+            "selected": true,
+            "background": "rgb(36, 72, 232)"
+          },
+          {
+            "screen": "varieties",
+            "selected": false,
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "screen": "desktop",
+            "selected": false,
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ],
+        "colors": {
+          "text": "rgb(83, 96, 127)",
+          "surface": "rgb(212, 223, 252)"
+        },
+        "violations": [],
+        "focusRestored": true
+      },
+      {
+        "name": "mobile",
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "screen": "orchard-setup",
+        "selection": [
+          {
+            "screen": "home",
+            "selected": false,
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "screen": "orchard-setup",
+            "selected": true,
+            "background": "rgb(36, 72, 232)"
+          },
+          {
+            "screen": "calendar",
+            "selected": false,
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "screen": "varieties",
+            "selected": false,
+            "background": "rgba(0, 0, 0, 0)"
+          },
+          {
+            "screen": "desktop",
+            "selected": false,
+            "background": "rgba(0, 0, 0, 0)"
+          }
+        ],
+        "colors": {
+          "text": "rgb(83, 96, 127)",
+          "surface": "rgb(212, 223, 252)"
+        },
+        "violations": [],
+        "focusRestored": true
+      }
+    ],
+    "errors": [],
+    "completedAt": "2026-10-12T03:37:54.872Z",
+    "contrastFix": "Dimensions text uses #53607f on #d4dffc. Capture subtitles use full opacity."
+  }
+}

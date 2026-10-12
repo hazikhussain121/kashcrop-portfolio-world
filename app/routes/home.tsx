@@ -1,9 +1,9 @@
 import type { MetaFunction } from 'react-router';
-import FieldworkHome from '~/components/portfolio/FieldworkHome';
+import OverdriveHome from '~/components/portfolio/overdrive/OverdriveHome';
 import { pageMeta } from '~/lib/portfolio/seo';
 
-export const meta: MetaFunction = () => pageMeta('The work has to work.', 'KashCrop Innovations is an independent software studio in Kashmir. Product design, engineering and applied AI for the real world.');
+export const meta: MetaFunction = () => pageMeta('Bright ideas. Real things.', 'KashCrop Innovations is an independent studio in Kashmir. Explore product design, engineering and applied AI through our real work.');
 
 export default function Home() {
-  return <FieldworkHome />;
+  return <OverdriveHome />;
 }

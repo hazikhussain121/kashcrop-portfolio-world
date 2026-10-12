@@ -1,8 +1,11 @@
 import { Link, type MetaFunction } from 'react-router';
 import { getProject, media } from '~/data/portfolio/catalog';
 import { serviceCatalog, type Service } from '~/data/portfolio/services';
+import { packageComparison, offerScope } from '~/data/portfolio/offer';
+import { projectFilms } from '~/data/portfolio/films';
 import { Icon } from '~/components/portfolio/Icon';
 import { pageMeta } from '~/lib/portfolio/seo';
+import '~/styles/portfolio/overdrive-services.css';
 
 export const meta: MetaFunction = () => pageMeta(
   'What we do',
@@ -10,97 +13,130 @@ export const meta: MetaFunction = () => pageMeta(
   '/services',
 );
 
-const serviceHeadlines: Record<string, [string, string]> = {
-  'full-stack-apps': ['The whole product.', 'Built together.'],
-  'website-development': ['A great first impression.', 'And everything after.'],
-  'ai-training': ['Your expertise.', 'Part of the workflow.'],
-  'blockchain-systems': ['Every handoff.', 'A clearer record.'],
-};
+/** The same sourced product material carries the index and its detail routes. */
+export function ServiceMedia({ service, priority = false }: { service: Service; priority?: boolean }) {
+  const loading = priority ? 'eager' : 'lazy';
 
-function ServicePreview({ service }: { service: Service }) {
   if (service.visual === 'platform') {
-    return <div className="ap-service-preview ap-service-platform">
-      <div className="ap-preview-phone ap-service-phone-back"><img src={media('phc-home.webp')} alt="Plant Health Clinic farmer app" width="390" height="844" loading="eager" decoding="async" /></div>
-      <div className="ap-preview-phone ap-service-phone-front"><img src={media('garden-home.webp')} alt="Baghban orchard services app" width="390" height="844" loading="eager" decoding="async" /></div>
-      <span className="ap-visual-note">Baghban &amp; Plant Health Clinic</span>
-    </div>;
+    return <figure className="ods-media ods-media-platform">
+      <div className="ods-media-surface">
+        <Link to="/projects/plant-health-clinic" className="ods-phone ods-phone-back" aria-label="Explore the Plant Health Clinic case study">
+          <img src={media('phc-home.webp')} alt="Plant Health Clinic farmer home, showing the implemented app interface" width="390" height="844" loading={loading} decoding="async" />
+        </Link>
+        <Link to="/projects/baghban" className="ods-phone ods-phone-front" aria-label="Explore the BaghBani case study">
+          <img src={media('garden-home.webp')} alt="BaghBani farmer home, showing orchard services and grower tools" width="390" height="844" loading={loading} decoding="async" />
+        </Link>
+      </div>
+      <figcaption>BaghBani &amp; Plant Health Clinic. Actual review-build captures, September 2026.</figcaption>
+    </figure>;
   }
 
   if (service.visual === 'website') {
-    return <div className="ap-service-preview ap-service-website">
-      <div className="ap-preview-browser ap-service-campus">
-        <div className="ap-browser-bar" aria-hidden="true"><span className="ap-browser-dots"><i /><i /><i /></span><span>skiie.co.in</span><Icon name="link" /></div>
-        <div className="ap-browser-content"><img src={media('skiie.webp')} alt="SKIIE public website, captured in September 2026" width="1440" height="960" loading="lazy" decoding="async" /></div>
+    return <figure className="ods-media ods-media-website">
+      <div className="ods-media-surface">
+        <Link to="/projects/skiie" className="ods-browser-capture" aria-label="Explore the SKIIE website case study">
+          <img src={media('skiie.webp')} alt="SKIIE public website with startup, programme and institutional content" width="1440" height="960" loading={loading} decoding="async" />
+        </Link>
       </div>
-      <span className="ap-visual-note">SKIIE · Public website</span>
-    </div>;
+      <figcaption>SKIIE public website. Captured on 20 September 2026.</figcaption>
+    </figure>;
   }
 
   if (service.visual === 'ai') {
-    return <div className="ap-service-preview ap-service-ai">
-      <div className="ap-preview-browser ap-service-research">
-        <div className="ap-browser-bar" aria-hidden="true"><span className="ap-browser-dots"><i /><i /><i /></span><span>TraceAMP</span><Icon name="link" /></div>
-        <img src="/media/projects/trace-amp/poster.webp" alt="TraceAMP research interface showing properties and a helical-wheel view for a sample sequence" width="1920" height="1080" loading="lazy" decoding="async" />
+    const film = projectFilms['trace-amp'];
+    return <figure className="ods-media ods-media-ai">
+      <div className="ods-media-surface">
+        <Link to="/projects/trace-amp" className="ods-research-capture" aria-label="Explore the TRACE-AMP research case study">
+          <img src={film.poster} alt="TRACE-AMP research interface with biophysical properties and a helical-wheel view for a sample sequence" width={film.width} height={film.height} loading={loading} decoding="async" />
+        </Link>
+        <Link to="/projects/plant-health-clinic" className="ods-ai-phone" aria-label="Explore the Plant Health Clinic case study">
+          <img src={media('phc-submit.webp')} alt="Plant Health Clinic interface for reporting a plant-health concern" width="390" height="844" loading={loading} decoding="async" />
+        </Link>
       </div>
-      <span className="ap-visual-note">TraceAMP · Interface demonstration</span>
-    </div>;
+      <figcaption>TRACE-AMP: interface demo with sample data, 2 October 2026. Plant Health Clinic: September review build.</figcaption>
+    </figure>;
   }
 
-  return <figure className="ap-service-preview ap-service-traceability">
-    <div className="ap-custody-drawing" aria-hidden="true">
-      <svg viewBox="0 0 600 220" fill="none">
-        <path className="ap-custody-line" d="M132 110H262M338 110H468" />
-        <rect className="ap-custody-block" x="40" y="64" width="92" height="92" rx="23" />
-        <path className="ap-custody-symbol" d="m64 98 22-12 22 12-22 12-22-12Zm0 12 22 12 22-12m-44 12 22 12 22-12" />
-        <rect className="ap-custody-block" x="254" y="64" width="92" height="92" rx="23" />
-        <path className="ap-custody-symbol" d="M287 90h22l8 8v32h-34V90h4Zm20 0v10h10m-25 10h16m-16 10h12" />
-        <rect className="ap-custody-block" x="468" y="64" width="92" height="92" rx="23" />
-        <path className="ap-custody-symbol" d="m493 110 14 14 28-28" />
-        <circle className="ap-custody-pulse" cx="178" cy="110" r="4" />
-        <circle className="ap-custody-pulse" cx="393" cy="110" r="4" />
-      </svg>
-      <div className="ap-custody-labels"><span>Records</span><span>Evidence</span><span>Verification</span></div>
+  return <figure className="ods-media ods-media-traceability">
+    <div className="ods-media-surface">
+      <div className="ods-trace-words">
+        <span>LOT RECORDS<Icon name="down" /></span>
+        <span>CUSTODY<Icon name="down" /></span>
+        <span>PUBLIC PROOF<Icon name="arrow" /></span>
+      </div>
     </div>
-    <p className="ap-custody-statement">Follow the journey.<br /><span>Keep the proof.</span></p>
-    <figcaption className="ap-visual-note">Conceptual traceability workflow</figcaption>
+    <figcaption>The traceability workflow. Records, evidence and verification are shaped around the actual process.</figcaption>
   </figure>;
 }
 
+function ServiceChapter({ service }: { service: Service }) {
+  const projects = service.projects.map(getProject).filter((project): project is NonNullable<typeof project> => !!project);
+
+  return <article className={'ods-chapter ods-chapter-' + service.visual} id={'service-' + service.slug} aria-labelledby={'title-' + service.slug}>
+    <div className="ods-chapter-copy">
+      <h2 id={'title-' + service.slug}>{service.name}<span aria-hidden="true">.</span></h2>
+      <p>{service.description}</p>
+      <ul className="ods-included-preview" role="list">{service.includes.slice(0, 3).map(item => <li key={item}>{item}</li>)}</ul>
+      <Link className="ods-text-link" to={'/services/' + service.slug}>Explore {service.name.toLowerCase()}<Icon name="arrow" /></Link>
+    </div>
+    <div className="ods-chapter-exhibit">
+      <ServiceMedia service={service} />
+      {projects.length > 0 ? <nav className="ods-project-links" aria-label={service.name + ' case studies'}>
+        {projects.map(project => <Link key={project.slug} to={'/projects/' + project.slug}>{project.name}<Icon name="arrow" /></Link>)}
+      </nav> : <p className="ods-project-references">{service.proof.join(' · ')}</p>}
+    </div>
+  </article>;
+}
+
 export default function ServicesPage() {
-  return <main id="main" className="fw-services fw-editorial-page">
-    <header className="fw-services-hero fw-edge">
-      <div className="fw-editorial-rail"><span>CAPABILITIES / END TO END</span><span>THE WORK BEHIND THE WORK</span></div>
-      <div className="fw-services-hero-heading"><h1>NO PRETTY<br/><em>DEAD ENDS.</em></h1><p>We design, engineer and deliver useful software. The interface is only the beginning of the story.</p></div>
-      <nav className="fw-services-toc" aria-label="Explore our services">{serviceCatalog.map((service,index)=><a href={'#service-'+service.slug} key={service.slug}><span>{String(index+1).padStart(2,'0')}</span>{service.name}<Icon name="down"/></a>)}</nav>
-    </header>
-    <section className="fw-service-sections fw-edge" aria-label="Studio capabilities">
-      {serviceCatalog.map((service,index)=>{
-        const [first,second]=serviceHeadlines[service.slug];
-        return <article className="fw-service-chapter" id={'service-'+service.slug} key={service.slug}>
-          <div className="fw-service-chapter-marker"><span>{String(index+1).padStart(2,'0')} / 04</span><span>{service.name}</span><span>↘</span></div>
-          <div className="fw-service-chapter-main">
-            <div className="fw-service-chapter-copy">
-              <h2>{first}<br/><em>{second}</em></h2><p>{service.description}</p>
-              <ul>{service.includes.slice(0,4).map(item=><li key={item}>{item}</li>)}</ul>
-              <Link className="fw-underlink" to={'/services/'+service.slug}>What goes into {service.name.toLowerCase()} <span aria-hidden="true">↗</span></Link>
-            </div>
-            <div className="fw-service-chapter-visual"><ServicePreview service={service}/></div>
-          </div>
-          {service.projects.length>0 && <div className="fw-service-proof"><span>PROOF IN THE WORK</span><div>{service.projects.map(slug=>{const project=getProject(slug);return project?<Link key={slug} to={'/projects/'+slug}>{project.name}<Icon name="right"/></Link>:null})}</div></div>}
-        </article>;
-      })}
-    </section>
-    <section className="fw-terms fw-edge" id="compare" aria-labelledby="fw-terms-title">
-      <div className="fw-editorial-rail"><span>WHAT A COMPLETE PROJECT INCLUDES</span><span>NO SURPRISE PROMISES</span></div>
-      <div className="fw-terms-lead"><h2 id="fw-terms-title">BEYOND<br/><em>LAUNCH DAY.</em></h2><p>A product is more than the moment it goes live. We plan the delivery, hosting and care as part of the real scope.</p></div>
-      <div className="fw-terms-columns">
-        <div><span>01 / DEVELOPMENT</span><h3>One agreed project price.</h3><p>A fixed price for the development scope defined together.</p></div>
-        <div><span>02 / HOSTING</span><h3>The infrastructure matters.</h3><p>Setup and hosting included where agreed, for the term named in the quote.</p></div>
-        <div><span>03 / RELEASES</span><h3>Your account, your control.</h3><p>Play Console account setup and Android release management, subject to Google's verification and review.</p></div>
-        <div><span>04 / CARE</span><h3>Up to four years of support.</h3><p>Maintenance options are scoped by coverage and duration. Third-party charges are stated in writing.</p></div>
+  return <main id="main" className="ods-page">
+    <header className="ods-hero od-wrap">
+      <div className="ods-hero-heading">
+        <h1>FROM IDEA<br /><span>TO IN USE.</span></h1>
+        <div className="ods-hero-copy">
+          <p>Product design, engineering and applied AI. We build the software and plan for the life it has after launch.</p>
+          <Link className="ods-button" to="/contact">Tell us what you’re making<Icon name="arrow" /></Link>
+        </div>
       </div>
-      <div className="fw-terms-bottom"><p>Compare written scopes. Different providers offer different packages; there is no universal checklist.</p><Link to="/contact" className="fw-underlink">Plan your project <span aria-hidden="true">↗</span></Link></div>
+      <nav className="ods-service-nav" aria-label="Explore our services">
+        {serviceCatalog.map(service => <a key={service.slug} href={'#service-' + service.slug}>{service.name}<Icon name="down" /></a>)}
+      </nav>
+    </header>
+
+    <section className="ods-chapters od-wrap" aria-label="Our services">
+      {serviceCatalog.map(service => <ServiceChapter key={service.slug} service={service} />)}
     </section>
-    <section className="fw-service-end fw-edge"><p>GOT SOMETHING COMPLEX?</p><h2>GOOD.<br/><em>WE LIKE HARD PROBLEMS.</em></h2><Link to="/contact">Let's talk about it <span aria-hidden="true">↗</span></Link></section>
+
+    <section className="ods-package" id="compare" aria-labelledby="ods-package-title">
+      <div className="od-wrap">
+        <div className="ods-package-heading">
+          <h2 id="ods-package-title">THE WHOLE<br /><span>PACKAGE.</span></h2>
+          <p>Look beyond the build price. Agree who handles the launch, the hosting and the years that follow.</p>
+        </div>
+        <div className="ods-package-table-wrap">
+          <table className="ods-package-table">
+            <caption className="sr-only">KashCrop project packages: compare the development, launch and maintenance scope.</caption>
+            <thead><tr><th scope="col">What to compare</th><th scope="col">Your KashCrop package</th></tr></thead>
+            <tbody>{packageComparison.map(row => <tr key={row.id}>
+              <th scope="row">{row.feature}</th>
+              <td><strong>{row.answer}</strong><span>{row.detail}</span></td>
+            </tr>)}</tbody>
+          </table>
+        </div>
+        <div className="ods-package-bottom">
+          <details className="ods-package-terms">
+            <summary>Package &amp; publishing terms<Icon name="down" /></summary>
+            <p>{offerScope}</p>
+            <p>Play Console is set up in the client’s name, with delegated access for management. Compare the written scope of each provider’s offer.</p>
+          </details>
+          <Link className="ods-button ods-button-blue" to="/contact">Plan your project<Icon name="arrow" /></Link>
+        </div>
+      </div>
+    </section>
+
+    <section className="ods-close od-wrap" aria-labelledby="ods-close-title">
+      <h2 id="ods-close-title">WHAT ARE<br /><span>YOU MAKING?</span></h2>
+      <Link to="/contact" className="ods-close-link">Let’s talk<Icon name="arrow" /></Link>
+    </section>
   </main>;
 }

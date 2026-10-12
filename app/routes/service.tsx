@@ -1,96 +1,63 @@
 import { Link, useLoaderData, type LoaderFunctionArgs, type MetaFunction } from 'react-router';
 import { getService, serviceCatalog, serviceFormValues } from '~/data/portfolio/services';
-import { getProject, media, type Project } from '~/data/portfolio/catalog';
-import { projectFilms } from '~/data/portfolio/films';
-import { Breadcrumbs } from '~/components/portfolio/UI';
+import { getProject } from '~/data/portfolio/catalog';
 import { Icon } from '~/components/portfolio/Icon';
 import { pageMeta } from '~/lib/portfolio/seo';
+import { ServiceMedia } from './services';
+import '~/styles/portfolio/overdrive-services.css';
 
 export function loader({ params }: Pick<LoaderFunctionArgs, 'params' | 'request'>) {
   const service = getService(params.slug);
   if (!service) throw new Response('Service not found', { status: 404 });
   return { service };
 }
+
 export const meta: MetaFunction<typeof loader> = ({ data }) => data?.service
   ? pageMeta(data.service.name, data.service.description, '/services/' + data.service.slug)
   : pageMeta('Service not found', 'Explore KashCrop services.', '/services');
 
-function EvidencePreview({ project, hero = false }: { project: Project; hero?: boolean }) {
-  const screen = project.screens[0];
-  const film = projectFilms[project.slug];
-  const mobile = screen?.kind === 'Mobile' || (!screen && project.slug !== 'trace-amp' && !!film?.mobile);
-  const src = screen ? media(screen.file) : mobile ? film?.mobile?.poster : film?.poster;
-  const width = screen?.width ?? (mobile ? film?.mobile?.width : film?.width);
-  const height = screen?.height ?? (mobile ? film?.mobile?.height : film?.height);
-
-  const preview = <div className={'ap-evidence-preview' + (mobile ? ' ap-evidence-phone' : ' ap-evidence-desktop') + (hero ? ' ap-evidence-hero' : '') + (project.slug === 'skiie' ? ' ap-evidence-campus' : '')}>
-    <div className={mobile ? 'ap-preview-phone' : 'ap-preview-browser'}>
-      {!mobile && <div className="ap-browser-bar" aria-hidden="true"><span className="ap-browser-dots"><i /><i /><i /></span><span>{project.slug === 'skiie' ? 'skiie.co.in' : project.name}</span><Icon name="link" /></div>}
-      <div className="ap-evidence-screen"><img src={src} alt={project.name + (screen ? ': ' + screen.name : ' interface demonstration with sample data')} width={width} height={height} loading="lazy" decoding="async" /></div>
-    </div>
-  </div>;
-  return hero ? <figure className="ap-evidence-figure">{preview}<figcaption className="ap-evidence-caption">{project.name} · Actual product interface</figcaption></figure> : preview;
-}
-
-function TraceabilityStage() {
-  return <figure className="ap-service-preview ap-detail-traceability">
-    <div className="ap-custody-drawing" aria-hidden="true">
-      <svg viewBox="0 0 600 220" fill="none">
-        <path className="ap-custody-line" d="M132 110H262M338 110H468" />
-        <rect className="ap-custody-block" x="40" y="64" width="92" height="92" rx="23" />
-        <path className="ap-custody-symbol" d="m64 98 22-12 22 12-22 12-22-12Zm0 12 22 12 22-12m-44 12 22 12 22-12" />
-        <rect className="ap-custody-block" x="254" y="64" width="92" height="92" rx="23" />
-        <path className="ap-custody-symbol" d="M287 90h22l8 8v32h-34V90h4Zm20 0v10h10m-25 10h16m-16 10h12" />
-        <rect className="ap-custody-block" x="468" y="64" width="92" height="92" rx="23" />
-        <path className="ap-custody-symbol" d="m493 110 14 14 28-28" />
-      </svg>
-      <div className="ap-custody-labels"><span>Records</span><span>Evidence</span><span>Verification</span></div>
-    </div>
-    <p className="ap-custody-statement">Follow the journey.<br /><span>Keep the proof.</span></p>
-    <figcaption className="ap-visual-note">Conceptual traceability workflow</figcaption>
-  </figure>;
-}
-
 export default function ServicePage() {
-  const { service: s } = useLoaderData<typeof loader>();
-  const evidence = s.projects.map(getProject).filter((project): project is NonNullable<typeof project> => !!project);
+  const { service } = useLoaderData<typeof loader>();
+  const evidence = service.projects.map(getProject).filter((project): project is NonNullable<typeof project> => !!project);
+  const contactPath = '/contact?service=' + encodeURIComponent(serviceFormValues[service.slug]);
 
-  return <main id="main" className="ap-page ap-detail-page">
-    <div className="ap-wrap ap-detail-breadcrumbs"><Breadcrumbs items={[{ label: 'What we do', to: '/services' }, { label: s.name }]} /></div>
-    <header className="ap-service-detail-intro ap-wrap">
-      <div><h1>{s.headline}</h1><p>{s.philosophy}</p><Link className="ap-button" to={'/contact?service=' + serviceFormValues[s.slug]}>Let’s discuss your project <Icon name="right" /></Link></div>
-      {evidence[0] ? <EvidencePreview project={evidence[0]} hero /> : <TraceabilityStage />}
+  return <main id="main" className="ods-page ods-detail-page">
+    <header className="ods-detail-hero od-wrap">
+      <nav className="ods-breadcrumb" aria-label="Breadcrumb"><Link to="/services"><Icon name="left" />All services</Link><span aria-current="page">{service.name}</span></nav>
+      <div className="ods-detail-title"><h1>{service.name}<span aria-hidden="true">.</span></h1><Link className="ods-button" to={contactPath}>Discuss your project<Icon name="arrow" /></Link></div>
+      <div className="ods-detail-opening">
+        <div className="ods-detail-intro"><h2>{service.headline}</h2><p>{service.philosophy}</p><a className="ods-text-link" href="#scope">See what’s included<Icon name="down" /></a></div>
+        <ServiceMedia service={service} priority />
+      </div>
     </header>
 
-    <section className="ap-service-detail-scope ap-wrap">
-      <div><h2>Built around<br /><span>what you need.</span></h2><p>The scope is agreed around your workflow, audience and operating requirements.</p></div>
-      <ul className="ap-detail-capabilities">{s.includes.map(item => <li key={item}><Icon name="check" /><span>{item}</span></li>)}</ul>
+    <section className="ods-scope od-wrap" id="scope" aria-labelledby="ods-scope-title">
+      <div className="ods-detail-section-heading"><h2 id="ods-scope-title">What goes<br />into it.</h2><p>The scope follows your audience, workflow and operating requirements.</p></div>
+      <ul className="ods-scope-list" role="list">{service.includes.map(item => <li key={item}><span>{item}</span><Icon name="check" /></li>)}</ul>
     </section>
 
-    <section className="ap-service-detail-process ap-wrap">
-      <div className="ap-detail-section-heading"><h2>From understanding<br /><span>to handover.</span></h2><p>A connected process, with the product<br />visible as it takes shape.</p></div>
-      <ol className="ap-detail-process">{s.process.map((step, index) => <li key={step}><span aria-hidden="true">{index + 1}</span><h3>{step}</h3></li>)}</ol>
+    <section className="ods-process-section" aria-labelledby="ods-process-title">
+      <div className="od-wrap">
+        <div className="ods-process-heading"><h2 id="ods-process-title">A clear path<br />through the work.</h2><Link className="ods-text-link" to="/services#compare">Delivery &amp; support<Icon name="arrow" /></Link></div>
+        <ol className="ods-process-list" role="list">{service.process.map((step, index) => <li key={step}><span className="ods-process-number" aria-hidden="true">{index + 1}</span><h3>{step}</h3></li>)}</ol>
+      </div>
     </section>
 
-    {evidence.length > 0 && <section className="ap-service-detail-evidence ap-wrap">
-      <div className="ap-detail-section-heading"><h2>See it in the work.</h2><Link className="ap-text-link" to="/projects">All projects <Icon name="right" /></Link></div>
-      <div className="ap-related-projects">{evidence.map(project => <article key={project.slug}>
-        <Link className="ap-related-project-link" to={'/projects/' + project.slug}>
-          <EvidencePreview project={project} />
-          <div><h3>{project.name}<Icon name="right" /></h3><p>{project.tagline}</p></div>
-        </Link>
-      </article>)}</div>
-      <p className="ap-capture-note">Interface captures from September–October 2026. Product demonstrations use sample data.</p>
-    </section>}
-
-    <section className="ap-other-services ap-wrap">
-      <h2>Connected disciplines.</h2>
-      <nav aria-label="Other services">{serviceCatalog.filter(service => service.slug !== s.slug).map(service => <Link key={service.slug} to={'/services/' + service.slug}>{service.name}<Icon name="right" /></Link>)}</nav>
+    <section className="ods-detail-work od-wrap" aria-labelledby="ods-work-title">
+      <div className="ods-detail-section-heading"><h2 id="ods-work-title">{evidence.length ? 'In the work.' : 'Project references.'}</h2><p>{service.proof.join(' · ')}</p></div>
+      {evidence.length > 0 ? <div className="ods-evidence-list">{evidence.map(project => <Link className="ods-evidence-link" key={project.slug} to={'/projects/' + project.slug}>
+        <div><h3>{project.name}</h3><p>{project.tagline}</p></div><Icon name="arrow" />
+      </Link>)}</div> : <div className="ods-trace-reference"><p>Lot history, evidence capture and public proof pages, connected through a clear chain of custody.</p><Link className="ods-text-link" to={contactPath}>Discuss a traceability system<Icon name="arrow" /></Link></div>}
     </section>
 
-    <section className="ap-contact-band ap-wrap">
-      <div><h2>Let’s make it work.</h2><p>Start with your idea. We’ll shape the next step together.</p></div>
-      <Link className="ap-button" to={'/contact?service=' + serviceFormValues[s.slug]}>Discuss your project <Icon name="right" /></Link>
+    <section className="ods-other-services od-wrap" aria-labelledby="ods-other-title">
+      <h2 id="ods-other-title">It all connects.</h2>
+      <nav aria-label="Other services">{serviceCatalog.filter(item => item.slug !== service.slug).map(item => <Link key={item.slug} to={'/services/' + item.slug}>{item.name}<Icon name="arrow" /></Link>)}</nav>
+    </section>
+
+    <section className="ods-close ods-detail-close od-wrap" aria-labelledby="ods-detail-close-title">
+      <h2 id="ods-detail-close-title">YOUR NEXT<br /><span>PROJECT?</span></h2>
+      <Link to={contactPath} className="ods-close-link">Let’s talk<Icon name="arrow" /></Link>
     </section>
   </main>;
 }

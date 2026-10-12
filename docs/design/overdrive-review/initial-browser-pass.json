@@ -1,0 +1,290 @@
+{
+  "pages": [
+    {
+      "name": "desktop",
+      "route": "/",
+      "status": 200,
+      "title": "Bright ideas. Real things. | KashCrop Innovations",
+      "h1": "Bright ideas.\nReal things.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 5118,
+      "missing": [],
+      "font": true,
+      "displayFont": true
+    },
+    {
+      "name": "work-desktop",
+      "route": "/projects",
+      "status": 200,
+      "title": "Selected work | KashCrop Innovations",
+      "h1": "THE WORK.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 3792,
+      "missing": [],
+      "font": true,
+      "displayFont": false
+    },
+    {
+      "name": "case-desktop",
+      "route": "/projects/baghban",
+      "status": 200,
+      "title": "BaghBani | KashCrop Innovations",
+      "h1": "BAGHBANI",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 6203,
+      "missing": [],
+      "font": true,
+      "displayFont": false
+    },
+    {
+      "name": "services-desktop",
+      "route": "/services",
+      "status": 200,
+      "title": "What we do | KashCrop Innovations",
+      "h1": "FROM IDEA\nTO IN USE.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 6257,
+      "missing": [],
+      "font": true,
+      "displayFont": false
+    },
+    {
+      "name": "detail-desktop",
+      "route": "/services/full-stack-apps",
+      "status": 200,
+      "title": "Full-stack apps | KashCrop Innovations",
+      "h1": "FULL-STACK APPS.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 4088,
+      "missing": [],
+      "font": true,
+      "displayFont": false
+    },
+    {
+      "name": "about-desktop",
+      "route": "/about",
+      "status": 200,
+      "title": "The studio | KashCrop Innovations",
+      "h1": "Small studio.\nOpen horizons.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 3039,
+      "missing": [],
+      "font": true,
+      "displayFont": true
+    },
+    {
+      "name": "contact-desktop",
+      "route": "/contact",
+      "status": 200,
+      "title": "Start a project | KashCrop Innovations",
+      "h1": "It starts\nwith a hello.",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 1554,
+      "missing": [],
+      "font": true,
+      "displayFont": false
+    },
+    {
+      "name": "mobile",
+      "route": "/",
+      "status": 200,
+      "title": "Bright ideas. Real things. | KashCrop Innovations",
+      "h1": "Bright ideas.\nReal things.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 4852,
+      "missing": [],
+      "font": true,
+      "displayFont": true
+    },
+    {
+      "name": "work-mobile",
+      "route": "/projects",
+      "status": 200,
+      "title": "Selected work | KashCrop Innovations",
+      "h1": "THE WORK.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 5417,
+      "missing": [],
+      "font": true,
+      "displayFont": false
+    },
+    {
+      "name": "case-mobile",
+      "route": "/projects/baghban",
+      "status": 200,
+      "title": "BaghBani | KashCrop Innovations",
+      "h1": "BAGHBANI",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 8216,
+      "missing": [],
+      "font": true,
+      "displayFont": false
+    },
+    {
+      "name": "services-mobile",
+      "route": "/services",
+      "status": 200,
+      "title": "What we do | KashCrop Innovations",
+      "h1": "FROM IDEA\nTO IN USE.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 6860,
+      "missing": [],
+      "font": true,
+      "displayFont": false
+    },
+    {
+      "name": "detail-mobile",
+      "route": "/services/full-stack-apps",
+      "status": 200,
+      "title": "Full-stack apps | KashCrop Innovations",
+      "h1": "FULL-STACK APPS.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 4211,
+      "missing": [],
+      "font": true,
+      "displayFont": false
+    },
+    {
+      "name": "about-mobile",
+      "route": "/about",
+      "status": 200,
+      "title": "The studio | KashCrop Innovations",
+      "h1": "Small studio.\nOpen horizons.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 3235,
+      "missing": [],
+      "font": true,
+      "displayFont": true
+    },
+    {
+      "name": "contact-mobile",
+      "route": "/contact",
+      "status": 200,
+      "title": "Start a project | KashCrop Innovations",
+      "h1": "It starts\nwith a hello.",
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 2384,
+      "missing": [],
+      "font": true,
+      "displayFont": false
+    }
+  ],
+  "checks": [
+    {
+      "name": "375px homepage fits",
+      "pass": true
+    },
+    {
+      "name": "reel controls and keyboard",
+      "pass": true
+    },
+    {
+      "name": "reel dragging changes selected project",
+      "pass": true
+    },
+    {
+      "name": "archive filters, empty search and reset",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n6 !== 2\n"
+    },
+    {
+      "name": "case alias, screen viewer, zoom, deep link and dismissal",
+      "pass": false,
+      "error": "AssertionError [ERR_ASSERTION]: The input did not match the regular expression /\\/projects\\/baghban$/. Input:\n\n'http://127.0.0.1:5216/projects/baghban/'\n"
+    },
+    {
+      "name": "mobile menu focus and navigation",
+      "pass": true
+    },
+    {
+      "name": "contact validation, preserved input and mocked provider states",
+      "pass": true
+    },
+    {
+      "name": "reduced motion preference and controls",
+      "pass": true
+    },
+    {
+      "name": "route /projects/plant-health-clinic",
+      "pass": true
+    },
+    {
+      "name": "route /projects/skiie",
+      "pass": true
+    },
+    {
+      "name": "route /projects/kashcrop",
+      "pass": true
+    },
+    {
+      "name": "route /projects/treat-my-fish",
+      "pass": true
+    },
+    {
+      "name": "route /projects/trace-amp",
+      "pass": true
+    },
+    {
+      "name": "route /services/website-development",
+      "pass": true
+    },
+    {
+      "name": "route /services/ai-training",
+      "pass": true
+    },
+    {
+      "name": "route /services/blockchain-systems",
+      "pass": true
+    },
+    {
+      "name": "route /privacy",
+      "pass": true
+    },
+    {
+      "name": "real 404 response",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "route": "/",
+      "violations": []
+    },
+    {
+      "route": "/projects",
+      "violations": []
+    },
+    {
+      "route": "/projects/baghban",
+      "violations": []
+    },
+    {
+      "route": "/services",
+      "violations": []
+    },
+    {
+      "route": "/about",
+      "violations": []
+    },
+    {
+      "route": "/contact",
+      "violations": []
+    }
+  ],
+  "finishedAt": "2026-10-12T03:23:09.528Z"
+}

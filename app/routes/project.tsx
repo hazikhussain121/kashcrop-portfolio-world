@@ -1,8 +1,6 @@
 import { redirect, useLoaderData, type LoaderFunctionArgs, type MetaFunction } from 'react-router';
 import { getProject, projectAliases } from '~/data/portfolio/catalog';
-import FieldworkBaghBani from '~/components/portfolio/FieldworkBaghBani';
-import FieldworkClinic from '~/components/portfolio/FieldworkClinic';
-import FieldworkCaseFile from '~/components/portfolio/FieldworkCaseFile';
+import ProjectCase from '~/components/portfolio/overdrive/ProjectCase';
 import { breadcrumbSchema, pageMeta } from '~/lib/portfolio/seo';
 
 export function loader({params,request}:Pick<LoaderFunctionArgs,'params'|'request'>) {
@@ -19,7 +17,5 @@ export const meta:MetaFunction<typeof loader>=({data})=>data?.project?[
 
 export default function ProjectPage(){
   const {project}=useLoaderData<typeof loader>();
-  if(project.slug==='baghban')return <FieldworkBaghBani project={project}/>;
-  if(project.slug==='plant-health-clinic')return <FieldworkClinic project={project}/>;
-  return <FieldworkCaseFile project={project}/>;
+  return <ProjectCase key={project.slug} project={project}/>;
 }

@@ -9,3 +9,4 @@ node_modules
 
 # Generated QA captures and Playwright traces
 artifacts/
+/.impeccable/review/

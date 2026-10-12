@@ -1,0 +1,63 @@
+{
+  "results": [
+    {
+      "route": "/",
+      "name": "desktop",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missing": [],
+      "hero": {
+        "textRight": 586.125,
+        "galleryLeft": 614.0625
+      },
+      "thumbnails": []
+    },
+    {
+      "route": "/",
+      "name": "mobile",
+      "width": 390,
+      "scrollWidth": 390,
+      "missing": [],
+      "hero": {
+        "textRight": 303.265625,
+        "galleryLeft": 8
+      },
+      "thumbnails": []
+    },
+    {
+      "route": "/",
+      "name": "tablet",
+      "width": 1024,
+      "scrollWidth": 1024,
+      "missing": [],
+      "hero": {
+        "textRight": 418.34375,
+        "galleryLeft": 440.125
+      },
+      "thumbnails": []
+    },
+    {
+      "route": "/contact",
+      "name": "contact-desktop",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missing": [],
+      "hero": null,
+      "thumbnails": [
+        {
+          "width": 152,
+          "height": 160
+        },
+        {
+          "width": 152,
+          "height": 160
+        },
+        {
+          "width": 152,
+          "height": 160
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

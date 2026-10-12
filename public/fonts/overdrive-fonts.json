@@ -1,0 +1,50 @@
+{
+  "source": "Google Fonts CSS2 API and official google/fonts repository",
+  "fetchedAt": "2026-10-12T03:04:31.392880+00:00",
+  "files": [
+    {
+      "file": "sora-latin-variable.woff2",
+      "family": "Sora",
+      "source": "https://fonts.gstatic.com/s/sora/v17/xMQ9uFFYT72X5wkB_18qmnndmSdSnh2BAfO5mnuyOo1lfiQwV6-x.woff2",
+      "bytes": 25284,
+      "sha256": "811e11966d29f3a01fcb19b087b61ac067d380665a55aebb7fcdf2cda95e4a93",
+      "weight": "400 800",
+      "style": "normal",
+      "subset": "latin"
+    },
+    {
+      "file": "barlow-condensed-latin-700.woff2",
+      "family": "Barlow Condensed",
+      "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B46r2z3bWuQ.woff2",
+      "bytes": 22444,
+      "sha256": "3787a5a419171630e6890cfa47c4da067474d005cd0ff8dc11ec090fdc3ee2b8",
+      "weight": "700",
+      "style": "normal",
+      "subset": "latin"
+    },
+    {
+      "file": "barlow-condensed-latin-800.woff2",
+      "family": "Barlow Condensed",
+      "source": "https://fonts.gstatic.com/s/barlowcondensed/v13/HTxwL3I-JCGChYJ8VI-L6OO_au7B47b1z3bWuQ.woff2",
+      "bytes": 22464,
+      "sha256": "2515494e8cc2ca07c86ea78766cfa104b796aa6ed5d66821c01d51dbb0b52bce",
+      "weight": "800",
+      "style": "normal",
+      "subset": "latin"
+    },
+    {
+      "file": "Sora-OFL.txt",
+      "family": "Sora",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/sora/OFL.txt",
+      "bytes": 4385,
+      "sha256": "ba0b9729c9428ba79a0459ab8ec575791b51509dbec213e383d0316d37fec299"
+    },
+    {
+      "file": "BarlowCondensed-OFL.txt",
+      "family": "Barlow Condensed",
+      "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/barlowcondensed/OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    }
+  ]
+}
