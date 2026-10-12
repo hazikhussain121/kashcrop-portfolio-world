@@ -1,0 +1,123 @@
+{
+  "capturedAt": "2026-10-12",
+  "source": "Rendered from the current press implementation in the Overdrive worktree",
+  "files": [
+    {
+      "file": "desktop.png",
+      "bytes": 339813,
+      "sha256": "afe1c04e5017451d2a1ff2447358ef788f8084dffb077e02f23c202e3456b26a"
+    },
+    {
+      "file": "mobile.png",
+      "bytes": 121415,
+      "sha256": "674c325e8160e068ab94f1b5dbda725c77a35b3e87e8e392be4be5c2a8f3406c"
+    },
+    {
+      "file": "user-375.png",
+      "bytes": 116241,
+      "sha256": "0218e076d5f15b8579de19bebc9a00e2ae5739a02a1c4ed37d979784751ee9fa"
+    },
+    {
+      "file": "home-desktop-full.jpg",
+      "bytes": 1179820,
+      "sha256": "aaebdb0d62282da7d706f3a41f654dc6b6af6bf3de421767c4ef62b9744d26e1"
+    },
+    {
+      "file": "about-desktop-full.jpg",
+      "bytes": 775464,
+      "sha256": "a92ffb5762be8c69b57454bdced25f85aa9d5ece8a98f9113db66f38294c749f"
+    },
+    {
+      "file": "home-desktop-press.jpg",
+      "bytes": 190626,
+      "sha256": "f2f03791f19497a112f42856fb944fc9f765d0642d4b7eca58a42c0e7997320e"
+    },
+    {
+      "file": "home-mobile-press.jpg",
+      "bytes": 143538,
+      "sha256": "47566b0505f413f207e4f176d45c636dc50cb3be3de6ff53237600280b4b0f5a"
+    },
+    {
+      "file": "home-375-press.jpg",
+      "bytes": 144704,
+      "sha256": "fffbd1c111bec07d2d59c899eb7700ab924b4ababd2864bbd1a4a845120faa84"
+    },
+    {
+      "file": "about-desktop-press.jpg",
+      "bytes": 247529,
+      "sha256": "26e9e43a9a6b3a9e7be7e4e6d4ee7c7423b1930b6f6da3ec238bbb137124b931"
+    },
+    {
+      "file": "about-mobile-press.jpg",
+      "bytes": 182456,
+      "sha256": "da54f5a0908c8dd9d3cbfc230b0a04c337b2e446c65ba1bc90df6818b1ff220c"
+    },
+    {
+      "file": "about-desktop-recognition.jpg",
+      "bytes": 110853,
+      "sha256": "8a5caa89eaff7a9847373bf704e1e2c5f0bc24181aa9b6ebf44d5b9ae2cfd80a"
+    },
+    {
+      "file": "about-mobile-recognition.jpg",
+      "bytes": 86355,
+      "sha256": "81a147700747f0f08551393f4896f3b8b90e6ebcee7db91b2a6b22d0e916b862"
+    },
+    {
+      "file": "kashcrop-desktop-press.jpg",
+      "bytes": 134252,
+      "sha256": "7bb598f8a61dc87cfd36eb96b5b1901c05c6812992ff7ac1be947ac514fd5c27"
+    },
+    {
+      "file": "kashcrop-mobile-press.jpg",
+      "bytes": 79971,
+      "sha256": "7a8e9444793e98c494c41691b95d7fca62b1fdcfaf1e59ec41d1165c31fc2b9f"
+    },
+    {
+      "file": "phc-desktop-press.jpg",
+      "bytes": 51332,
+      "sha256": "d34c8f0b017945d87be2bc43afa2309fa4250acf71a0f2daca6658077bf12e03"
+    },
+    {
+      "file": "phc-mobile-press.jpg",
+      "bytes": 32533,
+      "sha256": "95d01435745606f25911d1c478d080b8e7d7a4cb8b8ea096f0ba749be1eb680f"
+    },
+    {
+      "file": "core-verification.json",
+      "bytes": 20723,
+      "sha256": "db53c1b96975ef43e3bb77adf9983e78f79f638bd45412785de943b97e3e69b5"
+    },
+    {
+      "file": "cases-verification.json",
+      "bytes": 8116,
+      "sha256": "bbc0535feaabcb2353f70468e28c9bae3dac79a41f2f8861643c7f7c67316de8"
+    },
+    {
+      "file": "public-preview.json",
+      "bytes": 2618,
+      "sha256": "0039d532980253d1ab389f153f8913dcb5efbb3229eb4dee20c8debc7809d833"
+    },
+    {
+      "file": "detector.json",
+      "bytes": 11792,
+      "sha256": "db0f66ce296347854e530b9729f1fdd692e7ac402079de21179034f3a4cf1918"
+    },
+    {
+      "file": "typecheck.log",
+      "bytes": 43,
+      "sha256": "1cf6927324220c258cfe66ac7a41292adc79af8a2f8857ccffe0029703ebb219",
+      "normalization": "Trailing blank lines removed from the saved log copy; command output is otherwise unchanged."
+    },
+    {
+      "file": "build.log",
+      "bytes": 7784,
+      "sha256": "3b088e60a0899bed83e97180aa53bf85fb463ac060d75de7fa82326cdfb15182"
+    },
+    {
+      "file": "tests.log",
+      "bytes": 1599,
+      "sha256": "e582ec14c2987316733bb9b0069cde889cad0df26f7ba8d3f609c1020f5e7db7",
+      "normalization": "Trailing blank lines removed from the saved log copy; command output is otherwise unchanged."
+    }
+  ]
+}

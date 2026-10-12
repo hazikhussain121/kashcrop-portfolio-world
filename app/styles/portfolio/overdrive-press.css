@@ -1,0 +1,184 @@
+/* Attributed reporting extends the accepted Overdrive world on a quiet reading surface. */
+.od-press-surface {
+  background: var(--od-white);
+  color: var(--od-ink);
+}
+.od-press-feature,
+.od-press-archive,
+.od-press-case,
+.od-recognition-record {
+  scroll-margin-top: 110px;
+}
+.od-press-feature { padding-block: clamp(72px, 7.5vw, 110px) 42px; }
+.od-press-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 54px;
+}
+.od-press-heading h2,
+.od-recognition-record > h2 {
+  font-size: clamp(36px, 4vw, 60px);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+.od-press-link {
+  display: inline-flex;
+  align-items: center;
+  align-self: start;
+  gap: 14px;
+  min-height: 44px;
+  max-width: 100%;
+  padding-block: 9px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 6px;
+}
+.od-press-link > span { min-width: 0; }
+.od-press-link .icon { width: 18px; height: 18px; }
+.od-press-surface .od-press-link:focus-visible { outline: 3px solid var(--od-blue); outline-offset: 5px; }
+.od-press-surface .od-press-link { color: var(--od-blue); }
+.od-press-link:hover { text-decoration-thickness: 2px; }
+.od-press-surface .od-press-link:hover { color: var(--od-ink); }
+.od-press-feature-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: clamp(45px, 6.4vw, 100px);
+}
+.od-press-featured-report { min-width: 0; }
+.od-press-featured-report blockquote,
+.od-press-record blockquote { margin: 0; padding: 0; border: 0; }
+.od-press-featured-report blockquote {
+  font-size: clamp(23px, 2.2vw, 32px);
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -.03em;
+}
+.od-press-featured-report blockquote p { text-wrap: pretty; }
+.od-press-lead blockquote {
+  max-width: 16ch;
+  color: var(--od-blue);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(56px, 6.4vw, 96px);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.025em;
+}
+.od-press-featured-report figcaption { margin-top: 24px; }
+.od-press-byline { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 20px; }
+.od-press-byline h3 { font-size: 16px; line-height: 1.5; letter-spacing: -.015em; }
+.od-press-byline time,
+.od-press-record-source time { font-size: 12px; line-height: 1.6; }
+.od-press-context { max-width: 65ch; margin-top: 14px; font-size: 14px; line-height: 1.8; }
+.od-press-attribution { margin-top: 12px; font-size: 12px; line-height: 1.7; }
+.od-press-featured-report .od-press-link,
+.od-press-record .od-press-link { margin-top: 10px; }
+.od-press-lead .od-press-context { max-width: 45ch; font-size: 16px; }
+.od-press-supporting { display: flex; flex-direction: column; gap: 30px; }
+.od-press-supporting .od-press-featured-report { border-top: 1px solid color-mix(in srgb, var(--od-blue) 26%, transparent); padding-top: 26px; }
+.od-press-supporting .od-press-featured-report:first-child { border-top: 0; padding-top: 0; }
+.od-recognition-compact {
+  display: grid;
+  grid-template-columns: minmax(0, .55fr) minmax(0, 2fr);
+  gap: 44px;
+  margin-top: 68px;
+  padding-top: 32px;
+  border-top: 1px solid color-mix(in srgb, var(--od-blue) 26%, transparent);
+}
+.od-recognition-compact > h3 { font-size: 26px; line-height: 1.25; }
+.od-recognition-compact ul,
+.od-recognition-record ul { padding: 0; margin: 0; list-style: none; }
+.od-recognition-compact ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px; }
+.od-recognition-entry { min-width: 0; }
+.od-recognition-entry h3,
+.od-recognition-entry h4 { max-width: 30ch; font-size: 23px; line-height: 1.3; }
+.od-recognition-entry h4 { font-size: 20px; }
+.od-recognition-date { margin-top: 10px; font-size: 12px; line-height: 1.6; }
+.od-recognition-description { max-width: 65ch; margin-top: 17px; font-size: 14px; line-height: 1.8; }
+.od-recognition-entry .od-press-link { margin-top: 12px; }
+.od-press-feature-footer { display: flex; justify-content: end; margin-top: 34px; }
+
+/* About already owns the page measure; this inset uses no nested od-wrap. */
+.od-press-archive { padding: clamp(28px, 4.1vw, 60px); border-radius: 16px; }
+.od-press-record {
+  display: grid;
+  grid-template-columns: minmax(0, .7fr) minmax(0, 1.7fr);
+  gap: 30px 8%;
+  padding-block: 36px;
+  border-top: 1px solid color-mix(in srgb, var(--od-blue) 26%, transparent);
+}
+.od-press-record:last-child { padding-bottom: 0; }
+.od-press-record-source h3 { font-size: 22px; line-height: 1.3; margin-bottom: 10px; }
+.od-press-record-copy { min-width: 0; }
+.od-press-record blockquote { max-width: 39ch; font-size: clamp(24px, 2.25vw, 32px); font-weight: 500; line-height: 1.35; letter-spacing: -.025em; }
+.od-press-record .od-press-context { margin-top: 18px; }
+.od-recognition-record {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
+  gap: 50px 7%;
+  padding-block: clamp(72px, 7.5vw, 110px);
+}
+.od-recognition-record .od-recognition-entry { padding-block: 28px; border-top: 1px solid var(--od-line); }
+.od-recognition-record .od-recognition-entry:last-child { padding-bottom: 0; }
+.od-recognition-record .od-recognition-date,
+.od-recognition-record .od-recognition-description { color: var(--od-muted); }
+.od-recognition-record .od-press-link:hover { color: var(--od-yellow); }
+.od-press-case { padding-block: clamp(65px, 7vw, 100px); margin-bottom: clamp(72px, 8vw, 116px); }
+.od-press-case .od-press-heading { margin-bottom: 45px; }
+
+@media (max-width: 1050px) {
+  .od-press-feature-grid { gap: 44px; }
+  .od-recognition-compact { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .od-recognition-compact ul { gap: 40px; }
+  .od-press-record { column-gap: 5%; }
+}
+@media (max-width: 800px) {
+  .od-press-feature { padding-block: 70px 38px; }
+  .od-press-heading { margin-bottom: 38px; }
+  .od-press-feature-grid { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .od-press-lead blockquote { max-width: 18ch; font-size: clamp(54px, 8.7vw, 70px); }
+  .od-press-supporting { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
+  .od-press-supporting .od-press-featured-report:first-child { border-top: 1px solid color-mix(in srgb, var(--od-blue) 26%, transparent); padding-top: 26px; }
+  .od-press-featured-report blockquote { font-size: 25px; }
+  .od-press-featured-report.od-press-lead blockquote { font-size: clamp(54px, 8.7vw, 70px); }
+  .od-recognition-compact { margin-top: 48px; }
+  .od-press-record { grid-template-columns: minmax(0, .8fr) minmax(0, 1.6fr); gap: 24px; }
+  .od-press-record-source h3 { font-size: 20px; }
+  .od-press-record blockquote { font-size: 25px; }
+  .od-recognition-record { grid-template-columns: minmax(0, 1fr); gap: 35px; padding-block: 70px; }
+}
+@media (max-width: 520px) {
+  .od-press-feature { padding-block: 55px 30px; }
+  .od-press-heading { align-items: start; flex-direction: column; gap: 18px; margin-bottom: 32px; }
+  .od-press-heading h2,
+  .od-recognition-record > h2 { font-size: 38px; }
+  .od-press-feature-grid { gap: 35px; }
+  .od-press-lead blockquote { max-width: 16ch; }
+  .od-press-featured-report.od-press-lead blockquote { font-size: clamp(48px, 13.4vw, 66px); }
+  .od-press-lead .od-press-context { font-size: 14px; }
+  .od-press-featured-report figcaption { margin-top: 21px; }
+  .od-press-byline { gap: 6px 16px; }
+  .od-press-link { font-size: 13px; gap: 13px; }
+  .od-press-supporting { grid-template-columns: minmax(0, 1fr); gap: 27px; }
+  .od-press-supporting .od-press-featured-report { padding-top: 25px; }
+  .od-press-featured-report blockquote { font-size: 26px; }
+  .od-recognition-compact { margin-top: 38px; padding-top: 28px; gap: 28px; }
+  .od-recognition-compact ul { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .od-recognition-compact .od-recognition-entry + .od-recognition-entry { padding-top: 27px; border-top: 1px solid color-mix(in srgb, var(--od-blue) 26%, transparent); }
+  .od-recognition-entry h3,
+  .od-recognition-entry h4 { font-size: 22px; }
+  .od-press-feature-footer { justify-content: start; margin-top: 25px; }
+  .od-press-archive { padding: 29px 23px; border-radius: 12px; }
+  .od-press-record { grid-template-columns: minmax(0, 1fr); gap: 22px; padding-block: 30px; }
+  .od-press-record-source h3 { font-size: 20px; margin-bottom: 8px; }
+  .od-press-record blockquote { font-size: 25px; line-height: 1.4; }
+  .od-press-record .od-press-context { margin-top: 15px; }
+  .od-recognition-record { gap: 30px; padding-block: 60px 70px; }
+  .od-press-case { padding-block: 55px; margin-bottom: 65px; }
+  .od-press-case .od-press-heading { margin-bottom: 28px; }
+}

@@ -1,0 +1,318 @@
+{
+  "mode": "cases",
+  "startedAt": "2026-10-12T08:51:45.059Z",
+  "pages": [
+    {
+      "name": "kashcrop-desktop",
+      "route": "/projects/kashcrop",
+      "status": 200,
+      "title": "KashCrop | KashCrop Innovations",
+      "h1": 1,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missingImages": []
+    },
+    {
+      "name": "phc-desktop",
+      "route": "/projects/plant-health-clinic",
+      "status": 200,
+      "title": "Plant Health Clinic | KashCrop Innovations",
+      "h1": 1,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missingImages": []
+    },
+    {
+      "name": "kashcrop-mobile",
+      "route": "/projects/kashcrop",
+      "status": 200,
+      "title": "KashCrop | KashCrop Innovations",
+      "h1": 1,
+      "width": 390,
+      "scrollWidth": 390,
+      "missingImages": []
+    },
+    {
+      "name": "phc-mobile",
+      "route": "/projects/plant-health-clinic",
+      "status": 200,
+      "title": "Plant Health Clinic | KashCrop Innovations",
+      "h1": 1,
+      "width": 390,
+      "scrollWidth": 390,
+      "missingImages": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "kashcrop-desktop loads and fits",
+      "pass": true,
+      "details": {
+        "title": "KashCrop | KashCrop Innovations",
+        "h1": 1,
+        "width": 1440,
+        "scrollWidth": 1440,
+        "missingImages": []
+      }
+    },
+    {
+      "name": "kashcrop-desktop contains intended coverage",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-desktop preserves quotes dates and source URLs",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-desktop source links have safe targets and touch sizes",
+      "pass": true,
+      "details": [
+        {
+          "href": "/about#press",
+          "target": null,
+          "rel": null,
+          "height": 44,
+          "width": 122
+        },
+        {
+          "href": "https://www.etvbharat.com/en/state/kashcrop-kashmir-youth-develops-app-to-help-out-apple-farmers-enn25120303879",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        },
+        {
+          "href": "https://www.kashmirnewsobserver.com/top-stories/tral-boy-creates-smart-mobile-app-to-transform-kashmir-s-horticulture-sector-kno-200361",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        },
+        {
+          "href": "https://www.greaterkashmir.com/videos/teen-from-tral-creates-app-to-provide-scientific-guidance-to-apple-growers-in-kashmir/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 128
+        }
+      ]
+    },
+    {
+      "name": "kashcrop-desktop light-surface keyboard focus",
+      "pass": true,
+      "details": {
+        "focused": true,
+        "visible": true,
+        "color": "rgb(36, 72, 232)",
+        "width": 3
+      }
+    },
+    {
+      "name": "kashcrop-desktop chapter link reaches its section",
+      "pass": true
+    },
+    {
+      "name": "phc-desktop loads and fits",
+      "pass": true,
+      "details": {
+        "title": "Plant Health Clinic | KashCrop Innovations",
+        "h1": 1,
+        "width": 1440,
+        "scrollWidth": 1440,
+        "missingImages": []
+      }
+    },
+    {
+      "name": "phc-desktop contains intended coverage",
+      "pass": true
+    },
+    {
+      "name": "phc-desktop preserves quotes dates and source URLs",
+      "pass": true
+    },
+    {
+      "name": "phc-desktop source links have safe targets and touch sizes",
+      "pass": true,
+      "details": [
+        {
+          "href": "/about#press",
+          "target": null,
+          "rel": null,
+          "height": 44,
+          "width": 122
+        },
+        {
+          "href": "https://risingkashmir.com/skuast-k-launches-ai-driven-plant-health-clinic/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        }
+      ]
+    },
+    {
+      "name": "phc-desktop light-surface keyboard focus",
+      "pass": true,
+      "details": {
+        "focused": true,
+        "visible": true,
+        "color": "rgb(36, 72, 232)",
+        "width": 3
+      }
+    },
+    {
+      "name": "phc-desktop chapter link reaches its section",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-mobile loads and fits",
+      "pass": true,
+      "details": {
+        "title": "KashCrop | KashCrop Innovations",
+        "h1": 1,
+        "width": 390,
+        "scrollWidth": 390,
+        "missingImages": []
+      }
+    },
+    {
+      "name": "kashcrop-mobile contains intended coverage",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-mobile preserves quotes dates and source URLs",
+      "pass": true
+    },
+    {
+      "name": "kashcrop-mobile source links have safe targets and touch sizes",
+      "pass": true,
+      "details": [
+        {
+          "href": "/about#press",
+          "target": null,
+          "rel": null,
+          "height": 44,
+          "width": 114
+        },
+        {
+          "href": "https://www.etvbharat.com/en/state/kashcrop-kashmir-youth-develops-app-to-help-out-apple-farmers-enn25120303879",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://www.kashmirnewsobserver.com/top-stories/tral-boy-creates-smart-mobile-app-to-transform-kashmir-s-horticulture-sector-kno-200361",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://www.greaterkashmir.com/videos/teen-from-tral-creates-app-to-provide-scientific-guidance-to-apple-growers-in-kashmir/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 120
+        }
+      ]
+    },
+    {
+      "name": "kashcrop-mobile light-surface keyboard focus",
+      "pass": true,
+      "details": {
+        "focused": true,
+        "visible": true,
+        "color": "rgb(36, 72, 232)",
+        "width": 3
+      }
+    },
+    {
+      "name": "kashcrop-mobile chapter link reaches its section",
+      "pass": true
+    },
+    {
+      "name": "phc-mobile loads and fits",
+      "pass": true,
+      "details": {
+        "title": "Plant Health Clinic | KashCrop Innovations",
+        "h1": 1,
+        "width": 390,
+        "scrollWidth": 390,
+        "missingImages": []
+      }
+    },
+    {
+      "name": "phc-mobile contains intended coverage",
+      "pass": true
+    },
+    {
+      "name": "phc-mobile preserves quotes dates and source URLs",
+      "pass": true
+    },
+    {
+      "name": "phc-mobile source links have safe targets and touch sizes",
+      "pass": true,
+      "details": [
+        {
+          "href": "/about#press",
+          "target": null,
+          "rel": null,
+          "height": 44,
+          "width": 114
+        },
+        {
+          "href": "https://risingkashmir.com/skuast-k-launches-ai-driven-plant-health-clinic/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        }
+      ]
+    },
+    {
+      "name": "phc-mobile light-surface keyboard focus",
+      "pass": true,
+      "details": {
+        "focused": true,
+        "visible": true,
+        "color": "rgb(36, 72, 232)",
+        "width": 3
+      }
+    },
+    {
+      "name": "phc-mobile chapter link reaches its section",
+      "pass": true
+    },
+    {
+      "name": "Unrelated case has no empty press section or chapter",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "name": "kashcrop-desktop",
+      "violations": []
+    },
+    {
+      "name": "phc-desktop",
+      "violations": []
+    },
+    {
+      "name": "kashcrop-mobile",
+      "violations": []
+    },
+    {
+      "name": "phc-mobile",
+      "violations": []
+    }
+  ],
+  "captures": [
+    "kashcrop-desktop-press.jpg",
+    "phc-desktop-press.jpg",
+    "kashcrop-mobile-press.jpg",
+    "phc-mobile-press.jpg"
+  ],
+  "finishedAt": "2026-10-12T08:51:54.290Z"
+}

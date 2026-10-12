@@ -8,6 +8,7 @@ import { Icon } from '../Icon';
 import { useMotion } from '../MotionProvider';
 import ProjectReel from './ProjectReel';
 import { PackageComparison } from './PackageComparison';
+import { PressFeature } from './Press';
 import '~/styles/portfolio/overdrive-content.css';
 
 function CaseCaption({ slug, discipline }: { slug: string; discipline: string }) {
@@ -80,6 +81,7 @@ export default function OverdriveHome() {
         })}</div>
       </section>
     </section>
+    <PressFeature />
     <section className="od-capabilities od-wrap" aria-labelledby="od-capabilities-title">
       <div className="od-capabilities-intro"><h2 id="od-capabilities-title">From the first<br /><span>“what if?”</span></h2><p>One studio for the thinking, the making,<br className="od-desktop-break" /> and everything that keeps it working.</p></div>
       <div className="od-capability-accordion">{serviceCatalog.map((service, index) => <details key={service.slug} name="home-services" open={index === 0}><summary>{service.name}<Icon name="down" /></summary><div><p>{service.description}</p><Link to={'/services/' + service.slug} className="od-text-link">Explore this service <Icon /></Link></div></details>)}</div>

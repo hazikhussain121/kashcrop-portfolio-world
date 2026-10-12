@@ -2,6 +2,7 @@ import { Link, type MetaFunction } from 'react-router';
 import { company, media } from '~/data/portfolio/catalog';
 import { aboutPage } from '~/data/content';
 import { Icon } from '~/components/portfolio/Icon';
+import { PressArchive, RecognitionRecord } from '~/components/portfolio/overdrive/Press';
 import { pageMeta } from '~/lib/portfolio/seo';
 import '~/styles/portfolio/overdrive-content.css';
 
@@ -24,6 +25,8 @@ export default function About() {
     <section className="od-founder" aria-labelledby="founder-name"><div className="od-founder-title"><h2 id="founder-name">Hazik<br />Hussain.</h2><p>Founder, product & engineering</p><a href={company.linkedin} className="od-text-link" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <Icon /></a></div>
       <div className="od-founder-story"><p>Hazik Hussain founded KashCrop Innovations in Srinagar. He leads the studio’s product and technical work, connecting full-stack development and applied AI with practical problems.</p><p>That work includes <Link to="/projects/kashcrop">orchard planning tools</Link>, the <Link to="/projects/plant-health-clinic">Plant Health Clinic</Link> expert workflow, and <Link to="/projects/skiie">SKIIE’s startup and incubation platform</Link>. The range extends to fish health, peptide research and smaller consumer products.</p><p>The practice covers the complete product: how someone finds their next step, how information moves between people, and the interfaces, APIs and data systems that make it work.</p><div className="od-about-incubator"><img src={media('skiie-logo.png')} alt="SKIIE logo" width={70} height={70} loading="lazy" /><div><strong>Incubated at SKIIE</strong><p>SKUAST-Kashmir Innovation, Incubation<br />and Entrepreneurship Centre.</p></div></div></div>
     </section>
+    <PressArchive />
+    <RecognitionRecord />
     <section className="od-studio-grounding" aria-labelledby="grounding-title">
       <div className="od-studio-grounding-intro"><h2 id="grounding-title">Built from Kashmir.<br />Built around people.</h2><p>{aboutPage.philosophy.paragraphs[0]}</p></div>
       <ul>

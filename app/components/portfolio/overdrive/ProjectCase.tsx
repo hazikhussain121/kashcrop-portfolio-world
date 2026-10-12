@@ -3,8 +3,10 @@ import { Link } from 'react-router';
 import { media, projects, type Project, type Screen } from '~/data/portfolio/catalog';
 import type { CaseSystemDiagram, DiagramNode } from '~/data/portfolio/caseDepth';
 import { projectFilms, type InterfaceFilmAsset } from '~/data/portfolio/films';
+import { getProjectPress } from '~/data/portfolio/press';
 import { GalleryLink } from '../UI';
 import { Icon } from '../Icon';
+import { ProjectPress } from './Press';
 import '~/styles/portfolio/overdrive-projects.css';
 
 function Capture({ screen, project, priority = false }: { screen: Screen; project: Project; priority?: boolean }) {
@@ -132,6 +134,7 @@ export default function ProjectCase({ project }: { project: Project }) {
   const next = projects[(projects.findIndex(item => item.slug === project.slug) + 1) % projects.length];
   const nextScreen = next.screens.find(screen => screen.id === 'home') ?? next.screens[0];
   const nextFilm = projectFilms[next.slug];
+  const hasPress = getProjectPress(project.slug).length > 0;
 
   return <main id="main" className={`od-case od-case-${project.slug}`}>
     <header className="od-case-hero od-wrap">
@@ -150,6 +153,7 @@ export default function ProjectCase({ project }: { project: Project }) {
         {project.workflow && <a href="#project-workflow">Workflow</a>}
         {project.diagrams.length > 0 && <a href="#project-system">System diagrams</a>}
         <a href="#project-details">Product decisions</a>
+        {hasPress && <a href="#project-press">In the news</a>}
         <a href="#project-material">Sources & links</a>
       </nav>
       <HeroArtwork project={project} film={film} />
@@ -186,6 +190,8 @@ export default function ProjectCase({ project }: { project: Project }) {
       <ul className="od-case-feature-list">{project.features.map(feature => <li key={feature}><Icon name="check" /><span>{feature}</span></li>)}</ul>
       <div className="od-case-technology"><h3>Technology</h3><p>{project.stack.join(' · ')}</p></div>
     </section>
+
+    <ProjectPress projectSlug={project.slug} />
 
     <section className="od-case-material od-wrap" id="project-material" aria-labelledby="project-material-title">
       <div className="od-case-material-intro"><h2 id="project-material-title">From the product.</h2><p>{project.source}</p></div>

@@ -43,13 +43,23 @@ Help visitors compare written scopes without invented competitor omissions, fabr
 
 ## Content and Case Discovery
 
-Home presents all six main projects with meaningful excerpts and direct case-study links, followed by the shared package comparison, four delivery stages and five practical engagement questions. The first three projects retain their accepted artwork; the additional KashCrop, Treat My Fish and TRACE-AMP previews use the existing labelled demonstration posters. [studioContent.ts](app/data/portfolio/studioContent.ts) supplies the new excerpts, delivery explanation and questions.
+Home presents all six main projects with meaningful excerpts and direct case-study links, followed by press highlights, the shared package comparison, four delivery stages and five practical engagement questions. The first three projects retain their accepted artwork; the additional KashCrop, Treat My Fish and TRACE-AMP previews use the existing labelled demonstration posters. [studioContent.ts](app/data/portfolio/studioContent.ts) supplies the new excerpts, delivery explanation and questions.
 
 All six case pages add decision explanations to their existing story, scope, capabilities, technologies, references and source disclosures. [caseDepth.ts](app/data/portfolio/caseDepth.ts) also restores eight source workflow diagrams across Plant Health Clinic, TRACE-AMP, Treat My Fish and SKIIE, preserving their relationships and expert-review boundaries. Section links support navigation through the fuller cases. The Work archive explains each project's purpose before opening its case.
 
 Services retain the four disciplines and existing detail routes. The detail pages restore nine source proof descriptions from [content.ts](app/data/content.ts), link known case aliases to their canonical routes, and keep references without dedicated cases as text. About gives more of the founder's project range and regional operating context, with AquAMP, Sahlent and Kinfinity presented as smaller products and experiments.
 
 The case narratives build on the company site's owned record in [caseStudies.ts](app/data/caseStudies.ts). Retain the more precise current wording where it narrows an older public claim. The KashCrop case documents the earlier orchard companion; the current Play listing is linked from BaghBani with its recorded open-testing context. Do not reinstate historical apple-scab prediction claims or imply measured diagnostic, commercial or laboratory results.
+
+## Press and Recognition
+
+The founder's subsequent request adds short, attributable coverage of Hazik, KashCrop and SKUAST-Kashmir's Plant Health Clinic within the accepted Overdrive portfolio. [press.ts](app/data/portfolio/press.ts) supplies six outlets: ETV Bharat, Kashmir News Observer, Rising Kashmir, Greater Kashmir, Kashmir Ahead and FreshPlaza. Home's `#in-the-news` highlights ETV, KNO and Rising Kashmir plus two institutional recognition entries. About's `#press` and `#recognition` hold all six reports and four recognition records. The KashCrop case shows ETV, KNO and Greater Kashmir; Plant Health Clinic shows Rising Kashmir. Other cases have no empty press chapter.
+
+Each quotation keeps its outlet, publication date, concise context and original destination. Greater Kashmir's excerpt is visibly identified as a publisher headline and opens its video report. FreshPlaza's visible attribution states that it adapts ETV Bharat's reporting. These historical KashCrop reports describe the original orchard app at the time; they do not verify current BaghBani features, release status or measured results.
+
+SKIIE's institutional startup directory supports incubation. SKUAST-K's announcement supports the Vice Chancellor's commendation at the e-Plant Health Clinic app inauguration on 18 May 2026, distinct from April's clinic facilities launch. The Republic Day recognition on 26 January 2026 and KVK Pulwama felicitation in January 2026 are supported by original public founder posts and visibly attributed as such. The KVK post was published on 15 January; the event day is unconfirmed, so its displayed date remains month-only. Do not invent a formal award title, issuing body, metric or product guarantee, or import unrelated private circumstances.
+
+The [extension brief](docs/design/PRESS_RECOGNITION_2026-10-12.md), [press source packet](docs/design/press-research/press-coverage.md) and [recognition research](docs/design/press-research/recognition.json) preserve scope and source boundaries. The [independent finish review](docs/design/press-review/finish-review.md) records a ship disposition with no material fixes; the [evidence record](docs/design/press-review/README.md) preserves the final rendered and verification scope separately from the earlier content expansion.
 
 ## Design Principles
 

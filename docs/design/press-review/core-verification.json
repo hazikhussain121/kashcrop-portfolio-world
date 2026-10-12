@@ -1,0 +1,647 @@
+{
+  "mode": "core",
+  "startedAt": "2026-10-12T08:51:58.640Z",
+  "pages": [
+    {
+      "name": "home-desktop",
+      "route": "/",
+      "status": 200,
+      "title": "Bright ideas. Real things. | KashCrop Innovations",
+      "h1": 1,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missingImages": []
+    },
+    {
+      "name": "about-desktop",
+      "route": "/about",
+      "status": 200,
+      "title": "The studio | KashCrop Innovations",
+      "h1": 1,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "missingImages": []
+    },
+    {
+      "name": "home-mobile",
+      "route": "/",
+      "status": 200,
+      "title": "Bright ideas. Real things. | KashCrop Innovations",
+      "h1": 1,
+      "width": 390,
+      "scrollWidth": 390,
+      "missingImages": []
+    },
+    {
+      "name": "about-mobile",
+      "route": "/about",
+      "status": 200,
+      "title": "The studio | KashCrop Innovations",
+      "h1": 1,
+      "width": 390,
+      "scrollWidth": 390,
+      "missingImages": []
+    },
+    {
+      "name": "home-375",
+      "route": "/",
+      "status": 200,
+      "title": "Bright ideas. Real things. | KashCrop Innovations",
+      "h1": 1,
+      "width": 375,
+      "scrollWidth": 375,
+      "missingImages": []
+    }
+  ],
+  "checks": [
+    {
+      "name": "home-desktop loads and fits",
+      "pass": true,
+      "details": {
+        "title": "Bright ideas. Real things. | KashCrop Innovations",
+        "h1": 1,
+        "width": 1440,
+        "scrollWidth": 1440,
+        "missingImages": []
+      }
+    },
+    {
+      "name": "home-desktop contains intended coverage",
+      "pass": true
+    },
+    {
+      "name": "home-desktop preserves quotes dates and source URLs",
+      "pass": true
+    },
+    {
+      "name": "home-desktop source links have safe targets and touch sizes",
+      "pass": true,
+      "details": [
+        {
+          "href": "https://www.etvbharat.com/en/state/kashcrop-kashmir-youth-develops-app-to-help-out-apple-farmers-enn25120303879",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        },
+        {
+          "href": "https://www.kashmirnewsobserver.com/top-stories/tral-boy-creates-smart-mobile-app-to-transform-kashmir-s-horticulture-sector-kno-200361",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        },
+        {
+          "href": "https://risingkashmir.com/skuast-k-launches-ai-driven-plant-health-clinic/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        },
+        {
+          "href": "https://skiie.co.in/startups/kashcrop",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 194
+        },
+        {
+          "href": "https://www.linkedin.com/posts/skuastkashmir_%F0%9D%90%92%F0%9D%90%8A%F0%9D%90%94%F0%9D%90%80%F0%9D%90%92%F0%9D%90%93-%F0%9D%90%8A%F0%9D%90%9A%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%A6%F0%9D%90%A2%F0%9D%90%AB-%F0%9D%90%8B%F0%9D%90%9A%F0%9D%90%AE%F0%9D%90%A7%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%AC-activity-7464008117937381376-VmCb",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 220
+        },
+        {
+          "href": "/about#press",
+          "target": null,
+          "rel": null,
+          "height": 44,
+          "width": 222
+        }
+      ]
+    },
+    {
+      "name": "home-desktop light-surface keyboard focus",
+      "pass": true,
+      "details": {
+        "focused": true,
+        "visible": true,
+        "color": "rgb(36, 72, 232)",
+        "width": 3
+      }
+    },
+    {
+      "name": "home-desktop recognition sources remain distinct",
+      "pass": true,
+      "details": [
+        {
+          "id": "skiie-incubation",
+          "type": "institution",
+          "source": "SKIIE startup directory",
+          "date": null,
+          "text": "Incubated at SKIIE.Current affiliationKashCrop Innovations is listed in SKUAST-Kashmir’s startup directory, with Hazik Hussain named as founder.SKIIE startup directory"
+        },
+        {
+          "id": "skuast-phc-commendation",
+          "type": "institution",
+          "source": "SKUAST-K announcement",
+          "date": "2026-05-18",
+          "text": "Recognised at the app’s inauguration.18 May 2026SKUAST-K’s Vice Chancellor commended Hazik’s work on the e-Plant Health Clinic app at the Directorate of Extension.SKUAST-K announcement"
+        }
+      ]
+    },
+    {
+      "name": "about-desktop loads and fits",
+      "pass": true,
+      "details": {
+        "title": "The studio | KashCrop Innovations",
+        "h1": 1,
+        "width": 1440,
+        "scrollWidth": 1440,
+        "missingImages": []
+      }
+    },
+    {
+      "name": "about-desktop contains intended coverage",
+      "pass": true
+    },
+    {
+      "name": "about-desktop preserves quotes dates and source URLs",
+      "pass": true
+    },
+    {
+      "name": "about-desktop source links have safe targets and touch sizes",
+      "pass": true,
+      "details": [
+        {
+          "href": "#recognition",
+          "target": null,
+          "rel": null,
+          "height": 44,
+          "width": 120
+        },
+        {
+          "href": "https://www.etvbharat.com/en/state/kashcrop-kashmir-youth-develops-app-to-help-out-apple-farmers-enn25120303879",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        },
+        {
+          "href": "https://www.kashmirnewsobserver.com/top-stories/tral-boy-creates-smart-mobile-app-to-transform-kashmir-s-horticulture-sector-kno-200361",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        },
+        {
+          "href": "https://risingkashmir.com/skuast-k-launches-ai-driven-plant-health-clinic/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        },
+        {
+          "href": "https://www.greaterkashmir.com/videos/teen-from-tral-creates-app-to-provide-scientific-guidance-to-apple-growers-in-kashmir/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 128
+        },
+        {
+          "href": "https://kashmirahead.com/kashcrop-app-by-19-year-old-hazik-hussain-to-transform-kashmir-horticulture/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        },
+        {
+          "href": "https://www.freshplaza.com/north-america/article/9791367/kashmir-developer-launches-horticulture-support-app/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 109
+        }
+      ]
+    },
+    {
+      "name": "about-desktop light-surface keyboard focus",
+      "pass": true,
+      "details": {
+        "focused": true,
+        "visible": true,
+        "color": "rgb(36, 72, 232)",
+        "width": 3
+      }
+    },
+    {
+      "name": "about-desktop recognition sources remain distinct",
+      "pass": true,
+      "details": [
+        {
+          "id": "skiie-incubation",
+          "type": "institution",
+          "source": "SKIIE startup directory",
+          "date": null,
+          "text": "Incubated at SKIIE.Current affiliationKashCrop Innovations is listed in SKUAST-Kashmir’s startup directory, with Hazik Hussain named as founder.SKIIE startup directory"
+        },
+        {
+          "id": "skuast-phc-commendation",
+          "type": "institution",
+          "source": "SKUAST-K announcement",
+          "date": "2026-05-18",
+          "text": "Recognised at the app’s inauguration.18 May 2026SKUAST-K’s Vice Chancellor commended Hazik’s work on the e-Plant Health Clinic app at the Directorate of Extension.SKUAST-K announcement"
+        },
+        {
+          "id": "republic-day-2026",
+          "type": "founder",
+          "source": "Founder’s post",
+          "date": "2026-01-26",
+          "text": "Republic Day recognition.26 Jan 2026An award for KashCrop at District Police Lines on the 77th Republic Day, shared in Hazik’s public update.Founder’s post"
+        },
+        {
+          "id": "kvk-pulwama-2026",
+          "type": "founder",
+          "source": "Founder’s post",
+          "date": "2026-01",
+          "text": "KVK Pulwama felicitation.January 2026Hazik’s January update records a felicitation by Dr Javaid Ahmad Mugloo for work on KashCrop.Founder’s post"
+        }
+      ]
+    },
+    {
+      "name": "about-desktop KVK date remains month only",
+      "pass": true
+    },
+    {
+      "name": "about-desktop recognition anchor works",
+      "pass": true
+    },
+    {
+      "name": "home-mobile loads and fits",
+      "pass": true,
+      "details": {
+        "title": "Bright ideas. Real things. | KashCrop Innovations",
+        "h1": 1,
+        "width": 390,
+        "scrollWidth": 390,
+        "missingImages": []
+      }
+    },
+    {
+      "name": "home-mobile contains intended coverage",
+      "pass": true
+    },
+    {
+      "name": "home-mobile preserves quotes dates and source URLs",
+      "pass": true
+    },
+    {
+      "name": "home-mobile source links have safe targets and touch sizes",
+      "pass": true,
+      "details": [
+        {
+          "href": "https://www.etvbharat.com/en/state/kashcrop-kashmir-youth-develops-app-to-help-out-apple-farmers-enn25120303879",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://www.kashmirnewsobserver.com/top-stories/tral-boy-creates-smart-mobile-app-to-transform-kashmir-s-horticulture-sector-kno-200361",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://risingkashmir.com/skuast-k-launches-ai-driven-plant-health-clinic/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://skiie.co.in/startups/kashcrop",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 181
+        },
+        {
+          "href": "https://www.linkedin.com/posts/skuastkashmir_%F0%9D%90%92%F0%9D%90%8A%F0%9D%90%94%F0%9D%90%80%F0%9D%90%92%F0%9D%90%93-%F0%9D%90%8A%F0%9D%90%9A%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%A6%F0%9D%90%A2%F0%9D%90%AB-%F0%9D%90%8B%F0%9D%90%9A%F0%9D%90%AE%F0%9D%90%A7%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%AC-activity-7464008117937381376-VmCb",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 204
+        },
+        {
+          "href": "/about#press",
+          "target": null,
+          "rel": null,
+          "height": 44,
+          "width": 207
+        }
+      ]
+    },
+    {
+      "name": "home-mobile light-surface keyboard focus",
+      "pass": true,
+      "details": {
+        "focused": true,
+        "visible": true,
+        "color": "rgb(36, 72, 232)",
+        "width": 3
+      }
+    },
+    {
+      "name": "home-mobile recognition sources remain distinct",
+      "pass": true,
+      "details": [
+        {
+          "id": "skiie-incubation",
+          "type": "institution",
+          "source": "SKIIE startup directory",
+          "date": null,
+          "text": "Incubated at SKIIE.Current affiliationKashCrop Innovations is listed in SKUAST-Kashmir’s startup directory, with Hazik Hussain named as founder.SKIIE startup directory"
+        },
+        {
+          "id": "skuast-phc-commendation",
+          "type": "institution",
+          "source": "SKUAST-K announcement",
+          "date": "2026-05-18",
+          "text": "Recognised at the app’s inauguration.18 May 2026SKUAST-K’s Vice Chancellor commended Hazik’s work on the e-Plant Health Clinic app at the Directorate of Extension.SKUAST-K announcement"
+        }
+      ]
+    },
+    {
+      "name": "Home full-coverage link opens About at press",
+      "pass": true
+    },
+    {
+      "name": "about-mobile loads and fits",
+      "pass": true,
+      "details": {
+        "title": "The studio | KashCrop Innovations",
+        "h1": 1,
+        "width": 390,
+        "scrollWidth": 390,
+        "missingImages": []
+      }
+    },
+    {
+      "name": "about-mobile contains intended coverage",
+      "pass": true
+    },
+    {
+      "name": "about-mobile preserves quotes dates and source URLs",
+      "pass": true
+    },
+    {
+      "name": "about-mobile source links have safe targets and touch sizes",
+      "pass": true,
+      "details": [
+        {
+          "href": "#recognition",
+          "target": null,
+          "rel": null,
+          "height": 44,
+          "width": 113
+        },
+        {
+          "href": "https://www.etvbharat.com/en/state/kashcrop-kashmir-youth-develops-app-to-help-out-apple-farmers-enn25120303879",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://www.kashmirnewsobserver.com/top-stories/tral-boy-creates-smart-mobile-app-to-transform-kashmir-s-horticulture-sector-kno-200361",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://risingkashmir.com/skuast-k-launches-ai-driven-plant-health-clinic/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://www.greaterkashmir.com/videos/teen-from-tral-creates-app-to-provide-scientific-guidance-to-apple-growers-in-kashmir/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 120
+        },
+        {
+          "href": "https://kashmirahead.com/kashcrop-app-by-19-year-old-hazik-hussain-to-transform-kashmir-horticulture/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://www.freshplaza.com/north-america/article/9791367/kashmir-developer-launches-horticulture-support-app/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        }
+      ]
+    },
+    {
+      "name": "about-mobile light-surface keyboard focus",
+      "pass": true,
+      "details": {
+        "focused": true,
+        "visible": true,
+        "color": "rgb(36, 72, 232)",
+        "width": 3
+      }
+    },
+    {
+      "name": "about-mobile recognition sources remain distinct",
+      "pass": true,
+      "details": [
+        {
+          "id": "skiie-incubation",
+          "type": "institution",
+          "source": "SKIIE startup directory",
+          "date": null,
+          "text": "Incubated at SKIIE.Current affiliationKashCrop Innovations is listed in SKUAST-Kashmir’s startup directory, with Hazik Hussain named as founder.SKIIE startup directory"
+        },
+        {
+          "id": "skuast-phc-commendation",
+          "type": "institution",
+          "source": "SKUAST-K announcement",
+          "date": "2026-05-18",
+          "text": "Recognised at the app’s inauguration.18 May 2026SKUAST-K’s Vice Chancellor commended Hazik’s work on the e-Plant Health Clinic app at the Directorate of Extension.SKUAST-K announcement"
+        },
+        {
+          "id": "republic-day-2026",
+          "type": "founder",
+          "source": "Founder’s post",
+          "date": "2026-01-26",
+          "text": "Republic Day recognition.26 Jan 2026An award for KashCrop at District Police Lines on the 77th Republic Day, shared in Hazik’s public update.Founder’s post"
+        },
+        {
+          "id": "kvk-pulwama-2026",
+          "type": "founder",
+          "source": "Founder’s post",
+          "date": "2026-01",
+          "text": "KVK Pulwama felicitation.January 2026Hazik’s January update records a felicitation by Dr Javaid Ahmad Mugloo for work on KashCrop.Founder’s post"
+        }
+      ]
+    },
+    {
+      "name": "about-mobile KVK date remains month only",
+      "pass": true
+    },
+    {
+      "name": "about-mobile recognition anchor works",
+      "pass": true
+    },
+    {
+      "name": "home-375 loads and fits",
+      "pass": true,
+      "details": {
+        "title": "Bright ideas. Real things. | KashCrop Innovations",
+        "h1": 1,
+        "width": 375,
+        "scrollWidth": 375,
+        "missingImages": []
+      }
+    },
+    {
+      "name": "home-375 contains intended coverage",
+      "pass": true
+    },
+    {
+      "name": "home-375 preserves quotes dates and source URLs",
+      "pass": true
+    },
+    {
+      "name": "home-375 source links have safe targets and touch sizes",
+      "pass": true,
+      "details": [
+        {
+          "href": "https://www.etvbharat.com/en/state/kashcrop-kashmir-youth-develops-app-to-help-out-apple-farmers-enn25120303879",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://www.kashmirnewsobserver.com/top-stories/tral-boy-creates-smart-mobile-app-to-transform-kashmir-s-horticulture-sector-kno-200361",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://risingkashmir.com/skuast-k-launches-ai-driven-plant-health-clinic/",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 102
+        },
+        {
+          "href": "https://skiie.co.in/startups/kashcrop",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 181
+        },
+        {
+          "href": "https://www.linkedin.com/posts/skuastkashmir_%F0%9D%90%92%F0%9D%90%8A%F0%9D%90%94%F0%9D%90%80%F0%9D%90%92%F0%9D%90%93-%F0%9D%90%8A%F0%9D%90%9A%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%A6%F0%9D%90%A2%F0%9D%90%AB-%F0%9D%90%8B%F0%9D%90%9A%F0%9D%90%AE%F0%9D%90%A7%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%AC-activity-7464008117937381376-VmCb",
+          "target": "_blank",
+          "rel": "noopener noreferrer",
+          "height": 44,
+          "width": 204
+        },
+        {
+          "href": "/about#press",
+          "target": null,
+          "rel": null,
+          "height": 44,
+          "width": 207
+        }
+      ]
+    },
+    {
+      "name": "home-375 light-surface keyboard focus",
+      "pass": true,
+      "details": {
+        "focused": true,
+        "visible": true,
+        "color": "rgb(36, 72, 232)",
+        "width": 3
+      }
+    },
+    {
+      "name": "home-375 recognition sources remain distinct",
+      "pass": true,
+      "details": [
+        {
+          "id": "skiie-incubation",
+          "type": "institution",
+          "source": "SKIIE startup directory",
+          "date": null,
+          "text": "Incubated at SKIIE.Current affiliationKashCrop Innovations is listed in SKUAST-Kashmir’s startup directory, with Hazik Hussain named as founder.SKIIE startup directory"
+        },
+        {
+          "id": "skuast-phc-commendation",
+          "type": "institution",
+          "source": "SKUAST-K announcement",
+          "date": "2026-05-18",
+          "text": "Recognised at the app’s inauguration.18 May 2026SKUAST-K’s Vice Chancellor commended Hazik’s work on the e-Plant Health Clinic app at the Directorate of Extension.SKUAST-K announcement"
+        }
+      ]
+    },
+    {
+      "name": "Reduced motion retains all press and source links",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "accessibility": [
+    {
+      "name": "home-desktop",
+      "violations": []
+    },
+    {
+      "name": "about-desktop",
+      "violations": []
+    },
+    {
+      "name": "home-mobile",
+      "violations": []
+    },
+    {
+      "name": "about-mobile",
+      "violations": []
+    },
+    {
+      "name": "home-375",
+      "violations": []
+    }
+  ],
+  "captures": [
+    "home-desktop-press.jpg",
+    "desktop.png",
+    "home-desktop-full.jpg",
+    "about-desktop-press.jpg",
+    "about-desktop-recognition.jpg",
+    "about-desktop-full.jpg",
+    "home-mobile-press.jpg",
+    "mobile.png",
+    "about-mobile-press.jpg",
+    "about-mobile-recognition.jpg",
+    "home-375-press.jpg",
+    "user-375.png"
+  ],
+  "finishedAt": "2026-10-12T08:52:12.623Z"
+}

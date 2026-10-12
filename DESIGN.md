@@ -174,6 +174,8 @@ The world is continuous across Home, Work, all six project cases, Services, ever
 
 The base system was recorded on 12 October 2026 after the independent finish review. The current [direction contract](docs/design/OVERDRIVE_2026-10-12.md) supersedes the Fieldwork and Apple presentation iterations. The subsequent [content extension](docs/design/CONTENT_EXPANSION_2026-10-12.md) retains this accepted system. Its completed [finish review](docs/design/content-review/finish-review.md) records a ship disposition; the [evidence record](docs/design/content-review/README.md) preserves the reviewed captures and validation scope. The visual sources are [overdrive.css](app/styles/portfolio/overdrive.css), [overdrive-reel.css](app/styles/portfolio/overdrive-reel.css), [overdrive-projects.css](app/styles/portfolio/overdrive-projects.css) and [overdrive-services.css](app/styles/portfolio/overdrive-services.css). Component-specific content additions use [overdrive-content.css](app/styles/portfolio/overdrive-content.css), [overdrive-package-comparison.css](app/styles/portfolio/overdrive-package-comparison.css) and [overdrive-service-proof.css](app/styles/portfolio/overdrive-service-proof.css). The [sidecar](.impeccable/design.json) records extensions and component previews; the frontmatter above owns reusable primitives.
 
+The later [press and recognition extension](docs/design/PRESS_RECOGNITION_2026-10-12.md) uses [Press.tsx](app/components/portfolio/overdrive/Press.tsx) and [overdrive-press.css](app/styles/portfolio/overdrive-press.css) within this accepted world. The documentation comparison checked those sources against representative final Home, About and case captures at desktop and phone sizes, including Home at 375px. The [independent finish review](docs/design/press-review/finish-review.md) records a ship disposition with no material fixes; its [evidence record](docs/design/press-review/README.md) preserves the reviewed scope. The canonical frontmatter and sidecar remain unchanged.
+
 ## Colors
 
 Saturated cobalt carries the environment. Offwhite provides the main reading contrast, citron adds warmth and emphasis, and pale blue creates a quieter surface for inspecting or discussing the work.
@@ -189,6 +191,8 @@ Saturated cobalt carries the environment. Offwhite provides the main reading con
 ### Neutral
 
 **Offwhite** carries primary text on cobalt. **Pale** is a media-stage, process, contact-panel and viewer material. **Ink** supports comfortable reading on light surfaces. **Muted** is the lighter supporting language on cobalt, while **field-muted** is the darker supporting language inside the contact panel.
+
+Press uses Offwhite as a flat reading field, with Ink language, cobalt links and a cobalt lead quotation. Its fine rules mix the existing cobalt with transparency. About's separate recognition record stays on cobalt, using Offwhite headings and Muted supporting text.
 
 The shared translucent line divides content on cobalt. Light panels use their own visible field borders. Focus is citron on cobalt and cobalt on the light contact, package and viewer surfaces. Inputs use the field surface; error treatments remain semantic form states.
 
@@ -217,6 +221,8 @@ The contrast is one of width and scale: compact, close-set Sora explains the wor
 
 Keep the implemented title wrapping and readable paragraph measure. Small metadata adjustments belong to their components, rather than a new site-wide microtype scale.
 
+Home's lead press quotation uses Barlow 700 at a local fluid display scale. Supporting and archive quotations use Sora, with quieter source names, dates and context. These quote, metadata and phone sizes belong to the press component; they do not add roles to the global type ramp.
+
 ## Layout
 
 The outer measure is 1600px, including fluid side padding. Layouts use open two-column compositions, generous chapter separation, and occasional full-width sheets. Gaps follow the content: the homepage's feature grid uses a 7:5 split and a staggered second project; Work uses a 12-column grid with alternating 7- and 5-column spans; case stories and service chapters give artwork and copy different widths.
@@ -228,6 +234,7 @@ Those are surface-specific arrangements. The reusable grammar is broad space, de
 | Shared shell and Home | Refine at 1150px; the hero stacks and desktop navigation yields to its dialog trigger at 800px; compact phone compositions refine at 520px. A wide-screen adjustment begins at 1700px. |
 | Header | Sticky and opaque: 88px on desktop, 76px at 800px and below, and 72px at 520px and below. |
 | Work and cases | Refine at 1050px and stack at 680px. Work moves through unequal columns, equal columns, then one column. Case facts become two columns; galleries move from three to two to one. |
+| Press and recognition | At 1050px, Home's recognition heading moves above its two entries. At 800px, the Home lead moves above the supporting pair and About's recognition layout stacks. At 520px, supporting quotes, compact recognition entries and archive/case source rows become single columns in normal reading order. |
 | Services and service detail | Refine at 1050px; stack at 750px; media frames refine again at 450px. The process moves from four columns to two. |
 | Spatial reel | Uses container queries at 560px and 355px. The smaller reel expands panels from 62% to 74% width and reduces perspective from 1250px to 850px. Its toolbar remains separate from the moving artwork. |
 | Viewer | Preserves the existing adaptations at 1000px, 750px, 560px and 360px, with an additional short-landscape rule at a height of 620px. Long captures remain vertically readable. |
@@ -256,6 +263,8 @@ The shared easing is cubic-bezier(.16,1,.3,1). Most control color transitions la
 Shape distinguishes the job of the component. Shared header and homepage actions use an 8px radius; service actions use full pills, and project actions use a 100px pill radius. Archive filters and search are pills, while the reel picker and contact choices use compact 6px corners. Contact fields use 7px corners.
 
 The homepage artwork and reel panels have 14px corners. Contact sheets use 16px corners, tightening to 12px on compact layouts. The earlier compact commitment sheet remains a retained token and sidecar preview; current package content uses the shared comparison described below. Work and case stage backgrounds are deliberately square; service media uses 8px corners. Browser and phone frames clip their actual captures with nested, source-specific radii. Circular controls are reserved for arrows, inspection and compact actions.
+
+About's press archive follows the same broad-sheet and compact-panel corner treatment, with ruled rows inside one inset reading field. Home and case press sections remain open full-width fields. These local panel choices do not introduce another reusable radius role.
 
 Do not normalize these roles into one universal rounded card. Maintain the image's source aspect ratio and keep decorative device framing separate from the controls of the presented application.
 
@@ -292,6 +301,14 @@ Large project artwork remains the main evidence. Links open the case or the orig
 The viewer uses pale blue with Ink and darker supporting text. It remains a native dialog with direct screen identifiers and readable scrolling for long mobile captures. Its current supporting text uses the source's darker viewer color, rather than the main site's light muted color.
 
 Interface recordings sit in a native disclosure, with controls and no autoplay. They use no preload beyond their poster, pause when closed, and retain access to the mobile recording and the synthetic-data provenance.
+
+### Press and recognition
+
+[Press.tsx](app/components/portfolio/overdrive/Press.tsx) renders the shared records from [press.ts](app/data/portfolio/press.ts). Home's offwhite section pairs one dominant Barlow quotation with two quieter Sora reports in unequal columns, followed by a ruled institutional recognition row. About's archive places outlet and date beside each quotation inside a single offwhite panel; its complete recognition list follows on cobalt. Relevant cases reuse the archive rows under a conditional chapter and provide a link to all coverage.
+
+Every report is a figure with publisher/date caption and a blockquote carrying its source URL through `cite`. Semantic dates, visible context and applicable attribution remain attached to the quote when rows stack. Recognition entries retain their named source links. Underlined source actions use the existing arrow icon, ordinary external destinations with safe link attributes, and targets at least 44px tall. On offwhite they use cobalt focus with a 3px outline and 5px offset; the cobalt recognition section retains the shared citron focus. Hover thickens the underline and changes the link color.
+
+The press component adds no raster assets or animation. Its quote hierarchy, metadata sizes and compact panel treatment remain local composition choices, with the observed measurements recorded in the review evidence rather than promoted to universal tokens.
 
 ### Package comparison
 

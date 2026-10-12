@@ -1,0 +1,190 @@
+{
+  "researchedAt": "2026-10-12",
+  "purpose": "Public recognition and launch evidence for KashCrop Overdrive portfolio expansion.",
+  "researchScope": "Public web only. No personal account or signed-in surface was explored.",
+  "findings": [
+    {
+      "id": "skiie-incubation",
+      "publisher": "SKUAST-K Innovation, Incubation & Entrepreneurship Centre (SKIIE)",
+      "title": "KashCrop Innovations | SKIIE Startups",
+      "url": "https://skiie.co.in/startups/kashcrop",
+      "sourceRef": "turn14view0",
+      "sourceType": "Institutional startup directory",
+      "publicationDate": null,
+      "eventDate": null,
+      "verifiedClaim": "SKIIE lists KashCrop Innovations as incubated, names Hazik Hussain as founder, and identifies the SKIIE platform and Plant Health Clinic as its work.",
+      "suggestedPublicCopy": "Incubated at SKIIE, SKUAST-Kashmir.",
+      "excerpt": "A deep-tech agency incubated at SKIIE",
+      "excerptWordCount": 6,
+      "status": "Ready",
+      "limitations": "The undated profile establishes current listing status, not the date incubation began. Because KashCrop built the SKIIE site, this is institutional directory evidence rather than an independent editorial review."
+    },
+    {
+      "id": "skuast-phc-commendation",
+      "publisher": "SKUAST-Kashmir",
+      "title": "SKUAST-Kashmir Launches AI-Driven e-Plant Health Clinic for Farmers",
+      "url": "https://www.linkedin.com/posts/skuastkashmir_%F0%9D%90%92%F0%9D%90%8A%F0%9D%90%94%F0%9D%90%80%F0%9D%90%92%F0%9D%90%93-%F0%9D%90%8A%F0%9D%90%9A%F0%9D%90%AC%F0%9D%90%A1%F0%9D%90%A6%F0%9D%90%A2%F0%9D%90%AB-%F0%9D%90%8B%F0%9D%90%9A%F0%9D%90%AE%F0%9D%90%A7%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%9E%F0%9D%90%AC-activity-7464008117937381376-VmCb",
+      "sourceRef": "turn16view0",
+      "sourceType": "University public announcement",
+      "publicationDate": null,
+      "eventDate": "2026-05-18",
+      "verifiedClaim": "The university explicitly dates the app inauguration to 18 May 2026 and says Vice Chancellor Prof. Nazir Ahmad Ganai commended its developer.",
+      "suggestedPublicCopy": "Commended by SKUAST-K’s Vice Chancellor for developing the e-Plant Health Clinic app.",
+      "excerpt": "a young tech-savvy innovator",
+      "excerptWordCount": 4,
+      "status": "Ready with spelling note",
+      "limitations": "The source spells the developer’s name Haziq Hussain. The same named app, developer role and SKIIE portfolio establish contextual alignment with Hazik. Preserve source spelling inside any exact quote. This was a commendation at an inauguration, not a named award. Do not turn announced iOS availability, video-call features or hoped-for crop-loss reduction into current product claims."
+    },
+    {
+      "id": "rising-kashmir-app-inauguration",
+      "publisher": "Rising Kashmir",
+      "title": "SKUAST-K launches AI-driven plant health clinic",
+      "url": "https://risingkashmir.com/skuast-k-launches-ai-driven-plant-health-clinic/",
+      "sourceRef": "turn20view1",
+      "sourceType": "News coverage",
+      "publicationDate": "2026-05-19",
+      "eventDate": "2026-05-18",
+      "verifiedClaim": "Coverage reports the app inauguration and the Vice Chancellor’s commendation of its developer.",
+      "suggestedPublicCopy": "e-Plant Health Clinic app inaugurated at SKUAST-K’s Directorate of Extension.",
+      "excerpt": "farmers can directly interact with SKUAST-K experts",
+      "excerptWordCount": 7,
+      "status": "Ready",
+      "limitations": "Its text closely matches the university announcement and other May 19 reports. Treat multiple publications as coverage of one event, not separate awards or independently measured impact. The source spells Haziq."
+    },
+    {
+      "id": "kashmir-reader-clinic-facilities",
+      "publisher": "Kashmir Reader",
+      "title": "SKUAST-K launches NextGen e-Plant Clinic at Shalimar campus",
+      "url": "https://kashmirreader.com/2026/04/09/skuast-k-launches-nextgen-e-plant-clinic-at-shalimar-campus/",
+      "sourceRef": "turn25view0",
+      "sourceType": "News coverage",
+      "publicationDate": "2026-04-09",
+      "eventDate": "2026-04-08",
+      "verifiedClaim": "Coverage reports the inauguration of the university’s wider facilities, including e-Plant Health Clinic, Farmer School Centre and related centres.",
+      "suggestedPublicCopy": "The wider e-Plant Health Clinic initiative featured in coverage of SKUAST-K’s new facilities.",
+      "excerpt": "a critical bridge between laboratory breakthroughs and field-level reality",
+      "excerptWordCount": 9,
+      "status": "Context only",
+      "limitations": "This is the April 8 facilities ceremony, not the May 18 app inauguration. It does not name Hazik or KashCrop. Use only as Plant Health Clinic project context, never as a personal accolade or proof that KashCrop delivered all facilities. The excerpt is the reporter’s description of Prof. Ganai’s view, not a verbatim direct quotation from him."
+    },
+    {
+      "id": "freshplaza-kashcrop",
+      "publisher": "FreshPlaza",
+      "title": "Kashmir developer launches horticulture support app",
+      "url": "https://www.freshplaza.com/north-america/article/9791367/kashmir-developer-launches-horticulture-support-app/",
+      "sourceRef": "turn25view1",
+      "sourceType": "Trade publication coverage, credited to ETV Bharat",
+      "publicationDate": "2025-12-04",
+      "eventDate": null,
+      "verifiedClaim": "FreshPlaza published a feature naming software developer Hazik Hussain and the Kash Crop horticulture app.",
+      "suggestedPublicCopy": "KashCrop’s orchard tools featured in international fresh-produce publication FreshPlaza.",
+      "excerpt": "weather data, crop information, and advisory tools",
+      "excerptWordCount": 7,
+      "status": "Ready",
+      "limitations": "The page credits ETV Bharat and repeats a prelaunch story. Do not imply an independent product test, award, current feature validation or 2025 public Play Store release. The page links to an ETV Bharat original that was blocked for web retrieval.",
+      "originalUrl": "https://www.etvbharat.com/en/state/kashcrop-kashmir-youth-develops-app-to-help-out-apple-farmers-enn25120303879"
+    },
+    {
+      "id": "inside-kashmir-app-inauguration",
+      "publisher": "Inside Kashmir",
+      "title": "SKUAST-K launches AI-driven plant health clinic",
+      "url": "https://www.insidekashmir.net/article/skuast-k-launches-ai-driven-plant-health-clinic",
+      "sourceRef": "turn25view2",
+      "sourceType": "News coverage",
+      "publicationDate": "2026-05-19",
+      "eventDate": "2026-05-18",
+      "verifiedClaim": "Reports the app inauguration and credits the developer in its account of the Vice Chancellor’s commendation.",
+      "suggestedPublicCopy": "Regional coverage of the e-Plant Health Clinic app launch.",
+      "excerpt": "SKUAST-K launches AI-driven plant health clinic",
+      "excerptWordCount": 6,
+      "status": "Optional additional outlet",
+      "limitations": "Closely matches the institutional release and Rising Kashmir. Useful as a separate outlet link, not a separate achievement."
+    }
+  ],
+  "additionalCorroboration": [
+    {
+      "publisher": "Kashmir Reader",
+      "url": "https://kashmirreader.com/2026/05/19/skuast-k-launches-ai-driven-plant-health-clinic/",
+      "sourceRef": "turn20view2",
+      "publicationDate": "2026-05-19",
+      "eventDate": "2026-05-18",
+      "evidence": "Reports the same app inauguration and Vice Chancellor commendation, spelling the developer’s name Haziq.",
+      "limitations": "Do not confuse with the same publisher’s April 9 facilities story."
+    }
+  ],
+  "pendingOrExcluded": [
+    {
+      "candidate": "SKUAST-K NIRF startup listing",
+      "sourceUrl": "https://skuastkashmir.ac.in/frmPDF.aspx?FN=374_NIRF2020.pdf",
+      "sourceRef": "turn16view2",
+      "status": "Excluded: legal-entity mismatch",
+      "evidence": "The PDF lists Kashcrop LLP (Deep Tech), whereas the current portfolio uses KashCrop Innovations Private Limited.",
+      "recommendation": "Do not use its DPIIT number, date or technology-readiness claim as evidence for the present company without resolving the identity."
+    },
+    {
+      "candidate": "Achiever of the Year 2025",
+      "status": "Excluded: recipient unverified",
+      "evidence": "Appears beside unrelated LinkedIn activity in a different person’s profile. No source directly names Hazik as recipient.",
+      "recommendation": "Do not attribute to Hazik or KashCrop."
+    },
+    {
+      "candidate": "KashCrop Solutions awards and unrelated namesakes",
+      "status": "Excluded: identity mismatch",
+      "evidence": "Searches returned a different company name, similarly named professionals, personal records and unrelated uses of Kashcrop.",
+      "recommendation": "Do not import into this portfolio."
+    }
+  ],
+  "editorialNotes": [
+    "Use 'Press & recognition' or 'In the news' rather than 'Awards' for the mixed collection.",
+    "Keep short exact excerpts visibly attributed to the outlet, linked to the original and dated. Avoid unsupported performance metrics or implying paid/client endorsement.",
+    "Each supplied excerpt is at most 15 words. Keep aggregate verbatim copying from any one article below 25 words if adding its headline or other fragments.",
+    "The April clinic facilities launch and May app inauguration are distinct events.",
+    "The verified institutional achievements are incubation, app inauguration and the Vice Chancellor’s commendation. Multiple articles cover the same May event.",
+    "Home recognition uses the two institutional records only. About may also show the two original founder posts with visible Founder’s post attribution; those entries remain self-reported, not independently verified formal awards.",
+    "Founder-post verification was updated from search-index-only evidence after root retrieved both original posts. KVK retains January 2026 as the displayed post-based date; no exact event date is claimed."
+  ],
+  "founderReportedRecognition": [
+    {
+      "id": "republic-day-founder-post",
+      "publisher": "Hazik Hussain",
+      "sourceLabel": "Founder’s post",
+      "title": "Republic Day recognition for KashCrop",
+      "url": "https://www.linkedin.com/posts/hazik-hussain-49b5663a3_at-the-district-police-lines-today-receiving-activity-7421592627382304768-SIkK",
+      "sourceType": "Founder’s public post",
+      "publicationDate": "2026-01-26",
+      "eventDate": "2026-01-26",
+      "dateLabel": "26 January 2026",
+      "dateType": "event",
+      "status": "Original post verified; self-reported recognition",
+      "verification": "Root retrieved the original post with Exa web fetch on 12 October 2026; author, publication date and the post body were available. Direct web open was blocked.",
+      "supportedClaim": "The founder reports receiving an award for KashCrop at District Police Lines on the 77th Republic Day.",
+      "suggestedPublicTitle": "Republic Day recognition",
+      "suggestedPublicCopy": "Received recognition for KashCrop at District Police Lines on the 77th Republic Day.",
+      "excerpt": "receiving an award for KashCrop on the occasion of the 77th Republic Day.",
+      "excerptWordCount": 13,
+      "placement": "About recognition timeline, with visible Founder’s post attribution and original-post link. Omit from the official-only Home milestones.",
+      "limitations": "This verifies what the founder publicly reported, not an independently confirmed award. The post does not establish a formal award title or issuing body. Do not invent either."
+    },
+    {
+      "id": "kvk-pulwama-founder-post",
+      "publisher": "Hazik Hussain",
+      "sourceLabel": "Founder’s post",
+      "title": "KVK Pulwama felicitation",
+      "url": "https://www.linkedin.com/posts/hazik-hussain-49b5663a3_honored-to-be-felicitated-by-dr-javaid-ahmad-activity-7417573083038912512-meDB",
+      "sourceType": "Founder’s public post",
+      "publicationDate": "2026-01-15",
+      "eventDate": null,
+      "dateLabel": "January 2026",
+      "dateType": "post",
+      "status": "Original post verified; self-reported recognition",
+      "verification": "Root retrieved the original post with Exa web fetch on 12 October 2026; author, publication date and the post body were available. Direct web open was blocked.",
+      "supportedClaim": "The founder reports being felicitated by Dr. Javaid Ahmad Mugloo at KVK Pulwama for work on KashCrop.",
+      "suggestedPublicTitle": "KVK Pulwama felicitation",
+      "suggestedPublicCopy": "Felicitated by Dr. Javaid Ahmad Mugloo at KVK Pulwama for work on KashCrop.",
+      "excerpt": "felicitated by Dr. Javaid Ahmad Mugloo at KVK Pulwama",
+      "excerptWordCount": 9,
+      "placement": "About recognition timeline, with visible Founder’s post attribution and original-post link. Omit from the official-only Home milestones.",
+      "limitations": "This verifies what the founder publicly reported, not an independently confirmed formal award. January 15 is the publication date; the event date is not explicit. Show January 2026 and keep dateType post. Do not infer an award title or a January 15 event."
+    }
+  ]
+}
