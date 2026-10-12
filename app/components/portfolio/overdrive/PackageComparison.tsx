@@ -15,8 +15,8 @@ export function PackageComparison({ id = 'compare' }: PackageComparisonProps) {
   return <section className="od-compare" id={id} aria-labelledby={headingId}>
     <div className="od-wrap">
       <div className="od-compare-heading">
-        <h2 className="od-compare-title" id={headingId}>BEYOND<br />THE BUILD.</h2>
-        <p className="od-compare-intro">Hosting, publishing and maintenance, planned with your software.</p>
+        <h2 className="od-compare-title" id={headingId}>WHAT’S<br />INCLUDED.</h2>
+        <p className="od-compare-intro">We build your software and handle hosting, maintenance and Google Play publishing as agreed in your quote.</p>
       </div>
 
       <p className="od-compare-price" data-package-id={packagePrice.id}>
@@ -26,7 +26,7 @@ export function PackageComparison({ id = 'compare' }: PackageComparisonProps) {
 
       <div className="od-compare-sheet">
         <table className="od-compare-table" role="table" aria-describedby={baselineId}>
-          <caption className="od-compare-sr-only">Launch and ongoing services: with KashCrop compared with a development-only scope.</caption>
+          <caption className="od-compare-sr-only">Hosting, maintenance and Google Play publishing: a KashCrop package compared with software development alone.</caption>
           <colgroup><col className="od-compare-feature-col" /><col className="od-compare-managed-col" /><col className="od-compare-build-col" /></colgroup>
           <thead role="rowgroup">
             <tr role="row">
@@ -59,7 +59,7 @@ export function PackageComparison({ id = 'compare' }: PackageComparisonProps) {
       </div>
 
       <details className="od-compare-included">
-        <summary>What else is included?<Icon name="down" /></summary>
+        <summary>More package details<Icon name="down" /></summary>
         <dl className="od-compare-fundamentals">
           {packageFundamentals.map(row => <div key={row.id} data-package-id={row.id}>
             <dt>{row.answer}</dt>

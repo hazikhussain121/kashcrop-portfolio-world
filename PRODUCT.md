@@ -37,7 +37,7 @@ The user confirmed four offers on 8 October 2026:
 
 Each quote defines development scope, hosting term, maintenance coverage and third-party charges. The publisher account remains in the client's name, with delegated management access. Google account verification and app review apply.
 
-The canonical wording remains in [offer.ts](app/data/portfolio/offer.ts), retaining eight scope facts. Following the founder’s request to clarify the phone comparison using Taste, the fixed development price is presented on its own. A three-row table compares hosting, maintenance and Google Play publishing, with columns Service, With KashCrop and Development only. Phones place the two scopes one below the other rather than in narrow side-by-side paragraphs. The four remaining facts are available through a native “What else is included?” disclosure. The comparison defines development-only scope in plain language, not competitor omissions. Quote scope, third-party charges, maintenance duration and Google conditions remain visible outside the disclosure. Both Home and /services#compare use this component. See [comparison clarification](docs/design/COMPARISON_CLARITY_2026-10-12.md).
+The canonical wording remains in [offer.ts](app/data/portfolio/offer.ts), retaining eight scope facts. Following the founder’s request to clarify the phone comparison using Taste, the fixed development price is presented on its own. A three-row table compares hosting, maintenance and Google Play publishing, with columns Service, With KashCrop and Development only. Phones place the two scopes one below the other rather than in narrow side-by-side paragraphs. The four remaining facts are available through a native “More package details” disclosure. The comparison defines development-only scope in plain language, not competitor omissions. Quote scope, third-party charges, maintenance duration and Google conditions remain visible outside the disclosure. Both Home and /services#compare use this component. See [comparison clarification](docs/design/COMPARISON_CLARITY_2026-10-12.md).
 
 Help visitors compare written scopes without invented competitor omissions, fabricated prices or unqualified promises. Keep the confirmed offers intact when changing layout or copy.
 
@@ -70,6 +70,8 @@ The [extension brief](docs/design/PRESS_RECOGNITION_2026-10-12.md), [press sourc
 - Keep claims grounded. Historical captures and synthetic demonstrations describe interface work; they do not establish current release status, model accuracy, adoption, or laboratory results.
 
 ## Evidence and Voice
+
+Use headings that name the content, such as “What’s included”. Describe who does the work, what it covers and any limits. Avoid slogans, vague promises, repeated explanations and em dashes in authored copy. Preserve the wording and attribution of quoted press excerpts.
 
 Use actual project captures where they exist. Where a case uses synthetic interface demonstrations, identify that material and retain its dates, captions and provenance. Do not imply that demonstration data is a live customer workflow or measured result.
 

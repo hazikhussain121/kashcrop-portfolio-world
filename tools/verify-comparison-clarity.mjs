@@ -5,7 +5,7 @@ import axe from 'axe-core';
 import sharp from 'sharp';
 
 const base = process.env.PREVIEW_URL || 'http://127.0.0.1:5216';
-const root = path.resolve('.impeccable/review/comparison-clarity');
+const root = path.resolve(process.env.REVIEW_DIR || '.impeccable/review/comparison-clarity');
 await fs.mkdir(root, { recursive: true });
 const report = { base, checkedAt: new Date().toISOString(), checks: [], pages: [], errors: [], unavailable: [] };
 function check(name, pass, detail) { report.checks.push({ name, pass: Boolean(pass), ...(detail === undefined ? {} : { detail }) }); }
@@ -59,7 +59,7 @@ for (const spec of specs) {
       cellAssociations: [...e.querySelectorAll('td[headers]')].every(n => n.getAttribute('headers').split(' ').every(id => Boolean(document.getElementById(id)))),
     }));
     report.pages.push({ ...spec, status: response.status(), ...facts });
-    check(spec.name + ': loaded new comparison', response.status() === 200 && facts.text.includes('BEYOND') && facts.rowCount === 3);
+    check(spec.name + ': loaded new comparison', response.status() === 200 && facts.text.includes('WHAT’S') && facts.text.includes('INCLUDED.') && facts.rowCount === 3);
     check(spec.name + ': no horizontal overflow', facts.pageWidth <= facts.width && facts.overflowing.length === 0, facts.overflowing);
     check(spec.name + ': all eight facts preserved', facts.ids.length === 8 && new Set(facts.ids).size === 8);
     check(spec.name + ': table header associations', facts.cellAssociations);

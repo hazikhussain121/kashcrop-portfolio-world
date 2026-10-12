@@ -13,8 +13,8 @@ describe('package comparison clarity', () => {
     const table = screen.getByRole('table');
     expect(within(table).getAllByRole('rowheader').map(h => h.textContent))
       .toEqual(['Server hosting', 'Maintenance', 'Google Play publishing']);
-    expect(within(table).queryByText('One-time development payment.')).not.toBeInTheDocument();
-    expect(screen.getByText('One-time development payment.')).toBeInTheDocument();
+    expect(within(table).queryByText('One-time development fee.')).not.toBeInTheDocument();
+    expect(screen.getByText('One-time development fee.')).toBeInTheDocument();
   });
 
   it('leads with KashCrop without changing mobile reading order', () => {
@@ -37,21 +37,21 @@ describe('package comparison clarity', () => {
     const { container } = mount();
     const details = container.querySelector('details')!;
     expect(details).not.toHaveAttribute('open');
-    expect(details.querySelector('summary')).toHaveTextContent('What else is included?');
+    expect(details.querySelector('summary')).toHaveTextContent('More package details');
     expect(details.querySelectorAll('dt')).toHaveLength(4);
     expect(details).toHaveTextContent('The account stays in your name');
-    expect(details).toHaveTextContent('delegated access');
+    expect(details).toHaveTextContent('You give us access to manage it.');
   });
 
   it('keeps support and third-party conditions explicit', () => {
     const { container } = mount();
     const section = container.querySelector('#compare')!;
-    expect(section).toHaveTextContent('Options up to 4 years.');
-    expect(section).toHaveTextContent('Coverage and duration agreed for your project.');
-    expect(section).toHaveTextContent('Account setup included for Android projects.');
-    expect(section).toHaveTextContent('third-party charges');
-    expect(section).toHaveTextContent('Google account verification and app review apply.');
-    expect(section).toHaveTextContent('not individual providers');
+    expect(section).toHaveTextContent('Maintenance plans up to 4 years.');
+    expect(section).toHaveTextContent('Your quote lists what we maintain and for how long.');
+    expect(section).toHaveTextContent('We also manage releases for your Android app.');
+    expect(section).toHaveTextContent('third-party fees');
+    expect(section).toHaveTextContent('Google requires account verification and app review.');
+    expect(section).toHaveTextContent('Other providers’ packages may differ.');
   });
 
   it('preserves real row and column associations when reflowed', () => {
@@ -64,7 +64,7 @@ describe('package comparison clarity', () => {
     }
     const table = screen.getByRole('table');
     expect(container.querySelector(`[id="${table.getAttribute('aria-describedby')}"]`))
-      .toHaveTextContent('development only means the software build and technical handover');
+      .toHaveTextContent('A development-only job covers the software and handover');
   });
 
   it('supports multiple instances without duplicate document IDs', () => {

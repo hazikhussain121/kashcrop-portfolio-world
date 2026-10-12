@@ -1,48 +1,48 @@
 // Offers confirmed by Hazik on 8 October 2026. Scope and term remain quote-specific.
 // Additional capability rows reflect the existing service catalogue.
 // Development-only describes an illustrative scope, not other providers' offers.
-export const buildOnlyScope = 'Here, development only means the software build and technical handover. The comparison is between project scopes, not individual providers.';
+export const buildOnlyScope = 'A development-only job covers the software and handover. Hosting, maintenance and Google Play publishing are separate. Other providers’ packages may differ.';
 
 export const packageComparison = [
   {
     id: 'price', feature: 'Development price', question: 'Is the full development price agreed?',
     buildOnly: 'An agreed development fee.',
-    answer: 'One-time development payment.', detail: 'A fixed price for the agreed development scope.',
+    answer: 'One-time development fee.', detail: 'A fixed price for the work listed in your quote.',
   },
   {
     id: 'hosting', feature: 'Server hosting', question: 'Who gets it online and handles hosting?',
     buildOnly: 'Arranged separately.',
-    answer: 'Included for the agreed term.', detail: 'Server setup and hosting, as set out in your quote.',
+    answer: 'Hosting included.', detail: 'We set up the server. Your quote states how long hosting is covered.',
   },
   {
     id: 'maintenance', feature: 'Maintenance', question: 'What support follows the launch?',
     buildOnly: 'Arranged separately.',
-    answer: 'Options up to 4 years.', detail: 'Coverage and duration agreed for your project.',
+    answer: 'Maintenance plans up to 4 years.', detail: 'Your quote lists what we maintain and for how long.',
   },
   {
     id: 'play', feature: 'Google Play publishing', question: 'Who handles the account and releases?',
     buildOnly: 'Arranged separately.',
-    answer: 'Publishing and release management.', detail: 'Account setup included for Android projects.',
+    answer: 'Account setup and publishing.', detail: 'We also manage releases for your Android app.',
   },
   {
     id: 'access', feature: 'Publisher access', question: 'Who controls the publishing account?',
     buildOnly: 'You arrange the publisher account and its ongoing management.',
-    answer: 'Your Play Console account.', detail: 'The account stays in your name, with delegated access for management.',
+    answer: 'You own the publishing account.', detail: 'The account stays in your name. You give us access to manage it.',
   },
   {
     id: 'workflow', feature: 'Your workflow', question: 'Will the product fit how your team works?',
     buildOnly: 'Interfaces and workflows specified in the development brief.',
-    answer: 'Custom interfaces and workflows.', detail: 'Built around how your team works and the task at hand.',
+    answer: 'Software built for your team.', detail: 'We design the screens around the work your team needs to do.',
   },
   {
     id: 'connected', feature: 'The complete system', question: 'Who connects the app, data and backend?',
     buildOnly: 'Components and integrations as specified in the build scope.',
-    answer: 'One connected product.', detail: 'Design, interfaces, databases and APIs considered together.',
+    answer: 'App and database integration.', detail: 'We connect your app to its database and server.',
   },
   {
     id: 'handover', feature: 'Project handover', question: 'What happens when the build is ready?',
     buildOnly: 'Technical handover at completion of the agreed build.',
-    answer: 'A planned project handover.', detail: 'Launch preparation and a structured project handover.',
+    answer: 'Launch and handover.', detail: 'We prepare the software for launch and hand it over to your team.',
   },
 ] as const;
 
@@ -54,4 +54,4 @@ export const packageFundamentals = packageComparison.filter(row =>
   row.id === 'access' || row.id === 'workflow' || row.id === 'connected' || row.id === 'handover');
 export const packagePrice = packageComparison[0];
 
-export const offerScope = 'Your quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.';
+export const offerScope = 'Your quote lists the work, hosting period, maintenance and third-party fees. Google requires account verification and app review.';
