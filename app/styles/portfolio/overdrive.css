@@ -28,6 +28,7 @@ a{text-underline-offset:6px}
 .od-button-yellow:hover{background:#fff79a}
 .od-button-blue{background:var(--od-blue);color:var(--od-white)}
 .od-button-blue:hover{background:#1938c0}
+.od-commitment .od-button-blue:focus-visible{outline-color:var(--od-blue)}
 .od-text-link{display:inline-flex;align-items:center;gap:20px;min-height:46px;font-size:14px;font-weight:500;line-height:1.5;border-bottom:1px solid currentColor;padding-block:7px;transition:color .2s,gap .35s var(--od-ease)}
 .od-text-link .icon{width:18px;height:18px}
 .od-text-link:hover{color:var(--od-yellow);gap:28px}

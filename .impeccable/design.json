@@ -1,716 +1,506 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-09T15:00:00Z",
-  "title": "Design System: KashCrop Innovations",
+  "generatedAt": "2026-10-12T03:38:41Z",
+  "title": "Design System: KashCrop Innovations — Overdrive",
   "extensions": {
     "colorMeta": {
-      "ink": {
+      "od-blue": {
         "role": "primary",
+        "displayName": "Cobalt",
+        "tonalRamp": [
+          "oklch(15.00% 0.2418 266.34)",
+          "oklch(26.43% 0.2418 266.34)",
+          "oklch(37.86% 0.2418 266.34)",
+          "oklch(49.29% 0.2418 266.34)",
+          "oklch(60.71% 0.2418 266.34)",
+          "oklch(72.14% 0.2418 266.34)",
+          "oklch(83.57% 0.2418 266.34)",
+          "oklch(95.00% 0.2418 266.34)"
+        ]
+      },
+      "od-white": {
+        "role": "neutral",
+        "displayName": "Offwhite",
+        "tonalRamp": [
+          "oklch(15.00% 0.0093 279.69)",
+          "oklch(26.43% 0.0093 279.69)",
+          "oklch(37.86% 0.0093 279.69)",
+          "oklch(49.29% 0.0093 279.69)",
+          "oklch(60.71% 0.0093 279.69)",
+          "oklch(72.14% 0.0093 279.69)",
+          "oklch(83.57% 0.0093 279.69)",
+          "oklch(95.00% 0.0093 279.69)"
+        ]
+      },
+      "od-yellow": {
+        "role": "secondary",
+        "displayName": "Citron",
+        "tonalRamp": [
+          "oklch(15.00% 0.1496 104.84)",
+          "oklch(26.43% 0.1496 104.84)",
+          "oklch(37.86% 0.1496 104.84)",
+          "oklch(49.29% 0.1496 104.84)",
+          "oklch(60.71% 0.1496 104.84)",
+          "oklch(72.14% 0.1496 104.84)",
+          "oklch(83.57% 0.1496 104.84)",
+          "oklch(95.00% 0.1496 104.84)"
+        ]
+      },
+      "od-pale": {
+        "role": "neutral",
+        "displayName": "Pale blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.0235 272.82)",
+          "oklch(26.43% 0.0235 272.82)",
+          "oklch(37.86% 0.0235 272.82)",
+          "oklch(49.29% 0.0235 272.82)",
+          "oklch(60.71% 0.0235 272.82)",
+          "oklch(72.14% 0.0235 272.82)",
+          "oklch(83.57% 0.0235 272.82)",
+          "oklch(95.00% 0.0235 272.82)"
+        ]
+      },
+      "od-ink": {
+        "role": "neutral",
         "displayName": "Ink",
         "tonalRamp": [
-          "oklch(15% 0.0038 286.10)",
-          "oklch(27% 0.0038 286.10)",
-          "oklch(38% 0.0038 286.10)",
-          "oklch(50% 0.0038 286.10)",
-          "oklch(62% 0.0038 286.10)",
-          "oklch(73% 0.0038 286.10)",
-          "oklch(84% 0.0038 286.10)",
-          "oklch(95% 0.0038 286.10)"
+          "oklch(15.00% 0.0672 269.23)",
+          "oklch(26.43% 0.0672 269.23)",
+          "oklch(37.86% 0.0672 269.23)",
+          "oklch(49.29% 0.0672 269.23)",
+          "oklch(60.71% 0.0672 269.23)",
+          "oklch(72.14% 0.0672 269.23)",
+          "oklch(83.57% 0.0672 269.23)",
+          "oklch(95.00% 0.0672 269.23)"
         ]
       },
-      "paper": {
+      "od-muted": {
         "role": "neutral",
-        "displayName": "White canvas",
+        "displayName": "Muted on cobalt",
         "tonalRamp": [
-          "oklch(15% 0.0000 0.00)",
-          "oklch(27% 0.0000 0.00)",
-          "oklch(38% 0.0000 0.00)",
-          "oklch(50% 0.0000 0.00)",
-          "oklch(62% 0.0000 0.00)",
-          "oklch(73% 0.0000 0.00)",
-          "oklch(84% 0.0000 0.00)",
-          "oklch(95% 0.0000 0.00)"
+          "oklch(15.00% 0.0476 273.70)",
+          "oklch(26.43% 0.0476 273.70)",
+          "oklch(37.86% 0.0476 273.70)",
+          "oklch(49.29% 0.0476 273.70)",
+          "oklch(60.71% 0.0476 273.70)",
+          "oklch(72.14% 0.0476 273.70)",
+          "oklch(83.57% 0.0476 273.70)",
+          "oklch(95.00% 0.0476 273.70)"
         ]
       },
-      "surface": {
+      "od-line": {
         "role": "neutral",
-        "displayName": "Silver surface",
+        "displayName": "Line on cobalt",
         "tonalRamp": [
-          "oklch(15% 0.0027 286.35)",
-          "oklch(27% 0.0027 286.35)",
-          "oklch(38% 0.0027 286.35)",
-          "oklch(50% 0.0027 286.35)",
-          "oklch(62% 0.0027 286.35)",
-          "oklch(73% 0.0027 286.35)",
-          "oklch(84% 0.0027 286.35)",
-          "oklch(95% 0.0027 286.35)"
+          "oklch(15.00% 0.0093 279.69 / 0.28)",
+          "oklch(26.43% 0.0093 279.69 / 0.28)",
+          "oklch(37.86% 0.0093 279.69 / 0.28)",
+          "oklch(49.29% 0.0093 279.69 / 0.28)",
+          "oklch(60.71% 0.0093 279.69 / 0.28)",
+          "oklch(72.14% 0.0093 279.69 / 0.28)",
+          "oklch(83.57% 0.0093 279.69 / 0.28)",
+          "oklch(95.00% 0.0093 279.69 / 0.28)"
         ]
       },
-      "muted": {
-        "role": "neutral",
-        "displayName": "Supporting gray",
-        "tonalRamp": [
-          "oklch(15% 0.0077 286.14)",
-          "oklch(27% 0.0077 286.14)",
-          "oklch(38% 0.0077 286.14)",
-          "oklch(50% 0.0077 286.14)",
-          "oklch(62% 0.0077 286.14)",
-          "oklch(73% 0.0077 286.14)",
-          "oklch(84% 0.0077 286.14)",
-          "oklch(95% 0.0077 286.14)"
-        ]
-      },
-      "display-muted": {
-        "role": "neutral",
-        "displayName": "Large display gray",
-        "tonalRamp": [
-          "oklch(15% 0.0091 286.11)",
-          "oklch(27% 0.0091 286.11)",
-          "oklch(38% 0.0091 286.11)",
-          "oklch(50% 0.0091 286.11)",
-          "oklch(62% 0.0091 286.11)",
-          "oklch(73% 0.0091 286.11)",
-          "oklch(84% 0.0091 286.11)",
-          "oklch(95% 0.0091 286.11)"
-        ]
-      },
-      "line": {
-        "role": "neutral",
-        "displayName": "Soft divider",
-        "tonalRamp": [
-          "oklch(15% 0.0038 286.10 / 0.14)",
-          "oklch(27% 0.0038 286.10 / 0.14)",
-          "oklch(38% 0.0038 286.10 / 0.14)",
-          "oklch(50% 0.0038 286.10 / 0.14)",
-          "oklch(62% 0.0038 286.10 / 0.14)",
-          "oklch(73% 0.0038 286.10 / 0.14)",
-          "oklch(84% 0.0038 286.10 / 0.14)",
-          "oklch(95% 0.0038 286.10 / 0.14)"
-        ]
-      },
-      "line-solid": {
-        "role": "neutral",
-        "displayName": "Solid divider",
-        "tonalRamp": [
-          "oklch(15% 0.0068 286.26)",
-          "oklch(27% 0.0068 286.26)",
-          "oklch(38% 0.0068 286.26)",
-          "oklch(50% 0.0068 286.26)",
-          "oklch(62% 0.0068 286.26)",
-          "oklch(73% 0.0068 286.26)",
-          "oklch(84% 0.0068 286.26)",
-          "oklch(95% 0.0068 286.26)"
-        ]
-      },
-      "control-track": {
-        "role": "neutral",
-        "displayName": "Segmented control track",
-        "tonalRamp": [
-          "oklch(15% 0.0067 286.27)",
-          "oklch(27% 0.0067 286.27)",
-          "oklch(38% 0.0067 286.27)",
-          "oklch(50% 0.0067 286.27)",
-          "oklch(62% 0.0067 286.27)",
-          "oklch(73% 0.0067 286.27)",
-          "oklch(84% 0.0067 286.27)",
-          "oklch(95% 0.0067 286.27)"
-        ]
-      },
-      "garden-stage": {
+      "button-yellow-hover": {
         "role": "secondary",
-        "displayName": "Orchard presentation tint",
+        "displayName": "Citron action hover",
         "tonalRamp": [
-          "oklch(15% 0.0102 145.50)",
-          "oklch(27% 0.0102 145.50)",
-          "oklch(38% 0.0102 145.50)",
-          "oklch(50% 0.0102 145.50)",
-          "oklch(62% 0.0102 145.50)",
-          "oklch(73% 0.0102 145.50)",
-          "oklch(84% 0.0102 145.50)",
-          "oklch(95% 0.0102 145.50)"
+          "oklch(15.00% 0.1146 104.07)",
+          "oklch(26.43% 0.1146 104.07)",
+          "oklch(37.86% 0.1146 104.07)",
+          "oklch(49.29% 0.1146 104.07)",
+          "oklch(60.71% 0.1146 104.07)",
+          "oklch(72.14% 0.1146 104.07)",
+          "oklch(83.57% 0.1146 104.07)",
+          "oklch(95.00% 0.1146 104.07)"
         ]
       },
-      "clinic-stage": {
-        "role": "secondary",
-        "displayName": "Clinic presentation tint",
+      "button-blue-hover": {
+        "role": "primary",
+        "displayName": "Cobalt action hover",
         "tonalRamp": [
-          "oklch(15% 0.0084 236.56)",
-          "oklch(27% 0.0084 236.56)",
-          "oklch(38% 0.0084 236.56)",
-          "oklch(50% 0.0084 236.56)",
-          "oklch(62% 0.0084 236.56)",
-          "oklch(73% 0.0084 236.56)",
-          "oklch(84% 0.0084 236.56)",
-          "oklch(95% 0.0084 236.56)"
+          "oklch(15.00% 0.2125 266.05)",
+          "oklch(26.43% 0.2125 266.05)",
+          "oklch(37.86% 0.2125 266.05)",
+          "oklch(49.29% 0.2125 266.05)",
+          "oklch(60.71% 0.2125 266.05)",
+          "oklch(72.14% 0.2125 266.05)",
+          "oklch(83.57% 0.2125 266.05)",
+          "oklch(95.00% 0.2125 266.05)"
         ]
       },
-      "package-stage": {
-        "role": "secondary",
-        "displayName": "Package — forest stage",
-        "tonalRamp": [
-          "oklch(15% 0.0187 164.80)",
-          "oklch(27% 0.0187 164.80)",
-          "oklch(38% 0.0187 164.80)",
-          "oklch(50% 0.0187 164.80)",
-          "oklch(62% 0.0187 164.80)",
-          "oklch(73% 0.0187 164.80)",
-          "oklch(84% 0.0187 164.80)",
-          "oklch(95% 0.0187 164.80)"
-        ]
-      },
-      "package-text": {
+      "field-surface": {
         "role": "neutral",
-        "displayName": "Package — light text",
+        "displayName": "White field",
         "tonalRamp": [
-          "oklch(15% 0.0051 145.54)",
-          "oklch(27% 0.0051 145.54)",
-          "oklch(38% 0.0051 145.54)",
-          "oklch(50% 0.0051 145.54)",
-          "oklch(62% 0.0051 145.54)",
-          "oklch(73% 0.0051 145.54)",
-          "oklch(84% 0.0051 145.54)",
-          "oklch(95% 0.0051 145.54)"
+          "oklch(15.00% 0.0000 0.00)",
+          "oklch(26.43% 0.0000 0.00)",
+          "oklch(37.86% 0.0000 0.00)",
+          "oklch(49.29% 0.0000 0.00)",
+          "oklch(60.71% 0.0000 0.00)",
+          "oklch(72.14% 0.0000 0.00)",
+          "oklch(83.57% 0.0000 0.00)",
+          "oklch(95.00% 0.0000 0.00)"
         ]
       },
-      "package-muted": {
+      "field-line": {
         "role": "neutral",
-        "displayName": "Package — supporting text",
+        "displayName": "Field border",
         "tonalRamp": [
-          "oklch(15% 0.0146 155.53)",
-          "oklch(27% 0.0146 155.53)",
-          "oklch(38% 0.0146 155.53)",
-          "oklch(50% 0.0146 155.53)",
-          "oklch(62% 0.0146 155.53)",
-          "oklch(73% 0.0146 155.53)",
-          "oklch(84% 0.0146 155.53)",
-          "oklch(95% 0.0146 155.53)"
+          "oklch(15.00% 0.0459 268.62)",
+          "oklch(26.43% 0.0459 268.62)",
+          "oklch(37.86% 0.0459 268.62)",
+          "oklch(49.29% 0.0459 268.62)",
+          "oklch(60.71% 0.0459 268.62)",
+          "oklch(72.14% 0.0459 268.62)",
+          "oklch(83.57% 0.0459 268.62)",
+          "oklch(95.00% 0.0459 268.62)"
         ]
       },
-      "package-accent": {
-        "role": "secondary",
-        "displayName": "Package — mint accent",
-        "tonalRamp": [
-          "oklch(15% 0.0783 151.45)",
-          "oklch(27% 0.0783 151.45)",
-          "oklch(38% 0.0783 151.45)",
-          "oklch(50% 0.0783 151.45)",
-          "oklch(62% 0.0783 151.45)",
-          "oklch(73% 0.0783 151.45)",
-          "oklch(84% 0.0783 151.45)",
-          "oklch(95% 0.0783 151.45)"
-        ]
-      },
-      "package-chip": {
-        "role": "secondary",
-        "displayName": "Package — support chip",
-        "tonalRamp": [
-          "oklch(15% 0.0356 156.56)",
-          "oklch(27% 0.0356 156.56)",
-          "oklch(38% 0.0356 156.56)",
-          "oklch(50% 0.0356 156.56)",
-          "oklch(62% 0.0356 156.56)",
-          "oklch(73% 0.0356 156.56)",
-          "oklch(84% 0.0356 156.56)",
-          "oklch(95% 0.0356 156.56)"
-        ]
-      },
-      "package-track": {
-        "role": "secondary",
-        "displayName": "Package — tab track",
-        "tonalRamp": [
-          "oklch(15% 0.0256 158.19)",
-          "oklch(27% 0.0256 158.19)",
-          "oklch(38% 0.0256 158.19)",
-          "oklch(50% 0.0256 158.19)",
-          "oklch(62% 0.0256 158.19)",
-          "oklch(73% 0.0256 158.19)",
-          "oklch(84% 0.0256 158.19)",
-          "oklch(95% 0.0256 158.19)"
-        ]
-      },
-      "package-tab-selected": {
+      "field-muted": {
         "role": "neutral",
-        "displayName": "Package — selected tab",
+        "displayName": "Supporting field text",
         "tonalRamp": [
-          "oklch(15% 0.0099 155.10)",
-          "oklch(27% 0.0099 155.10)",
-          "oklch(38% 0.0099 155.10)",
-          "oklch(50% 0.0099 155.10)",
-          "oklch(62% 0.0099 155.10)",
-          "oklch(73% 0.0099 155.10)",
-          "oklch(84% 0.0099 155.10)",
-          "oklch(95% 0.0099 155.10)"
-        ]
-      },
-      "package-tab-ink": {
-        "role": "neutral",
-        "displayName": "Package — selected tab text",
-        "tonalRamp": [
-          "oklch(15% 0.0311 155.04)",
-          "oklch(27% 0.0311 155.04)",
-          "oklch(38% 0.0311 155.04)",
-          "oklch(50% 0.0311 155.04)",
-          "oklch(62% 0.0311 155.04)",
-          "oklch(73% 0.0311 155.04)",
-          "oklch(84% 0.0311 155.04)",
-          "oklch(95% 0.0311 155.04)"
-        ]
-      },
-      "comparison-surface": {
-        "role": "secondary",
-        "displayName": "Comparison — KashCrop column",
-        "tonalRamp": [
-          "oklch(15% 0.0118 145.48)",
-          "oklch(27% 0.0118 145.48)",
-          "oklch(38% 0.0118 145.48)",
-          "oklch(50% 0.0118 145.48)",
-          "oklch(62% 0.0118 145.48)",
-          "oklch(73% 0.0118 145.48)",
-          "oklch(84% 0.0118 145.48)",
-          "oklch(95% 0.0118 145.48)"
-        ]
-      },
-      "comparison-line": {
-        "role": "neutral",
-        "displayName": "Comparison — divider",
-        "tonalRamp": [
-          "oklch(15% 0.0137 145.46)",
-          "oklch(27% 0.0137 145.46)",
-          "oklch(38% 0.0137 145.46)",
-          "oklch(50% 0.0137 145.46)",
-          "oklch(62% 0.0137 145.46)",
-          "oklch(73% 0.0137 145.46)",
-          "oklch(84% 0.0137 145.46)",
-          "oklch(95% 0.0137 145.46)"
-        ]
-      },
-      "comparison-ink": {
-        "role": "neutral",
-        "displayName": "Comparison — offer text",
-        "tonalRamp": [
-          "oklch(15% 0.0598 153.86)",
-          "oklch(27% 0.0598 153.86)",
-          "oklch(38% 0.0598 153.86)",
-          "oklch(50% 0.0598 153.86)",
-          "oklch(62% 0.0598 153.86)",
-          "oklch(73% 0.0598 153.86)",
-          "oklch(84% 0.0598 153.86)",
-          "oklch(95% 0.0598 153.86)"
-        ]
-      },
-      "comparison-muted": {
-        "role": "neutral",
-        "displayName": "Comparison — offer detail",
-        "tonalRamp": [
-          "oklch(15% 0.0244 156.18)",
-          "oklch(27% 0.0244 156.18)",
-          "oklch(38% 0.0244 156.18)",
-          "oklch(50% 0.0244 156.18)",
-          "oklch(62% 0.0244 156.18)",
-          "oklch(73% 0.0244 156.18)",
-          "oklch(84% 0.0244 156.18)",
-          "oklch(95% 0.0244 156.18)"
-        ]
-      },
-      "comparison-question": {
-        "role": "neutral",
-        "displayName": "Comparison — question text",
-        "tonalRamp": [
-          "oklch(15% 0.0110 285.99)",
-          "oklch(27% 0.0110 285.99)",
-          "oklch(38% 0.0110 285.99)",
-          "oklch(50% 0.0110 285.99)",
-          "oklch(62% 0.0110 285.99)",
-          "oklch(73% 0.0110 285.99)",
-          "oklch(84% 0.0110 285.99)",
-          "oklch(95% 0.0110 285.99)"
-        ]
-      },
-      "control-hover": {
-        "role": "neutral",
-        "displayName": "Primary action hover",
-        "tonalRamp": [
-          "oklch(15% 0.0035 286.21)",
-          "oklch(27% 0.0035 286.21)",
-          "oklch(38% 0.0035 286.21)",
-          "oklch(50% 0.0035 286.21)",
-          "oklch(62% 0.0035 286.21)",
-          "oklch(73% 0.0035 286.21)",
-          "oklch(84% 0.0035 286.21)",
-          "oklch(95% 0.0035 286.21)"
-        ]
-      },
-      "focus": {
-        "role": "secondary",
-        "displayName": "Functional keyboard focus",
-        "tonalRamp": [
-          "oklch(15% 0.1887 256.99)",
-          "oklch(27% 0.1887 256.99)",
-          "oklch(38% 0.1887 256.99)",
-          "oklch(50% 0.1887 256.99)",
-          "oklch(62% 0.1887 256.99)",
-          "oklch(73% 0.1887 256.99)",
-          "oklch(84% 0.1887 256.99)",
-          "oklch(95% 0.1887 256.99)"
-        ]
-      },
-      "selection": {
-        "role": "secondary",
-        "displayName": "Text selection",
-        "tonalRamp": [
-          "oklch(15% 0.0305 254.32)",
-          "oklch(27% 0.0305 254.32)",
-          "oklch(38% 0.0305 254.32)",
-          "oklch(50% 0.0305 254.32)",
-          "oklch(62% 0.0305 254.32)",
-          "oklch(73% 0.0305 254.32)",
-          "oklch(84% 0.0305 254.32)",
-          "oklch(95% 0.0305 254.32)"
+          "oklch(15.00% 0.0545 266.12)",
+          "oklch(26.43% 0.0545 266.12)",
+          "oklch(37.86% 0.0545 266.12)",
+          "oklch(49.29% 0.0545 266.12)",
+          "oklch(60.71% 0.0545 266.12)",
+          "oklch(72.14% 0.0545 266.12)",
+          "oklch(83.57% 0.0545 266.12)",
+          "oklch(95.00% 0.0545 266.12)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
-        "displayName": "Hero display",
-        "purpose": "Confident native-sans hero; maximum 88px on the homepage."
+        "displayName": "Monumental masthead",
+        "purpose": "Barlow Condensed 800 in the homepage brand composition."
       },
       "headline": {
-        "displayName": "Section headline",
-        "purpose": "Major product and narrative sections; 600 weight and tight balanced lines."
+        "displayName": "Homepage headline",
+        "purpose": "The Sora opening statement, separate from monumental brand lettering."
+      },
+      "case-display": {
+        "displayName": "Case title",
+        "purpose": "Barlow Condensed project-page title."
+      },
+      "service-display": {
+        "displayName": "Service title",
+        "purpose": "Barlow Condensed title role in the service pages."
+      },
+      "section-heading": {
+        "displayName": "Sora section heading",
+        "purpose": "Explanatory section headings in the shared world."
       },
       "title": {
-        "displayName": "Product title",
-        "purpose": "Project names, service names, and supporting panel titles."
+        "displayName": "Project title",
+        "purpose": "Sora names below archive artwork."
       },
       "body": {
-        "displayName": "Narrative",
-        "purpose": "Readable project explanations, generally 16–18px within a restrained text measure."
+        "displayName": "Body",
+        "purpose": "Base readable language."
+      },
+      "story": {
+        "displayName": "Case narrative",
+        "purpose": "Longer case prose, with a 70ch maximum measure."
       },
       "label": {
-        "displayName": "Control and context",
-        "purpose": "Compact navigation, source notes, facts, and controls."
+        "displayName": "Shared action label",
+        "purpose": "Label treatment of the shared rectangular actions."
       }
     },
     "shadows": [
       {
-        "name": "phone-hero",
-        "value": "0 24px 38px -16px rgba(26,33,37,.32)",
-        "purpose": "Depth below the homepage product devices."
+        "name": "reel-panel",
+        "value": "16px 28px 44px rgb(7 21 98 / 27%)",
+        "purpose": "Soft directional lift beneath the spatial project panels."
       },
       {
-        "name": "phone-supporting",
-        "value": "0 17px 42px #1d1d1f2b",
-        "purpose": "Soft separation around actual interface captures."
+        "name": "reel-panel-small",
+        "value": "10px 19px 30px rgb(7 21 98 / 25%)",
+        "purpose": "Reel panels at a container width of 560px or less."
       },
       {
-        "name": "browser",
-        "value": "0 20px 45px #1d1d1f24",
-        "purpose": "Browser-window presentation."
+        "name": "reel-phone",
+        "value": "9px 14px 25px rgb(18 34 75 / 25%)",
+        "purpose": "Nested actual mobile captures within the reel."
       },
       {
-        "name": "selected-tab",
-        "value": "0 2px 8px rgba(0,0,0,.08)",
-        "purpose": "Active white segment above a silver control track."
+        "name": "work-phone",
+        "value": "0 24px 38px rgb(17 39 102 / 20%)",
+        "purpose": "Real mobile screens in the Work archive."
       },
       {
-        "name": "viewer",
-        "value": "0 40px 110px rgba(0,0,0,.24)",
-        "purpose": "The native screen-inspection dialog."
+        "name": "service-capture",
+        "value": "8px 18px 34px rgb(16 37 120 / 16%)",
+        "purpose": "Browser and research captures on the service pages."
       },
       {
-        "name": "navigation-divider",
-        "value": "0 1px 0 rgba(29,29,31,.06)",
-        "purpose": "Subtle separation beneath the translucent header."
-      },
-      {
-        "name": "package-device",
-        "value": "0 25px 60px #0009, inset 0 0 0 1px #d2dad4",
-        "purpose": "Local depth around the actual interface inside the dark package stage."
-      },
-      {
-        "name": "package-chip",
-        "value": "0 16px 30px #0002",
-        "purpose": "Lift hosting and publishing chips on desktop; omitted on mobile."
+        "name": "navigation-dialog",
+        "value": "0 30px 100px rgba(4,14,70,.3)",
+        "purpose": "The native mobile navigation dialog."
       }
     ],
     "motion": [
       {
-        "name": "ease",
+        "name": "ease-spatial",
         "value": "cubic-bezier(.16,1,.3,1)",
-        "purpose": "Shared CSS product and interaction easing."
+        "purpose": "The shared Overdrive easing for spatial feedback."
       },
       {
-        "name": "entrance-ease",
-        "value": "power3.out",
-        "purpose": "GSAP hero entrance easing."
+        "name": "reel-control-color",
+        "value": "160ms ease-out",
+        "purpose": "Reel picker and arrow color transitions."
       },
       {
-        "name": "hero-copy",
-        "value": ".95s; stagger .09s",
-        "purpose": "Already-visible headline and supporting copy move into place."
+        "name": "service-control-color",
+        "value": "180ms ease-out",
+        "purpose": "Service actions and terms-arrow feedback."
       },
       {
-        "name": "hero-devices",
-        "value": "Inner center .apple-desktop: 1.7s starting at .12s; inner phones: 1.6s starting at .25s and .33s",
-        "purpose": "Entrance transforms act on the inner desktop and phones, independently of the outer wrappers used by the scroll fan."
+        "name": "shared-action-color",
+        "value": "200ms",
+        "purpose": "Shared rectangular button background feedback."
       },
       {
-        "name": "chapter-copy",
-        "value": ".65s",
-        "purpose": "Transition into a selected product chapter."
+        "name": "shared-action-transform",
+        "value": "300ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "The shared button and its 2px up-right arrow shift; a press scales to 0.97."
       },
       {
-        "name": "chapter-visual",
-        "value": ".9s",
-        "purpose": "Product imagery accompanies the selected chapter."
+        "name": "archive-media",
+        "value": "700ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "Hovered archive capture movement when motion is on and the pointer supports hover."
       },
       {
-        "name": "mobile-navigation",
-        "value": ".32s",
-        "purpose": "Native menu entrance."
+        "name": "case-media",
+        "value": "800ms cubic-bezier(.16,1,.3,1)",
+        "purpose": "Case hero phone movement with the same motion and pointer eligibility."
       },
       {
-        "name": "scroll-scrub",
-        "value": ".8",
-        "purpose": "Subtle GSAP product separation and contextual-image parallax."
+        "name": "home-headline-entrance",
+        "value": "1.2s power4.out; stagger 0.1s; y 32px to 0",
+        "purpose": "The visible homepage title settles once on entry. Reduced motion skips the GSAP setup."
+      },
+      {
+        "name": "home-phone-parallax",
+        "value": "y 22px to -28px; scrub 0.7",
+        "purpose": "Homepage feature phones at a minimum width of 900px with motion enabled."
+      },
+      {
+        "name": "reel-spring",
+        "value": "stiffness 126; damping 20; delta cap 0.032s",
+        "purpose": "Selection settles through a damped requestAnimationFrame spring."
+      },
+      {
+        "name": "reel-drag-follow",
+        "value": "1 - exp(-28 × delta)",
+        "purpose": "A short follow while a horizontal drag is held."
+      },
+      {
+        "name": "reel-tilt-follow",
+        "value": "1 - exp(-9 × delta)",
+        "purpose": "Mouse tilt settles within approximately ±1.5 degrees vertically and ±2 degrees horizontally."
+      },
+      {
+        "name": "reel-rest",
+        "value": "displacement 0.0003; velocity 0.002; tilt 0.008",
+        "purpose": "Thresholds stop frames when the reel is settled. Hidden, out-of-view and blur states settle and cancel dragging."
       },
       {
         "name": "reduced-motion",
-        "value": "prefers-reduced-motion: reduce; html[data-motion=off]",
-        "purpose": "Keep every control and content item accessible without the authored motion."
-      },
-      {
-        "name": "sticky-eligibility",
-        "value": "(min-width: 1100px) and (min-height: 850px) and (hover: hover) and (pointer: fine)",
-        "purpose": "Use scroll-selected product chapters only when the complete stage fits comfortably."
-      },
-      {
-        "name": "reduced-transparency",
-        "value": "prefers-reduced-transparency: reduce",
-        "purpose": "Replace translucent navigation with an opaque white surface."
-      },
-      {
-        "name": "hero-scroll-fan",
-        "value": ".8 scrub; outer device wrappers",
-        "purpose": "Fan the outer hero wrappers without overwriting the inner device entrance transforms."
-      },
-      {
-        "name": "hero-fan-eligibility",
-        "value": "(min-width: 900px) and (hover: hover) and (pointer: fine)",
-        "purpose": "Enable the hero scroll fan on layouts with a fine pointer and hover."
-      },
-      {
-        "name": "package-eligibility",
-        "value": "(min-width: 900px) and (hover: hover) and (pointer: fine)",
-        "purpose": "Enable package scroll choreography and pointer tilt; separate from sticky chapter eligibility."
-      },
-      {
-        "name": "package-entrance-ease",
-        "value": "power2.out",
-        "purpose": "Ease the package device, numerals and support chips into their scroll-linked positions."
-      },
-      {
-        "name": "package-screen-crossfade",
-        "value": ".55s opacity; .85s transform",
-        "purpose": "Switch the actual Build, Launch and Care interface captures."
-      },
-      {
-        "name": "package-panel",
-        "value": ".55s",
-        "purpose": "Bring in the selected chapter explanation when motion is enabled."
-      },
-      {
-        "name": "package-pointer",
-        "value": "Approximately ±2.5deg on each axis; .55s transform smoothing",
-        "purpose": "Add device tilt for fine pointers, resetting on pointer leave or eligibility changes; touch and reduced motion bypass it."
-      },
-      {
-        "name": "package-composition-scrub",
-        "value": ".8; top 90% to top 8%",
-        "purpose": "Scroll-linked arrival of the package device, payment/care numerals and support chips."
-      },
-      {
-        "name": "package-orbit-scrub",
-        "value": "1; top bottom to bottom top",
-        "purpose": "Move local orbital geometry through 16 degrees and −30px as the package passes the viewport."
+        "value": "immediate selection; no pointer decoration; CSS transitions disabled",
+        "purpose": "System preference and the site control preserve all project controls and the complete static composition."
       }
     ],
     "breakpoints": [
       {
-        "name": "home-wide",
-        "value": "min-width: 1600px"
+        "name": "home-wide-min",
+        "value": "1700px"
       },
       {
-        "name": "home-tablet",
-        "value": "max-width: 1099px"
+        "name": "shared-refinement-max",
+        "value": "1150px"
       },
       {
-        "name": "home-mobile",
-        "value": "max-width: 750px"
+        "name": "projects-services-refinement-max",
+        "value": "1050px"
       },
       {
-        "name": "home-narrow",
-        "value": "max-width: 374px"
+        "name": "viewer-refinement-max",
+        "value": "1000px"
       },
       {
-        "name": "supporting-tablet",
-        "value": "max-width: 1100px"
+        "name": "home-scroll-min",
+        "value": "900px"
       },
       {
-        "name": "supporting-stack",
-        "value": "max-width: 800px"
+        "name": "shared-stack-max",
+        "value": "800px"
       },
       {
-        "name": "supporting-mobile",
-        "value": "max-width: 480px"
+        "name": "services-viewer-stack-max",
+        "value": "750px"
       },
       {
-        "name": "package-compact",
-        "value": "max-width: 1199px"
+        "name": "projects-stack-max",
+        "value": "680px"
       },
       {
-        "name": "package-tablet",
-        "value": "min-width: 751px and max-width: 899px"
+        "name": "viewer-short-landscape-height-max",
+        "value": "620px"
       },
       {
-        "name": "package-mobile",
-        "value": "max-width: 750px"
+        "name": "reel-container-max",
+        "value": "560px"
+      },
+      {
+        "name": "viewer-small-max",
+        "value": "560px"
+      },
+      {
+        "name": "shared-phone-max",
+        "value": "520px"
+      },
+      {
+        "name": "service-media-phone-max",
+        "value": "450px"
+      },
+      {
+        "name": "viewer-narrow-max",
+        "value": "360px"
+      },
+      {
+        "name": "reel-narrow-container-max",
+        "value": "355px"
       }
-    ],
-    "fieldwork": {
-      "status": "current across principal studio pages",
-      "guidance": "FIELDWORK supersedes Apple on homepage, Work index, Services, About, Contact and six case study routes. Service details are transitional. See docs/design/FIELDWORK_2026-10-09.md.",
-      "colors": {
-        "paper": "#eeece5",
-        "ink": "#151715",
-        "vermilion": "#bd3827",
-        "leaf": "#dce683",
-        "orchard": "#123b2e"
-      },
-      "typography": {
-        "display": "Geist 700 tight tracking -0.07 to -0.11em",
-        "accent": "Georgia italic",
-        "micro": "system monospace tracked uppercase"
-      },
-      "components": [
-        "Editorial cover",
-        "Case-file chapter",
-        "Evidence viewer",
-        "Real-screen exhibit",
-        "Three-part lifecycle narrative"
-      ]
-    }
+    ]
   },
   "components": [
     {
-      "name": "Primary action",
+      "name": "Shared citron action",
       "kind": "button",
       "refersTo": "button-primary",
-      "description": "Neutral pill for a clear next step.",
-      "html": "<button class=\"ds-button-primary\" type=\"button\">Start a conversation<svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button>",
-      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:12px 23px;background:var(--ink,#1d1d1f);color:var(--paper,#fff);border:0;border-radius:999px;font:500 15px/1.3 -apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif;cursor:pointer;transition:background .25s,transform .35s cubic-bezier(.16,1,.3,1)}.ds-button-primary:hover{background:#373739;transform:translateY(-2px)}.ds-button-primary:active{transform:scale(.975)}.ds-button-primary:focus-visible{outline:3px solid #0067d6;outline-offset:5px}.ds-button-primary:disabled{opacity:.5;cursor:default;transform:none}"
+      "description": "Shared citron action in the cobalt shell.",
+      "html": "<a class=\"ds-button-primary\" href=\"/contact\">Let’s talk<svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
+      "css": ".ds-button-primary{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;padding:14px 23px;border:0;border-radius:8px;background:var(--od-yellow, #f5eb6a);color:var(--od-ink, #162043);font:500 14px/1.4 Sora,sans-serif;white-space:nowrap;text-decoration:none;transition:background .2s,transform .3s var(--od-ease, cubic-bezier(.16,1,.3,1))}.ds-button-primary svg{flex:0 0 auto;width:19px;height:19px;transition:transform .3s var(--od-ease, cubic-bezier(.16,1,.3,1))}.ds-button-primary:hover{background:#fff79a}.ds-button-primary:hover svg{transform:translate(2px,-2px)}.ds-button-primary:focus-visible{outline:3px solid var(--od-yellow, #f5eb6a);outline-offset:5px}.ds-button-primary:active{transform:scale(.97)}@media(prefers-reduced-motion:reduce){.ds-button-primary,.ds-button-primary svg{transition:none}}"
     },
     {
-      "name": "Text action",
+      "name": "Shared blue action",
       "kind": "button",
-      "refersTo": "button-secondary",
-      "description": "A quiet secondary action alongside product content.",
-      "html": "<button class=\"ds-text-action\" type=\"button\">Explore the work<svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button>",
-      "css": ".ds-text-action{display:inline-flex;align-items:center;gap:9px;min-height:44px;padding:12px 0;background:transparent;border:0;color:var(--ink,#1d1d1f);font:500 16px/1.3 -apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif;cursor:pointer;text-underline-offset:4px}.ds-text-action svg{transition:transform .35s cubic-bezier(.16,1,.3,1)}.ds-text-action:hover{text-decoration:underline}.ds-text-action:hover svg{transform:translateX(3px)}.ds-text-action:active{opacity:.65}.ds-text-action:focus-visible{outline:3px solid #0067d6;outline-offset:5px}"
+      "refersTo": "button-blue",
+      "description": "Shared blue action for a citron or pale surface.",
+      "html": "<a class=\"ds-button-blue\" href=\"/contact\">See the whole package<svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
+      "css": ".ds-button-blue{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;padding:14px 23px;border:0;border-radius:8px;background:var(--od-blue, #2448e8);color:var(--od-white, #f7f8ff);font:500 14px/1.4 Sora,sans-serif;white-space:nowrap;text-decoration:none;transition:background .2s,transform .3s var(--od-ease, cubic-bezier(.16,1,.3,1))}.ds-button-blue svg{flex:0 0 auto;width:19px;height:19px;transition:transform .3s var(--od-ease, cubic-bezier(.16,1,.3,1))}.ds-button-blue:hover{background:#1938c0}.ds-button-blue:hover svg{transform:translate(2px,-2px)}.ds-button-blue:focus-visible{outline:3px solid var(--od-blue, #2448e8);outline-offset:5px}.ds-button-blue:active{transform:scale(.97)}@media(prefers-reduced-motion:reduce){.ds-button-blue,.ds-button-blue svg{transition:none}}"
     },
     {
-      "name": "Project search",
+      "name": "Service citron action",
+      "kind": "button",
+      "refersTo": "button-service",
+      "description": "Roomier pill action from the service pages; color feedback is the primary hover response.",
+      "html": "<a class=\"ds-service-button\" href=\"/contact\">Let’s talk<svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
+      "css": ".ds-service-button{display:inline-flex;justify-content:space-between;align-items:center;gap:24px;min-height:56px;padding:16px 22px;border:0;border-radius:999px;background:var(--od-yellow, #f5eb6a);color:var(--od-blue, #2448e8);font:600 14px/1.4 Sora,sans-serif;text-decoration:none;transition:background-color 180ms ease-out,color 180ms ease-out}.ds-service-button svg{flex:0 0 auto;width:22px;height:22px}.ds-service-button:focus-visible{outline:3px solid var(--od-yellow, #f5eb6a);outline-offset:5px}@media(hover:hover) and (pointer:fine){.ds-service-button:hover{background:var(--od-white, #f7f8ff);color:var(--od-blue, #2448e8)}}@media(max-width:750px){.ds-service-button{min-height:52px;padding:14px 19px;font-size:12px}}@media(prefers-reduced-motion:reduce){.ds-service-button{transition:none}}"
+    },
+    {
+      "name": "Service blue action",
+      "kind": "button",
+      "refersTo": "button-service-blue",
+      "description": "Roomier pill action from the service pages; color feedback is the primary hover response.",
+      "html": "<a class=\"ds-service-button-blue\" href=\"/contact\">Plan your project<svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a>",
+      "css": ".ds-service-button-blue{display:inline-flex;justify-content:space-between;align-items:center;gap:24px;min-height:56px;padding:16px 22px;border:0;border-radius:999px;background:var(--od-blue, #2448e8);color:var(--od-white, #f7f8ff);font:600 14px/1.4 Sora,sans-serif;text-decoration:none;transition:background-color 180ms ease-out,color 180ms ease-out}.ds-service-button-blue svg{flex:0 0 auto;width:22px;height:22px}.ds-service-button-blue:focus-visible{outline:3px solid var(--od-blue, #2448e8);outline-offset:5px}@media(hover:hover) and (pointer:fine){.ds-service-button-blue:hover{background:var(--od-ink, #162043);color:var(--od-white, #f7f8ff)}}@media(max-width:750px){.ds-service-button-blue{min-height:52px;padding:14px 19px;font-size:12px}}@media(prefers-reduced-motion:reduce){.ds-service-button-blue{transition:none}}"
+    },
+    {
+      "name": "Contact text field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "A labeled white control inside the pale enquiry panel, with the actual two-pixel cobalt focus outline.",
+      "html": "<div class=\"ds-field-preview\"><div class=\"ds-contact-field\"><label for=\"ds-contact-name\">Name</label><input id=\"ds-contact-name\" name=\"name\" autocomplete=\"name\" type=\"text\"></div></div>",
+      "css": ".ds-field-preview{padding:36px;border-radius:16px;background:var(--od-pale, #e9eeff);color:var(--od-ink, #162043);font-family:Sora,sans-serif;color-scheme:light}.ds-contact-field{margin-bottom:22px}.ds-contact-field label{display:flex;justify-content:space-between;gap:10px;margin-bottom:9px;color:var(--od-ink, #162043);font-size:12px;font-weight:500;line-height:1.5}.ds-contact-field input{width:100%;min-width:0;min-height:48px;padding:12px;border:1px solid #b1bddc;border-radius:7px;background:#fff;color:var(--od-ink, #162043);font:400 16px/1.5 Sora,sans-serif;box-shadow:none;caret-color:currentColor;transition:border-color .2s,background .2s}.ds-contact-field input:hover{border-color:#b1bddc}.ds-contact-field input:focus-visible{outline:2px solid var(--od-blue, #2448e8);outline-offset:2px}.ds-contact-field input[aria-invalid=true]{border-color:#ad3051}.ds-contact-field input:disabled{cursor:default;opacity:.72}@media(max-width:520px){.ds-field-preview{padding:24px 19px;border-radius:12px}}@media(prefers-reduced-motion:reduce){.ds-contact-field input{transition:none}}"
+    },
+    {
+      "name": "Work search",
       "kind": "input",
       "refersTo": "search",
-      "description": "A labeled neutral search control used by the URL-based project archive.",
-      "html": "<form class=\"ds-search\" role=\"search\"><label class=\"ds-search-label\" for=\"ds-project-query\">Search projects</label><svg viewBox=\"0 0 24 24\" width=\"16\" height=\"16\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" aria-hidden=\"true\"><path d=\"M16 16l5 5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0\"/></svg><input id=\"ds-project-query\" name=\"q\" type=\"search\" placeholder=\"Find a project\"/><button type=\"submit\" aria-label=\"Search projects\"><svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button></form>",
-      "css": ".ds-search{display:flex;align-items:center;gap:10px;max-width:300px;min-height:46px;padding:0 6px 0 15px;background:var(--surface,#f5f5f7);border-radius:999px;color:var(--ink,#1d1d1f);font:400 14px/1.5 -apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-search-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ds-search>svg{color:var(--muted,#6e6e73);flex-shrink:0}.ds-search input{width:100%;min-width:0;padding:11px 0;border:0;background:transparent;color:inherit;font:inherit;caret-color:var(--ink,#1d1d1f)}.ds-search input::placeholder{color:var(--muted,#6e6e73);opacity:1}.ds-search input:focus-visible{outline:0}.ds-search:focus-within{outline:3px solid var(--ink,#1d1d1f);outline-offset:3px}.ds-search button{display:grid;place-items:center;width:38px;height:38px;flex:0 0 38px;padding:0;border:0;border-radius:50%;background:transparent;color:inherit;cursor:pointer}.ds-search button:hover{background:#e8e8ed}.ds-search button:focus-visible{outline:3px solid var(--ink,#1d1d1f);outline-offset:3px}"
+      "description": "The labeled GET search with an ordinary submit control; the selected category and query remain URL state.",
+      "html": "<div class=\"ds-search-preview\"><form class=\"ds-work-search\" action=\"/projects\" method=\"get\" role=\"search\"><input name=\"q\" type=\"search\" aria-label=\"Search projects\" placeholder=\"Search projects\"><button type=\"submit\" aria-label=\"Search projects\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M16 16l5 5M18 10a8 8 0 1 1-16 0 8 8 0 0 1 16 0\"/></svg></button></form></div>",
+      "css": ".ds-search-preview{padding:20px;background:var(--od-blue, #2448e8);color:var(--od-white, #f7f8ff);font-family:Sora,sans-serif}.ds-work-search{display:flex;align-items:center;gap:10px;width:275px;max-width:100%;padding:1px 1px 1px 15px;border:1px solid rgb(247 248 255 / 58%);border-radius:100px}.ds-work-search input{width:100%;min-width:0;min-height:44px;padding:8px 0;border:0;background:transparent;color:inherit;caret-color:var(--od-yellow, #f5eb6a);font:400 16px/1.6 Sora,sans-serif}.ds-work-search input::placeholder{color:var(--od-pale, #e9eeff);opacity:1}.ds-work-search button{display:grid;flex:0 0 44px;width:44px;height:44px;padding:0;place-items:center;border:0;border-radius:50%;color:var(--od-blue, #2448e8);background:var(--od-white, #f7f8ff);cursor:pointer}.ds-work-search button:hover{background:var(--od-white, #f7f8ff)}.ds-work-search input:focus-visible,.ds-work-search button:focus-visible{outline:3px solid var(--od-yellow, #f5eb6a);outline-offset:5px}.ds-work-search svg{width:20px;height:20px}@media(max-width:680px){.ds-work-search{width:100%}}"
     },
     {
-      "name": "Archive filters",
-      "kind": "chip",
-      "refersTo": "chip-selected",
-      "description": "An ink selected pill with quiet neutral alternatives.",
-      "html": "<div class=\"ds-filters\" role=\"group\" aria-label=\"Filter projects\"><button type=\"button\" aria-pressed=\"true\">All work</button><button type=\"button\" aria-pressed=\"false\">Platforms</button><button type=\"button\" aria-pressed=\"false\">Applied AI</button></div>",
-      "css": ".ds-filters{display:flex;flex-wrap:wrap;gap:7px;font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-filters button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 17px;border:0;border-radius:999px;background:transparent;color:var(--ink,#1d1d1f);font:500 14px/1.4 -apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif;cursor:pointer;transition:background .22s,color .22s}.ds-filters button:hover{background:var(--surface,#f5f5f7)}.ds-filters button[aria-pressed=true]{background:var(--ink,#1d1d1f);color:var(--paper,#fff)}.ds-filters button:active{transform:scale(.98)}.ds-filters button:focus-visible{outline:3px solid var(--ink,#1d1d1f);outline-offset:4px}"
-    },
-    {
-      "name": "Product panel",
-      "kind": "card",
-      "refersTo": "product-panel",
-      "description": "Material and title preview of an archive tile. Production tiles include the actual captured product.",
-      "html": "<article class=\"ds-product-panel\"><h3>BaghBani</h3><p>Orchard services, specialist access and seasonal guidance.</p><a href=\"#project\">Explore the project<svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></a></article>",
-      "css": ".ds-product-panel{max-width:420px;padding:38px;background:var(--surface,#f5f5f7);border-radius:28px;color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-product-panel h3{margin:0;font-size:32px;font-weight:600;line-height:1.12;letter-spacing:-.035em}.ds-product-panel p{margin:16px 0 10px;max-width:35ch;font-size:16px;line-height:1.5;color:var(--muted,#6e6e73)}.ds-product-panel a{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:inherit;text-decoration:none;font-size:14px;font-weight:500;text-underline-offset:4px}.ds-product-panel a:hover{text-decoration:underline}.ds-product-panel a:focus-visible{outline:3px solid var(--ink,#1d1d1f);outline-offset:4px}.ds-product-panel a:active{opacity:.65}"
-    },
-    {
-      "name": "Site navigation",
+      "name": "Desktop navigation",
       "kind": "nav",
       "refersTo": "navigation",
-      "description": "Familiar, compact navigation with a translucent white material.",
-      "html": "<nav class=\"ds-navigation\" aria-label=\"Main navigation\"><a class=\"ds-brand\" href=\"#home\">KashCrop</a><div><a href=\"#work\" aria-current=\"page\">Work</a><a href=\"#services\">Services</a><a href=\"/services#compare\">Why KashCrop</a><a href=\"#about\">About</a></div><a class=\"ds-nav-action\" href=\"#contact\">Start a project</a></nav>",
-      "css": ".ds-navigation{display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:64px;padding:0 24px;background:rgba(255,255,255,.84);backdrop-filter:saturate(170%) blur(20px);box-shadow:0 1px 0 rgba(29,29,31,.06);color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-navigation a{display:inline-flex;align-items:center;min-height:44px;color:inherit;text-decoration:none;font-size:12px}.ds-navigation .ds-brand{font-size:19px;font-weight:600;letter-spacing:-.04em}.ds-navigation>div{display:flex;gap:30px}.ds-navigation .ds-nav-action{min-height:34px;padding:0 15px;background:var(--ink,#1d1d1f);color:var(--paper,#fff);border-radius:999px}.ds-navigation a:hover{text-decoration:underline;text-underline-offset:4px}.ds-navigation .ds-nav-action:hover{background:#373739;text-decoration:none}.ds-navigation a:focus-visible{outline:3px solid #0067d6;outline-offset:4px}.ds-navigation a:active{opacity:.7}@media(max-width:500px){.ds-navigation{gap:18px;flex-wrap:wrap;padding:15px 20px}.ds-navigation>div{gap:17px}}@media(prefers-reduced-transparency:reduce){.ds-navigation{background:#fff;backdrop-filter:none}}"
+      "description": "The three current route links, with an underline for the current page and hover state.",
+      "html": "<nav class=\"ds-desktop-nav\" aria-label=\"Main navigation\"><a href=\"/projects\" aria-current=\"page\">Work</a><a href=\"/services\">What we do</a><a href=\"/about\">The studio</a></nav>",
+      "css": ".ds-desktop-nav{display:flex;align-items:center;gap:38px;padding:16px 20px;background:var(--od-blue, #2448e8);color:var(--od-white, #f7f8ff);font-family:Sora,sans-serif}.ds-desktop-nav a{display:flex;align-items:center;min-height:44px;position:relative;color:inherit;font-size:13px;line-height:1.6;text-decoration:none}.ds-desktop-nav a::after{content:\"\";position:absolute;bottom:4px;height:1px;left:0;right:0;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--od-ease, cubic-bezier(.16,1,.3,1))}.ds-desktop-nav a:hover::after,.ds-desktop-nav a[aria-current=page]::after{transform:scaleX(1)}.ds-desktop-nav a:focus-visible{outline:3px solid var(--od-yellow, #f5eb6a);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-desktop-nav a::after{transition:none}}"
     },
     {
-      "name": "Recording disclosure",
-      "kind": "custom",
-      "description": "A native, keyboard-accessible disclosure for optional interface recordings and provenance.",
-      "html": "<details class=\"ds-recording\"><summary>Watch interface film<svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></summary><p>Recorded from the implemented interface using demonstration data. The production recording provides native manual controls and pauses when this disclosure closes.</p></details>",
-      "css": ".ds-recording{max-width:580px;border-bottom:1px solid #d2d2d7;color:var(--ink,#1d1d1f);font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-recording summary{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:54px;list-style:none;cursor:pointer;font-size:13px;font-weight:500}.ds-recording summary::-webkit-details-marker{display:none}.ds-recording summary svg{transition:transform .3s cubic-bezier(.16,1,.3,1)}.ds-recording[open] summary svg{transform:rotate(90deg)}.ds-recording summary:hover{text-decoration:underline;text-underline-offset:4px}.ds-recording summary:focus-visible{outline:3px solid var(--ink,#1d1d1f);outline-offset:4px}.ds-recording p{max-width:75ch;margin:0;padding:0 0 21px;color:var(--muted,#6e6e73);font-size:13px;line-height:1.7}@media(prefers-reduced-motion:reduce){.ds-recording summary svg{transition:none}}"
+      "name": "Work category filters",
+      "kind": "chip",
+      "refersTo": "filter-selected",
+      "description": "Ordinary category links. The active filter uses citron, while an unselected hover uses pale blue.",
+      "html": "<nav class=\"ds-work-filters\" aria-label=\"Project categories\"><a href=\"/projects\" aria-current=\"page\">All work</a><a href=\"/projects?category=mobile\">Mobile</a></nav>",
+      "css": ".ds-work-filters{display:flex;align-items:center;flex-wrap:wrap;gap:3px 5px;padding:20px;background:var(--od-blue, #2448e8);color:var(--od-white, #f7f8ff);font-family:Sora,sans-serif}.ds-work-filters a{display:flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border-radius:100px;color:inherit;font-size:16px;font-weight:500;line-height:1.4;text-decoration:none;transition:color 180ms,background 180ms}.ds-work-filters a[aria-current=page]{color:var(--od-blue, #2448e8);background:var(--od-yellow, #f5eb6a)}.ds-work-filters a:focus-visible{outline:3px solid var(--od-yellow, #f5eb6a);outline-offset:5px}@media(hover:hover) and (pointer:fine){.ds-work-filters a:not([aria-current=page]):hover{color:var(--od-blue, #2448e8);background:var(--od-pale, #e9eeff)}}@media(prefers-reduced-motion:reduce){.ds-work-filters a{transition:none}}"
     },
     {
-      "name": "Package chapter tabs",
-      "kind": "custom",
-      "description": "Build, Launch and Care control on the local forest stage, shown with Build selected. Production adds roving keyboard navigation and real interface changes.",
-      "html": "<section class=\"ds-package-preview\" aria-label=\"Project package chapters\"><div class=\"ds-package-tabs\" role=\"tablist\" aria-label=\"Explore the project package\"><button type=\"button\" role=\"tab\" id=\"ds-package-build\" aria-selected=\"true\" aria-controls=\"ds-package-panel-build\" tabindex=\"0\">Build</button><button type=\"button\" role=\"tab\" id=\"ds-package-launch\" aria-selected=\"false\" aria-controls=\"ds-package-panel-launch\" tabindex=\"-1\">Launch</button><button type=\"button\" role=\"tab\" id=\"ds-package-care\" aria-selected=\"false\" aria-controls=\"ds-package-panel-care\" tabindex=\"-1\">Care</button></div><div class=\"ds-package-panel\" id=\"ds-package-panel-build\" role=\"tabpanel\" aria-labelledby=\"ds-package-build\" tabindex=\"0\"><h3>Made for your world.</h3><p>Your workflow. Your interface. One connected product.</p></div><div class=\"ds-package-panel\" id=\"ds-package-panel-launch\" role=\"tabpanel\" aria-labelledby=\"ds-package-launch\" hidden><h3>Ready for the real world.</h3><p>Hosting, publishing and the details around going live.</p></div><div class=\"ds-package-panel\" id=\"ds-package-panel-care\" role=\"tabpanel\" aria-labelledby=\"ds-package-care\" hidden><h3>A longer view.</h3><p>Maintenance options that can stay with you for up to four years.</p></div></section>",
-      "css": ".ds-package-preview{padding:32px 24px;border-radius:28px;background:#101b16;color:#f5f8f5;text-align:center;font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-package-tabs{display:inline-flex;gap:4px;padding:5px;background:#26352c;border:1px solid #4a5b50;border-radius:999px}.ds-package-tabs button{min-width:93px;min-height:43px;padding:10px 21px;border:0;border-radius:999px;background:transparent;color:#e3eae5;font-family:inherit;font-size:14px;font-weight:500;line-height:1.3;cursor:pointer;transition:color .25s,background .3s,box-shadow .3s}.ds-package-tabs button:hover{background:#3b4c41}.ds-package-tabs button[aria-selected=true]{background:#edf4ef;color:#14251a;box-shadow:0 2px 8px #0002}.ds-package-tabs button:focus-visible,.ds-package-panel:focus-visible{outline:3px solid var(--kc-accent,#b2e7be);outline-offset:4px}.ds-package-panel{max-width:570px;min-height:73px;margin:22px auto 0}.ds-package-panel[hidden]{display:none}.ds-package-panel h3{margin:0;font-size:23px;line-height:1.2;letter-spacing:-.025em;font-weight:600}.ds-package-panel p{margin:8px 0 0;color:#c1cbc4;font-size:15px;line-height:1.5}@media(max-width:750px){.ds-package-preview{padding:27px 22px;border-radius:24px}.ds-package-tabs{gap:2px;padding:4px}.ds-package-tabs button{min-width:82px;padding:10px 16px;font-size:13px}.ds-package-panel{min-height:94px;margin-top:21px}.ds-package-panel h3{font-size:22px}.ds-package-panel p{font-size:14px;max-width:330px;margin:9px auto 0}}@media(prefers-reduced-motion:reduce){.ds-package-tabs button{transition:none}}"
+      "name": "Commitment sheet",
+      "kind": "card",
+      "refersTo": "commitment-sheet",
+      "description": "The homepage's flat citron sheet introduces the agreed package and links to its full terms.",
+      "html": "<section class=\"ds-commitment-sheet\"><h2>Good after hello.<br><span>Great after launch.</span></h2><div class=\"ds-commitment-bottom\"><p>A clear project price. Hosting and publishing support. Maintenance options up to four years.</p><a class=\"ds-commitment-action\" href=\"/services#compare\">See the whole package<svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a></div><p class=\"ds-commitment-note\">Scope, support, hosting term and third-party charges are agreed in your quote.</p></section>",
+      "css": ".ds-commitment-sheet{background:var(--od-yellow, #f5eb6a);color:var(--od-ink, #162043);border-radius:16px;padding:60px 62px 35px;font-family:Sora,sans-serif}.ds-commitment-sheet h2{margin:0;font-size:clamp(39px,5vw,72px);font-weight:600;letter-spacing:-.035em;line-height:1.07}.ds-commitment-sheet h2 span{color:var(--od-blue, #2448e8)}.ds-commitment-bottom{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-top:38px}.ds-commitment-bottom>p{margin:0;font-size:17px;line-height:1.8;max-width:460px}.ds-commitment-action{display:inline-flex;align-items:center;justify-content:center;gap:24px;min-height:48px;padding:14px 23px;border-radius:8px;background:var(--od-blue, #2448e8);color:var(--od-white, #f7f8ff);font:500 14px/1.4 Sora,sans-serif;white-space:nowrap;text-decoration:none;transition:background .2s,transform .3s var(--od-ease, cubic-bezier(.16,1,.3,1))}.ds-commitment-action svg{width:19px;height:19px;flex:0 0 auto;transition:transform .3s var(--od-ease, cubic-bezier(.16,1,.3,1))}.ds-commitment-action:hover{background:#1938c0}.ds-commitment-action:hover svg{transform:translate(2px,-2px)}.ds-commitment-action:focus-visible{outline:3px solid var(--od-blue, #2448e8);outline-offset:5px}.ds-commitment-action:active{transform:scale(.97)}.ds-commitment-note{font-size:11px;line-height:1.75;margin:45px 0 0;color:#4c491f}@media(max-width:800px){.ds-commitment-sheet{padding:35px 30px 28px}.ds-commitment-bottom{align-items:start;flex-direction:column;gap:24px;margin-top:25px}.ds-commitment-bottom>p{font-size:15px}.ds-commitment-sheet h2{font-size:44px}}@media(max-width:520px){.ds-commitment-sheet{padding:30px 22px 23px;border-radius:12px}.ds-commitment-sheet h2{font-size:clamp(31px,8.1vw,42px);line-height:1.16;letter-spacing:-.04em}.ds-commitment-bottom>p{font-size:13px;line-height:1.9}.ds-commitment-action{min-height:46px;font-size:12px;padding-inline:15px;gap:15px}}@media(prefers-reduced-motion:reduce){.ds-commitment-action,.ds-commitment-action svg{transition:none}}"
     },
     {
-      "name": "Scoped quote comparison",
+      "name": "Spatial reel controls",
       "kind": "custom",
-      "description": "Two-row material preview of the eight-row comparison: real quote questions, KashCrop scope, light offer column and native terms disclosure.",
-      "html": "<section class=\"ds-comparison-preview\" aria-label=\"Project quote comparison\"><div class=\"ds-comparison-wrap\"><table class=\"ds-comparison-table\" role=\"table\"><caption class=\"ds-compare-caption\">Questions to ask when comparing project quotes, alongside the KashCrop offer</caption><thead role=\"rowgroup\"><tr role=\"row\"><th scope=\"col\" role=\"columnheader\">What matters</th><th scope=\"col\" role=\"columnheader\">When comparing quotes</th><th scope=\"col\" role=\"columnheader\">With KashCrop</th></tr></thead><tbody role=\"rowgroup\"><tr role=\"row\"><th scope=\"row\" role=\"rowheader\">Server hosting</th><td role=\"cell\"><span class=\"ds-compare-label\" aria-hidden=\"true\">Ask other providers</span>Who gets it online and handles hosting?</td><td role=\"cell\"><span class=\"ds-compare-label\" aria-hidden=\"true\">With KashCrop</span><div class=\"ds-compare-commitment\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\"/></svg><strong>Hosting in your package.</strong></div><p>Setup and hosting for the term agreed in your quote.</p></td></tr><tr role=\"row\"><th scope=\"row\" role=\"rowheader\">Long-term care</th><td role=\"cell\"><span class=\"ds-compare-label\" aria-hidden=\"true\">Ask other providers</span>What support follows the launch?</td><td role=\"cell\"><span class=\"ds-compare-label\" aria-hidden=\"true\">With KashCrop</span><div class=\"ds-compare-commitment\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m5 12 4 4L19 6\"/></svg><strong>Maintenance up to 4 years.</strong></div><p>Choose the coverage and duration your project needs.</p></td></tr></tbody></table></div><div class=\"ds-comparison-footnote\"><p>Compare written scopes. Every provider’s offer is different.</p><details><summary>Package scope and terms <svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 4v16m-6-6 6 6 6-6\"/></svg></summary><p>Your quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.</p></details></div></section>",
-      "css": ".ds-comparison-preview{max-width:1180px;background:var(--paper,#fff);color:#1d1d1f;font-family:-apple-system,BlinkMacSystemFont,Geist,'Helvetica Neue','Segoe UI',sans-serif}.ds-comparison-wrap{border:1px solid #dce4dc;border-radius:24px;overflow:hidden}.ds-comparison-table{width:100%;table-layout:fixed;border-collapse:separate;border-spacing:0;text-align:left}.ds-compare-caption{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ds-comparison-table th,.ds-comparison-table td{padding:25px 26px;vertical-align:top;border-bottom:1px solid #dce4dc;line-height:1.5}.ds-comparison-table thead th{vertical-align:middle;color:#616168;font-size:13px;font-weight:500}.ds-comparison-table thead th:first-child{width:22%}.ds-comparison-table thead th:nth-child(2){width:33%}.ds-comparison-table thead th:last-child{width:45%;color:#173f26;font-size:19px;font-weight:600}.ds-comparison-table tbody th{color:#303033;font-size:15px;font-weight:600}.ds-comparison-table tbody td{font-size:15px;color:#616168}.ds-comparison-table tr>:last-child{background:#f0f7f0}.ds-comparison-table tbody tr:last-child>*{border-bottom:0}.ds-comparison-table tbody tr>:not(:last-child){transition:background .25s}.ds-comparison-table tbody tr:hover>:not(:last-child){background:#f6f7f6}.ds-compare-commitment{display:flex;align-items:flex-start;gap:10px}.ds-compare-commitment>svg{width:18px;height:18px;margin-top:4px;color:#2e7046;flex-shrink:0}.ds-compare-commitment strong{color:#234830;font-size:17px;font-weight:600;letter-spacing:-.015em;line-height:1.45}.ds-comparison-table td>p{margin:7px 0 0 28px;color:#526157;font-size:13px;line-height:1.5}.ds-compare-label{display:none}.ds-comparison-footnote{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:22px;color:#68686e;font-size:12px;line-height:1.55}.ds-comparison-footnote>p{margin:0;padding-top:11px}.ds-comparison-footnote details{justify-self:end;max-width:520px}.ds-comparison-footnote summary{display:flex;align-items:center;justify-content:flex-end;gap:8px;min-height:44px;list-style:none;color:#44494a;cursor:pointer}.ds-comparison-footnote summary::-webkit-details-marker{display:none}.ds-comparison-footnote summary:hover{text-decoration:underline;text-underline-offset:3px}.ds-comparison-footnote summary:focus-visible{outline:3px solid #0067d6;outline-offset:4px}.ds-comparison-footnote summary svg{transition:transform .25s}.ds-comparison-footnote details[open] summary svg{transform:rotate(180deg)}.ds-comparison-footnote details p{margin:10px 0 0}@media(max-width:750px){.ds-comparison-wrap{border-radius:19px}.ds-comparison-table,.ds-comparison-table tbody{display:block}.ds-comparison-table thead{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}.ds-comparison-table tbody tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-bottom:1px solid #cfdacf}.ds-comparison-table tbody tr:last-child{border-bottom:0}.ds-comparison-table tbody th{grid-column:1/-1;padding:17px 15px;background:#f5f6f5;border-bottom:1px solid #dce4dc;font-size:16px;line-height:1.3}.ds-comparison-table tbody td{border-bottom:0;padding:18px 14px 23px;font-size:14px}.ds-comparison-table tbody td:last-child{border-left:1px solid #dce4dc}.ds-compare-label{display:block;min-height:17px;margin-bottom:11px;color:#62696a;font-size:10px;line-height:1.3;font-weight:600}.ds-comparison-table td:last-child .ds-compare-label{color:#366346}.ds-compare-commitment{gap:5px}.ds-compare-commitment>svg{width:14px;height:14px;margin-top:3px}.ds-compare-commitment strong{font-size:14px;line-height:1.4;letter-spacing:-.01em}.ds-comparison-table td>p{margin:9px 0 0 19px;font-size:12px}.ds-comparison-footnote{grid-template-columns:1fr;gap:3px;margin-top:15px;font-size:11px}.ds-comparison-footnote>p{padding-top:0}.ds-comparison-footnote details{justify-self:stretch;max-width:none}.ds-comparison-footnote summary{justify-content:flex-start;width:max-content}}@media(prefers-reduced-motion:reduce){.ds-comparison-table tbody tr>:not(:last-child),.ds-comparison-footnote summary svg{transition:none}}"
+      "refersTo": "reel-selection",
+      "description": "The stationary caption and direct control strip below the moving artwork. This preview preserves the control states without simulating the application's spring engine.",
+      "html": "<div class=\"ds-reel-controls\"><div class=\"ds-reel-caption\"><strong>BaghBani</strong><a class=\"ds-reel-case\" href=\"/projects/baghban\"><span>View project</span><svg viewBox=\"0 0 24 24\" width=\"21\" height=\"21\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M5 19 19 5M5 5h14v14\"/></svg></a></div><div class=\"ds-reel-toolbar\"><div class=\"ds-reel-picker\" role=\"group\" aria-label=\"Choose a project\"><button type=\"button\" aria-pressed=\"true\" aria-label=\"Show BaghBani\">BaghBani</button><button type=\"button\" aria-pressed=\"false\" aria-label=\"Show Plant Health Clinic\">Plant Health</button><button type=\"button\" aria-pressed=\"false\" aria-label=\"Show SKIIE\">SKIIE</button></div><div class=\"ds-reel-arrows\" role=\"group\" aria-label=\"Move through projects\"><button type=\"button\" aria-label=\"Previous project\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M20 12H4m6-6-6 6 6 6\"/></svg></button><button type=\"button\" aria-label=\"Next project\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 12h16m-6-6 6 6-6 6\"/></svg></button></div></div></div>",
+      "css": ".ds-reel-controls{padding:20px;background:var(--od-blue, #2448e8);color:var(--od-white, #f7f8ff);font-family:Sora,sans-serif;container-type:inline-size}.ds-reel-caption{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:48px;padding:6px 0 4px}.ds-reel-caption strong{font-size:17px;font-weight:600;line-height:1.25;letter-spacing:-.025em}.ds-reel-case{display:inline-flex;align-items:center;gap:12px;min-height:44px;color:inherit;font-size:12px;font-weight:500;text-decoration:none}.ds-reel-case span{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px}.ds-reel-case svg{width:21px;height:21px;transition:transform 180ms cubic-bezier(.2,.8,.2,1)}.ds-reel-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:13px;padding-top:12px;border-top:1px solid var(--od-line, rgba(247,248,255,.28))}.ds-reel-picker{display:flex;align-items:center;gap:5px;min-width:0}.ds-reel-controls button{margin:0;color:inherit;cursor:pointer;font-family:inherit;touch-action:manipulation;-webkit-tap-highlight-color:transparent}.ds-reel-picker button{min-height:44px;padding:10px 13px;border:0;border-radius:6px;background:transparent;font-size:11px;font-weight:500;line-height:1.35;white-space:nowrap;transition:background-color 160ms ease-out,color 160ms ease-out}.ds-reel-picker button[aria-pressed=true]{color:#1736b6;background:var(--od-yellow, #f5eb6a)}.ds-reel-arrows{display:flex;gap:6px;flex:0 0 auto}.ds-reel-arrows button{display:grid;place-items:center;width:44px;height:44px;padding:0;border:1px solid rgb(247 248 255 / 50%);border-radius:50%;background:transparent;transition:background-color 160ms ease-out,color 160ms ease-out,border-color 160ms ease-out}.ds-reel-arrows svg{width:20px;height:20px}.ds-reel-controls button:focus-visible,.ds-reel-controls a:focus-visible{outline:2px solid var(--od-yellow, #f5eb6a);outline-offset:4px}.ds-reel-picker button[aria-pressed=true]:focus-visible{outline-color:var(--od-white, #f7f8ff)}@media(hover:hover) and (pointer:fine){.ds-reel-picker button:hover:not([aria-pressed=true]){background:rgb(247 248 255 / 12%)}.ds-reel-arrows button:hover{border-color:var(--od-white, #f7f8ff);background:var(--od-white, #f7f8ff);color:var(--od-blue, #2448e8)}.ds-reel-case:hover svg{transform:translate(2px,-2px)}}@container(max-width:560px){.ds-reel-caption{gap:12px;min-height:42px;padding:6px 0 0}.ds-reel-caption strong{font-size:15px}.ds-reel-case{gap:7px;font-size:10px}.ds-reel-case svg{width:18px;height:18px}.ds-reel-toolbar{gap:9px;margin-top:6px;padding-top:7px}.ds-reel-picker{gap:1px}.ds-reel-picker button{padding:10px 9px;font-size:10px}.ds-reel-arrows{gap:4px}}@container(max-width:355px){.ds-reel-picker button{padding-inline:6px;font-size:9px}.ds-reel-toolbar{gap:4px}}@media(prefers-reduced-motion:reduce){.ds-reel-controls *{transition:none!important}}"
     }
   ],
   "narrative": {
-    "northStar": "The work has to work. A distinctive editorial software studio portfolio with real product proof.",
-    "overview": "9 October 2026 FIELDWORK studio expansion across the main portfolio: editorial covers, actual project evidence, distinct case palette, functional search and enquiry preserved. Service detail routes transitional; no production deployment.",
+    "northStar": "The work is a moving opening title.",
+    "overview": "Overdrive presents KashCrop as a motion-title design studio: confident cobalt space, bright citron interruptions, monumental lettering and software that has physical presence. The products supply the image detail. Navigation, language and service information remain direct enough for founders, institutional buyers and agricultural experts to find the next step.\n\nThe world is continuous across Home, Work, all six project cases, Services, every service detail, About, Contact, the viewer and shared navigation. Pale and citron sections change the pace within that world. The spatial reel is its signature interaction; open project layouts and precise media frames extend the same material without repeating the homepage composition.",
     "keyCharacteristics": [
-      "Large native sans-serif type, with a locally hosted Geist fallback.",
-      "Real software presented at a readable scale.",
-      "One neutral visual system across home, archive, detail pages, forms, viewer, and footer, with a local dark stage for the project package.",
-      "Purposeful product choreography and optional, manually controlled recordings."
+      "A continuous cobalt shell, with offwhite language and citron emphasis.",
+      "Sora for readable language and controls; Barlow Condensed for monumental lettering and selected page titles.",
+      "Actual interface captures, with separately identified synthetic demonstrations and accessible source context.",
+      "Soft depth on the work and overlays; flat rules and open space around supporting information.",
+      "Direct selection, ordinary links and a complete static experience alongside decorative motion."
     ],
     "rules": [
       {
-        "name": "The Neutral Frame Rule",
-        "body": "Product colors belong to actual imagery and selected presentation stages. They do not establish separate site identities.",
+        "name": "The Continuous Stage Rule",
+        "body": "Keep the shared cobalt shell coherent across routes. Citron and pale sheets belong to the same palette; a project image can carry its own colors without creating another site identity.",
         "section": "colors"
       },
       {
-        "name": "The Single Voice Rule",
-        "body": "Headings and prose use the same sans family. Do not reintroduce the previous serif pairing, uppercase technical labels, or gradient-filled type. Keep ordinary text tracking at or above −0.04em; reserve the tighter package tracking for its heading and oversized numerals.",
+        "name": "The Two Voices Rule",
+        "body": "Use Barlow Condensed for the monumental masthead and the implemented display-title roles. Keep Sora for the small wordmark, navigation, explanatory headings, prose and controls.",
         "section": "typography"
       },
       {
-        "name": "The Product Depth Rule",
-        "body": "Spend depth on the presented software and active overlays. Keep text sections, facts, and routine cards calm.",
+        "name": "The Work Has Weight Rule",
+        "body": "Concentrate spatial depth on real interface surfaces, reel panels and active overlays. Service lists, facts and the package sheet use color, rules and spacing to establish hierarchy.",
         "section": "elevation"
       }
     ],
     "dos": [
-      "Do keep KashCrop’s logo and factual project records intact.",
-      "Do build new pages in the same neutral material and sans-serif hierarchy.",
-      "Do use actual interfaces, original copy, clear destinations, and honest recording provenance.",
-      "Do make product motion ambitious while keeping the complete static experience available.",
-      "Do inspect mobile spacing, focus, long-screen scrolling, and real content together."
+      "Do keep the cobalt shell, current typographic wordmark and two-family hierarchy consistent on new routes.",
+      "Do choose a source-backed capture and preserve its project, screen identity, aspect ratio and provenance.",
+      "Do keep case captions, source disclosures, full-size inspection and ordinary destination links close to the work.",
+      "Do preserve the current project package terms, semantic table headers and visible scope qualifiers when changing presentation.",
+      "Do provide visible keyboard focus and direct controls alongside drag, hover and scroll effects.",
+      "Do verify the complete static composition, narrow layouts and long-screen reading before shipping changes."
     ],
     "donts": [
-      "Don't restore the superseded Fraunces/red-room presentation or layer another design identity over this one.",
-      "Don't substitute fabricated application screenshots, adoption figures, or validation claims.",
-      "Don't turn every section into an animation demo or conceal content until scrolling triggers it.",
-      "Don't autoplay optional recordings or leave a hidden recording playing after its disclosure closes.",
-      "Don't discard useful project details, source notes, URL behavior, or gallery access while simplifying the layout."
+      "Don't restore Fieldwork or Apple-era visual instructions as the authority for this build.",
+      "Don't recolor application captures to fit the site palette or present synthetic demonstrations as shipped product evidence.",
+      "Don't make drag, decorative motion or an optional recording the only route to a project or its information.",
+      "Don't turn a local stage tint, a composition-specific measurement or small caption treatment into a universal design token.",
+      "Don't remove useful routes, URL state, screen IDs, factual content or contact states while simplifying the interface."
     ]
   }
 }

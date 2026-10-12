@@ -15,6 +15,7 @@ The work starts at `eea7893` and lives on `design/impeccable-overdrive-20261012`
 | Existing Vitest suite | 11 files, 71 tests pass |
 | Impeccable scan of changed UI sources | No primary or advisory findings |
 | Main-page WCAG A/AA and 2.1 AA axe checks | No violations on Home, Work, BaghBani, Services, Studio, and Contact |
+| Screen viewer WCAG A/AA and 2.1 AA axe checks | No violations in desktop and phone dialogs |
 | Route and asset loading | All canonical routes return 200; an invalid case returns a real 404; no missing images in captured pages |
 
 The Impeccable source scan ran once without the obsolete design-system context. It did not substitute for rendered inspection.
@@ -35,7 +36,7 @@ Browser tests intercepted Web3Forms requests. They checked required-field valida
 
 ## Design review and evidence
 
-A fresh independent reviewer inspected the required full desktop and mobile captures and eight supporting captures. The visual review found the typography, material, ground, first viewport, responsive adaptation, story, truth, and design floor consistent with the code-led contract. The sole material finding was stale Fieldwork/Apple documentation; the final documenter pass reconciles that authority with the implemented Overdrive system.
+A fresh independent reviewer inspected the required full desktop and mobile captures and eight supporting captures. The visual review found the typography, material, ground, first viewport, responsive adaptation, story, truth, and design floor consistent with the code-led contract. The sole material finding was stale Fieldwork/Apple documentation. The final documenter pass reconciled that authority with the implemented Overdrive system, and the reviewer returned `disposition: ship` for the scored persistence fix. The shared blue action on the citron homepage sheet also received an explicit cobalt focus ring.
 
 The concept seed is `35e932bf`, candidate 5, corroborated by the supported-network API result. This was a code-led build with no approved raster comp. External challenger quality-board requests returned HTTP 403; those images were not inspected and no comparison against them is claimed.
 

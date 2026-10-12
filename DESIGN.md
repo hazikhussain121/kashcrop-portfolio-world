@@ -1,272 +1,329 @@
 ---
-name: KashCrop Innovations
-description: FIELDWORK editorial studio identity with monumental typography and genuine project evidence.
+name: "KashCrop Innovations — Overdrive"
+description: "A cobalt motion-title studio portfolio, with monumental lettering and real software in a spatial reel."
 colors:
-  paper: "#eeece5"
-  surface: "#f5f5f7"
-  ink: "#151715"
-  muted: "#6e6e73"
-  display-muted: "#77777d"
-  line: "rgba(29,29,31,.14)"
-  line-solid: "#d2d2d7"
-  control-hover: "#373739"
-  control-track: "#e8e8ed"
-  focus: "#f6b600"
-  selection: "#d8e7fa"
-  fieldwork-vermilion: "#bd3827"
-  fieldwork-leaf: "#dce683"
-  fieldwork-orchard: "#123b2e"
-  garden-stage: "#edf3ed"
-  clinic-stage: "#edf3f7"
-  package-stage: "#101b16"
-  package-text: "#f5f8f5"
-  package-muted: "#c1cbc4"
-  package-accent: "#b2e7be"
-  package-chip: "#23382b"
-  package-track: "#26352c"
-  package-tab-selected: "#edf4ef"
-  package-tab-ink: "#14251a"
-  comparison-surface: "#f0f7f0"
-  comparison-line: "#dce4dc"
-  comparison-ink: "#234830"
-  comparison-muted: "#526157"
-  comparison-question: "#616168"
+  od-blue: "#2448e8"
+  od-white: "#f7f8ff"
+  od-yellow: "#f5eb6a"
+  od-pale: "#e9eeff"
+  od-ink: "#162043"
+  od-muted: "#d4ddff"
+  od-line: "rgba(247,248,255,.28)"
+  button-yellow-hover: "#fff79a"
+  button-blue-hover: "#1938c0"
+  field-surface: "#fff"
+  field-line: "#b1bddc"
+  field-muted: "#526080"
 typography:
   display:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Geist, Helvetica Neue, Segoe UI, sans-serif"
-    fontSize: "clamp(56px, 6.5vw, 88px)"
-    fontWeight: 600
-    lineHeight: 1.025
-    letterSpacing: "-0.04em"
+    fontFamily: "Barlow Condensed, sans-serif"
+    fontSize: "clamp(132px, 24vw, 370px)"
+    fontWeight: 800
+    lineHeight: 0.83
+    letterSpacing: "-0.025em"
   headline:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Geist, Helvetica Neue, Segoe UI, sans-serif"
-    fontSize: "clamp(40px, 4.5vw, 64px)"
+    fontFamily: "Sora, sans-serif"
+    fontSize: "clamp(52px, 6.1vw, 96px)"
     fontWeight: 600
-    lineHeight: 1.06
+    lineHeight: 1.05
     letterSpacing: "-0.04em"
-  title:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Geist, Helvetica Neue, Segoe UI, sans-serif"
-    fontSize: "32px"
+  case-display:
+    fontFamily: "Barlow Condensed, sans-serif"
+    fontSize: "clamp(80px, 11.5vw, 172px)"
+    fontWeight: 700
+    lineHeight: 0.86
+    letterSpacing: "-0.025em"
+  service-display:
+    fontFamily: "Barlow Condensed, Sora, sans-serif"
+    fontSize: "clamp(88px, 10.6vw, 168px)"
+    fontWeight: 700
+    lineHeight: 0.9
+    letterSpacing: "-0.025em"
+  section-heading:
+    fontFamily: "Sora, sans-serif"
+    fontSize: "clamp(36px, 4vw, 60px)"
     fontWeight: 600
-    lineHeight: 1.12
+    lineHeight: 1.08
     letterSpacing: "-0.035em"
+  title:
+    fontFamily: "Sora, sans-serif"
+    fontSize: "clamp(26px, 2.4vw, 36px)"
+    fontWeight: 600
+    lineHeight: 1.25
+    letterSpacing: "-0.03em"
   body:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Geist, Helvetica Neue, Segoe UI, sans-serif"
-    fontSize: "17px"
+    fontFamily: "Sora, sans-serif"
+    fontSize: "16px"
     fontWeight: 400
-    lineHeight: 1.55
+    lineHeight: 1.6
+  story:
+    fontFamily: "Sora, sans-serif"
+    fontSize: "18px"
+    fontWeight: 400
+    lineHeight: 1.75
   label:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Geist, Helvetica Neue, Segoe UI, sans-serif"
-    fontSize: "13px"
-    fontWeight: 400
-    lineHeight: 1.5
+    fontFamily: "Sora, sans-serif"
+    fontSize: "14px"
+    fontWeight: 500
+    lineHeight: 1.4
 rounded:
-  browser: "12px"
-  desktop-display: "16px"
-  panel-mobile: "24px"
-  panel: "28px"
-  phone: "30px"
+  selection: "6px"
+  input: "7px"
+  action: "8px"
+  browser: "9px"
+  media: "14px"
+  panel: "16px"
+  reel-phone: "20px"
+  project-pill: "100px"
   pill: "999px"
+  circle: "50%"
 spacing:
-  page-x: "clamp(22px, 5vw, 72px)"
-  page-x-mobile: "22px"
-  content-measure: "1280px"
-  outer-measure: "1400px"
-  navigation-measure: "1180px"
-  product-family-measure: "1060px"
-  section: "100px"
-  grid-gap: "24px"
-  archive-gap: "26px"
-  hero-top: "44px"
+  page-x: "clamp(20px, 4.5vw, 72px)"
+  outer-measure: "1600px"
+  gap-small: "12px"
+  gap: "24px"
+  gap-large: "38px"
+  case-section: "clamp(72px, 8vw, 116px)"
 components:
   button-primary:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.paper}"
-    rounded: "{rounded.pill}"
-    padding: "12px 23px"
-    height: "46px"
+    backgroundColor: "{colors.od-yellow}"
+    textColor: "{colors.od-ink}"
+    rounded: "{rounded.action}"
+    padding: "14px 23px"
+    height: "48px"
   button-primary-hover:
-    backgroundColor: "{colors.control-hover}"
-    textColor: "{colors.paper}"
-  button-secondary:
-    backgroundColor: "transparent"
-    textColor: "{colors.ink}"
-    padding: "12px 0"
-    height: "44px"
-  chip-selected:
-    backgroundColor: "{colors.ink}"
-    textColor: "{colors.paper}"
+    backgroundColor: "{colors.button-yellow-hover}"
+  button-blue:
+    backgroundColor: "{colors.od-blue}"
+    textColor: "{colors.od-white}"
+    rounded: "{rounded.action}"
+    padding: "14px 23px"
+    height: "48px"
+  button-blue-hover:
+    backgroundColor: "{colors.button-blue-hover}"
+  button-service:
+    backgroundColor: "{colors.od-yellow}"
+    textColor: "{colors.od-blue}"
     rounded: "{rounded.pill}"
-    padding: "11px 17px"
+    padding: "16px 22px"
+    height: "56px"
+  button-service-hover:
+    backgroundColor: "{colors.od-white}"
+    textColor: "{colors.od-blue}"
+  button-service-blue:
+    backgroundColor: "{colors.od-blue}"
+    textColor: "{colors.od-white}"
+    rounded: "{rounded.pill}"
+    padding: "16px 22px"
+    height: "56px"
+  button-service-blue-hover:
+    backgroundColor: "{colors.od-ink}"
+    textColor: "{colors.od-white}"
+  filter-selected:
+    backgroundColor: "{colors.od-yellow}"
+    textColor: "{colors.od-blue}"
+    rounded: "{rounded.project-pill}"
+    padding: "10px 14px"
+    height: "44px"
+  reel-selection:
+    backgroundColor: "{colors.od-yellow}"
+    textColor: "#1736b6"
+    rounded: "{rounded.selection}"
+    padding: "10px 13px"
     height: "44px"
   search:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.pill}"
-    padding: "0 6px 0 15px"
-    height: "46px"
-  product-panel:
-    backgroundColor: "{colors.surface}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.panel}"
-    padding: "38px"
+    backgroundColor: "transparent"
+    textColor: "{colors.od-white}"
+    rounded: "{rounded.project-pill}"
+    padding: "1px 1px 1px 15px"
+    width: "275px"
+  input:
+    backgroundColor: "{colors.field-surface}"
+    textColor: "{colors.od-ink}"
+    rounded: "{rounded.input}"
+    padding: "12px"
+    height: "48px"
   navigation:
-    backgroundColor: "rgba(255,255,255,.84)"
-    textColor: "{colors.ink}"
-    height: "64px"
+    backgroundColor: "{colors.od-blue}"
+    textColor: "{colors.od-white}"
+    height: "88px"
+  commitment-sheet:
+    backgroundColor: "{colors.od-yellow}"
+    textColor: "{colors.od-ink}"
+    rounded: "{rounded.panel}"
+    padding: "60px 62px 35px"
 ---
 
-## CURRENT / FIELDWORK / 9 OCTOBER 2026
-
-This document retains older Apple-stage token and component reference sections for unconverted routes. **These are not the current design authority for the converted Fieldwork routes.** The latest brief and accurate token palette are in [FIELDWORK_2026-10-09.md](docs/design/FIELDWORK_2026-10-09.md), and the implemented styles are in `app/styles/portfolio/fieldwork.css` and `app/styles/portfolio/fieldwork-expansion.css`.
-
-Fieldwork is an experimental editorial system: oversized close-set Geist display typography, restrained Georgia italic contrast, ink on warm paper, deeper accessible vermilion, finely tracked mono case labels, graphic rules, real product screenshots, and distinct story formats per project. Do not reintroduce translucent SaaS cards, comparison tables on the homepage, invented KPI metrics, or generic Apple-like silver surfaces.
-
-The brand-specific logo, real project data, links, source and accuracy notes, reduced-motion behavior, and direct contact workflow are unchanged.
-
----
-
-# Design System: KashCrop Innovations
+# Design System: KashCrop Innovations — Overdrive
 
 ## Overview
 
-**Creative North Star: “The product, beautifully presented.”**
+**Creative North Star: "The work is a moving opening title."**
 
-The approved direction is an Apple-inspired presentation adapted to KashCrop’s own work. White and silver surfaces, confident sans-serif headlines, clear product photography and interface captures create a familiar visual rhythm. Motion gives the products scale and depth while navigation and controls stay direct.
+Overdrive presents KashCrop as a motion-title design studio: confident cobalt space, bright citron interruptions, monumental lettering and software that has physical presence. The products supply the image detail. Navigation, language and service information remain direct enough for founders, institutional buyers and agricultural experts to find the next step.
 
-This system replaces the earlier Fraunces and red-room identity. Keep KashCrop’s existing red-and-green logo and original copy. The products supply their own colors inside real screenshots; the surrounding website remains neutral.
+The world is continuous across Home, Work, all six project cases, Services, every service detail, About, Contact, the viewer and shared navigation. Pale and citron sections change the pace within that world. The spatial reel is its signature interaction; open project layouts and precise media frames extend the same material without repeating the homepage composition.
 
-The implementation sources are app/styles/portfolio/apple-base.css, apple.css, apple-pages.css, and offer.css. The frontmatter above records reusable primitives. The .impeccable/design.json sidecar records motion, elevation, breakpoints, and component previews.
+**Key Characteristics:**
 
-**Key characteristics:**
+- A continuous cobalt shell, with offwhite language and citron emphasis.
+- Sora for readable language and controls; Barlow Condensed for monumental lettering and selected page titles.
+- Actual interface captures, with separately identified synthetic demonstrations and accessible source context.
+- Soft depth on the work and overlays; flat rules and open space around supporting information.
+- Direct selection, ordinary links and a complete static experience alongside decorative motion.
 
-- Large native sans-serif type, with a locally hosted Geist fallback.
-- Real software presented at a readable scale.
-- One neutral visual system across home, archive, detail pages, forms, viewer, and footer, with a local dark stage for the project package.
-- Purposeful product choreography and optional, manually controlled recordings.
+This is the implemented system recorded on 12 October 2026 after the independent finish review. The current [direction contract](docs/design/OVERDRIVE_2026-10-12.md) supersedes the Fieldwork and Apple presentation iterations. The visual sources are [overdrive.css](app/styles/portfolio/overdrive.css), [overdrive-reel.css](app/styles/portfolio/overdrive-reel.css), [overdrive-projects.css](app/styles/portfolio/overdrive-projects.css) and [overdrive-services.css](app/styles/portfolio/overdrive-services.css). The [sidecar](.impeccable/design.json) records extensions and component previews; the frontmatter above owns reusable primitives.
 
 ## Colors
 
+Saturated cobalt carries the environment. Offwhite provides the main reading contrast, citron adds warmth and emphasis, and pale blue creates a quieter surface for inspecting or discussing the work.
+
 ### Primary
 
-**Ink** carries headlines, primary actions, active archive filters, and navigation. Its hover step adds feedback without introducing another brand color.
+**Cobalt** is the page, header and footer canvas. It also becomes an action or reading color on pale and citron surfaces. Its deeper hover step belongs to the shared blue button.
+
+### Secondary
+
+**Citron** marks selected controls, key headline phrases and project actions. It also fills entire commitment, package and workflow sections. Its use is substantial and deliberate; the implementation does not treat it as a rare notification color.
 
 ### Neutral
 
-**Paper** is the main canvas. **Surface** groups products and supporting content. **Muted** is for supporting copy; **display-muted** is reserved for larger secondary headline phrases. **Line** and **line-solid** divide facts, lists, and navigation without enclosing every element.
+**Offwhite** carries primary text on cobalt. **Pale** is a media-stage, process, contact-panel and viewer material. **Ink** supports comfortable reading on light surfaces. **Muted** is the lighter supporting language on cobalt, while **field-muted** is the darker supporting language inside the contact panel.
 
-**The Neutral Frame Rule.** Product colors belong to actual imagery and selected presentation stages. They do not establish separate site identities.
+The shared translucent line divides content on cobalt. Light panels use their own visible field borders. Focus is citron on cobalt and cobalt on the light contact, package and viewer surfaces. Inputs use the field surface; error treatments remain semantic form states.
 
-Garden and clinic tints are local product-stage backgrounds. Blue is a functional focus/selection signal. The existing logo retains its own asset colors. Legacy CSS variables named --red and --red-deep are compatibility aliases for the neutral action system; their names do not authorize red page treatments.
+**The Continuous Stage Rule.** Keep the shared cobalt shell coherent across routes. Citron and pale sheets belong to the same palette; a project image can carry its own colors without creating another site identity.
 
-The project package has its own scoped material: a forest stage, pale text, muted supporting copy, and a mint accent. Chips and tab tracks use darker tonal layers; the selected tab has a light surface with dark ink. The light comparison uses a pale green offer column, quiet dividers, green offer text and gray questions. Package and comparison tokens apply to these components only; the shared site palette and primary actions remain neutral.
+The green and lavender artwork fields on Home, and the clinic reel tint, are local composition colors. The actual application screens retain their source colors. Those local tints do not expand the global palette. Tonal ramps in the sidecar are generated preview metadata, not additional implementation tokens.
 
 ## Typography
 
-**Display and body:** native Apple/system sans, then locally hosted Geist, then platform fallbacks. Geist weights 400, 500, 600, and 700 are supplied from /fonts/; no remote font request is required.
+**Display font:** Barlow Condensed, with sans-serif fallback; the service styles also name Sora as a fallback. **Language and control font:** Sora, with sans-serif fallback.
 
-- **Display:** use the frontmatter hero scale. The homepage tops out at 88px. Supporting page intros use comparable scales with their own responsive line breaks.
-- **Headline:** major sections use approximately 40–64px, with smaller layouts stepping down to the mid-30px range.
-- **Title:** product and service names generally use 24–36px. Supporting-page tracking is usually −0.035em.
-- **Body:** most narrative copy is 16–18px; short hero descriptions are 19–21px. Paragraphs normally stay within 45–65 characters per line.
-- **Labels:** compact navigation, facts, captions, and provenance use 11–14px. Small text is not a substitute for visible explanation.
+Both families are served from the site's font assets with swap loading. The Sora variable file supports weights 400–800. Barlow Condensed has separate 700 and 800 files. The deployed paths are /fonts/sora-latin-variable.woff2, /fonts/barlow-condensed-latin-700.woff2 and /fonts/barlow-condensed-latin-800.woff2; OFL licensing and provenance are recorded in public/fonts/overdrive-fonts.json.
 
-**The Single Voice Rule.** Headings and prose use the same sans family. Do not reintroduce the previous serif pairing, uppercase technical labels, or gradient-filled type. Keep ordinary text tracking at or above −0.04em; reserve the tighter package tracking for its heading and oversized numerals.
+The contrast is one of width and scale: compact, close-set Sora explains the work, while tall condensed lettering gives names and titles a physical presence.
+
+### Hierarchy
+
+- **Display:** the Barlow 800 masthead role is specific to monumental brand lettering. Its close line box is a composition device, not a body-text rhythm.
+- **Headline:** the Sora 600 role is the two-line homepage statement. General section headings use the separate Sora section-heading role.
+- **Case and service display:** Barlow 700 gives project and service titles their own observed fluid scales. Work uses a larger archive title scale, while the case section titles use smaller condensed scales.
+- **Title:** Sora 600 names archive projects; captions and supporting headings use nearby Sora sizes and weights.
+- **Body and story:** base language is 16px with a 1.6 line height. Case narratives use 18px at 1.75 and a maximum measure of 70ch; their narrow-layout text steps to 17px. Service narrative measures normally sit around 37–67ch.
+- **Label:** the shared action role uses 14px, weight 500 and a 1.4 line height. Navigation and source captions have local size adjustments; they are not a separate display voice.
+
+**The Two Voices Rule.** Use Barlow Condensed for the monumental masthead and the implemented display-title roles. Keep Sora for the small wordmark, navigation, explanatory headings, prose and controls.
+
+Keep the implemented title wrapping and readable paragraph measure. Small metadata adjustments belong to their components, rather than a new site-wide microtype scale.
 
 ## Layout
 
-The active content measure is 1280px. The shared outer wrapper allows 1400px including side padding; navigation and footer use an approximately 1180px inner measure. Major sections normally have 80–110px of separation, with 20–28px gaps between related items.
+The outer measure is 1600px, including fluid side padding. Layouts use open two-column compositions, generous chapter separation, and occasional full-width sheets. Gaps follow the content: the homepage's feature grid uses a 7:5 split and a staggered second project; Work uses a 12-column grid with alternating 7- and 5-column spans; case stories and service chapters give artwork and copy different widths.
 
-The homepage opens with centered copy and a real product family. At the default desktop size, the family is 440px tall; the center device occupies 64% of its width, starts 18% from the left, and sits 40px from the top. Its display uses a 16:9 viewport. The SKIIE chapter uses a wider 2.45:1 crop to keep the real campus banner visible. These are homepage composition values, not requirements for every new page.
+Those are surface-specific arrangements. The reusable grammar is broad space, deliberate unequal columns, clear reading measures and large real media. Supporting rows use thin rules rather than enclosing every item.
 
-| Surface | Responsive behavior |
+| Scope | Implemented responsive behavior |
 |---|---|
-| Home and shared navigation | Adapt at 1099px and 750px; narrow-phone refinements at 374px; a larger-desktop adjustment begins at 1600px. |
-| Supporting pages | Adapt at 1100px, 800px, and 480px. Two-column archives become one column; service rows stack; facts and galleries retain readable spacing. |
-| Sticky product showcase | Enabled only at a minimum width of 1100px and height of 850px with a fine pointer and hover support. Elsewhere the same products remain accessible through ordinary tabs. |
-| Project package and comparison | Refine at 1199px and 751–899px. At 750px and below, the device sits beside stacked payment/care numerals, hosting and publishing chips sit below, and each comparison row has a full-width heading above two labeled cells. |
-| Screen viewer | Long mobile captures retain a readable 390px presentation and scroll vertically; desktop captures use the available viewport. |
+| Shared shell and Home | Refine at 1150px; the hero stacks and desktop navigation yields to its dialog trigger at 800px; compact phone compositions refine at 520px. A wide-screen adjustment begins at 1700px. |
+| Header | Sticky and opaque: 88px on desktop, 76px at 800px and below, and 72px at 520px and below. |
+| Work and cases | Refine at 1050px and stack at 680px. Work moves through unequal columns, equal columns, then one column. Case facts become two columns; galleries move from three to two to one. |
+| Services and service detail | Refine at 1050px; stack at 750px; media frames refine again at 450px. The process moves from four columns to two. |
+| Spatial reel | Uses container queries at 560px and 355px. The smaller reel expands panels from 62% to 74% width and reduces perspective from 1250px to 850px. Its toolbar remains separate from the moving artwork. |
+| Viewer | Preserves the existing adaptations at 1000px, 750px, 560px and 360px, with an additional short-landscape rule at a height of 620px. Long captures remain vertically readable. |
+| Decorative scroll | Homepage phone parallax is eligible at 900px and above, and only while motion is enabled. |
 
-Preserve URL-based project filters, direct screen IDs, legacy project redirects, and ordinary links when changing the layout.
+Contact moves from two columns to one at the shared tablet breakpoint. Its paired fields stack or pair according to their available layout, and select controls use a 16px font on compact phones. Keep the native vertical page scroll when swiping the reel.
 
 ## Elevation & Depth
 
-Depth comes from layered real screens, a small amount of hardware geometry, and selective shadows. Panels themselves are mostly flat tonal surfaces. The navigation blur expresses a floating navigation layer; it is not repeated behind ordinary content.
+Depth is a hybrid of real media layering, perspective and soft shadows. The reel panels and captured screens carry the strongest depth. Flat citron or pale sheets and fine rules organize surrounding prose. The header is opaque cobalt; its current treatment does not use the earlier frosted-glass navigation.
 
-Representative source treatments:
+### Shadow Vocabulary
 
-- **Homepage phone:** offset shadow (0 24px 38px -16px rgba(26,33,37,.32)) with a subtle hardware edge.
-- **Supporting phone:** soft shadow (0 17px 42px #1d1d1f2b) around a dark device frame.
-- **Browser window:** soft shadow (0 20px 45px #1d1d1f24).
-- **Selected product tab:** compact shadow (0 2px 8px rgba(0,0,0,.08)).
-- **Screen viewer:** elevated dialog (0 40px 110px rgba(0,0,0,.24)).
+- **Reel panel:** a directional but soft shadow (16px 28px 44px rgb(7 21 98 / 27%)); the small-container version reduces to 10px 19px 30px rgb(7 21 98 / 25%).
+- **Reel phone:** a closer shadow (9px 14px 25px rgb(18 34 75 / 25%)).
+- **Work phone:** a centered, broad shadow (0 24px 38px rgb(17 39 102 / 20%)).
+- **Service capture:** a soft screen shadow (8px 18px 34px rgb(16 37 120 / 16%)).
+- **Navigation dialog:** an ambient overlay shadow (0 30px 100px rgba(4,14,70,.3)).
 
-**The Product Depth Rule.** Spend depth on the presented software and active overlays. Keep text sections, facts, and routine cards calm.
+**The Work Has Weight Rule.** Concentrate spatial depth on real interface surfaces, reel panels and active overlays. Service lists, facts and the package sheet use color, rules and spacing to establish hierarchy.
+
+The shared easing is cubic-bezier(.16,1,.3,1). Most control color transitions last 160–200ms; spatial media settles over 500–800ms. The reel uses an explicit damped spring rather than a repeated autoplay cycle. Its motion and cancellation behavior are recorded with the component below.
 
 ## Shapes
 
-Large product panels use gently curved corners; mobile panels tighten slightly. Buttons and compact filters are full pills. Browser windows and desktop screens use smaller radii. Phone frames preserve the source screen’s aspect ratio and have a nested, clipped screen surface.
+Shape distinguishes the job of the component. Shared header and homepage actions use an 8px radius; service actions use full pills, and project actions use a 100px pill radius. Archive filters and search are pills, while the reel picker and contact choices use compact 6px corners. Contact fields use 7px corners.
 
-The homepage uses subtle metallic hardware geometry. Supporting pages use simpler dark frames. Both contain actual captured software. Device frames do not invent controls, performance figures, or product states.
+The homepage artwork and reel panels have 14px corners. Commitment and contact sheets use 16px corners, tightening to 12px on compact layouts. Work and case stage backgrounds are deliberately square; service media uses 8px corners. Browser and phone frames clip their actual captures with nested, source-specific radii. Circular controls are reserved for arrows, inspection and compact actions.
+
+Do not normalize these roles into one universal rounded card. Maintain the image's source aspect ratio and keep decorative device framing separate from the controls of the presented application.
 
 ## Components
 
-### Actions and navigation
+### Actions
 
-Primary actions are ink pills with white text. Standard actions are 46px tall; supporting-page actions use 48px. Text links have a visible arrow or a clear action label and underline on hover. Press feedback scales to approximately 0.97–0.975.
+Shared actions are compact, confident rounded rectangles. They are at least 48px tall, with an icon separated from the label by 24px. Citron actions use Ink; their blue counterparts use Offwhite. On hover, the arrow shifts 2px up and right; a press scales the shared action to 0.97. Service actions are roomier pills, at least 56px tall on desktop and 52px on small layouts, with color feedback instead of the shared arrow movement.
 
-The header is a 64px translucent white bar, reduced to 58px on mobile. It contains Work, Services, Why KashCrop, About, and a compact project action. Why KashCrop links directly to /services#compare. Mobile navigation uses a native dialog with focus management. Reduced-transparency preference removes navigation blur.
+Text links retain ordinary destinations and an underline or clear action label. Global keyboard focus is a 3px outline with 5px offset; the reel and form fields have their own deliberate treatments.
 
-Global focus is a three-pixel blue outline. Supporting pages use an equally explicit ink outline. Search fields indicate focus on the enclosing control. Do not remove keyboard focus to make a screenshot look cleaner.
+### Navigation and footer
 
-### Product tabs, filters, and search
+The Sora wordmark reads kashcrop. with a citron stop. Desktop navigation offers Work, What we do and The studio, beside the persistent contact action. Active and hovered desktop links reveal a fine underline. At the tablet breakpoint a native dialog provides the same destinations, Escape dismissal and focus return through its controls.
 
-Homepage tabs use a silver track and a raised white active segment. Archive filters use an ink selected pill. Preserve the existing keyboard semantics and live result count.
+The footer continues the cobalt shell, with direct email and phone links, an email-copy fallback, LinkedIn, privacy, back-to-top and the motion preference. The preference is visibly disabled when system reduced motion is already in force.
 
-Search remains a labeled GET form. Its query and category remain in the URL; an empty result provides a clear route back to all work.
+### Spatial project reel
 
-### Product panels and galleries
+The reel is DOM-based and displays the real featured project material. Its perspective panels move independently of the caption, project action and control strip. Project buttons expose their pressed state; previous/next controls, Left/Right, Home/End and horizontal drag provide direct selection. The selected project is announced politely; inactive panels are hidden from assistive technology.
 
-Use real images as the main content. Archive tiles retain a project title, short description, route link, and available screen-viewer action. Preserve source captions and sample-data context. Place source captions below the artwork with a clear gap, so they remain separate from the product image and cannot overlap device frames.
+The spring uses a stiffness of 126 and damping of 20. Drag follow uses an exponential factor of 28; pointer tilt follows at 9, with approximately ±1.5° vertical and ±2° horizontal mouse tilt. Depth scales with reel width and clamps between 65px and 144px. Movement stops when settled; hidden, out-of-view and blurred states cancel active drag and settle the scene.
 
-The screen viewer remains a native dialog. Long captures must be scrollable at a readable width. Never convert a tall capture into a tiny full-height thumbnail as its only inspection view.
+Reduced motion and the site preference retain the complete composition and every direct control, with selection settling immediately and pointer decoration disabled. Vertical touch travel remains page scrolling. There is no autoplay.
 
-### Package presentation and comparison
+### Work filters and search
 
-The project package has a local dark product stage within the neutral site. Large 1 and 4 numerals communicate one-time project payment and maintenance options up to four years; keep the maintenance qualifier visible beside the numeral. Build, Launch and Care tabs pair concise copy with actual BaghBani and Plant Health Clinic review captures. Keep their source caption below the composition.
+Archive categories remain ordinary links with URL state. A selected category is a citron pill; hover on an unselected category uses the pale surface. Search is a labeled GET form with a clear submit control, 16px input text and a visible keyboard outline. Preserve the result count, query/category state and empty-result recovery.
 
-Follow the stage with a light eight-row comparison. Use real table headers and questions about competing quotes, then give KashCrop’s scoped answer. Do not imply that other providers exclude an offer. Keep the quote-specific scope disclosure, client-controlled publisher account and contact action easy to find.
+### Artwork, cases and viewer
 
-Package scroll and pointer effects are eligible at 900px and above with hover and a fine pointer. Screens crossfade over 0.55s and settle over 0.85s; selected text panels arrive over 0.55s. Pointer tilt is limited to approximately ±2.5 degrees, with 0.55s smoothing. Composition and orbit scroll scrubs use 0.8 and 1, respectively. Reduced motion and touch layouts retain a complete static composition and directly selectable tabs. Responsive labels preserve the meaning of the comparison at small widths.
+Large project artwork remains the main evidence. Links open the case or the original accessible screen viewer; decorative crops never replace the ability to inspect the full capture. Source captions remain outside the media frame. Case pages retain the story, scope, workflow, capabilities, technologies, references and material disclosure.
 
-The implemented colors and motion are recorded here and in the sidecar. The iteration record and verification status are in docs/design/APPLE_OVERDRIVE_2026-10-08.md.
+The viewer uses pale blue with Ink and darker supporting text. It remains a native dialog with direct screen identifiers and readable scrolling for long mobile captures. Its current supporting text uses the source's darker viewer color, rather than the main site's light muted color.
 
-### Motion and recordings
+Interface recordings sit in a native disclosure, with controls and no autoplay. They use no preload beyond their poster, pause when closed, and retain access to the mobile recording and the synthetic-data provenance.
 
-The homepage’s layered entrance acts on the inner devices: the center desktop enters over 1.7s starting at 0.12s; the two phones enter over 1.6s starting at 0.25s and 0.33s. Separate outer wrappers provide the scroll fan, so scrolling does not overwrite the entrance transforms. The fan is eligible at 900px and above with hover and a fine pointer. CSS uses the shared exponential ease; GSAP hero entrance motion uses power3.out. Main chapter copy and visuals enter over 0.65s and 0.9s, respectively.
+### Commitment and package sheets
 
-Content is visible before animation setup. Honor prefers-reduced-motion, the site’s motion toggle, and the layout eligibility gate. Motion-off users keep all navigation and content.
+The homepage commitment is a rounded citron sheet. Services presents the full package on a broad citron field, using a two-column, eight-row semantic table: comparison topic and the KashCrop offer. The actual quote scope and client-controlled publisher account remain in the adjacent terms disclosure.
 
-Project recordings sit behind **Watch interface film**. Native video controls, no autoplay, preload="none", and pause-on-close preserve user control. Keep recording provenance and mobile recording access.
+The sheet presents existing confirmed offers; it is not a competitor scorecard. Keep pricing, hosting term, maintenance coverage, publishing conditions and third-party-charge qualifiers readable at every size. Package rows and scoped copy are sourced from [offer.ts](app/data/portfolio/offer.ts).
 
-### Forms, facts, and disclosures
+### Service disclosures and process
 
-Forms share the neutral palette and rounded controls. Keep existing error, waiting, validation, and confirmation states. Facts use ordinary definition lists; sequential processes use ordered lists. Technical scope belongs on project detail pages, not as decoration in the homepage hero.
+The homepage service list uses native details and summary, with a ruled row and an arrow that reverses on opening. The fuller service pages pair a discipline with relevant evidence, then show included scope and a numbered process. These are reading and navigation components: retain their real service destinations and native semantics.
+
+### Contact fields and states
+
+The enquiry panel is pale with white fields, Ink text and visible field borders. Controls are at least 48px tall. Labels stay associated with inputs; radio choices expose checked and keyboard-focus states. The actual field focus outline is 2px, with cobalt color and a 2px offset. Choice focus uses a 3px cobalt outline.
+
+Keep validation messages, the error summary, disabled/waiting behavior, success content and the direct contact alternative. Error colors describe form status, not another site accent. The existing textarea supports vertical resizing.
 
 ## Do's and Don'ts
 
 ### Do:
 
-- **Do** keep KashCrop’s logo and factual project records intact.
-- **Do** build new pages in the same neutral material and sans-serif hierarchy.
-- **Do** use actual interfaces, original copy, clear destinations, and honest recording provenance.
-- **Do** make product motion ambitious while keeping the complete static experience available.
-- **Do** inspect mobile spacing, focus, long-screen scrolling, and real content together.
+- **Do** keep the cobalt shell, current typographic wordmark and two-family hierarchy consistent on new routes.
+- **Do** choose a source-backed capture and preserve its project, screen identity, aspect ratio and provenance.
+- **Do** keep case captions, source disclosures, full-size inspection and ordinary destination links close to the work.
+- **Do** preserve the current project package terms, semantic table headers and visible scope qualifiers when changing presentation.
+- **Do** provide visible keyboard focus and direct controls alongside drag, hover and scroll effects.
+- **Do** verify the complete static composition, narrow layouts and long-screen reading before shipping changes.
 
 ### Don't:
 
-- **Don't** restore the superseded Fraunces/red-room presentation or layer another design identity over this one.
-- **Don't** substitute fabricated application screenshots, adoption figures, or validation claims.
-- **Don't** turn every section into an animation demo or conceal content until scrolling triggers it.
-- **Don't** autoplay optional recordings or leave a hidden recording playing after its disclosure closes.
-- **Don't** discard useful project details, source notes, URL behavior, or gallery access while simplifying the layout.
+- **Don't** restore Fieldwork or Apple-era visual instructions as the authority for this build.
+- **Don't** recolor application captures to fit the site palette or present synthetic demonstrations as shipped product evidence.
+- **Don't** make drag, decorative motion or an optional recording the only route to a project or its information.
+- **Don't** turn a local stage tint, a composition-specific measurement or small caption treatment into a universal design token.
+- **Don't** remove useful routes, URL state, screen IDs, factual content or contact states while simplifying the interface.
