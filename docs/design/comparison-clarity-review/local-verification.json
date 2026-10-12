@@ -1,0 +1,1056 @@
+{
+  "base": "http://127.0.0.1:5216",
+  "checkedAt": "2026-10-12T16:15:27.987Z",
+  "checks": [
+    {
+      "name": "desktop: loaded new comparison",
+      "pass": true
+    },
+    {
+      "name": "desktop: no horizontal overflow",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "desktop: all eight facts preserved",
+      "pass": true
+    },
+    {
+      "name": "desktop: table header associations",
+      "pass": true
+    },
+    {
+      "name": "desktop: price not treated as a comparative advantage",
+      "pass": true
+    },
+    {
+      "name": "desktop: desktop column order",
+      "pass": true
+    },
+    {
+      "name": "desktop: details initially collapsed",
+      "pass": true
+    },
+    {
+      "name": "desktop: keyboard opens all supporting facts",
+      "pass": true
+    },
+    {
+      "name": "desktop: ownership remains explicit",
+      "pass": true
+    },
+    {
+      "name": "desktop: visible focus",
+      "pass": true,
+      "detail": {
+        "width": 3,
+        "visible": true
+      }
+    },
+    {
+      "name": "desktop: automated accessibility checks",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "desktop: keyboard closes details",
+      "pass": true
+    },
+    {
+      "name": "mobile: loaded new comparison",
+      "pass": true
+    },
+    {
+      "name": "mobile: no horizontal overflow",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "mobile: all eight facts preserved",
+      "pass": true
+    },
+    {
+      "name": "mobile: table header associations",
+      "pass": true
+    },
+    {
+      "name": "mobile: price not treated as a comparative advantage",
+      "pass": true
+    },
+    {
+      "name": "mobile: stacked full-width scopes",
+      "pass": true
+    },
+    {
+      "name": "mobile: details initially collapsed",
+      "pass": true
+    },
+    {
+      "name": "mobile: keyboard opens all supporting facts",
+      "pass": true
+    },
+    {
+      "name": "mobile: ownership remains explicit",
+      "pass": true
+    },
+    {
+      "name": "mobile: visible focus",
+      "pass": true,
+      "detail": {
+        "width": 3,
+        "visible": true
+      }
+    },
+    {
+      "name": "mobile: automated accessibility checks",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "mobile: keyboard closes details",
+      "pass": true
+    },
+    {
+      "name": "mobile: contact action uses existing route",
+      "pass": true
+    },
+    {
+      "name": "mobile: browser back keeps comparison anchor",
+      "pass": true
+    },
+    {
+      "name": "home-mobile: loaded new comparison",
+      "pass": true
+    },
+    {
+      "name": "home-mobile: no horizontal overflow",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "home-mobile: all eight facts preserved",
+      "pass": true
+    },
+    {
+      "name": "home-mobile: table header associations",
+      "pass": true
+    },
+    {
+      "name": "home-mobile: price not treated as a comparative advantage",
+      "pass": true
+    },
+    {
+      "name": "home-mobile: stacked full-width scopes",
+      "pass": true
+    },
+    {
+      "name": "home-mobile: details initially collapsed",
+      "pass": true
+    },
+    {
+      "name": "home-mobile: keyboard opens all supporting facts",
+      "pass": true
+    },
+    {
+      "name": "home-mobile: ownership remains explicit",
+      "pass": true
+    },
+    {
+      "name": "home-mobile: visible focus",
+      "pass": true,
+      "detail": {
+        "width": 3,
+        "visible": true
+      }
+    },
+    {
+      "name": "home-mobile: automated accessibility checks",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "home-mobile: keyboard closes details",
+      "pass": true
+    },
+    {
+      "name": "narrow-phone: loaded new comparison",
+      "pass": true
+    },
+    {
+      "name": "narrow-phone: no horizontal overflow",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "narrow-phone: all eight facts preserved",
+      "pass": true
+    },
+    {
+      "name": "narrow-phone: table header associations",
+      "pass": true
+    },
+    {
+      "name": "narrow-phone: price not treated as a comparative advantage",
+      "pass": true
+    },
+    {
+      "name": "narrow-phone: stacked full-width scopes",
+      "pass": true
+    },
+    {
+      "name": "narrow-phone: details initially collapsed",
+      "pass": true
+    },
+    {
+      "name": "narrow-phone: keyboard opens all supporting facts",
+      "pass": true
+    },
+    {
+      "name": "narrow-phone: ownership remains explicit",
+      "pass": true
+    },
+    {
+      "name": "narrow-phone: visible focus",
+      "pass": true,
+      "detail": {
+        "width": 3,
+        "visible": true
+      }
+    },
+    {
+      "name": "narrow-phone: automated accessibility checks",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "narrow-phone: keyboard closes details",
+      "pass": true
+    },
+    {
+      "name": "small-phone: loaded new comparison",
+      "pass": true
+    },
+    {
+      "name": "small-phone: no horizontal overflow",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "small-phone: all eight facts preserved",
+      "pass": true
+    },
+    {
+      "name": "small-phone: table header associations",
+      "pass": true
+    },
+    {
+      "name": "small-phone: price not treated as a comparative advantage",
+      "pass": true
+    },
+    {
+      "name": "small-phone: stacked full-width scopes",
+      "pass": true
+    },
+    {
+      "name": "small-phone: details initially collapsed",
+      "pass": true
+    },
+    {
+      "name": "small-phone: keyboard opens all supporting facts",
+      "pass": true
+    },
+    {
+      "name": "small-phone: ownership remains explicit",
+      "pass": true
+    },
+    {
+      "name": "small-phone: visible focus",
+      "pass": true,
+      "detail": {
+        "width": 3,
+        "visible": true
+      }
+    },
+    {
+      "name": "small-phone: automated accessibility checks",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "small-phone: keyboard closes details",
+      "pass": true
+    },
+    {
+      "name": "tablet: loaded new comparison",
+      "pass": true
+    },
+    {
+      "name": "tablet: no horizontal overflow",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "tablet: all eight facts preserved",
+      "pass": true
+    },
+    {
+      "name": "tablet: table header associations",
+      "pass": true
+    },
+    {
+      "name": "tablet: price not treated as a comparative advantage",
+      "pass": true
+    },
+    {
+      "name": "tablet: desktop column order",
+      "pass": true
+    },
+    {
+      "name": "tablet: details initially collapsed",
+      "pass": true
+    },
+    {
+      "name": "tablet: keyboard opens all supporting facts",
+      "pass": true
+    },
+    {
+      "name": "tablet: ownership remains explicit",
+      "pass": true
+    },
+    {
+      "name": "tablet: visible focus",
+      "pass": true,
+      "detail": {
+        "width": 3,
+        "visible": true
+      }
+    },
+    {
+      "name": "tablet: automated accessibility checks",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "tablet: keyboard closes details",
+      "pass": true
+    },
+    {
+      "name": "landscape: loaded new comparison",
+      "pass": true
+    },
+    {
+      "name": "landscape: no horizontal overflow",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "landscape: all eight facts preserved",
+      "pass": true
+    },
+    {
+      "name": "landscape: table header associations",
+      "pass": true
+    },
+    {
+      "name": "landscape: price not treated as a comparative advantage",
+      "pass": true
+    },
+    {
+      "name": "landscape: desktop column order",
+      "pass": true
+    },
+    {
+      "name": "landscape: details initially collapsed",
+      "pass": true
+    },
+    {
+      "name": "landscape: keyboard opens all supporting facts",
+      "pass": true
+    },
+    {
+      "name": "landscape: ownership remains explicit",
+      "pass": true
+    },
+    {
+      "name": "landscape: visible focus",
+      "pass": true,
+      "detail": {
+        "width": 3,
+        "visible": true
+      }
+    },
+    {
+      "name": "landscape: automated accessibility checks",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "landscape: keyboard closes details",
+      "pass": true
+    },
+    {
+      "name": "reflow-720: loaded new comparison",
+      "pass": true
+    },
+    {
+      "name": "reflow-720: no horizontal overflow",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "reflow-720: all eight facts preserved",
+      "pass": true
+    },
+    {
+      "name": "reflow-720: table header associations",
+      "pass": true
+    },
+    {
+      "name": "reflow-720: price not treated as a comparative advantage",
+      "pass": true
+    },
+    {
+      "name": "reflow-720: desktop column order",
+      "pass": true
+    },
+    {
+      "name": "reflow-720: details initially collapsed",
+      "pass": true
+    },
+    {
+      "name": "reflow-720: keyboard opens all supporting facts",
+      "pass": true
+    },
+    {
+      "name": "reflow-720: ownership remains explicit",
+      "pass": true
+    },
+    {
+      "name": "reflow-720: visible focus",
+      "pass": true,
+      "detail": {
+        "width": 3,
+        "visible": true
+      }
+    },
+    {
+      "name": "reflow-720: automated accessibility checks",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "reflow-720: keyboard closes details",
+      "pass": true
+    }
+  ],
+  "pages": [
+    {
+      "route": "/services#compare",
+      "width": 1440,
+      "height": 1244.0625,
+      "name": "desktop",
+      "status": 200,
+      "pageWidth": 1440,
+      "rowCount": 3,
+      "text": "BEYOND\nTHE BUILD.\n\nHosting, publishing and maintenance, planned with your software.\n\nOne-time development payment.\nA fixed price for the agreed development scope.\n\nLaunch and ongoing services: with KashCrop compared with a development-only scope.\nService\tWith KashCrop\tDevelopment only\nServer hosting\t\nIncluded for the agreed term.\nServer setup and hosting, as set out in your quote.\n\t\nArranged separately.\n\nMaintenance\t\nOptions up to 4 years.\nCoverage and duration agreed for your project.\n\t\nArranged separately.\n\nGoogle Play publishing\t\nPublishing and release management.\nAccount setup included for Android projects.\n\t\nArranged separately.\n\nHere, development only means the software build and technical handover. The comparison is between project scopes, not individual providers.\n\nWhat else is included?\n\nYour quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.\n\nLet’s talk",
+      "overflowing": [],
+      "rows": [
+        {
+          "feature": {
+            "x": 94.796875,
+            "y": 769.515625,
+            "width": 325.09375
+          },
+          "own": {
+            "x": 419.890625,
+            "y": 769.515625,
+            "width": 575.171875
+          },
+          "other": {
+            "x": 995.0625,
+            "y": 769.515625,
+            "width": 350.140625
+          }
+        },
+        {
+          "feature": {
+            "x": 94.796875,
+            "y": 880.015625,
+            "width": 325.09375
+          },
+          "own": {
+            "x": 419.890625,
+            "y": 880.015625,
+            "width": 575.171875
+          },
+          "other": {
+            "x": 995.0625,
+            "y": 880.015625,
+            "width": 350.140625
+          }
+        },
+        {
+          "feature": {
+            "x": 94.796875,
+            "y": 991.015625,
+            "width": 325.09375
+          },
+          "own": {
+            "x": 419.890625,
+            "y": 991.015625,
+            "width": 575.171875
+          },
+          "other": {
+            "x": 995.0625,
+            "y": 991.015625,
+            "width": 350.140625
+          }
+        }
+      ],
+      "ids": [
+        "price",
+        "hosting",
+        "maintenance",
+        "play",
+        "access",
+        "workflow",
+        "connected",
+        "handover"
+      ],
+      "cellAssociations": true
+    },
+    {
+      "route": "/services#compare",
+      "width": 390,
+      "height": 1590,
+      "name": "mobile",
+      "status": 200,
+      "pageWidth": 390,
+      "rowCount": 3,
+      "text": "BEYOND\nTHE BUILD.\n\nHosting, publishing and maintenance, planned with your software.\n\nOne-time development payment.\nA fixed price for the agreed development scope.\n\nLaunch and ongoing services: with KashCrop compared with a development-only scope.\nService\tWith KashCrop\tDevelopment only\nServer hosting\nKashCrop\nIncluded for the agreed term.\nServer setup and hosting, as set out in your quote.\nDevelopment only\nArranged separately.\nMaintenance\nKashCrop\nOptions up to 4 years.\nCoverage and duration agreed for your project.\nDevelopment only\nArranged separately.\nGoogle Play publishing\nKashCrop\nPublishing and release management.\nAccount setup included for Android projects.\nDevelopment only\nArranged separately.\n\nHere, development only means the software build and technical handover. The comparison is between project scopes, not individual providers.\n\nWhat else is included?\n\nYour quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.\n\nLet’s talk",
+      "overflowing": [],
+      "rows": [
+        {
+          "feature": {
+            "x": 42,
+            "y": 614.140625,
+            "width": 306
+          },
+          "own": {
+            "x": 42,
+            "y": 653.328125,
+            "width": 306
+          },
+          "other": {
+            "x": 42,
+            "y": 769.609375,
+            "width": 306
+          }
+        },
+        {
+          "feature": {
+            "x": 42,
+            "y": 860.890625,
+            "width": 306
+          },
+          "own": {
+            "x": 42,
+            "y": 900.078125,
+            "width": 306
+          },
+          "other": {
+            "x": 42,
+            "y": 991.71875,
+            "width": 306
+          }
+        },
+        {
+          "feature": {
+            "x": 42,
+            "y": 1083,
+            "width": 306
+          },
+          "own": {
+            "x": 42,
+            "y": 1122.1875,
+            "width": 306
+          },
+          "other": {
+            "x": 42,
+            "y": 1238.46875,
+            "width": 306
+          }
+        }
+      ],
+      "ids": [
+        "price",
+        "hosting",
+        "maintenance",
+        "play",
+        "access",
+        "workflow",
+        "connected",
+        "handover"
+      ],
+      "cellAssociations": true
+    },
+    {
+      "route": "/#compare",
+      "width": 390,
+      "height": 1590,
+      "name": "home-mobile",
+      "status": 200,
+      "pageWidth": 390,
+      "rowCount": 3,
+      "text": "BEYOND\nTHE BUILD.\n\nHosting, publishing and maintenance, planned with your software.\n\nOne-time development payment.\nA fixed price for the agreed development scope.\n\nLaunch and ongoing services: with KashCrop compared with a development-only scope.\nService\tWith KashCrop\tDevelopment only\nServer hosting\nKashCrop\nIncluded for the agreed term.\nServer setup and hosting, as set out in your quote.\nDevelopment only\nArranged separately.\nMaintenance\nKashCrop\nOptions up to 4 years.\nCoverage and duration agreed for your project.\nDevelopment only\nArranged separately.\nGoogle Play publishing\nKashCrop\nPublishing and release management.\nAccount setup included for Android projects.\nDevelopment only\nArranged separately.\n\nHere, development only means the software build and technical handover. The comparison is between project scopes, not individual providers.\n\nWhat else is included?\n\nYour quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.\n\nLet’s talk",
+      "overflowing": [],
+      "rows": [
+        {
+          "feature": {
+            "x": 42,
+            "y": 604.109375,
+            "width": 306
+          },
+          "own": {
+            "x": 42,
+            "y": 643.296875,
+            "width": 306
+          },
+          "other": {
+            "x": 42,
+            "y": 759.578125,
+            "width": 306
+          }
+        },
+        {
+          "feature": {
+            "x": 42,
+            "y": 850.859375,
+            "width": 306
+          },
+          "own": {
+            "x": 42,
+            "y": 890.046875,
+            "width": 306
+          },
+          "other": {
+            "x": 42,
+            "y": 981.6875,
+            "width": 306
+          }
+        },
+        {
+          "feature": {
+            "x": 42,
+            "y": 1072.96875,
+            "width": 306
+          },
+          "own": {
+            "x": 42,
+            "y": 1112.15625,
+            "width": 306
+          },
+          "other": {
+            "x": 42,
+            "y": 1228.4375,
+            "width": 306
+          }
+        }
+      ],
+      "ids": [
+        "price",
+        "hosting",
+        "maintenance",
+        "play",
+        "access",
+        "workflow",
+        "connected",
+        "handover"
+      ],
+      "cellAssociations": true
+    },
+    {
+      "route": "/services#compare",
+      "width": 375,
+      "height": 1686.671875,
+      "name": "narrow-phone",
+      "status": 200,
+      "pageWidth": 375,
+      "rowCount": 3,
+      "text": "BEYOND\nTHE BUILD.\n\nHosting, publishing and maintenance, planned with your software.\n\nOne-time development payment.\nA fixed price for the agreed development scope.\n\nLaunch and ongoing services: with KashCrop compared with a development-only scope.\nService\tWith KashCrop\tDevelopment only\nServer hosting\nKashCrop\nIncluded for the agreed term.\nServer setup and hosting, as set out in your quote.\nDevelopment only\nArranged separately.\nMaintenance\nKashCrop\nOptions up to 4 years.\nCoverage and duration agreed for your project.\nDevelopment only\nArranged separately.\nGoogle Play publishing\nKashCrop\nPublishing and release management.\nAccount setup included for Android projects.\nDevelopment only\nArranged separately.\n\nHere, development only means the software build and technical handover. The comparison is between project scopes, not individual providers.\n\nWhat else is included?\n\nYour quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.\n\nLet’s talk",
+      "overflowing": [],
+      "rows": [
+        {
+          "feature": {
+            "x": 42,
+            "y": 614.875,
+            "width": 291
+          },
+          "own": {
+            "x": 42,
+            "y": 654.0625,
+            "width": 291
+          },
+          "other": {
+            "x": 42,
+            "y": 794.34375,
+            "width": 291
+          }
+        },
+        {
+          "feature": {
+            "x": 42,
+            "y": 885.625,
+            "width": 291
+          },
+          "own": {
+            "x": 42,
+            "y": 924.8125,
+            "width": 291
+          },
+          "other": {
+            "x": 42,
+            "y": 1041.09375,
+            "width": 291
+          }
+        },
+        {
+          "feature": {
+            "x": 42,
+            "y": 1132.375,
+            "width": 291
+          },
+          "own": {
+            "x": 42,
+            "y": 1171.5625,
+            "width": 291
+          },
+          "other": {
+            "x": 42,
+            "y": 1312.484375,
+            "width": 291
+          }
+        }
+      ],
+      "ids": [
+        "price",
+        "hosting",
+        "maintenance",
+        "play",
+        "access",
+        "workflow",
+        "connected",
+        "handover"
+      ],
+      "cellAssociations": true
+    },
+    {
+      "route": "/services#compare",
+      "width": 320,
+      "height": 1819.34375,
+      "name": "small-phone",
+      "status": 200,
+      "pageWidth": 320,
+      "rowCount": 3,
+      "text": "BEYOND\nTHE BUILD.\n\nHosting, publishing and maintenance, planned with your software.\n\nOne-time development payment.\nA fixed price for the agreed development scope.\n\nLaunch and ongoing services: with KashCrop compared with a development-only scope.\nService\tWith KashCrop\tDevelopment only\nServer hosting\nKashCrop\nIncluded for the agreed term.\nServer setup and hosting, as set out in your quote.\nDevelopment only\nArranged separately.\nMaintenance\nKashCrop\nOptions up to 4 years.\nCoverage and duration agreed for your project.\nDevelopment only\nArranged separately.\nGoogle Play publishing\nKashCrop\nPublishing and release management.\nAccount setup included for Android projects.\nDevelopment only\nArranged separately.\n\nHere, development only means the software build and technical handover. The comparison is between project scopes, not individual providers.\n\nWhat else is included?\n\nYour quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.\n\nLet’s talk",
+      "overflowing": [],
+      "rows": [
+        {
+          "feature": {
+            "x": 38,
+            "y": 669.828125,
+            "width": 244
+          },
+          "own": {
+            "x": 38,
+            "y": 709.015625,
+            "width": 244
+          },
+          "other": {
+            "x": 38,
+            "y": 846.390625,
+            "width": 244
+          }
+        },
+        {
+          "feature": {
+            "x": 38,
+            "y": 943.390625,
+            "width": 244
+          },
+          "own": {
+            "x": 38,
+            "y": 982.578125,
+            "width": 244
+          },
+          "other": {
+            "x": 38,
+            "y": 1119.953125,
+            "width": 244
+          }
+        },
+        {
+          "feature": {
+            "x": 38,
+            "y": 1216.953125,
+            "width": 244
+          },
+          "own": {
+            "x": 38,
+            "y": 1256.140625,
+            "width": 244
+          },
+          "other": {
+            "x": 38,
+            "y": 1416.703125,
+            "width": 244
+          }
+        }
+      ],
+      "ids": [
+        "price",
+        "hosting",
+        "maintenance",
+        "play",
+        "access",
+        "workflow",
+        "connected",
+        "handover"
+      ],
+      "cellAssociations": true
+    },
+    {
+      "route": "/services#compare",
+      "width": 768,
+      "height": 1271.921875,
+      "name": "tablet",
+      "status": 200,
+      "pageWidth": 768,
+      "rowCount": 3,
+      "text": "BEYOND\nTHE BUILD.\n\nHosting, publishing and maintenance, planned with your software.\n\nOne-time development payment.\nA fixed price for the agreed development scope.\n\nLaunch and ongoing services: with KashCrop compared with a development-only scope.\nService\tWith KashCrop\tDevelopment only\nServer hosting\t\nIncluded for the agreed term.\nServer setup and hosting, as set out in your quote.\n\t\nArranged separately.\n\nMaintenance\t\nOptions up to 4 years.\nCoverage and duration agreed for your project.\n\t\nArranged separately.\n\nGoogle Play publishing\t\nPublishing and release management.\nAccount setup included for Android projects.\n\t\nArranged separately.\n\nHere, development only means the software build and technical handover. The comparison is between project scopes, not individual providers.\n\nWhat else is included?\n\nYour quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.\n\nLet’s talk",
+      "overflowing": [],
+      "rows": [
+        {
+          "feature": {
+            "x": 64.546875,
+            "y": 664.359375,
+            "width": 166.109375
+          },
+          "own": {
+            "x": 230.65625,
+            "y": 664.359375,
+            "width": 293.890625
+          },
+          "other": {
+            "x": 524.546875,
+            "y": 664.359375,
+            "width": 178.90625
+          }
+        },
+        {
+          "feature": {
+            "x": 64.546875,
+            "y": 827.859375,
+            "width": 166.109375
+          },
+          "own": {
+            "x": 230.65625,
+            "y": 827.859375,
+            "width": 293.890625
+          },
+          "other": {
+            "x": 524.546875,
+            "y": 827.859375,
+            "width": 178.90625
+          }
+        },
+        {
+          "feature": {
+            "x": 64.546875,
+            "y": 962.859375,
+            "width": 166.109375
+          },
+          "own": {
+            "x": 230.65625,
+            "y": 962.859375,
+            "width": 293.890625
+          },
+          "other": {
+            "x": 524.546875,
+            "y": 962.859375,
+            "width": 178.90625
+          }
+        }
+      ],
+      "ids": [
+        "price",
+        "hosting",
+        "maintenance",
+        "play",
+        "access",
+        "workflow",
+        "connected",
+        "handover"
+      ],
+      "cellAssociations": true
+    },
+    {
+      "route": "/services#compare",
+      "width": 844,
+      "height": 1242.921875,
+      "name": "landscape",
+      "status": 200,
+      "pageWidth": 844,
+      "rowCount": 3,
+      "text": "BEYOND\nTHE BUILD.\n\nHosting, publishing and maintenance, planned with your software.\n\nOne-time development payment.\nA fixed price for the agreed development scope.\n\nLaunch and ongoing services: with KashCrop compared with a development-only scope.\nService\tWith KashCrop\tDevelopment only\nServer hosting\t\nIncluded for the agreed term.\nServer setup and hosting, as set out in your quote.\n\t\nArranged separately.\n\nMaintenance\t\nOptions up to 4 years.\nCoverage and duration agreed for your project.\n\t\nArranged separately.\n\nGoogle Play publishing\t\nPublishing and release management.\nAccount setup included for Android projects.\n\t\nArranged separately.\n\nHere, development only means the software build and technical handover. The comparison is between project scopes, not individual providers.\n\nWhat else is included?\n\nYour quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.\n\nLet’s talk",
+      "overflowing": [],
+      "rows": [
+        {
+          "feature": {
+            "x": 67.96875,
+            "y": 679.578125,
+            "width": 184.09375
+          },
+          "own": {
+            "x": 252.0625,
+            "y": 679.578125,
+            "width": 325.703125
+          },
+          "other": {
+            "x": 577.765625,
+            "y": 679.578125,
+            "width": 198.265625
+          }
+        },
+        {
+          "feature": {
+            "x": 67.96875,
+            "y": 814.078125,
+            "width": 184.09375
+          },
+          "own": {
+            "x": 252.0625,
+            "y": 814.078125,
+            "width": 325.703125
+          },
+          "other": {
+            "x": 577.765625,
+            "y": 814.078125,
+            "width": 198.265625
+          }
+        },
+        {
+          "feature": {
+            "x": 67.96875,
+            "y": 949.078125,
+            "width": 184.09375
+          },
+          "own": {
+            "x": 252.0625,
+            "y": 949.078125,
+            "width": 325.703125
+          },
+          "other": {
+            "x": 577.765625,
+            "y": 949.078125,
+            "width": 198.265625
+          }
+        }
+      ],
+      "ids": [
+        "price",
+        "hosting",
+        "maintenance",
+        "play",
+        "access",
+        "workflow",
+        "connected",
+        "handover"
+      ],
+      "cellAssociations": true
+    },
+    {
+      "route": "/services#compare",
+      "width": 720,
+      "height": 1304.921875,
+      "name": "reflow-720",
+      "status": 200,
+      "pageWidth": 720,
+      "rowCount": 3,
+      "text": "BEYOND\nTHE BUILD.\n\nHosting, publishing and maintenance, planned with your software.\n\nOne-time development payment.\nA fixed price for the agreed development scope.\n\nLaunch and ongoing services: with KashCrop compared with a development-only scope.\nService\tWith KashCrop\tDevelopment only\nServer hosting\t\nIncluded for the agreed term.\nServer setup and hosting, as set out in your quote.\n\t\nArranged separately.\n\nMaintenance\t\nOptions up to 4 years.\nCoverage and duration agreed for your project.\n\t\nArranged separately.\n\nGoogle Play publishing\t\nPublishing and release management.\nAccount setup included for Android projects.\n\t\nArranged separately.\n\nHere, development only means the software build and technical handover. The comparison is between project scopes, not individual providers.\n\nWhat else is included?\n\nYour quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.\n\nLet’s talk",
+      "overflowing": [],
+      "rows": [
+        {
+          "feature": {
+            "x": 62.390625,
+            "y": 697.390625,
+            "width": 154.75
+          },
+          "own": {
+            "x": 217.140625,
+            "y": 697.390625,
+            "width": 273.796875
+          },
+          "other": {
+            "x": 490.9375,
+            "y": 697.390625,
+            "width": 166.671875
+          }
+        },
+        {
+          "feature": {
+            "x": 62.390625,
+            "y": 860.890625,
+            "width": 154.75
+          },
+          "own": {
+            "x": 217.140625,
+            "y": 860.890625,
+            "width": 273.796875
+          },
+          "other": {
+            "x": 490.9375,
+            "y": 860.890625,
+            "width": 166.671875
+          }
+        },
+        {
+          "feature": {
+            "x": 62.390625,
+            "y": 995.890625,
+            "width": 154.75
+          },
+          "own": {
+            "x": 217.140625,
+            "y": 995.890625,
+            "width": 273.796875
+          },
+          "other": {
+            "x": 490.9375,
+            "y": 995.890625,
+            "width": 166.671875
+          }
+        }
+      ],
+      "ids": [
+        "price",
+        "hosting",
+        "maintenance",
+        "play",
+        "access",
+        "workflow",
+        "connected",
+        "handover"
+      ],
+      "cellAssociations": true
+    }
+  ],
+  "errors": [],
+  "unavailable": [
+    {
+      "browser": "WebKit",
+      "reason": "browserType.launch: Executable doesn't exist at /var/lib/azure-workspace-mcp/.cache/ms-playwright/webkit-2359/pw_run.sh"
+    }
+  ],
+  "pass": true
+}

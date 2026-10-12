@@ -1,0 +1,109 @@
+
+> build
+> node tools/prepare-portfolio.cjs && react-router build
+
+Prepared 16 canonical routes, 9 verified screen assets and social metadata.
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 103 modules transformed.
+Generated an empty chunk: "legacy-about-redirect".
+Generated an empty chunk: "legacy-projects-redirect".
+rendering chunks...
+computing gzip size...
+build/client/.vite/manifest.json                           10.45 kB │ gzip:  1.43 kB
+build/client/assets/service-BJRn2r64.css                    1.26 kB │ gzip:  0.50 kB
+build/client/assets/PackageComparison-KewqmXiM.css          6.55 kB │ gzip:  1.77 kB
+build/client/assets/home-4xSVs7OO.css                       7.07 kB │ gzip:  2.16 kB
+build/client/assets/Press-dSKi_L66.css                      7.39 kB │ gzip:  1.66 kB
+build/client/assets/overdrive-content-CE-XARwg.css          9.97 kB │ gzip:  2.19 kB
+build/client/assets/services-BMIRQn0h.css                  17.92 kB │ gzip:  4.00 kB
+build/client/assets/overdrive-projects-CExfpLpH.css        28.91 kB │ gzip:  5.83 kB
+build/client/assets/root-Q40KdJ6S.css                      52.79 kB │ gzip: 11.01 kB
+build/client/assets/legacy-about-redirect-l0sNRNKZ.js       0.00 kB │ gzip:  0.02 kB
+build/client/assets/legacy-projects-redirect-l0sNRNKZ.js    0.00 kB │ gzip:  0.02 kB
+build/client/assets/not-found-BtzJWTjH.js                   0.11 kB │ gzip:  0.12 kB
+build/client/assets/useHydrated-zCl_QKWK.js                 0.15 kB │ gzip:  0.15 kB
+build/client/assets/services-DlxgF1GH.js                    0.34 kB │ gzip:  0.24 kB
+build/client/assets/jsx-runtime-u17CrQMm.js                 0.48 kB │ gzip:  0.31 kB
+build/client/assets/overdrive-projects-BWHZ14ZS.js          0.77 kB │ gzip:  0.51 kB
+build/client/assets/MotionProvider-VkLmbwUX.js              0.81 kB │ gzip:  0.48 kB
+build/client/assets/preload-helper-BXl3LOEh.js              1.11 kB │ gzip:  0.65 kB
+build/client/assets/Icon-BTf7-S2S.js                        1.17 kB │ gzip:  0.68 kB
+build/client/assets/services-D1CFvB3o.js                    1.77 kB │ gzip:  0.86 kB
+build/client/assets/films-CXdUyE_4.js                       2.14 kB │ gzip:  0.93 kB
+build/client/assets/privacy-Cj3xtxmn.js                     3.21 kB │ gzip:  1.41 kB
+build/client/assets/service-NqpisIoh.js                     4.57 kB │ gzip:  1.50 kB
+build/client/assets/projects-CdVPPpog.js                    5.20 kB │ gzip:  1.90 kB
+build/client/assets/PackageComparison-PqPzBivU.js           5.49 kB │ gzip:  1.83 kB
+build/client/assets/services-CzE50TwA.js                    5.71 kB │ gzip:  1.89 kB
+build/client/assets/about-BUq33SlU.js                       6.16 kB │ gzip:  2.32 kB
+build/client/assets/content-C9jb2aZE.js                     6.26 kB │ gzip:  2.39 kB
+build/client/assets/ScreenViewer-DjXG3-kl.js                8.27 kB │ gzip:  3.12 kB
+build/client/assets/root-B_VR1AgJ.js                        9.02 kB │ gzip:  3.50 kB
+build/client/assets/Press-CObMyyQa.js                       9.24 kB │ gzip:  2.89 kB
+build/client/assets/contact-D1uVgREM.js                    10.55 kB │ gzip:  3.75 kB
+build/client/assets/project-1eqZnF2j.js                    13.24 kB │ gzip:  3.48 kB
+build/client/assets/home-CHsV39M7.js                       21.93 kB │ gzip:  7.51 kB
+build/client/assets/seo-D0qyY_0t.js                        28.34 kB │ gzip:  9.59 kB
+build/client/assets/ScrollTrigger-BrDuEirF.js              43.55 kB │ gzip: 18.11 kB
+build/client/assets/index-D4-8ALNT.js                      70.43 kB │ gzip: 27.68 kB
+build/client/assets/chunk-OB3PAWPO-CGjaFKtx.js            130.32 kB │ gzip: 43.95 kB
+build/client/assets/entry.client-1rdmL0C4.js              219.02 kB │ gzip: 68.40 kB
+✓ built in 2.29s
+  ⚠️  Future Flag Warning: Route middleware support is changing in React Router v8.
+     You can use the `future.v8_middleware` flag to opt in early.
+     -> https://reactrouter.com/v7/upgrading/future#futurev8_middleware
+  ⚠️  Future Flag Warning: Route module splitting behavior is changing in React Router v8.
+     You can use the `future.v8_splitRouteModules` flag to opt in early.
+     -> https://reactrouter.com/v7/upgrading/future#futurev8_splitroutemodules
+  ⚠️  Future Flag Warning: Vite Environment API usage is changing in React Router v8.
+     You can use the `future.v8_viteEnvironmentApi` flag to opt in early.
+     -> https://reactrouter.com/v7/upgrading/future#futurev8_viteenvironmentapi
+  ⚠️  Future Flag Warning: Request handling behavior is changing in React Router v8.
+     You can use the `future.v8_passThroughRequests` flag to opt in early.
+     -> https://reactrouter.com/v7/upgrading/future#futurev8_passthroughrequests
+  ⚠️  Future Flag Warning: Data request URL formats are changing in React Router v8.
+     You can use the `future.v8_trailingSlashAwareDataRequests` flag to opt in early.
+     -> https://reactrouter.com/v7/upgrading/future#futurev8_trailingslashawaredatarequests
+vite v7.3.6 building ssr environment for production...
+transforming...
+✓ 53 modules transformed.
+rendering chunks...
+build/server/.vite/manifest.json                 0.88 kB
+build/server/assets/server-build-Ew9E87rJ.css  131.87 kB
+build/server/index.js                            0.43 kB
+build/server/assets/ScreenViewer-iqBwV04G.js    13.35 kB
+build/server/assets/server-build-BQNCp2zR.js   212.89 kB
+
+✓ 1 asset cleaned from React Router server build.
+build/server/assets/server-build-Ew9E87rJ.css
+✓ 1 asset moved from React Router server build to client assets.
+build/client/assets/server-build-Ew9E87rJ.css
+
+Prerender (html): / -> build/client/index.html
+Prerender (html): /projects -> build/client/projects/index.html
+Prerender (html): /services -> build/client/services/index.html
+Prerender (html): /about -> build/client/about/index.html
+Prerender (html): /contact -> build/client/contact/index.html
+Prerender (html): /privacy -> build/client/privacy/index.html
+Prerender (data): /projects/baghban -> build/client/projects/baghban.data
+Prerender (html): /projects/baghban -> build/client/projects/baghban/index.html
+Prerender (data): /projects/plant-health-clinic -> build/client/projects/plant-health-clinic.data
+Prerender (html): /projects/plant-health-clinic -> build/client/projects/plant-health-clinic/index.html
+Prerender (data): /projects/skiie -> build/client/projects/skiie.data
+Prerender (html): /projects/skiie -> build/client/projects/skiie/index.html
+Prerender (data): /projects/kashcrop -> build/client/projects/kashcrop.data
+Prerender (html): /projects/kashcrop -> build/client/projects/kashcrop/index.html
+Prerender (data): /projects/treat-my-fish -> build/client/projects/treat-my-fish.data
+Prerender (html): /projects/treat-my-fish -> build/client/projects/treat-my-fish/index.html
+Prerender (data): /projects/trace-amp -> build/client/projects/trace-amp.data
+Prerender (html): /projects/trace-amp -> build/client/projects/trace-amp/index.html
+Prerender (data): /services/full-stack-apps -> build/client/services/full-stack-apps.data
+Prerender (html): /services/full-stack-apps -> build/client/services/full-stack-apps/index.html
+Prerender (data): /services/website-development -> build/client/services/website-development.data
+Prerender (html): /services/website-development -> build/client/services/website-development/index.html
+Prerender (data): /services/ai-training -> build/client/services/ai-training.data
+Prerender (html): /services/ai-training -> build/client/services/ai-training/index.html
+Prerender (data): /services/blockchain-systems -> build/client/services/blockchain-systems.data
+Prerender (html): /services/blockchain-systems -> build/client/services/blockchain-systems/index.html
+✓ built in 501ms

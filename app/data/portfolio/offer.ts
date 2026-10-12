@@ -1,38 +1,38 @@
 // Offers confirmed by Hazik on 8 October 2026. Scope and term remain quote-specific.
-// Additional capability rows reflect the existing service catalogue; no competitor exclusions are asserted.
-// The build-only column defines an illustrative engagement, not a claim about other providers.
-export const buildOnlyScope = 'For this illustrative comparison, build-only covers agreed software development and a technical handover. Hosting, ongoing maintenance and Android publishing are arranged separately. Providers and packages vary; compare the written quote.';
+// Additional capability rows reflect the existing service catalogue.
+// Development-only describes an illustrative scope, not other providers' offers.
+export const buildOnlyScope = 'Here, development only means the software build and technical handover. The comparison is between project scopes, not individual providers.';
 
 export const packageComparison = [
   {
-    id: 'price', feature: 'Project pricing', question: 'Is the full development price agreed?',
-    buildOnly: 'An agreed fee for the development work.',
+    id: 'price', feature: 'Development price', question: 'Is the full development price agreed?',
+    buildOnly: 'An agreed development fee.',
     answer: 'One-time development payment.', detail: 'A fixed price for the agreed development scope.',
   },
   {
     id: 'hosting', feature: 'Server hosting', question: 'Who gets it online and handles hosting?',
-    buildOnly: 'Hosting setup and service arranged separately.',
-    answer: 'Hosting in your package.', detail: 'Setup and hosting for the term agreed in your quote.',
+    buildOnly: 'Arranged separately.',
+    answer: 'Included for the agreed term.', detail: 'Server setup and hosting, as set out in your quote.',
   },
   {
-    id: 'maintenance', feature: 'Long-term care', question: 'What support follows the launch?',
-    buildOnly: 'Ongoing maintenance arranged separately after handover.',
-    answer: 'Maintenance options up to 4 years.', detail: 'Choose the coverage and duration your project needs.',
+    id: 'maintenance', feature: 'Maintenance', question: 'What support follows the launch?',
+    buildOnly: 'Arranged separately.',
+    answer: 'Options up to 4 years.', detail: 'Coverage and duration agreed for your project.',
   },
   {
-    id: 'play', feature: 'Google Play', question: 'Who handles the account and releases?',
-    buildOnly: 'Android account setup, publishing and releases arranged separately.',
-    answer: 'Setup. Publishing. Management.', detail: 'Play Console account setup, publishing and release management for Android projects.',
+    id: 'play', feature: 'Google Play publishing', question: 'Who handles the account and releases?',
+    buildOnly: 'Arranged separately.',
+    answer: 'Publishing and release management.', detail: 'Account setup included for Android projects.',
   },
   {
     id: 'access', feature: 'Publisher access', question: 'Who controls the publishing account?',
     buildOnly: 'You arrange the publisher account and its ongoing management.',
-    answer: 'Your account. Your control.', detail: 'The Play Console account stays in your name, with delegated access for management.',
+    answer: 'Your Play Console account.', detail: 'The account stays in your name, with delegated access for management.',
   },
   {
     id: 'workflow', feature: 'Your workflow', question: 'Will the product fit how your team works?',
     buildOnly: 'Interfaces and workflows specified in the development brief.',
-    answer: 'Built around your people.', detail: 'Custom interfaces and workflows, shaped around the actual task.',
+    answer: 'Custom interfaces and workflows.', detail: 'Built around how your team works and the task at hand.',
   },
   {
     id: 'connected', feature: 'The complete system', question: 'Who connects the app, data and backend?',
@@ -42,8 +42,16 @@ export const packageComparison = [
   {
     id: 'handover', feature: 'Project handover', question: 'What happens when the build is ready?',
     buildOnly: 'Technical handover at completion of the agreed build.',
-    answer: 'Launch and handover, planned.', detail: 'Launch preparation and a structured project handover.',
+    answer: 'A planned project handover.', detail: 'Launch preparation and a structured project handover.',
   },
 ] as const;
+
+// Only ongoing/launch responsibilities belong in the comparison. The price and
+// shared development fundamentals remain visible without a false competitive claim.
+export const packageHighlights = packageComparison.filter(row =>
+  row.id === 'hosting' || row.id === 'maintenance' || row.id === 'play');
+export const packageFundamentals = packageComparison.filter(row =>
+  row.id === 'access' || row.id === 'workflow' || row.id === 'connected' || row.id === 'handover');
+export const packagePrice = packageComparison[0];
 
 export const offerScope = 'Your quote defines development scope, hosting term, maintenance coverage and third-party charges. Maintenance options extend up to four years. Google account verification and app review apply.';
